@@ -17,28 +17,10 @@
 
     <chapter xml:id="course-documents">
       <title>Course Documents</title>
-
-      <!-- Course syllabus -->
-      <xi:include href="./syllabus/syllabus.ptx" />
+      <xi:include href="./documents/syllabus.ptx" />
+      <xi:include href="./documents/objectives.ptx" />
       <!-- Other documents could go here, like a schedule, project description, etc. -->
     </chapter>
-
-    <chapter xml:id="course-notes">
-      <title>Course Notes</title>
-
-      <introduction>
-        <p>
-          The following notes are intended to remind you what we covered each week.
-          They are not a substitute for attending class and not a substitute for reading the textbook.
-        </p>
-      </introduction>
-
-      <xi:include href="./notes/week01.ptx"/>
-      <xi:include href="./notes/week02.ptx"/>
-      <!-- etc. -->
-
-    </chapter>
-
 
     <chapter xml:id="activities">
       <title>In-Class Activities</title>
@@ -56,21 +38,32 @@
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 
-    <chapter xml:id="handouts">
-      <title>Handouts</title>
-      <!-- Include handouts -->
-      <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
+    <chapter xml:id="exam">
+      <title>Exams</title>
+
+      <introduction>
+        <p>
+        </p>
+      </introduction>
+
+      <xi:include href="./exams/Exam1.ptx"/>
+      <!-- etc. -->
     </chapter>
 
-    <chapter xml:id="homework">
-      <title>Homework</title>
+    <chapter xml:id="homework-coding">
+      <title>Homework &amp; Coding Assignments</title>
 
       <!-- Include homework files -->
-      <!--<xi:include href="./homework/homework01.ptx"/>-->
+      <xi:include href="./homework-coding/Homework1.ptx"/>
+      <xi:include href="./homework-coding/Coding1.ptx"/>
+    </chapter>
 
+    <chapter xml:id="screencasts">
+      <title>Screencast Slides</title>
+      <xi:include href="./slides/slides.ptx"/>-->
     </chapter>
 
     <!-- Include additional chapters for other categories -->
-
-    </book>
-  </pretext>
+     
+  </book>
+</pretext>

@@ -12,7 +12,7 @@
   </introduction>
 
   <!-- Exercises start here. -->
-  <exercise workspace="2in">
+  <exercise>
     <statement>
       <p>
         Let <m>n</m> be an odd integer.  Determine whether <m>3n^2+7n+4</m> is odd or even.  Prove your result.

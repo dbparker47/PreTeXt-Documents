@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet>
+  <title>Divisibility and Congruence</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+    </p>
+  </introduction>
+
+  <!-- Exercises start here. -->
+  <exercise>
+    <statement>
+      <p>
+        Among all integers between <m>2</m> and <m>10</m>, find all <m>m</m> and <m>n</m> such that <m>m \mid n</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>m</m>, <m>n</m>, and <m>p</m> are integers.  Prove that if <m>m \mid n</m> and <m>n \mid p</m>, then <m>m \mid p</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find five solutions to the equivalence <m>x \equiv 3</m> (mod 8).
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose that <m>x \equiv 7</m> (mod 11).  Determine what <m>x+8</m> is modulo 11 (where the number you come up with is between 0 and 10).  Prove your result.
+      </p>
+    </statement>
+  </exercise>
+</worksheet>

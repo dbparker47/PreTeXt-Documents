@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>Homework Assignment #1 - Math 325</title>
+    <p>
+      <alert>Due Sunday, 1/24</alert>
+    </p>
+
+  <introduction>
+    <p>
+      For this assignment, you will solve the problems given below.  Each solution will be in the form of a theorem and a proof, which will be written clearly and in complete sentences.  Your paper will be assessed on both your mathematical reasoning and the quality of your writing.  The writing criteria for this assignment is the following.
+      <ul>
+        <li>
+          <p>
+            Theorem is written properly.
+          </p>
+          <ul>
+            <li>
+              <p>
+                All relevant information is clearly stated (assumptions and other context).
+              </p>
+            </li>
+            <li>
+              <p>
+                Write your theorem as a precise mathematical statement (e.g. not in the form of a problem or command).
+              </p>
+            </li>
+            <li>
+              <p>
+                Make sure your theorem matches what was asked for in the problem.
+              </p>
+            </li>
+            <li>
+              <p>
+                Make sure your theorem describes the conclusion to the solution of your problem.
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            Thoroughly explain your reasoning.
+          </p>
+        </li>
+        <li>
+          <p>
+            Make sure all assertions are justified rigorously and clearly.
+          </p>
+        </li>
+        <li>
+          <p>
+            Explain things so that a typical student in our class can understand what you are saying (e.g. don't use terminology a student in the class would not be familiar with).
+          </p>
+        </li>
+        <li>
+          <p>
+            Make sure your proof is written for a <em>skeptical</em> audience (i.e. Peeves).  One of your jobs is to assure your reader that you have countered every possible counterargument to your theorem.
+          </p>
+        </li>
+        <li>
+          <p>
+            On conditional statements, state clearly what is being assumed and what needs to be shown.
+          </p>
+        </li>
+        <li>
+          <p>
+            Let your reader know when the proof is finished.
+          </p>
+        </li>
+      </ul>
+      You may either submit a hard copy of your paper in class or submit your paper on Blackboard as a PDF file.  <alert>If you submit your paper electronically, it <em>must</em> be as a PDF file</alert>.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        (25 pts.)  Let <m>m</m> and <m>n</m> be even integers.  Determine whether <m>4m+7n+5</m> is odd or even, and prove your result.  Make sure to state the theorem you prove as a mathematical statement (not a command).
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        (25 pts.) Suppose <m>a \equiv 7</m> (mod 9) and <m>b \equiv 5</m> (mod 9).  Find integers <m>c</m> and <m>d</m>, each between <m>0</m> and <m>8</m>, such that <m>a+b \equiv c</m> (mod 9) and <m>ab \equiv d</m> (mod 9).  Prove your results.  Note:  You may not choose specific values for <m>a</m> and <m>b</m> in your proof.  Make sure to state the theorem you prove as a mathematical statement.
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>
