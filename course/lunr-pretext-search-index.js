@@ -55,22 +55,13 @@ var ptx_lunr_docs = [
   "body": "Class Preparation Resources and Course Links "
 },
 {
-  "id": "notes-week-01",
+  "id": "objectives",
   "level": "1",
-  "url": "notes-week-01.html",
+  "url": "objectives.html",
   "type": "Section",
   "number": "",
-  "title": "Week 1",
-  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Monday 8\/22      Wednesday 8\/24      Friday 8\/26     "
-},
-{
-  "id": "notes-week-02",
-  "level": "1",
-  "url": "notes-week-02.html",
-  "type": "Section",
-  "number": "",
-  "title": "Week 2",
-  "body": " Week 2   Monday      Wednesday      Friday     "
+  "title": "Course Objectives for Math 325",
+  "body": " Course Objectives for Math 325   Note that in the objectives below that italicized words and phrases are terminology that you are expected to know, understand, and be able to work with.    Constructing & Writing Proofs in Mathematics (Sundstrom: Section 1.2 & Chapter 3)   Direct Proofs (Section 3.1)  You should be able to do the following:   Set up the proof of a conditional statement (i.e. what is assumed and what is to be proven).    Outline the proof of a given conditional statement.    Write the formal proof of a given conditional statement.    Explain what it means for an integer to be even (section 1.2). Use in proofs.    Explain what it means for an integer to be odd (section 1.2). Use in proofs.    Explain what it means for one integer to be divisible by another integer. Use in proofs.    Given an integer , explain what it means for two integers to be congruent modulo . Use in proofs.       More Methods of Proof (Section 3.2)  You should be able to do the following:   Given a statement, explain why proving a logically equivalent statement also proves the original statement.    Explain the definition of the contrapositive of a conditional statement.    Given a conditional statement, construct its contrapositive.    Use the logical equivalence to prove a conditional statement by its contrapositive.    Use the logical equivalence to prove biconditional statements .    Use logical equivalences (e.g. De Morgan's laws) to construct the negation of a given statement.       Proof by Contradiction (Section 3.3)  You should be able to do the following:   Set up a proof by contradiction . Specifically, to prove a given statement by contradiction, be able to state clearly and correctly what you are assuming and what kind of statement you want to prove.    Explain why proof by contradiction is valid.    Determine an appropriate false statement necessary to prove a given statement by contradiction.    Use proof by contradiction to prove theorems.    Use proof by contradiction to prove that a given real number is irrational.        Proof by Induction (Sundstrom: Chapter 4)   Introduction to Induction (Section 4.1)  You should be able to do the following:   Describe what kinds of statements can be proven by induction .    Explain the steps necessary to prove a theorem by induction. In particular, be able to explain the base case and the inductive step.    Prove theorems by induction.       Strong Induction (Section 4.2)  You should be able to do the following:   Explain what kinds of statements can be proven by Strong Induction .    Explain the steps necessary to prove theorems using all types of induction.    Prove theorems by using appropriate types of induction.    Prove theorems about sequences using appropriate types of induction.        Equivalence Relations (Sundstrom: Chapter 7)   Introduction to Relations (Section 7.1)  You should be able to do the following:   Explain the definition of relation .    Understand relations as ways of describing relationships between pairs of objects.    Use appropriate models (e.g. directed graph model) to understand relations.    Given a description of a relation, list ordered pairs in the relation.    Explain how functions are relations (but not vice-versa).       Equivalence Relations (Section 7.2)  You should be able to do the following:   Explain the definitions of reflexive , symmetric , and transitive relations.    Given a relation, determine and prove whether or not it is reflexive, symmetric, or transitive.    Explain the definition of an equivalence relation .    Given a relation, determine and prove whether or not it is an equivalence relation.       Equivalence Classes (Section 7.3)  You should be able to do the following:   Explain the definition of an equivalence class of a relation.    Explain how only equivalence relations give rise to equivalence classes.    Given an equivalence relation, determine all of its equivalence classes.    Prove theorems about equivalence relations and equivalence classes.        Other Relation Topics   Partial Orders  You should be able to do the following:   Explain the definition of an anti-symmetric relation .    Explain the definition of a partial order on a set.    Describe examples of partial orders (e.g. the set of real numbers, the power set of a set).    Given a set with a relation, determine whether or not the relation is a partial order, and prove your result.    Given two elements in a partially ordered set (i.e. poset) , determine whether or not they are comparable .    Explain the difference between a minimum and a minimal element in a partially ordered set.    Explain the difference between a maximum and a maximal element in a partially ordered set.    Given a partially ordered set, determine any minimum, minimal, maximum, or maximal elements of the partially ordered set and prove the result.       Composition of Relations  You should be able to do the following:   Explain the definition of the composition of two relations.    Relate composition of relations to composition of functions.    Given two appropriate relations, determine elements related under the composition of relations.    Prove theorems about composition of relations.       Transitive Closure  You should be able to do the following:   Explain the definition of the transitive closure of a relation.    Given a relation, construct the transitive closure of the relation.    Implement Warshall's algorithm to find the transitive closure of a relation.        Graph Theory (Keller & Trotter: Chapter 5)   Basic Notation and Terminology for Graphs (Section 5.1)  You should be able to do the following:   Use graphs as models for real-world phenomena (e.g. friendships, bordering countries, etc).    Describe basic terminology related to graphs, including vertex, edge, adjacent, incident, neighborhood, degree, subgraph, walk, path, cycle, trail , and circuit .    Describe and draw the following classes of graphs: path graphs , cycle graphs , complete graphs , and complete bipartite graphs .    Explain what a connected graph is, both conceptually and using the formal definition.    Explain the statement and reasoning behind the Handshake Theorem , which states that the sum of the degrees of the vertices in a graph is twice the number of edges in the graph.    Explain what an isomorphism between two graphs is.    Identify graphs that are isomorphic , and define an isomorphism between them.    Determine when two graphs are not isomorphic, and explain why.    Prove theorems of basic facts about graphs.       Eulerian & Hamiltonian Graphs (Section 5.3)  You should be able to do the following:   Explain the definition of an Eulerian trail or circuit .    Explain the definition of a Hamiltonian cycle .    Determine whether or not a given graph has an Eulerian trail or Eulerian circuit based on the degrees of the vertices.    Construct an Eulerian trail or circuit on a graph, if it is possible.    Construct a Hamiltonian cycle on a given graph, if it is possible.    Prove theorems about Eulerian trails & circuits, and about Hamiltonian paths & cycles.       Graph Coloring (Section 5.4)  You should be able to do the following:   Explain the definition of a proper vertex coloring of a graph.    Given a graph and a vertex coloring of a graph, determine whether the coloring is a proper vertex coloring.    Given a graph and a fixed number of colors, determine whether it is possible to properly color the vertices of the graph.    Given a graph , determine the chromatic number  of the graph, and prove it.    Prove theorems about proper vertex colorings.       Adjacency Matrices  You should be able to do the following:   Explain what an adjacency matrix of a graph is.    Given a graph, construct an adjacency matrix.    Given an adjacency matrix, construct the graph it represents.    Determine whether or not a given matrix is an adjacency matrix for a graph.        Trees (Doerr & Levasseur: Chapter 10)   Introduction to Trees (Section 10.1)  You should be able to do the following:   Explain the definition of a tree .    Explain the definition of a forest , and distinguish a forest from a tree.    Explain some basic facts about trees (e.g. adding an edge between two existing vertices creates a cycle; every tree has at least two leaves; the number of vertices is one more than the number of edges; there is a unique path between any two vertices in a tree).    Prove theorems about trees.       Spanning Trees (Section 10.2)  You should be able to do the following:   Explain the definition of a spanning tree of a graph.    Explain what is meant by a weighted graph .    Explain the definition of a minimum spanning tree of a weighted graph.    Explain and implement Prim's algorithm to determine a minimum spanning tree of a connected weighted graph.    Explain and implement Kruskal's algorithm to determine a minimum spanning tree of a connected weighted graph.       Rooted Trees (Section 10.3)  You should be able to do the following:   Explain the definition of a rooted tree .    Explain why every tree can be interpreted as a rooted tree.    Explain why every vertex in a tree can be the root of a rooted tree.    Given any tree and any vertex of the tree, represent the tree as a rooted tree with root , making clear all parent-child relationships between the vertices.       Binary Trees (Section 10.4)  You should be able to do the following:   Explain the recursive definition of a binary tree .    Explain the definition of a traversal of a graph.    Identify and describe different traversals that we encounter in this course (i.e. Euler trails\/circuits, Hamiltonian paths\/cycles, preorder, inorder, and postorder traversals of trees).    Given a binary tree, implement a preorder, inorder, or postorder traversal that visits all vertices of the tree.        Graph Algorithms   Shortest Path Algorithms  You should be able to do the following:   Given a weighted graph, explain the definition of a shortest path between two given vertices.    Given a relatively simple weighted graph and two vertices in the graph, use your wits to find a shortest path between the vertices.    Explain Dijkstra's algorithm for finding a shortest path between two given vertices in a weighted graph. In particular, explain why the algorithm works.    Use Dijkstra's algorithm to find a shortest path between two given vertices in a weighted graph.    Explain the Improved Dijkstra's algorithm for finding a shortest path between two given vertices in a weighted graph. In particular, explain why the algorithm works.    Use the Improved Dijkstra's algorithm to find a shortest path between two given vertices in a weighted graph.       Route Inspection Problem  You should be able to do the following:   Model a given walk in a graph with a multigraph .    Explain the Route Inspection problem .    Explain our algorithm for solving the Route Inspection problem.    Given a weighted graph, use the algorithm to solve the Route Inspection problem.       Digraphs  You should be able to do the following:   State and apply the definition of a digraph .    Describe basic terminology related to digraphs, including vertex, arc, walk, path, cycle, trail , and circuit .    Use Dijkstra's Algorithm or the Improved Dijkstra's Algorithm to find shortest paths between vertices in digraphs.       Scheduling Problems  You should be able to do the following:   Given a scheduling problem, construct an appropriate digraph to model the problem.    Use appropriate algorithms to construct paths used to solve scheduling problems.    Describe in detail the solution to a given scheduling problem.       "
 },
 {
   "id": "activity-01-intro-activity",
@@ -100,22 +91,283 @@ var ptx_lunr_docs = [
   "body": "  Let and be odd integers. Determine whether is odd or even. Prove your result.   "
 },
 {
-  "id": "handouts",
+  "id": "activities-4",
   "level": "1",
-  "url": "handouts.html",
-  "type": "Chapter",
+  "url": "activities-4.html",
+  "type": "Worksheet",
   "number": "",
-  "title": "Handouts",
-  "body": " Handouts    "
+  "title": "Divisibility and Congruence",
+  "body": " Divisibility and Congruence          Among all integers between and , find all and such that .      Suppose , , and are integers. Prove that if and , then .      Find five solutions to the equivalence (mod 8).      Suppose that (mod 11). Determine what is modulo 11 (where the number you come up with is between 0 and 10). Prove your result.    "
 },
 {
-  "id": "homework",
+  "id": "activities-4-3",
+  "level": "2",
+  "url": "activities-4.html#activities-4-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Among all integers between and , find all and such that .   "
+},
+{
+  "id": "activities-4-4",
+  "level": "2",
+  "url": "activities-4.html#activities-4-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Suppose , , and are integers. Prove that if and , then .   "
+},
+{
+  "id": "activities-4-5",
+  "level": "2",
+  "url": "activities-4.html#activities-4-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Find five solutions to the equivalence (mod 8).   "
+},
+{
+  "id": "activities-4-6",
+  "level": "2",
+  "url": "activities-4.html#activities-4-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Suppose that (mod 11). Determine what is modulo 11 (where the number you come up with is between 0 and 10). Prove your result.   "
+},
+{
+  "id": "exam-3",
   "level": "1",
-  "url": "homework.html",
+  "url": "exam-3.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Exam 1 - Math 325",
+  "body": " Exam 1 - Math 325    For each of the following problems, you will state the solution of the problem as a theorem, and you will write a proof of the theorem. Keep the following in mind.   All proofs must be written in complete sentences.    If computations are a part of your proof, they must be written as part of the proof. Do not separate the computations from the explanations.    Your proof may not have any unproved steps. All steps must be justified by definitions, your previously proven steps, or by facts we proved in class or in videos.         (25 pts.) Suppose (mod 9) and (mod 9). Prove that (mod 9).      (25 pts.) Let , , and be integers. Prove that if , and does not divide , then does not divide .      (25 pts.) Suppose that is a nonzero rational number and is an irrational number (i.e. a real number that is not a rational number). Prove that is an irrational number.      (25 pts.) Suppose you have a system of buildings where each pair of buildings is connected by a one-way road. Prove that there is a route that enables you to visit every building.    "
+},
+{
+  "id": "exam-3-3",
+  "level": "2",
+  "url": "exam-3.html#exam-3-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  (25 pts.) Suppose (mod 9) and (mod 9). Prove that (mod 9).   "
+},
+{
+  "id": "exam-3-4",
+  "level": "2",
+  "url": "exam-3.html#exam-3-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  (25 pts.) Let , , and be integers. Prove that if , and does not divide , then does not divide .   "
+},
+{
+  "id": "exam-3-5",
+  "level": "2",
+  "url": "exam-3.html#exam-3-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  (25 pts.) Suppose that is a nonzero rational number and is an irrational number (i.e. a real number that is not a rational number). Prove that is an irrational number.   "
+},
+{
+  "id": "exam-3-6",
+  "level": "2",
+  "url": "exam-3.html#exam-3-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  (25 pts.) Suppose you have a system of buildings where each pair of buildings is connected by a one-way road. Prove that there is a route that enables you to visit every building.   "
+},
+{
+  "id": "exam-4",
+  "level": "1",
+  "url": "exam-4.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Exam 2 - Math 325",
+  "body": " Exam 2 - Math 325    For each of the following problems, you will state the solution of the problem as a theorem, and you will write a proof of the theorem. Keep the following in mind.   All proofs must be written in complete sentences.    If computations are a part of your proof, they must be written as part of the proof. Do not separate the computations from the explanations.    Your proof may not have any unproved steps. All steps must be justified by definitions, your previously proven steps, or by facts we proved in class or in videos.         (25 pts.) Suppose you have a set , and let , be a collection of subsets of with the following properties.        There are no elements of that are in more than one of the 's (i.e. if , then ).   Define the relation as follows. For , we say when and are in the same (i.e. there exists such that ). Prove that is an equivalence relation.      Define the relation on (i.e. the natural numbers without 0 and 1) by precisely when divides . Note that we are excluding 0 and 1 from the numbers we are considering for the relation.     (12 pts.) Prove that is a partial order.      (7 pts.) Prove that has no maximal elements.      (6 pts.) Prove that every prime number is a minimal element for .       (25 pts.) Consider the relations and on the set of integers defined as follows.    precisely when (mod 9).     precisely when (mod 12).   Let . Suppose that . Prove that (mod 3).      (25 pts.) Let be a relation on the set , and let be the transitive closure of . Let , and suppose that for all we have (in directed graph form, this is ). Prove by induction that for all (i.e. for all for .    "
+},
+{
+  "id": "exam-4-3",
+  "level": "2",
+  "url": "exam-4.html#exam-4-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  (25 pts.) Suppose you have a set , and let , be a collection of subsets of with the following properties.        There are no elements of that are in more than one of the 's (i.e. if , then ).   Define the relation as follows. For , we say when and are in the same (i.e. there exists such that ). Prove that is an equivalence relation.   "
+},
+{
+  "id": "exam-4-4",
+  "level": "2",
+  "url": "exam-4.html#exam-4-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Define the relation on (i.e. the natural numbers without 0 and 1) by precisely when divides . Note that we are excluding 0 and 1 from the numbers we are considering for the relation.     (12 pts.) Prove that is a partial order.      (7 pts.) Prove that has no maximal elements.      (6 pts.) Prove that every prime number is a minimal element for .    "
+},
+{
+  "id": "exam-4-5",
+  "level": "2",
+  "url": "exam-4.html#exam-4-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  (25 pts.) Consider the relations and on the set of integers defined as follows.    precisely when (mod 9).     precisely when (mod 12).   Let . Suppose that . Prove that (mod 3).   "
+},
+{
+  "id": "exam-4-6",
+  "level": "2",
+  "url": "exam-4.html#exam-4-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  (25 pts.) Let be a relation on the set , and let be the transitive closure of . Let , and suppose that for all we have (in directed graph form, this is ). Prove by induction that for all (i.e. for all for .   "
+},
+{
+  "id": "exam-5",
+  "level": "1",
+  "url": "exam-5.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Exam 3 - Math 325",
+  "body": " Exam 3 - Math 325    For each of the following problems, you will state the solution of the problem as a theorem, and you will write a proof of the theorem. Keep the following in mind.   All proofs must be written in complete sentences.    If computations are a part of your proof, they must be written as part of the proof. Do not separate the computations from the explanations.    Your proof may not have any unproved steps. All steps must be justified by definitions, your previously proven steps, or by facts we proved in class or in videos.         (30 pts.) Let be a connected graph that contains a cycle . Prove that if you remove one of the edges in the cycle, the resulting graph is connected.      Let be a tree with at least two vertices, and consider the following algorithm applied to .   Choose a random vertex in . Call it current_vertex.    If possible, choose a vertex that is adjacent to current_vertex that has not been visited yet; call this new vertex adjacent_vertex. If it is not possible, stop the algorithm and return the vertex current_vertex.    If the algorithm has not yet been stopped, change the name of adjacent_vertex to current_vertex and repeat step (2) above.   Prove that the algorithm eventually terminates and that the output of the algorithm is a leaf (i.e. a vertex of degree 1). Hint: I suggest letting be the vertices that are visited (in order), where is the output of the algorithm. I would suggest a proof by contradiction.      (40 pts.) Choose one of the following. You will likely need to use the theorem you proved in #1 on this exam in your proof.     Let be a tree you get from Kruskal's algorithm, and let be the edges of listed in the order you choose them in Kruskal's algorithm. Let be a minimum spanning tree, and let be the first edge of that is not in (if such an edge exists).     Prove that adding to creates a cycle.      Prove that there is some edge in but not in such that if you remove and replace it with , the resulting graph is a spanning tree.      Prove that . Hint: is a minimum spanning tree, so what does that tell you about the spanning tree from (b)?      Prove that . Hint: At the step of Kruskal's algorithm, would it be appropriate to choose instead of ?      What happens to the weight of if you replace with ? Explain how you would continue this process to show is a minimum spanning tree.       Let be a tree you get from Prim's algorithm, and let be the edges of listed in the order you choose them in Prim's algorithm. Let be a minimum spanning tree     Suppose is not in . Prove that adding to creates a cycle.      Prove that is in a minimum spanning tree. Hint: Remove a carefully chosen edge from the cycle you created in (a).      Using a similar technique as in (a) and (b), prove that and are part of a common minimum spanning tree.      Prove that , , and are part of a common minimum spanning tree.      Prove that all form a minimum spanning tree by induction.            "
+},
+{
+  "id": "exam-5-3",
+  "level": "2",
+  "url": "exam-5.html#exam-5-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  (30 pts.) Let be a connected graph that contains a cycle . Prove that if you remove one of the edges in the cycle, the resulting graph is connected.   "
+},
+{
+  "id": "exam-5-4",
+  "level": "2",
+  "url": "exam-5.html#exam-5-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Let be a tree with at least two vertices, and consider the following algorithm applied to .   Choose a random vertex in . Call it current_vertex.    If possible, choose a vertex that is adjacent to current_vertex that has not been visited yet; call this new vertex adjacent_vertex. If it is not possible, stop the algorithm and return the vertex current_vertex.    If the algorithm has not yet been stopped, change the name of adjacent_vertex to current_vertex and repeat step (2) above.   Prove that the algorithm eventually terminates and that the output of the algorithm is a leaf (i.e. a vertex of degree 1). Hint: I suggest letting be the vertices that are visited (in order), where is the output of the algorithm. I would suggest a proof by contradiction.   "
+},
+{
+  "id": "exam-5-5",
+  "level": "2",
+  "url": "exam-5.html#exam-5-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  (40 pts.) Choose one of the following. You will likely need to use the theorem you proved in #1 on this exam in your proof.     Let be a tree you get from Kruskal's algorithm, and let be the edges of listed in the order you choose them in Kruskal's algorithm. Let be a minimum spanning tree, and let be the first edge of that is not in (if such an edge exists).     Prove that adding to creates a cycle.      Prove that there is some edge in but not in such that if you remove and replace it with , the resulting graph is a spanning tree.      Prove that . Hint: is a minimum spanning tree, so what does that tell you about the spanning tree from (b)?      Prove that . Hint: At the step of Kruskal's algorithm, would it be appropriate to choose instead of ?      What happens to the weight of if you replace with ? Explain how you would continue this process to show is a minimum spanning tree.       Let be a tree you get from Prim's algorithm, and let be the edges of listed in the order you choose them in Prim's algorithm. Let be a minimum spanning tree     Suppose is not in . Prove that adding to creates a cycle.      Prove that is in a minimum spanning tree. Hint: Remove a carefully chosen edge from the cycle you created in (a).      Using a similar technique as in (a) and (b), prove that and are part of a common minimum spanning tree.      Prove that , , and are part of a common minimum spanning tree.      Prove that all form a minimum spanning tree by induction.     "
+},
+{
+  "id": "exam-5-6",
+  "level": "2",
+  "url": "exam-5.html#exam-5-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "exam-6",
+  "level": "1",
+  "url": "exam-6.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Final Exam - Math 325",
+  "body": " Final Exam - Math 325    For each of the following problems, you will state the solution of the problem as a theorem, and you will write a proof of the theorem. Keep the following in mind.   All proofs must be written in complete sentences.    If computations are a part of your proof, they must be written as part of the proof. Do not separate the computations from the explanations.    Your proof may not have any unproved steps. All steps must be justified by definitions, your previously proven steps, or by facts we proved in class or in videos.   For both of the following, let be a connected weighted graph where we are trying to solve the Route Inspection Problem.      (30 pts.) Suppose we have two pairs of vertices, and , where each of , , and have odd degree. Suppose the shortest paths between & and between & go through the same edge . Prove that these pairings of the vertices cannot be part of a solution to the Route Inspection Problem. Hint: Prove by contradiction, and let be the weight of the shortest from to , be the weight of the shortest path from to , be the weight of the shortest path from to and be the weight of the shortest path from to . Consider the following questions.     What is the total distance covered by the shortest paths between these two pairs?      Can you find a pairing of the vertices that gives a shorter distance?       (30 pts.) Suppose has precisely four vertices (say , , , and ) with odd degree. Let be a path between and , and let be a path between and . Suppose also that and share no edges. Prove that duplicating the edges of and transforms into an Eulerian multigraph.      For the remainder of the exam period, you may do either or both of the following.     Resubmit solutions to problems on exam 1, exam 2, or exam 3. If you choose this option, you must bring a copy of your exam and write your solution on blank paper that I will provide.      Re-take any quizzes given during the semester.     Be aware of the following deadlines.   All quiz re-takes must be done by the time I leave campus on Wednesday, 12\/10. You may take quizzes any time I am in my office. My last final exam ends at 1:50 on Wednesday. If you want to take any quizzes after that, please make arrangements with me before I leave campus.    All coding and homework assignment resubmissions are due Wednesday, 12\/10 at 11:59 pm. If you have an urgent reason that you need to turn in assignments later than that, please let me know.     "
+},
+{
+  "id": "exam-6-3",
+  "level": "2",
+  "url": "exam-6.html#exam-6-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  (30 pts.) Suppose we have two pairs of vertices, and , where each of , , and have odd degree. Suppose the shortest paths between & and between & go through the same edge . Prove that these pairings of the vertices cannot be part of a solution to the Route Inspection Problem. Hint: Prove by contradiction, and let be the weight of the shortest from to , be the weight of the shortest path from to , be the weight of the shortest path from to and be the weight of the shortest path from to . Consider the following questions.     What is the total distance covered by the shortest paths between these two pairs?      Can you find a pairing of the vertices that gives a shorter distance?    "
+},
+{
+  "id": "exam-6-4",
+  "level": "2",
+  "url": "exam-6.html#exam-6-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  (30 pts.) Suppose has precisely four vertices (say , , , and ) with odd degree. Let be a path between and , and let be a path between and . Suppose also that and share no edges. Prove that duplicating the edges of and transforms into an Eulerian multigraph.   "
+},
+{
+  "id": "exam-6-5",
+  "level": "2",
+  "url": "exam-6.html#exam-6-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  For the remainder of the exam period, you may do either or both of the following.     Resubmit solutions to problems on exam 1, exam 2, or exam 3. If you choose this option, you must bring a copy of your exam and write your solution on blank paper that I will provide.      Re-take any quizzes given during the semester.    "
+},
+{
+  "id": "homework-coding-2",
+  "level": "1",
+  "url": "homework-coding-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework Assignment #1 - Math 325",
+  "body": " Homework Assignment #1 - Math 325    Due Sunday, 1\/24   For this assignment, you will solve the problems given below. Each solution will be in the form of a theorem and a proof, which will be written clearly and in complete sentences. Your paper will be assessed on both your mathematical reasoning and the quality of your writing. The writing criteria for this assignment is the following.   Theorem is written properly.   All relevant information is clearly stated (assumptions and other context).    Write your theorem as a precise mathematical statement (e.g. not in the form of a problem or command).    Make sure your theorem matches what was asked for in the problem.    Make sure your theorem describes the conclusion to the solution of your problem.       Thoroughly explain your reasoning.    Make sure all assertions are justified rigorously and clearly.    Explain things so that a typical student in our class can understand what you are saying (e.g. don't use terminology a student in the class would not be familiar with).    Make sure your proof is written for a skeptical audience (i.e. Peeves). One of your jobs is to assure your reader that you have countered every possible counterargument to your theorem.    On conditional statements, state clearly what is being assumed and what needs to be shown.    Let your reader know when the proof is finished.   You may either submit a hard copy of your paper in class or submit your paper on Blackboard as a PDF file. If you submit your paper electronically, it must be as a PDF file .     (25 pts.) Let and be even integers. Determine whether is odd or even, and prove your result. Make sure to state the theorem you prove as a mathematical statement (not a command).      (25 pts.) Suppose (mod 9) and (mod 9). Find integers and , each between and , such that (mod 9) and (mod 9). Prove your results. Note: You may not choose specific values for and in your proof. Make sure to state the theorem you prove as a mathematical statement.    "
+},
+{
+  "id": "homework-coding-2-3",
+  "level": "2",
+  "url": "homework-coding-2.html#homework-coding-2-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  (25 pts.) Let and be even integers. Determine whether is odd or even, and prove your result. Make sure to state the theorem you prove as a mathematical statement (not a command).   "
+},
+{
+  "id": "homework-coding-2-4",
+  "level": "2",
+  "url": "homework-coding-2.html#homework-coding-2-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  (25 pts.) Suppose (mod 9) and (mod 9). Find integers and , each between and , such that (mod 9) and (mod 9). Prove your results. Note: You may not choose specific values for and in your proof. Make sure to state the theorem you prove as a mathematical statement.   "
+},
+{
+  "id": "homework-coding-3",
+  "level": "1",
+  "url": "homework-coding-3.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Coding Assignment #1 - Math 325",
+  "body": " Coding Assignment #1 - Math 325    Due Sunday, 1\/24   You will code the following functions in the programming language Python. For help with the syntax you will need to complete the code, please read the document Code Help that is included with this assignment. That document will include some explanation of the Python syntax that you may need. Note that you may not use any fancy modules to do these. Use only the mathematical operations in Python.  You may either submit a hard copy of your code in class or submit your code on Blackboard as a PDF file. If you submit your code electronically, it must be as a PDF file .   The functions you will be working on this week are the following.    Write a function called divisible . Its inputs are integers and , and its output depends on whether or not .   If , then the function returns a list of length 2 whose first component is True and whose second component is the number such that .    If , then the function simply returns False .         Write a function called congruent . Its inputs are integers , , and , and its output depends on whether or not (mod ) is true.   If (mod ), then the function returns a list of length 2 whose first component is True and whose second component is the number such that .    If (mod ), then the functions simply returns False .       Correct code is an important part of how you will be assessed on this assignment, but much more important is how well you document your code. For each function you code, you should do the following.   Each part of your code must be documented. It is not necessary to document every line of code, but you should document so that the purposes of each part of your code can be understood in detail.    Make sure you explain what each portion of code does.    Make sure you explain how each portion of code relates to the overall purpose of the function. For instance, if you have a for loop that runs through entries in a list, briefly describe how the entries in the list will help you find the output of your function.   You should be able to properly document your code with one-line comments (using the single line comments with #), and they should be written in complete sentences that describe what each line of code does and what its purpose is. You may not import any packages to help you with your function.   If you need help reviewing or learning Python, I would suggest going to one of the following websites:    Learnpython.org : This is an interactive free tutorial for Python 3. It is not quite as interactive as Codecademy below. But, unlike Codecademy, you can learn Python 3 for free.     Codecademy.com : This will take you to the tutorial for Python 2. You can learn Python 3 at Codecademy, but it costs money. However, learning Python 2 will be enough to get you functional on Python. Any differences between Python 2 and Python 3 are documented on the Coding Help document included with every coding assignment.     "
+},
+{
+  "id": "homework-coding-3-4",
+  "level": "2",
+  "url": "homework-coding-3.html#homework-coding-3-4",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Write a function called divisible . Its inputs are integers and , and its output depends on whether or not .   If , then the function returns a list of length 2 whose first component is True and whose second component is the number such that .    If , then the function simply returns False .      "
+},
+{
+  "id": "homework-coding-3-5",
+  "level": "2",
+  "url": "homework-coding-3.html#homework-coding-3-5",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Write a function called congruent . Its inputs are integers , , and , and its output depends on whether or not (mod ) is true.   If (mod ), then the function returns a list of length 2 whose first component is True and whose second component is the number such that .    If (mod ), then the functions simply returns False .      "
+},
+{
+  "id": "screencasts",
+  "level": "1",
+  "url": "screencasts.html",
   "type": "Chapter",
   "number": "",
-  "title": "Homework",
-  "body": " Homework    "
+  "title": "Screencast Slides",
+  "body": " Screencast Slides  PreTeXt --> "
 }
 ]
 
