@@ -2,40 +2,40 @@
 
 <worksheet>
   <title>Homework Assignment #1 - Math 325</title>
+
+  <introduction>
     <p>
       <alert>Due Sunday, 1/24</alert>
     </p>
-
-  <introduction>
     <p>
       For this assignment, you will solve the problems given below.  Each solution will be in the form of a theorem and a proof, which will be written clearly and in complete sentences.  Your paper will be assessed on both your mathematical reasoning and the quality of your writing.  The writing criteria for this assignment is the following.
       <ul>
         <li>
           <p>
             Theorem is written properly.
+            <ul>
+              <li>
+                <p>
+                  All relevant information is clearly stated (assumptions and other context).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Write your theorem as a precise mathematical statement (e.g. not in the form of a problem or command).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Make sure your theorem matches what was asked for in the problem.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Make sure your theorem describes the conclusion to the solution of your problem.
+                </p>
+              </li>
+            </ul>
           </p>
-          <ul>
-            <li>
-              <p>
-                All relevant information is clearly stated (assumptions and other context).
-              </p>
-            </li>
-            <li>
-              <p>
-                Write your theorem as a precise mathematical statement (e.g. not in the form of a problem or command).
-              </p>
-            </li>
-            <li>
-              <p>
-                Make sure your theorem matches what was asked for in the problem.
-              </p>
-            </li>
-            <li>
-              <p>
-                Make sure your theorem describes the conclusion to the solution of your problem.
-              </p>
-            </li>
-          </ul>
         </li>
         <li>
           <p>

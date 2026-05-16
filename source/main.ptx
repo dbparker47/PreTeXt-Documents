@@ -32,8 +32,8 @@
       </introduction>
 
       <!-- Remove the example and replace with your own activities -->
-      <xi:include href="./activities/1-Introduction-to-Proofs.ptx"/>
-      <xi:include href="./activities/2-Divisibility-and-Congruence.ptx"/>
+      <xi:include href="./activities/1-introduction-to-proofs.ptx"/>
+      <xi:include href="./activities/2-divisibility-and-congruence.ptx"/>
 
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
@@ -46,7 +46,10 @@
         </p>
       </introduction>
 
-      <xi:include href="./exams/Exam1.ptx"/>
+      <xi:include href="./exams/exam-1.ptx"/>
+      <xi:include href="./exams/exam-2.ptx"/>
+      <xi:include href="./exams/exam-3.ptx"/>
+      <xi:include href="./exams/final-exam.ptx"/>
       <!-- etc. -->
     </chapter>
 
@@ -54,8 +57,8 @@
       <title>Homework &amp; Coding Assignments</title>
 
       <!-- Include homework files -->
-      <xi:include href="./homework-coding/Homework1.ptx"/>
-      <xi:include href="./homework-coding/Coding1.ptx"/>
+      <xi:include href="./homework-coding/homework-1.ptx"/>
+      <xi:include href="./homework-coding/coding-1.ptx"/>
     </chapter>
 
     <chapter xml:id="screencasts">

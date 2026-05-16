@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet>
+  <title>Exam 3 - Math 325</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      For each of the following problems, you will state the solution of the problem as a theorem, and you will write a proof of the theorem.  Keep the following in mind.
+      <ul>
+        <li>
+            <p>
+                All proofs must be written in complete sentences.
+            </p>
+        </li>
+        <li>
+            <p>
+                If computations are a part of your proof, they must be written as part of the proof. Do not separate the computations from the explanations.
+            </p>
+        </li>
+        <li>
+            <p>
+                Your proof may not have any unproved steps.  All steps must be justified by definitions, your previously proven steps, or by facts we proved in class or in videos.
+            </p>
+        </li>
+      </ul>
+    </p>
+  </introduction>
+
+  <!-- Exercises start here. -->
+  <exercise>
+    <statement>
+      <p>
+        (30 pts.) Let <m>G</m> be a connected graph that contains a cycle <m>v_1v_2 \ldots v_nv_1</m>.  Prove that if you remove one of the edges in the cycle, the resulting graph is connected.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+        <p>
+            Let <m>T</m> be a tree with at least two vertices, and consider the following algorithm applied to <m>T</m>.
+            <ol>
+                <li>
+                    <p>
+                        Choose a random vertex in <m>T</m>.  Call it current_vertex.
+        
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If possible, choose a vertex that is adjacent to current_vertex that has not been visited yet; call this new vertex adjacent_vertex.  If it is not possible, stop the algorithm and return the vertex current_vertex.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If the algorithm has not yet been stopped, change the name of adjacent_vertex to current_vertex and repeat step (2) above.
+                    </p>
+                </li>
+            </ol>
+            Prove that the algorithm eventually terminates and that the output of the algorithm is a leaf (i.e. a vertex of degree 1).  Hint:  I suggest letting <m>v_1, v_2, \ldots , v_n</m> be the vertices that are visited (in order), where <m>v_n</m> is the output of the algorithm.  I would suggest a proof by contradiction.
+        </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <introduction>
+        <p>
+            (40 pts.) Choose one of the following.  You will likely need to use the theorem you proved in #1 on this exam in your proof.
+        </p>
+    </introduction>
+    <task>
+        <introduction>
+            <p>
+                Let <m>T</m> be a tree you get from Kruskal's algorithm, and let <m>\{ e_1, e_2, \ldots , e_r\}</m> be the edges of <m>T</m> listed in the order you choose them in Kruskal's algorithm.  Let <m>T_m,</m> be a minimum spanning tree, and let <m>e_k</m> be the first edge of <m>T</m> that is not in <m>T_m</m> (if such an edge exists).
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Prove that adding <m>e_k</m> to <m>T_m</m> creates a cycle.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Prove that there is some edge <m>e</m> in <m>T_m</m> but not in <m>T</m> such that if you remove <m>e</m> and replace it with <m>e_k</m>, the resulting graph is a spanning tree.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Prove that <m>w(e_k) \geq w(e)</m>.  Hint: <m>T_m</m> is a minimum spanning tree, so what does that tell you about the spanning tree from (b)?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Prove that <m>w(e_k) \leq w(e)</m>.  Hint: At the <m>k^{\hbox{th}}</m> step of Kruskal's algorithm, would it be appropriate to choose <m>e</m> instead of <m>e_k</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What happens to the weight of <m>T_m</m> if you replace <m>e</m> with <m>e_k</m>?  Explain how you would continue this process to show <m>T</m> is a minimum spanning tree.
+                </p>
+            </statement>
+        </task>
+    </task>
+    <task>
+        <introduction>
+            <p>
+                Let <m>T</m> be a tree you get from Prim's algorithm, and let <m>\{ e_1, e_2, \ldots , e_r\}</m> be the edges of <m>T</m> listed in the order you choose them in Prim's algorithm.  Let <m>T_m,</m> be a minimum spanning tree
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Suppose <m>e_1</m> is not in <m>T</m>.  Prove that adding <m>e_1</m> to <m>T_m</m> creates a cycle.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Prove that <m>e_1</m> is in a minimum spanning tree.  Hint: Remove a carefully chosen edge from the cycle you created in (a).
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Using a similar technique as in (a) and (b), prove that <m>e_1</m> and <m>e_2</m> are part of a common minimum spanning tree.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Prove that <m>e_1</m>, <m>e_2</m>, and <m>e_3</m> are part of a common minimum spanning tree.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Prove that all <m>e_i</m> form a minimum spanning tree by induction.
+                </p>
+            </statement>
+        </task>
+    </task>
+  </exercise>
+  <exercise>
+    <statement>
+        <p>
+
+        </p>
+    </statement>
+  </exercise>
+
+</worksheet>

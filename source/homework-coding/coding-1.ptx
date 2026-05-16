@@ -2,10 +2,10 @@
 
 <worksheet>
   <title>Coding Assignment #1 - Math 325</title>
+  <introduction>
     <p>
       <alert> Due Sunday, 1/24</alert>
     </p>
-  <introduction>
     <p>
       You will code the following functions in the programming language Python.  For help with the syntax you will need to complete the code, please read the document <q>Code Help</q> that is included with this assignment.  That document will include some explanation of the Python syntax that you may need.  Note that you may not use any fancy modules to do these.  Use only the mathematical operations in Python.
     </p>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet>
+  <title>Final Exam - Math 325</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      For each of the following problems, you will state the solution of the problem as a theorem, and you will write a proof of the theorem.  Keep the following in mind.
+      <ul>
+        <li>
+            <p>
+                All proofs must be written in complete sentences.
+            </p>
+        </li>
+        <li>
+            <p>
+                If computations are a part of your proof, they must be written as part of the proof. Do not separate the computations from the explanations.
+            </p>
+        </li>
+        <li>
+            <p>
+                Your proof may not have any unproved steps.  All steps must be justified by definitions, your previously proven steps, or by facts we proved in class or in videos.
+            </p>
+        </li>
+      </ul>
+      For both of the following, let <m>G</m> be a connected weighted graph where we are trying to solve the Route Inspection Problem.
+    </p>
+  </introduction>
+
+  <!-- Exercises start here. -->
+  <exercise>
+    <introduction>
+      <p>
+         (30 pts.) Suppose we have two pairs of vertices, <m>\{ v_1,w_1 \}</m> and <m>\{ v_2,w_2 \}</m>, where each of <m>v_1</m>, <m>v_2</m>, <m>w_1</m> and <m>w_2</m> have odd degree.  Suppose the shortest paths between <m>v_1</m> &amp; <m>w_1</m> and between <m>v_2</m> &amp; <m>w_2</m> go through the same edge <m>uv</m>.  Prove that these pairings of the vertices cannot be part of a solution to the Route Inspection Problem.  Hint: Prove by contradiction, and let <m>d_1</m> be the weight of the shortest from <m>v_1</m> to <m>uv</m>, <m>d_2</m> be the weight of the shortest path from <m>uv</m> to <m>v_2</m>, <m>d_3</m> be the weight of the shortest path from <m>w_1</m> to <m>uv</m> and <m>d_4</m> be the weight of the shortest path from <m>uv</m> to <m>w_2</m>.  Consider the following questions.
+      </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                What is the total distance covered by the shortest paths between these two pairs?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Can you find a pairing of the vertices that gives a shorter distance?
+            </p>
+        </statement>
+    </task>
+  </exercise>
+  <exercise>
+    <statement>
+        <p>
+            (30 pts.) Suppose <m>G</m> has precisely four vertices (say <m>u</m>, <m>v</m>, <m>w</m>, and <m>x</m>) with odd degree.  Let <m>P_1</m> be a path between <m>u</m> and <m>v</m>, and let <m>P_2</m> be a path between <m>w</m> and <m>x</m>.  Suppose also that <m>P_1</m> and <m>P_2</m> share no edges.  Prove that duplicating the edges of <m>P_1</m> and <m>P_2</m> transforms <m>G</m> into an Eulerian multigraph.
+        </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <introduction>
+        <p>
+            For the remainder of the exam period, you may do either or both of the following.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Resubmit solutions to problems on exam 1, exam 2, or exam 3.  If you choose this option, you must bring a copy of your exam and write your solution on blank paper that I will provide.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Re-take any quizzes given during the semester.
+            </p>
+        </statement>
+    </task>
+  </exercise>
+  <p>
+    Be aware of the following deadlines.
+    <ul>
+        <li>
+            <p>
+                All quiz re-takes must be done by the time I leave campus on Wednesday, 12/10.  You may take quizzes any time I am in my office.  My last final exam ends at 1:50 on Wednesday.  If you want to take any quizzes after that, please make arrangements with me before I leave campus.
+            </p>
+        </li>
+        <li>
+            <p>
+                All coding and homework assignment resubmissions are due Wednesday, 12/10 at 11:59 pm.  If you have an urgent reason that you need to turn in assignments later than that, please let me know.
+            </p>
+        </li>
+    </ul>
+  </p>
+
+</worksheet>
