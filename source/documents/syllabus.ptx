@@ -38,6 +38,7 @@
     <title>Drop-In Office Hours</title>
     <p>
       If you find yourself having trouble with any part of this course, please come to my drop-in office hours for help.  You should also feel welcome to set up appointments with me outside of office hours, including in the evening on Zoom if necessary.  My schedule is on Blackboard in the <term>Course Information &amp; Resources</term> document.
+    </p>
       <tabular>
         <row>
           <cell>Monday</cell> <cell>2:00-3:00 (PCS &amp; Zoom)</cell>
@@ -55,6 +56,7 @@
           <cell>Friday</cell> <cell>11:00-11:50 (Office &amp; Zoom)</cell>
         </row>
       </tabular>
+    <p>
       Note that all Monday office hours will be held in the Peer Collaboration Space (PCS), which is on the second floor of Mackinac Hall, Room A-2-610, across from the Math Center. Also, here is the <url href="https://gvsu-edu.zoom.us/j/97750195382?pwd=TFBDQjFPM2xnWVJiV2Iza0FvdnFyUT09">Zoom link for office hours</url>.
     </p>
   </subsection>
@@ -206,6 +208,7 @@ computer and/or phone. You can download it for free at <url href="https://get.ad
         <title>Grading</title>
         <p>
           You will be graded on coding assignments, homework, quizzes, three midterm exams, and a final exam.
+        </p>
           <tabular>
             <row>
               <cell>Coding Assignments</cell> <cell>10%</cell>
@@ -223,6 +226,7 @@ computer and/or phone. You can download it for free at <url href="https://get.ad
               <cell>Final Exam</cell> <cell>7%</cell>
             </row>
           </tabular>
+        <p>
           Grades cutoffs will generally be as follows: 92% for A; 90% for A-; 88% for B+; 82% for B; 80% for B-; 78% for C+; 72% for C; 70% for C-; 68% for D+; and 60% for D.
         </p>
       </subsubsection>
