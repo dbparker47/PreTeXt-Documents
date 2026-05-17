@@ -15,14 +15,7 @@
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
 
-    <chapter xml:id="course-documents">
-      <title>Course Documents</title>
-      <xi:include href="./documents/syllabus.ptx" />
-      <xi:include href="./documents/objectives.ptx" />
-      <!-- Other documents could go here, like a schedule, project description, etc. -->
-    </chapter>
-
-    <chapter xml:id="activities">
+    <part xml:id="activities">
       <title>In-Class Activities</title>
 
       <introduction>
@@ -30,43 +23,57 @@
           These are copies of the in-class activities distributed during the semester.
         </p>
       </introduction>
+      <chapter xml:id="sec-12-31">
+        <title>Sections 1.2 &amp; 3.1</title>
+        <xi:include href="./activities/section-12-31/1-introduction-to-proofs.ptx"/>
+        <xi:include href="./activities/section-12-31/2-divisibility-and-congruence.ptx"/>
+      </chapter>
 
-      <!-- Remove the example and replace with your own activities -->
-      <xi:include href="./activities/1-introduction-to-proofs.ptx"/>
-      <xi:include href="./activities/2-divisibility-and-congruence.ptx"/>
+      <chapter xml:id="sec-32">
+        <title>Section 3.2</title>
+        <xi:include href="./activities/section-32/1-proof-by-contrapositive.ptx"/>
+      </chapter>
+    </part>
 
-      <!-- Add more xi:include files here to include them in the main course -->
-    </chapter>
+    <part xml:id="other-chapters">
+      <title>Other Chapters</title>
+      <chapter xml:id="course-documents">
+        <title>Course Documents</title>
+        <xi:include href="./documents/syllabus.ptx" />
+        <xi:include href="./documents/objectives.ptx" />
+        <!-- Other documents could go here, like a schedule, project description, etc. -->
+      </chapter>
 
-    <chapter xml:id="exam">
-      <title>Exams</title>
+      <chapter xml:id="exam">
+        <title>Exams</title>
 
-      <introduction>
-        <p>
-        </p>
-      </introduction>
+        <introduction>
+          <p>
+          </p>
+        </introduction>
 
-      <xi:include href="./exams/exam-1.ptx"/>
-      <xi:include href="./exams/exam-2.ptx"/>
-      <xi:include href="./exams/exam-3.ptx"/>
-      <xi:include href="./exams/final-exam.ptx"/>
-      <!-- etc. -->
-    </chapter>
+        <xi:include href="./exams/exam-1.ptx"/>
+        <xi:include href="./exams/exam-2.ptx"/>
+        <xi:include href="./exams/exam-3.ptx"/>
+        <xi:include href="./exams/final-exam.ptx"/>
+        <!-- etc. -->
+      </chapter>
 
-    <chapter xml:id="homework-coding">
-      <title>Homework &amp; Coding Assignments</title>
+      <chapter xml:id="homework-coding">
+        <title>Homework &amp; Coding Assignments</title>
 
-      <!-- Include homework files -->
-      <xi:include href="./homework-coding/homework-1.ptx"/>
-      <xi:include href="./homework-coding/coding-1.ptx"/>
-    </chapter>
+        <!-- Include homework files -->
+        <xi:include href="./homework-coding/homework-1.ptx"/>
+        <xi:include href="./homework-coding/coding-1.ptx"/>
+      </chapter>
 
-    <chapter xml:id="screencasts">
-      <title>Screencast Slides</title>
-      <xi:include href="./slides/slides.ptx"/>-->
-    </chapter>
+      <chapter xml:id="screencasts">
+        <title>Screencast Slides</title>
+        <xi:include href="./slides/slides.ptx"/>-->
+      </chapter>
 
-    <!-- Include additional chapters for other categories -->
+      <!-- Include additional chapters for other categories -->
+    </part>
      
   </book>
 </pretext>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="proof-contrapositive">
+  <title>Proof by Contrapositive</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Solve the following problems.  Write some kind of outline your proof (which can be a ``Know-Show'' table, but does not have to be).
+    </p>
+  </introduction>
+
+  <!-- Exercises start here. -->
+  <exercise>
+    <statement>
+      <p>
+        Let <m>n</m> be an odd integer.  Determine whether <m>3n^2+7n+4</m> is odd or even.  Prove your result.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Let <m>x</m> and <m>y</m> be odd integers.  Determine whether <m>xy</m> is odd or even.  Prove your result.
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>
