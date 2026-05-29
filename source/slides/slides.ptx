@@ -7,7 +7,7 @@
   <xi:include href="../docinfo.ptx"/>
 
   <slideshow xml:id="slides">
-    <title>Slides for MATH xxx</title>
+    <title>Real Analysis Slides</title>
 
     <frontmatter>
       <titlepage-items/>
@@ -16,12 +16,29 @@
     <!-- This assumes you want to structure your entire slide deck by sections -->
     <!-- RevealJS will use 2-d navigation: move left-right to switch between sections, up-down to switch between slides in a section -->
     <section xml:id="sec-1-1">
-      <title>Section 1.1</title>
+      <title>Constructing Number Systems</title>
 
       <slide>
-        <title>[topic]</title>
+        <title>Overview</title>
+        <p pause="yes"> We explore a process for constructing number systems. </p>
+        <p><ul pause="yes">
+          <li>Use known number systems to construct new number systems.</li>
+          <li>Outline a process of constructing number systems.</li>
+          <li>Use process to construct the integers from the natural numbers.</li>
+        </ul></p>
+      </slide>
 
-
+      <slide>
+        <title>Real Numbers</title>
+        <p pause="yes">We will be constructing real numbers from the rational numbers.</p>
+        <p pause="yes">Assume rational numbers exist <m>\Rightarrow</m> Use to make real numbers.</p>
+        <p pause="yes">Constructing number systems:</p>
+        <p><ul pause="yes">
+          <li>Develop an intuitive understanding of what the numbers are like.</li>
+          <li>Make a list of axioms that precisely describes your number system.</li>
+          <li>Construct a set and define any operations, relations, etc that are needed to create the number system and satisfy the axioms.</li>
+          <li>Show that every construction is <q>equivalent</q> to your construction.</li>
+        </ul></p>
       </slide>
     </section>
 
