@@ -52,9 +52,9 @@
       <xi:include href="./activities/section-32/1-proof-by-contrapositive.ptx"/>
     </chapter>
 
-    <chapter xml:id="screencasts">
-      <title>Screencast Slides</title>
-      <xi:include href="./slides/slides.ptx"/>
-    </chapter>    
+    <!-- chapter xml:id="screencasts" -->
+      <!-- title>Screencast Slides</title -->
+      <!-- xi:include href="./slides/slides.ptx"/ -->
+    <!-- /chapter -->    
   </book>
 </pretext>
