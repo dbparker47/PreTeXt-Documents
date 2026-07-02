@@ -3,15 +3,11 @@
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="intro-proofs">
   <title>Introduction to Proofs</title>
-
-  <!-- Optional introduction -->
   <introduction>
     <p>
-      Solve the following problems.  Write some kind of outline your proof (which can be a ``Know-Show'' table, but does not have to be).
+      Solve the following problems.  Write some kind of outline your proof (which can be a <q>Know-Show</q> table, but does not have to be).
     </p>
   </introduction>
-
-  <!-- Exercises start here. -->
   <exercise>
     <statement>
       <p>
@@ -26,5 +22,4 @@
       </p>
     </statement>
   </exercise>
-
 </worksheet>
