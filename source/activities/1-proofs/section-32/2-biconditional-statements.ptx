@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="act-temp">
+  <title>Biconditional Statements</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Prove the following.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        Verify that <m>p \leftrightarrow q</m> is logically equivalent to <m>(p \rightarrow q) \wedge (q \rightarrow p)</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Let <m>n \in {\mathbb Z}</m>.  Prove that <m>n^2</m> is odd if and only if <m>n</m> is odd.
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>

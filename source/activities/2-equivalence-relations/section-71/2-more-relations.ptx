@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="act-temp">
+  <title>More Relations</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Work the following relation problems.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        For a relation <m>R \subseteq A \times B</m> and for <m>b \in B</m>, let <m>R[b]</m> be the set of elements of <m>A</m> that are related to <m>b</m>.  Write <m>R[b]</m> formally as a set in set builder notation.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        We define a relation <m>E</m> on <m>\mathbb Z</m>, where <m>aEb</m> means <m>a \equiv b</m> (mod 3).
+        <ol>
+          <li>
+            <p>
+              Define <m>E</m> as a subset of <m>{\mathbb Z} \times {\mathbb Z}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              What numbers are in <m>E[1]</m>?  In <m>E[5]</m>?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Let <m>n \in {\mathbb Z}</m>, and define <m>E</m> on <m>\mathbb Z</m>, where <m>aEb</m> means <m>a \equiv b</m> (mod <m>n</m>).
+        <ol>
+          <li>
+            <p>
+              Define <m>E</m> as a subset of <m>{\mathbb Z} \times {\mathbb Z}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Let <m>b \in {\mathbb Z}</m>.  What are the elements in <m>E[b]</m>?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Prove the relations in #2 and #3 are reflexive, symmetric, and transitive.
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="act-temp">
+  <title>Introduction to Proof by Contrapositive (Not on Quiz)</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      The following problems are to help you understand proof by contrapositive.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        Consider the theorem we proved:  If <m>x \equiv 7</m> (mod 11), then <m>x+8 \equiv 4</m> (mod 11). 
+        <ol>
+            <li>
+                <p>
+                    If you assume <m>x+8 \not\equiv 4</m> (mod 11), what can you conclude about <m></m>$?
+                </p>
+            </li>
+            <li>
+                <p>
+                    State what you found in (a) as a conditional statement.
+                </p>
+            </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Assume the statement <q>If <m>P</m>, then <m>Q</m></q>.
+        <ol>
+            <li>
+                <p>
+                    If you assume <m>Q</m> is false (i.e. <m>\neg Q</m> is true), what can you conclude about <m>P</m>?
+                </p>
+            </li>
+            <li>
+                <p>
+                    State what you found in (a) as as conditional statement.
+                </p>
+            </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Find the truth tables for <m>P \rightarrow Q</m>, and <m>(\neg Q) \rightarrow (\neg P)</m>.
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="act-temp">
+  <title>Equivalence Relations</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Work the following problems related to equivalence relations.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        We define <m>R</m> on <m>\mathbb R</m> by <m>aRb</m> precisely when <m>a \leq b</m>.  Determine whether or not <m>R</m> is reflexive, symmetric, or transitive.  Is <m>R</m> an equivalence relation?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        We define <m>R</m> on <m>\mathbb R</m> by  <m>aRb</m> precisely when <m>a - b \in {\mathbb Z}</m>.
+        <ol>
+          <li>
+            <p>
+              List 6 elements of <m>R</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that <m>R</m> is an equivalence relation.
+            </p>
+          </li>
+          <li>
+            <p>
+              Let <m>R[b] = \{ a \in {\mathbb R} : aRb \}</m>.  What are the elements in <m>R \left[ \frac{2}{3} \right]</m>?  In <m>R[5]</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>R[a] \neq R[b]</m>, find <m>R[a] \cap R[b]</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              (Not on quiz) Look at the different <m>R[a]</m>'s, starting with <m>R[0]</m>.  When do the <m>R[a]</m>'s start repeating themselves?  Use this to describe a set of distinct <m>R[a]</m>'s that form a complete list.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Here is how we mathematically define rational numbers. Let <m>A = \{ (a,b) \in \mathbb{Z} \times \mathbb{Z} : b \ne 0 \}</m>, and define <m>R</m> on <m>A</m> by <m>(a,b)R(c,d)</m> precisely when <m>ad = bc</m>.
+        <ol>
+          <li>
+            <p>
+              List 4 elements of <m>R</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that <m>R</m> is an equivalence relation.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>

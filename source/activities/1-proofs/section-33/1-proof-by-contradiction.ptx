@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="act-temp">
+  <title>Proof by Contradiction</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Find the negations of the following statements.  Use them to prove the original statements.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        There is no largest integer  (i.e. one that is larger than all other integers).
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        There is no smallest positive rational number (i.e. one that is smaller than all other positive rational numbers).
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        No integer can be both even and odd.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Let <m>F</m> be a statement that is always false (i.e. a contradiction).  Prove that <m>P</m> is logically equivalent to <m>(\neg P) \rightarrow F</m>. What does this have to do with proof by contradiction?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Prove every natural number is either even or odd.  Hint: Assume that <m>n</m> is the smallest natural number that is neither even nor odd.
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>

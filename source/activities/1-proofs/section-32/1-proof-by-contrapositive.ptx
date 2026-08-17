@@ -1,28 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="proof-contrapositive">
+<worksheet xml:id="act-temp">
   <title>Proof by Contrapositive</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      Solve the following problems.  Write some kind of outline your proof (which can be a ``Know-Show'' table, but does not have to be).
+      Use a logically equivalent form of the statement to prove the following theorems.
     </p>
   </introduction>
 
-  <!-- Exercises start here. -->
   <exercise>
     <statement>
       <p>
-        Let <m>n</m> be an odd integer.  Determine whether <m>3n^2+7n+4</m> is odd or even.  Prove your result.
+        If the sum of two real numbers is less than 50, then at least one of the numbers is less than 25.
       </p>
     </statement>
   </exercise>
+
   <exercise>
     <statement>
       <p>
-        Let <m>x</m> and <m>y</m> be odd integers.  Determine whether <m>xy</m> is odd or even.  Prove your result.
+        If <m>a</m>, <m>b</m>, and <m>c</m> are integers and <m>a</m> does not divide <m>bc</m>, then <m>a</m> does not divide <m>b</m>.  Hint:  Separate out one of the assumptions to make the contrapositive easier to prove.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        For all integers <m>m</m> and <m>n</m>, if <m>m+n</m> is even, then <m>m</m> and <m>n</m> are both even or <m>m</m> and <m>n</m> are both odd.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Let <m>a</m>, <m>b</m>, and <m>c</m> be integers.  If <m>a|b</m> and <m>a</m> does not divide <m>c</m>, then <m>a</m> does not divide <m>b+c</m>.
       </p>
     </statement>
   </exercise>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="act-temp">
+  <title>Equivalence Class Examples</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Find the equivalence classes of the following relations.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        Let <m>A</m> be the set of all the ways you can write the numbers 1, 2, 3, and 4 in a square.  Define the relation <m>R</m> on <m>A</m> as follows.  For each pair of squares <m>s_1,s_2 \in A</m>, we say that <m>s_1Rs_2</m> if <m>s_1</m> can be rotated so that it looks exactly like <m>s_2</m>.
+        <ol>
+          <li>
+            <p>
+              Write down two squares that are related to one another.
+            </p>
+          </li>
+          <li>
+            <p>
+              Write down two squares that are <em>not</em> related to one another.
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that <m>R</m> is an equivalence relation.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find all equivalence classes of <m>R</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Let <m>A = \{ 0,1,2,3,4,5 \}</m>, and define <m>E</m> on <m>A</m> by <m>aEb</m> precisely when <m>a^2 \equiv b^2</m> (mod 6).  Do parts (a) through (d) above for <m>E</m>.
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>

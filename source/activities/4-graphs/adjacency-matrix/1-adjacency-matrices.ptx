@@ -2,19 +2,19 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="act-temp">
-  <title>Irrational Numbers</title>
+  <title></title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      Prove the following about irrational numbers.
+      
     </p>
   </introduction>
 
   <exercise>
     <statement>
       <p>
-        Consider <m>\sqrt{3}</m>, <m>\sqrt{5}</m>, <m>\sqrt{6}</m>, and <m>\sqrt{15}</m>. Prove that each of them is an irrational number.
+        
       </p>
     </statement>
   </exercise>
@@ -22,7 +22,7 @@
   <exercise>
     <statement>
       <p>
-        Prove that <m>\log_2(5)</m> is irrational.  Hint: Think exponentially.
+        
       </p>
     </statement>
   </exercise>

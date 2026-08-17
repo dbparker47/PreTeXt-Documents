@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="act-temp">
+  <title>Equivalence Class Theorems</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Let the relation <m>R</m> on <m>A</m> (i.e. from <m>A</m> to <m>A</m>) be an equivalence relation.  As before, for each <m>b \in A</m>, let <m>R[b] = \{ a \in A : aRb \}</m>.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        Prove that <m>b \in R[b]</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Prove that for all <m>x \in R[b]</m>, we have <m>xRb</m> and <m>bRx</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Prove that for all <m>x,y \in R[b]</m>, <m>xRy</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Prove that if <m>xRy</m> and <m>a \in R[x]</m>, then <m>a \in R[y]</m>.  Similarly, prove that if <m>a \in R[y]</m>, then <m>a \in R[x]</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Use what you proved above to prove that <m>R[x] = R[y]</m> if and only if <m>xRy</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose that <m>a \in R[b] \cap R[c]</m>.  What can you say about <m>R[a]</m>, <m>R[b]</m>, and <m>R[c]</m>?  Prove it.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Let <m>R[b_1]</m>, <m>R[b_2], \ldots , R[b_r]</m> be all the distinct <m>R[b]</m>'s (i.e. all the distinct families).  If <m>a \in A</m>, prove that <m>a \in R[b_1] \cup R[b_2] \cup \cdots \cup R[b_r]</m>.
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>

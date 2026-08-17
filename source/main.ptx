@@ -58,13 +58,128 @@
 
     <chapter xml:id="in-class-12-31">
       <title>In-Class Activities: Sections 1.2 &amp; 3.1</title>
-      <xi:include href="./activities/section-12-31/1-introduction-to-proofs.ptx"/>
-      <xi:include href="./activities/section-12-31/2-divisibility-and-congruence.ptx"/>
+      <xi:include href=".//activities/1-proofs/section-12-31/1-introduction-to-proofs.ptx"/>
+      <xi:include href="./activities/1-proofs/section-12-31/2-divisibility-and-congruence.ptx"/>
     </chapter>
 
     <chapter xml:id="in-class-32">
       <title>In-Class Activities: Section 3.2</title>
-      <xi:include href="./activities/section-32/1-proof-by-contrapositive.ptx"/>
+      <xi:include href="./activities/1-proofs/section-32/0-introduction-to-proof-by-contrapositive-no-quiz.ptx"/>
+      <xi:include href="./activities/1-proofs/section-32/1-proof-by-contrapositive.ptx"/>
+      <xi:include href="./activities/1-proofs/section-32/2-biconditional-statements.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-33">
+      <title>In-Class Activities: Section 3.3</title>
+      <xi:include href="./activities/1-proofs/section-33/1-proof-by-contradiction.ptx"/>
+      <xi:include href="./activities/1-proofs/section-33/2-irrational-numbers.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-41-42">
+      <title>In-Class Activities: Sections 4.1 &amp; 4.2</title>
+      <xi:include href="./activities/1-proofs/section-41-42/1-proof-by-induction.ptx"/>
+      <xi:include href="./activities/1-proofs/section-41-42/2-strong-induction.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-71">
+      <title>In-Class Activities: Section 7.1</title>
+      <xi:include href="./activities/2-equivalence-relations/section-71/1-introduction-to-relations.ptx"/>
+      <xi:include href="./activities/2-equivalence-relations/section-71/2-more-relations.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-72">
+      <title>In-Class Activities: Section 7.2</title>
+      <xi:include href="./activities/2-equivalence-relations/section-72/1-equivalence-relations.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-73">
+      <title>In-Class Activities: Section 7.3</title>
+      <xi:include href="./activities/2-equivalence-relations/section-73/1a-equivalence-class-examples.ptx"/>
+      <xi:include href="./activities/2-equivalence-relations/section-73/1b-equivalence-class-theorems.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-partial-order">
+      <title>In-Class Activities: Partial Orders</title>
+      <xi:include href="./activities/3-other-relations/1-partial-orders/1-2-3-partial-orders-directed-graph.ptx"/>
+      <xi:include href="./activities/3-other-relations/1-partial-orders/1-2-3-partial-orders-divisible.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-composition">
+      <title>In-Class Activities: Composition of Relations</title>
+      <xi:include href="./activities/3-other-relations/2-composition/1-composition-of-relations.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-trans-closure">
+      <title>In-Class Activities: Transitive Closure</title>
+      <xi:include href="./activities/3-other-relations/3-transitive-closure/1-transitive-closure.ptx"/>
+      <xi:include href="./activities/3-other-relations/3-transitive-closure/2-warshall-algorithm.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-51">
+      <title>In-Class Activities: Section 5.1</title>
+      <xi:include href="./activities/4-graphs/section-51/1-introduction-to-graphs-no-quiz.ptx"/>
+      <xi:include href="./activities/4-graphs/section-51/2-graph-terminology.ptx"/>
+      <xi:include href="./activities/4-graphs/section-51/3-classes-of-graphs.ptx"/>
+      <xi:include href="./activities/4-graphs/section-51/4-handshake-theorem.ptx"/>
+      <xi:include href="./activities/4-graphs/section-51/5-connected-graphs.ptx"/>
+      <xi:include href="./activities/4-graphs/section-51/6-graph-isomorphisms.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-53">
+      <title>In-Class Activities: Section 5.3</title>
+      <xi:include href="./activities/4-graphs/section-53/1-introduction-to-eulerian-circuits-and-trails.ptx"/>
+      <xi:include href="./activities/4-graphs/section-53/2-eulerian-circuit-algorithm-steps.ptx"/>
+      <xi:include href="./activities/4-graphs/section-53/2-eulerian-circuit-algorithm.ptx"/>
+      <xi:include href="./activities/4-graphs/section-53/3-hamiltonian-cycles.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-54">
+      <title>In-Class Activities: Section 5.4</title>
+      <xi:include href="./activities/4-graphs/section-54/1-graph-coloring.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-adjacency">
+      <title>In-Class Activities: Adjacency Matrices</title>
+      <xi:include href="./activities/4-graphs/adjacency-matrix/1-adjacency-matrices.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-101">
+      <title>In-Class Activities: Section 10.1</title>
+      <xi:include href="./activities/5-trees/section-101/1-introduction-to-trees.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-102">
+      <title>In-Class Activities: Section 10.2</title>
+      <xi:include href="./activities/5-trees/section-102/1-minimum-spanning-trees.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-103-104">
+      <title>In-Class Activities: Sections 10.3 &amp; 10.4</title>
+      <xi:include href="./activities/5-trees/section-103-104/1-rooted-trees-no-quiz.ptx"/>
+      <xi:include href="./activities/5-trees/section-103-104/2-binary-trees-no-quiz.ptx"/>
+      <xi:include href="./activities/5-trees/section-103-104/3-traversals.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-short-path">
+      <title>In-Class Activities: Shortest Path Algorithms</title>
+      <xi:include href="./activities/6-algorithms/1-shortest-path/1-introduction-to-shortest-path-algorithms-no-quiz.ptx"/>
+      <xi:include href="./activities/6-algorithms/1-shortest-path/2-dijkstra's-algorithm.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-route">
+      <title>In-Class Activities: Route Inspection Problems</title>
+      <xi:include href="./activities/6-algorithms/2-route-inspection/1-introduction-to-the-route-inspection-problem-no-quiz.ptx"/>
+      <xi:include href="./activities/6-algorithms/2-route-inspection/2-more-route-inspection.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-digraph">
+      <title>In-Class Activities: Directed Graphs</title>
+      <xi:include href="./activities/6-algorithms/3-digraphs/1-digraphs-shortest-path-algorithms-no-quiz.ptx"/>
+    </chapter>
+
+    <chapter xml:id="in-class-sched">
+      <title>In-Class Activities: Scheduling</title>
+      <xi:include href="./activities/6-algorithms/4-scheduling/1-scheduling-problems.ptx"/>
     </chapter>
 
     <!-- chapter xml:id="screencasts" -->

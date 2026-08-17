@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="act-temp">
+  <title>Introduction to Relations</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      For the following, recall that if <m>R</m> is a relation, the statement <m>aRb</m> means that <m>a</m> is related to <m>b</m> under the relation.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        Come up with some relations (human, number, set, and other) apart from the ones discussed in the video.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        For the relations <m>\le</m> (i.e. less than or equal), <m>\mid</m> (i.e. divisibility), and <m>\subseteq</m> (i.e. subset relation), define the relation formally as a set of ordered pairs, using set builder notation.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Find 4 elements of each relation in #2 (i.e. 4 ordered pairs).
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Define the hostility relationship <m>H</m> on the set <m>P</m> of all people where <m>aHb</m> means that <m>a</m> is mad at <m>b</m>. Let Jojo be a person.  Describe the following set, interpreting <m>H</m> as a set of ordered pairs, and using set builder notation:  The set of people who are mad at Jojo (poor Jojo!).
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Do what you did in #3 for all the other relations we discussed in class.  Describe the sets informally, and then describe them formally using set builder notation.
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>
