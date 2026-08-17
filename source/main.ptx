@@ -47,9 +47,9 @@
     <chapter xml:id="coding">
       <title>Coding Assignments</title>
       <xi:include href="./homework-coding/coding-1.ptx"/>
-      <!-- <xi:include href="./homework-coding/coding-3.ptx"/> -->
-      <!-- <xi:include href="./homework-coding/coding-4.ptx"/> -->
-      <!-- <xi:include href="./homework-coding/coding-5.ptx"/> -->
+      <xi:include href="./homework-coding/coding-3.ptx"/>
+      <xi:include href="./homework-coding/coding-4.ptx"/>
+      <xi:include href="./homework-coding/coding-5.ptx"/>
       <!-- <xi:include href="./homework-coding/coding-6.ptx"/> -->
       <!-- <xi:include href="./homework-coding/coding-7.ptx"/> -->
       <!-- <xi:include href="./homework-coding/coding-8.ptx"/> -->
