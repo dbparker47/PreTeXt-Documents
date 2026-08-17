@@ -50,10 +50,10 @@
       <xi:include href="./homework-coding/coding-3.ptx"/>
       <xi:include href="./homework-coding/coding-4.ptx"/>
       <xi:include href="./homework-coding/coding-5.ptx"/>
-      <!-- <xi:include href="./homework-coding/coding-6.ptx"/> -->
-      <!-- <xi:include href="./homework-coding/coding-7.ptx"/> -->
-      <!-- <xi:include href="./homework-coding/coding-8.ptx"/> -->
-      <!-- <xi:include href="./homework-coding/coding-9.ptx"/> -->
+      <xi:include href="./homework-coding/coding-6.ptx"/>
+      <xi:include href="./homework-coding/coding-7.ptx"/>
+      <xi:include href="./homework-coding/coding-8.ptx"/>
+      <xi:include href="./homework-coding/coding-9.ptx"/>
     </chapter>
 
     <chapter xml:id="in-class-12-31">

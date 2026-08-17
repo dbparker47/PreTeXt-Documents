@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>Coding Assignment #9 - Math 325</title>
+  <introduction>
+    <p>
+      <alert> Due Sunday, 4/11</alert>
+    </p>
+    <p>
+      You will code the following functions in the programming language Python.  For help with the syntax you will need to complete the code, please read the document <q>Code Help</q> that is included with this assignment.  That document will include some explanation of the Python syntax that you may need.  Note that you may not use any fancy modules to do these.  Use only the mathematical operations in Python.
+    </p>
+    <p>
+      You may either submit a hard copy of your code in class or submit your code on Blackboard as a PDF file.  <alert>If you submit your code electronically, it <em>must</em> be as a PDF file</alert>.
+    </p>
+  </introduction>
+
+  <p>
+    The function you will be working on this week are the following.
+  </p>
+  <exercise>
+    <statement>
+      <p>
+        Write a function called <q>spanningTree</q>.  The input will be a connected graph <m>G</m> (i.e. a dictionary whose keys are the vertices, and whose values are lists of vertices that are adjacent to the given vertex), and the output will be a spanning tree of <m>G</m>.  I would suggest starting with a random vertex <m>v</m>, and at each step add a vertex and an edge to your tree.
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    Correct code is an important part of how you will be assessed on this assignment, but much more important is how well you document your code.  For each function you code, you should do the following.
+    <ul>
+      <li>
+        <p>
+          Each part of your code must be documented.  It is not necessary to document every line of code, but you should document so that the purposes of each part of your code can be understood in detail.
+        </p>
+      </li>
+      <li>
+        <p>
+          Make sure you explain what each portion of code does.
+        </p>
+      </li>
+      <li>
+        <p>
+          Make sure you explain how each portion of code relates to the overall purpose of the function.  For instance, if you have a for loop that runs through entries in a list, briefly describe how the entries in the list will help you find the output of your function.
+        </p>
+      </li>
+    </ul>
+    You should be able to properly document your code with one-line comments (using the single line comments with #), and they should be written in complete sentences that describe what each line of code does and what its purpose is.  <em>You may not import any packages to help you with your function.</em>
+  </p>
+
+  <p>
+    If you need help reviewing or learning Python, I would suggest going to one of the following websites:
+    <ul>
+      <li>
+        <p>
+          <url href="https://learnpython.org">Learnpython.org</url>:  This is an interactive free tutorial for Python 3.  It is not quite as interactive as Codecademy below.  But, unlike Codecademy, you can learn Python 3 for free.
+        </p>
+      </li>
+      <li>
+        <p>
+          <url href="https://www.codecademy.com/learn/learn-python">Codecademy.com</url>:  This will take you to the tutorial for Python 2.  You can learn Python 3 at Codecademy, but it costs money.  However, learning Python 2 will be enough to get you functional on Python.  Any differences between Python 2 and Python 3 are documented on the <q>Coding Help</q> document included with every coding assignment.
+        </p>
+      </li>
+    </ul>
+  </p>
+
+</worksheet>
