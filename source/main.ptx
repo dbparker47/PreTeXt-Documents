@@ -24,21 +24,36 @@
 
     <chapter xml:id="exam">
       <title>Exams</title>
-        <xi:include href="./exams/exam-1.ptx"/>
-        <xi:include href="./exams/exam-2.ptx"/>
-        <xi:include href="./exams/exam-3.ptx"/>
-        <xi:include href="./exams/final-exam.ptx"/>
+        <!-- <xi:include href="./exams/exam-1.ptx"/> -->
+        <!-- <<xi:include href="./exams/exam-2.ptx"/> -->
+        <!-- <<xi:include href="./exams/exam-3.ptx"/> -->
+        <!-- <<xi:include href="./exams/final-exam.ptx"/> -->
         <!-- etc. -->
     </chapter>
 
     <chapter xml:id="homework">
       <title>Homework Assignments</title>
       <xi:include href="./homework-coding/homework-1.ptx"/>
+      <xi:include href="./homework-coding/homework-2.ptx"/>
+      <xi:include href="./homework-coding/homework-3.ptx"/>
+      <xi:include href="./homework-coding/homework-4.ptx"/>
+      <xi:include href="./homework-coding/homework-5.ptx"/>
+      <xi:include href="./homework-coding/homework-6.ptx"/>
+      <xi:include href="./homework-coding/homework-7.ptx"/>
+      <xi:include href="./homework-coding/homework-8.ptx"/>
+      <xi:include href="./homework-coding/homework-9.ptx"/>
     </chapter>
 
     <chapter xml:id="coding">
       <title>Coding Assignments</title>
       <xi:include href="./homework-coding/coding-1.ptx"/>
+      <!-- <xi:include href="./homework-coding/coding-3.ptx"/> -->
+      <!-- <xi:include href="./homework-coding/coding-4.ptx"/> -->
+      <!-- <xi:include href="./homework-coding/coding-5.ptx"/> -->
+      <!-- <xi:include href="./homework-coding/coding-6.ptx"/> -->
+      <!-- <xi:include href="./homework-coding/coding-7.ptx"/> -->
+      <!-- <xi:include href="./homework-coding/coding-8.ptx"/> -->
+      <!-- <xi:include href="./homework-coding/coding-9.ptx"/> -->
     </chapter>
 
     <chapter xml:id="in-class-12-31">

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-  <title>Homework Assignment #1 - Math 325</title>
+  <title>Homework Assignment #3 - Math 325</title>
 
   <introduction>
     <p>
-      <alert>Due Sunday, 1/24</alert>
+      <alert>Due Sunday, 2/7</alert>
     </p>
     <p>
       For this assignment, you will solve the problems given below.  Each solution will be in the form of a theorem and a proof, which will be written clearly and in complete sentences.  Your paper will be assessed on both your mathematical reasoning and the quality of your writing.  The writing criteria for this assignment are the following.
@@ -67,6 +67,46 @@
             Let your reader know when the proof is finished.
           </p>
         </li>
+        <li>
+            <p>
+                Any definitions that you use in your theorem should be explicitly referenced.
+            </p>
+        </li>
+        <li>
+            <p>
+                There should be explanation before all computations.  However, if you have many computations that all go together, you can explain them all together as well.
+            </p>
+        </li>
+        <li>
+            <p>
+                At any appropriate place in your proof, remind the reader what needs to be proved.
+            </p>
+        </li>
+        <li>
+            <p>
+                Any theorems that you use to prove your theorem should be properly cited (e.g. by stating the theorem or by referencing it from the book).
+            </p>
+        </li>
+        <li>
+            <p>
+                When you are using a special method of proof (e.g. contrapositive, contradiction, etc.), let your reader know.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by contrapositive, make sure you state the contrapositive, what you are assuming, and what you must show.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by contradiction, make sure you state your contradiction assumption, and clearly alert your reader when you have reached a contradiction.  Justify that your contradiction is false, if necessary.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by induction, make sure you clearly state the basis step and what you are assuming and showing in the inductive step.  Also, be explicit about when and how you use the induction hypothesis.
+            </p>
+        </li>
       </ul>
       You may either submit a hard copy of your paper in class or submit your paper on Blackboard as a PDF file.  <alert>If you submit your paper electronically, it <em>must</em> be as a PDF file</alert>.
     </p>
@@ -75,14 +115,14 @@
   <exercise>
     <statement>
       <p>
-        (25 pts.)  Let <m>m</m> and <m>n</m> be even integers.  Determine whether <m>4m+7n+5</m> is odd or even, and prove your result.  Make sure to state the theorem you prove as a mathematical statement (not a command).
+        (25 pts.) For the Fibonacci sequence (<m>f_0 = 0</m>, <m>f_1 = 1</m>, and <m>f_{n}=f_{n-1}+f_{n-2}</m> for all <m>n \geq 2</m>), prove that <m>f_{5k}</m> is a multiple of 5 for all integers <m>k \geq 0</m>.
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        (25 pts.) Suppose <m>a \equiv 7</m> (mod 9) and <m>b \equiv 5</m> (mod 9).  Find integers <m>c</m> and <m>d</m>, each between <m>0</m> and <m>8</m>, such that <m>a+b \equiv c</m> (mod 9) and <m>ab \equiv d</m> (mod 9).  Prove your results.  Note:  You may not choose specific values for <m>a</m> and <m>b</m> in your proof.  Make sure to state the theorem you prove as a mathematical statement.
+        (25 pts.) Suppose you have a system of buildings where each pair of buildings is connected by a one-way road.  Prove that there is a route that enables you to visit every building.  Hint: Let <m>n</m> be the number of buildings. For the induction step, choose a random building <m>b</m> and let <m>A</m> be the set of buildings from which you can get to <m>b</m> by a single road.  Let <m>B</m> be the set of buildings you can get to from <m>b</m> with a single road.
       </p>
     </statement>
   </exercise>

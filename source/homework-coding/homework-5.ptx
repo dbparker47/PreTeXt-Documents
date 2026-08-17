@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>Homework Assignment #5 - Math 325</title>
+
+  <introduction>
+    <p>
+      <alert>Due Sunday, 2/28</alert>
+    </p>
+    <p>
+      For this assignment, you will solve the problems given below.  Each solution will be in the form of a theorem and a proof, which will be written clearly and in complete sentences.  Your paper will be assessed on both your mathematical reasoning and the quality of your writing.  The writing criteria for this assignment are the following.
+      <ul>
+        <li>
+          <p>
+            Theorem is written properly.
+            <ul>
+              <li>
+                <p>
+                  All relevant information is clearly stated (assumptions and other context).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Write your theorem as a precise mathematical statement (e.g. not in the form of a problem or command).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Make sure your theorem matches what was asked for in the problem.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Make sure your theorem describes the conclusion to the solution of your problem.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Thoroughly explain your reasoning.
+          </p>
+        </li>
+        <li>
+          <p>
+            Make sure all assertions are justified rigorously and clearly.
+          </p>
+        </li>
+        <li>
+          <p>
+            Explain things so that a typical student in our class can understand what you are saying (e.g. don't use terminology a student in the class would not be familiar with).
+          </p>
+        </li>
+        <li>
+          <p>
+            Make sure your proof is written for a <em>skeptical</em> audience (i.e. Peeves).  One of your jobs is to assure your reader that you have countered every possible counterargument to your theorem.
+          </p>
+        </li>
+        <li>
+          <p>
+            On conditional statements, state clearly what is being assumed and what needs to be shown.
+          </p>
+        </li>
+        <li>
+          <p>
+            Let your reader know when the proof is finished.
+          </p>
+        </li>
+        <li>
+            <p>
+                Any definitions that you use in your theorem should be explicitly referenced.
+            </p>
+        </li>
+        <li>
+            <p>
+                There should be explanation before all computations.  However, if you have many computations that all go together, you can explain them all together as well.
+            </p>
+        </li>
+        <li>
+            <p>
+                At any appropriate place in your proof, remind the reader what needs to be proved.
+            </p>
+        </li>
+        <li>
+            <p>
+                Any theorems that you use to prove your theorem should be properly cited (e.g. by stating the theorem or by referencing it from the book).
+            </p>
+        </li>
+        <li>
+            <p>
+                When you are using a special method of proof (e.g. contrapositive, contradiction, etc.), let your reader know.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by contrapositive, make sure you state the contrapositive, what you are assuming, and what you must show.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by contradiction, make sure you state your contradiction assumption, and clearly alert your reader when you have reached a contradiction.  Justify that your contradiction is false, if necessary.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by induction, make sure you clearly state the basis step and what you are assuming and showing in the inductive step.  Also, be explicit about when and how you use the induction hypothesis.
+            </p>
+        </li>
+      </ul>
+      You may either submit a hard copy of your paper in class or submit your paper on Blackboard as a PDF file.  <alert>If you submit your paper electronically, it <em>must</em> be as a PDF file</alert>.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        (25 pts.) Define the relation <m>\mid</m> on <m>{\mathbb N} \backslash \{0,1\}</m> (i.e. the natural numbers without 0 and 1) by <m>a \mid b</m> precisely when <m>a</m> divides <m>b</m>.
+        <ol>
+            <li>
+                <p>
+                    Prove that <m>\mid</m> is a partial order.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Identify all maximum, minimum, maximal, and minimal elements of <m>\mid</m>. Prove your result.
+                </p>
+            </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        (25 pts.) Consider the relations <m>E_9</m> and <m>E_{12}</m> on the set of integers defined as follows
+        <ul>
+            <li>
+                <p>
+                    <m>aE_9b</m> precisely when <m>a \equiv b</m> (mod 9).
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>aE_{12}b</m> precisely when <m>a \equiv b</m> (mod 12).
+                </p>
+            </li>
+        </ul>
+        Let <m>R=E_9 \circ E_{12}</m>.
+        <ol>
+            <li>
+                <p>
+                    Suppose that <m>2Rx</m>.  Prove that <m>x \equiv 2</m> (mod 3)
+                </p>
+            </li>
+            <li>
+                <p>
+                    Suppose that <m>x \equiv 2</m> (mod 3).  Prove that <m>2Rx</m>.
+                </p>
+            </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>

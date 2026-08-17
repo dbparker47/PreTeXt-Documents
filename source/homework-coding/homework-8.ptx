@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>Homework Assignment #8 - Math 325</title>
+
+  <introduction>
+    <p>
+      <alert>Due Sunday, 4/4</alert>
+    </p>
+    <p>
+      For this assignment, you will solve the problems given below.  Each solution will be in the form of a theorem and a proof, which will be written clearly and in complete sentences.  Your paper will be assessed on both your mathematical reasoning and the quality of your writing.  The writing criteria for this assignment are the following.
+      <ul>
+        <li>
+          <p>
+            Theorem is written properly.
+            <ul>
+              <li>
+                <p>
+                  All relevant information is clearly stated (assumptions and other context).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Write your theorem as a precise mathematical statement (e.g. not in the form of a problem or command).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Make sure your theorem matches what was asked for in the problem.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Make sure your theorem describes the conclusion to the solution of your problem.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Thoroughly explain your reasoning.
+          </p>
+        </li>
+        <li>
+          <p>
+            Make sure all assertions are justified rigorously and clearly.
+          </p>
+        </li>
+        <li>
+          <p>
+            Explain things so that a typical student in our class can understand what you are saying (e.g. don't use terminology a student in the class would not be familiar with).
+          </p>
+        </li>
+        <li>
+          <p>
+            Make sure your proof is written for a <em>skeptical</em> audience (i.e. Peeves).  One of your jobs is to assure your reader that you have countered every possible counterargument to your theorem.
+          </p>
+        </li>
+        <li>
+          <p>
+            On conditional statements, state clearly what is being assumed and what needs to be shown.
+          </p>
+        </li>
+        <li>
+          <p>
+            Let your reader know when the proof is finished.
+          </p>
+        </li>
+        <li>
+            <p>
+                Any definitions that you use in your theorem should be explicitly referenced.
+            </p>
+        </li>
+        <li>
+            <p>
+                There should be explanation before all computations.  However, if you have many computations that all go together, you can explain them all together as well.
+            </p>
+        </li>
+        <li>
+            <p>
+                At any appropriate place in your proof, remind the reader what needs to be proved.
+            </p>
+        </li>
+        <li>
+            <p>
+                Any theorems that you use to prove your theorem should be properly cited (e.g. by stating the theorem or by referencing it from the book).
+            </p>
+        </li>
+        <li>
+            <p>
+                When you are using a special method of proof (e.g. contrapositive, contradiction, etc.), let your reader know.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by contrapositive, make sure you state the contrapositive, what you are assuming, and what you must show.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by contradiction, make sure you state your contradiction assumption, and clearly alert your reader when you have reached a contradiction.  Justify that your contradiction is false, if necessary.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by induction, make sure you clearly state the basis step and what you are assuming and showing in the inductive step.  Also, be explicit about when and how you use the induction hypothesis.
+            </p>
+        </li>
+      </ul>
+      You may either submit a hard copy of your paper in class or submit your paper on Blackboard as a PDF file.  <alert>If you submit your paper electronically, it <em>must</em> be as a PDF file</alert>.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        (25 pts.) Let <m>G</m> be a connected graph that is not a tree.  Prove that it is possible to remove edges from <m>G</m> so that the resulting graph is a tree that includes all vertices of <m>G</m>.  Here is a two-part hint.
+        <ol>
+            <li>
+                <p>
+                    You may use the fact (which you proved previously) that if you have a connected graph, removing an edge from one of its cycles still makes it a connected graph.
+                </p>
+            </li>
+            <li>
+                <p>
+                    You will probably want to create an algorithm that removes appropriate edges to make <m>G</m> a tree.  Make sure to prove four things about your algorithm.
+                    <ol>
+                        <li>
+                            <p>
+                                Justify that your algorithm terminates.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                For your output, justify that the edges span all vertices.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Justify that the output is connected.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Justify that the output has no cycles.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        (25 pts.) Let <m>T</m> be a tree with at least two vertices, and consider the following algorithm applied to <m>T</m>.
+        <ol>
+            <li>
+                <p>
+                    Choose a random vertex in <m>T</m>.  Call it current-vertex.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If possible, choose a vertex that is adjacent to current-vertex that has not been visited yet; call this new vertex adjacent-vertex.  If it is not possible, stop the algorithm and return the vertex current-vertex.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If the algorithm has not yet been stopped, change the name of adjacent-vertex to current-vertex and repeat step (2) above.
+                </p>
+            </li>
+        </ol>
+        Prove that the algorithm eventually terminates and that the output of the algorithm is a leaf (i.e. a vertex of degree 1).  Hint:  I suggest letting <m>v_1, v_2, \ldots , v_n</m> be the vertices that are visited (in order), where <m>v_n</m> is the output of the algorithm.  I would suggest a proof by contradiction.
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>

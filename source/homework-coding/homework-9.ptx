@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>Homework Assignment #9 - Math 325</title>
+
+  <introduction>
+    <p>
+      <alert>Due Sunday, 4/11</alert>
+    </p>
+    <p>
+      For this assignment, you will solve the problems given below.  Each solution will be in the form of a theorem and a proof, which will be written clearly and in complete sentences.  Your paper will be assessed on both your mathematical reasoning and the quality of your writing.  The writing criteria for this assignment are the following.
+      <ul>
+        <li>
+          <p>
+            Theorem is written properly.
+            <ul>
+              <li>
+                <p>
+                  All relevant information is clearly stated (assumptions and other context).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Write your theorem as a precise mathematical statement (e.g. not in the form of a problem or command).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Make sure your theorem matches what was asked for in the problem.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Make sure your theorem describes the conclusion to the solution of your problem.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Thoroughly explain your reasoning.
+          </p>
+        </li>
+        <li>
+          <p>
+            Make sure all assertions are justified rigorously and clearly.
+          </p>
+        </li>
+        <li>
+          <p>
+            Explain things so that a typical student in our class can understand what you are saying (e.g. don't use terminology a student in the class would not be familiar with).
+          </p>
+        </li>
+        <li>
+          <p>
+            Make sure your proof is written for a <em>skeptical</em> audience (i.e. Peeves).  One of your jobs is to assure your reader that you have countered every possible counterargument to your theorem.
+          </p>
+        </li>
+        <li>
+          <p>
+            On conditional statements, state clearly what is being assumed and what needs to be shown.
+          </p>
+        </li>
+        <li>
+          <p>
+            Let your reader know when the proof is finished.
+          </p>
+        </li>
+        <li>
+            <p>
+                Any definitions that you use in your theorem should be explicitly referenced.
+            </p>
+        </li>
+        <li>
+            <p>
+                There should be explanation before all computations.  However, if you have many computations that all go together, you can explain them all together as well.
+            </p>
+        </li>
+        <li>
+            <p>
+                At any appropriate place in your proof, remind the reader what needs to be proved.
+            </p>
+        </li>
+        <li>
+            <p>
+                Any theorems that you use to prove your theorem should be properly cited (e.g. by stating the theorem or by referencing it from the book).
+            </p>
+        </li>
+        <li>
+            <p>
+                When you are using a special method of proof (e.g. contrapositive, contradiction, etc.), let your reader know.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by contrapositive, make sure you state the contrapositive, what you are assuming, and what you must show.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by contradiction, make sure you state your contradiction assumption, and clearly alert your reader when you have reached a contradiction.  Justify that your contradiction is false, if necessary.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by induction, make sure you clearly state the basis step and what you are assuming and showing in the inductive step.  Also, be explicit about when and how you use the induction hypothesis.
+            </p>
+        </li>
+      </ul>
+      You may either submit a hard copy of your paper in class or submit your paper on Blackboard as a PDF file.  <alert>If you submit your paper electronically, it <em>must</em> be as a PDF file</alert>.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        (34 pts.) Let <m>T</m> be a tree you get from Kruskal's algorithm, and let <m>\{ e_1, e_2, \ldots , e_r\}</m> be the edges of <m>T</m> listed in the order you choose them in Kruskal's algorithm.  Let <m>T_m</m> be a minimum spanning tree, and let <m>e_k</m> be the first edge of <m>T</m> that is not in <m>T_m</m> (if such an edge exists).
+        <ol>
+            <li>
+                <p>
+                    Prove that adding <m>e_k</m> to <m>T_m</m> creates a cycle.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Prove that there is some edge <m>e</m> in <m>T_m</m> but not in <m>T</m> such that if you remove <m>e</m> and replace it with <m>e_k</m>, the resulting graph is a spanning tree.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Prove that <m>w(e_k) \geq w(e)</m>.  Hint: <m>T_m</m> is a minimum spanning tree, so what does that tell you about the spanning tree from (b)?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Prove that <m>w(e_k) \leq w(e)</m>.  Hint: At the <m>k^{\hbox{th}}</m> step of Kruskal's algorithm, would it be appropriate to choose <m>e</m> instead of <m>e_k</m>?
+                </p>
+            </li>
+            <li>
+                <p>
+                    What happens to the weight of <m>T_m</m> if you replace <m>e</m> with <m>e_k</m>?  Explain how you would continue this process to show <m>T</m> is a minimum spanning tree.
+                </p>
+            </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        (34 pts.) Let <m>T</m> be a tree you get from Prim's algorithm, and let <m>\{ e_1, e_2, \ldots , e_r\}</m> be the edges of <m>T</m> listed in the order you choose them in Prim's algorithm.  Let <m>T_m,</m> be a minimum spanning tree.
+        <ol>
+            <li>
+                <p>
+                    Prove that adding <m>e_1</m> to <m>T_m</m> creates a cycle.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Prove that <m>e_1</m> is in a minimum spanning tree.  Hint: Remove a carefully chosen edge from the cycle you created in (a).
+                </p>
+            </li>
+            <li>
+                <p>
+                    Using a similar technique as in (a) and (b), prove that <m>e_1</m> and <m>e_2</m> are part of a common minimum spanning tree.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Prove that <m>e_1</m>, <m>e_2</m>, and <m>e_3</m> are part of a common minimum spanning tree.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Explain how you would continue this process to prove that all <m>e_i</m> form a minimum spanning tree. Prove that this results in a minimum spanning tree.
+                </p>
+            </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>

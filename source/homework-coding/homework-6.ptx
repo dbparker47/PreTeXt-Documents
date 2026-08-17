@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>Homework Assignment #6 - Math 325</title>
+
+  <introduction>
+    <p>
+      <alert>Due Sunday, 3/7</alert>
+    </p>
+    <p>
+      For this assignment, you will solve the problems given below.  Each solution will be in the form of a theorem and a proof, which will be written clearly and in complete sentences.  Your paper will be assessed on both your mathematical reasoning and the quality of your writing.  The writing criteria for this assignment are the following.
+      <ul>
+        <li>
+          <p>
+            Theorem is written properly.
+            <ul>
+              <li>
+                <p>
+                  All relevant information is clearly stated (assumptions and other context).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Write your theorem as a precise mathematical statement (e.g. not in the form of a problem or command).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Make sure your theorem matches what was asked for in the problem.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Make sure your theorem describes the conclusion to the solution of your problem.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Thoroughly explain your reasoning.
+          </p>
+        </li>
+        <li>
+          <p>
+            Make sure all assertions are justified rigorously and clearly.
+          </p>
+        </li>
+        <li>
+          <p>
+            Explain things so that a typical student in our class can understand what you are saying (e.g. don't use terminology a student in the class would not be familiar with).
+          </p>
+        </li>
+        <li>
+          <p>
+            Make sure your proof is written for a <em>skeptical</em> audience (i.e. Peeves).  One of your jobs is to assure your reader that you have countered every possible counterargument to your theorem.
+          </p>
+        </li>
+        <li>
+          <p>
+            On conditional statements, state clearly what is being assumed and what needs to be shown.
+          </p>
+        </li>
+        <li>
+          <p>
+            Let your reader know when the proof is finished.
+          </p>
+        </li>
+        <li>
+            <p>
+                Any definitions that you use in your theorem should be explicitly referenced.
+            </p>
+        </li>
+        <li>
+            <p>
+                There should be explanation before all computations.  However, if you have many computations that all go together, you can explain them all together as well.
+            </p>
+        </li>
+        <li>
+            <p>
+                At any appropriate place in your proof, remind the reader what needs to be proved.
+            </p>
+        </li>
+        <li>
+            <p>
+                Any theorems that you use to prove your theorem should be properly cited (e.g. by stating the theorem or by referencing it from the book).
+            </p>
+        </li>
+        <li>
+            <p>
+                When you are using a special method of proof (e.g. contrapositive, contradiction, etc.), let your reader know.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by contrapositive, make sure you state the contrapositive, what you are assuming, and what you must show.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by contradiction, make sure you state your contradiction assumption, and clearly alert your reader when you have reached a contradiction.  Justify that your contradiction is false, if necessary.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by induction, make sure you clearly state the basis step and what you are assuming and showing in the inductive step.  Also, be explicit about when and how you use the induction hypothesis.
+            </p>
+        </li>
+      </ul>
+      You may either submit a hard copy of your paper in class or submit your paper on Blackboard as a PDF file.  <alert>If you submit your paper electronically, it <em>must</em> be as a PDF file</alert>.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        (25 pts.) Let <m>a_1, a_2, \ldots , a_m \in A</m>, and suppose that for all <m>1 \le k \le m-1</m> we have <m>a_k R a_{k+1}</m> (in directed graph form, this is <m>a_1 \rightarrow a_2 \rightarrow a_3 \rightarrow \cdots \rightarrow a_m</m>).  Prove by induction that <m>a_1 R^+ a_k</m> for all <m>2 \le k \le m</m> (i.e. <m>a_1 \rightarrow a_k</m> for all <m>2 \le k \le m</m> for <m>R^+</m>).
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        (25 pts.) Define <m>S</m> to be the relation on <m>A</m> where <m>aSb</m> means one of the following occurs.
+        <ol>
+            <li>
+                <p>
+                    <m>aRb</m>
+                </p>
+            </li>
+            <li>
+                <p>
+                    There are some elements <m>a_1, a_2, \cdots , a_m \in A</m> such that <m>aRa_1</m>, <m>a_1Ra_2</m>, <m>a_2Ra_3, \ldots , a_mRb</m>.
+                </p>
+            </li>
+        </ol>
+        Prove that <m>S</m> is transitive. Hint:  When you assume <m>xSy</m> and <m>ySz</m>, each <m>S</m> could either be <m>R</m> or come from the <m>a_1, \ldots , a_m</m> as in (b) above.  That makes four possibilities for what the <m>S</m>'s can be in <m>xSy</m> and <m>ySz</m>.  Consider each of the four cases individually.
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>

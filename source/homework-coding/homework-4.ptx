@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>Homework Assignment #4 - Math 325</title>
+
+  <introduction>
+    <p>
+      <alert>Due Sunday, 2/21</alert>
+    </p>
+    <p>
+      For this assignment, you will solve the problems given below.  Each solution will be in the form of a theorem and a proof, which will be written clearly and in complete sentences.  Your paper will be assessed on both your mathematical reasoning and the quality of your writing.  The writing criteria for this assignment are the following.
+      <ul>
+        <li>
+          <p>
+            Theorem is written properly.
+            <ul>
+              <li>
+                <p>
+                  All relevant information is clearly stated (assumptions and other context).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Write your theorem as a precise mathematical statement (e.g. not in the form of a problem or command).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Make sure your theorem matches what was asked for in the problem.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Make sure your theorem describes the conclusion to the solution of your problem.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Thoroughly explain your reasoning.
+          </p>
+        </li>
+        <li>
+          <p>
+            Make sure all assertions are justified rigorously and clearly.
+          </p>
+        </li>
+        <li>
+          <p>
+            Explain things so that a typical student in our class can understand what you are saying (e.g. don't use terminology a student in the class would not be familiar with).
+          </p>
+        </li>
+        <li>
+          <p>
+            Make sure your proof is written for a <em>skeptical</em> audience (i.e. Peeves).  One of your jobs is to assure your reader that you have countered every possible counterargument to your theorem.
+          </p>
+        </li>
+        <li>
+          <p>
+            On conditional statements, state clearly what is being assumed and what needs to be shown.
+          </p>
+        </li>
+        <li>
+          <p>
+            Let your reader know when the proof is finished.
+          </p>
+        </li>
+        <li>
+            <p>
+                Any definitions that you use in your theorem should be explicitly referenced.
+            </p>
+        </li>
+        <li>
+            <p>
+                There should be explanation before all computations.  However, if you have many computations that all go together, you can explain them all together as well.
+            </p>
+        </li>
+        <li>
+            <p>
+                At any appropriate place in your proof, remind the reader what needs to be proved.
+            </p>
+        </li>
+        <li>
+            <p>
+                Any theorems that you use to prove your theorem should be properly cited (e.g. by stating the theorem or by referencing it from the book).
+            </p>
+        </li>
+        <li>
+            <p>
+                When you are using a special method of proof (e.g. contrapositive, contradiction, etc.), let your reader know.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by contrapositive, make sure you state the contrapositive, what you are assuming, and what you must show.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by contradiction, make sure you state your contradiction assumption, and clearly alert your reader when you have reached a contradiction.  Justify that your contradiction is false, if necessary.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by induction, make sure you clearly state the basis step and what you are assuming and showing in the inductive step.  Also, be explicit about when and how you use the induction hypothesis.
+            </p>
+        </li>
+      </ul>
+      You may either submit a hard copy of your paper in class or submit your paper on Blackboard as a PDF file.  <alert>If you submit your paper electronically, it <em>must</em> be as a PDF file</alert>.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        (25 pts.) Let <m>A=\{x_1,x_2,\ldots,x_n\}</m> be a set of points in which no three points are on the same line.  Between some of the pairs of points, we draw a line segment.  We define the relation <m>R</m> on <m>A</m> according to the rule <m>aRb</m> precisely when there is a line drawn between <m>a</m> and <m>b</m>.  Assume that <m>x_1Rx_2</m>, <m>x_2Rx_3, \ldots , x_{n-1}Rx_n</m> are some of the pairs in <m>R</m> (so there may be others).  Also assume that <m>R</m> is a transitive relation.
+        <ol>
+            <li>
+                <p>
+                    What are all of the elements of <m>A</m> that are are connected by a line segment to <m>x_1</m>?  Prove your result.  You will probably need proof by induction.
+                </p>
+            </li>
+            <li>
+                <p>
+                    What are all of the elements of <m>A</m> that are are connected by a line segment to <m>x_2</m>?  Prove your result.  You will probably need proof by induction.
+                </p>
+            </li>
+            <li>
+                <p>
+                    What are all of the elements of <m>A</m> that are connected by a line segment to <m>x_3</m>?  Prove your result.  You will probably need proof by induction.
+                </p>
+            </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        (25 pts.) Suppose you have a set <m>A</m>, and let <m>A_1, A_2, \ldots , A_n</m> be a collections of subsets of <m>A</m> with the following properties.
+        <ul>
+            <li>
+                <p>
+                    <m>A = A_1 \cup A_2 \cup \cdots \cup A_n</m>
+                </p>
+            </li>
+            <li>
+                <p>
+                    There is no element of <m>A</m> that is in more than one of the <m>A_i</m>'s (i.e. if <m>i \ne j</m>, then <m>A_i \cap A_j = \emptyset</m>).
+                </p>
+            </li>
+        </ul>
+        Define the relation <m>R</m> as follows.  For <m>a,b \in A</m>, we say <m>aRb</m> when <m>a</m> and <m>b</m> are in the same <m>A_i</m> (i.e. there exists <m>i</m> such that <m>a,b \in A_i</m>).  Prove that <m>R</m> is an equivalence relation.  For each property of equivalence relations that you prove, you will need to use at least one of the properties of the <m>A_i</m>'s listed above.
+      </p>
+    </statement>
+  </exercise>
+
+</worksheet>

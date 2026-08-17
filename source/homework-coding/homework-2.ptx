@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-  <title>Homework Assignment #1 - Math 325</title>
+  <title>Homework Assignment #2 - Math 325</title>
 
   <introduction>
     <p>
-      <alert>Due Sunday, 1/24</alert>
+      <alert>Due Sunday, 1/31</alert>
     </p>
     <p>
       For this assignment, you will solve the problems given below.  Each solution will be in the form of a theorem and a proof, which will be written clearly and in complete sentences.  Your paper will be assessed on both your mathematical reasoning and the quality of your writing.  The writing criteria for this assignment are the following.
@@ -67,6 +67,36 @@
             Let your reader know when the proof is finished.
           </p>
         </li>
+        <li>
+            <p>
+                Any definitions that you use in your theorem should be explicitly referenced.
+            </p>
+        </li>
+        <li>
+            <p>
+                There should be explanation before all computations.  However, if you have many computations that all go together, you can explain them all together as well.
+            </p>
+        </li>
+        <li>
+            <p>
+                At any appropriate place in your proof, remind the reader what needs to be proved.
+            </p>
+        </li>
+        <li>
+            <p>
+                Any theorems that you use to prove your theorem should be properly cited (e.g. by stating the theorem or by referencing it from the book).
+            </p>
+        </li>
+        <li>
+            <p>
+                When you are using a special method of proof (e.g. contrapositive, contradiction, etc.), let your reader know.
+            </p>
+        </li>
+        <li>
+            <p>
+                When using proof by contrapositive, make sure you state the contrapositive, what you are assuming, and what you must show.
+            </p>
+        </li>
       </ul>
       You may either submit a hard copy of your paper in class or submit your paper on Blackboard as a PDF file.  <alert>If you submit your paper electronically, it <em>must</em> be as a PDF file</alert>.
     </p>
@@ -75,14 +105,26 @@
   <exercise>
     <statement>
       <p>
-        (25 pts.)  Let <m>m</m> and <m>n</m> be even integers.  Determine whether <m>4m+7n+5</m> is odd or even, and prove your result.  Make sure to state the theorem you prove as a mathematical statement (not a command).
+        (18 pts.) Let <m>a</m>, <m>b</m>, and <m>c</m> be integers.  If <m>a|b</m>, and <m>a</m> does not divide <m>c</m>, then <m>a</m> does not divide <m>b+c</m>.  Hint:  Determine what you are assuming and what you are showing.  Then re-write the theorem so that the if-then part only includes the assumptions that you are happy with.
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        (25 pts.) Suppose <m>a \equiv 7</m> (mod 9) and <m>b \equiv 5</m> (mod 9).  Find integers <m>c</m> and <m>d</m>, each between <m>0</m> and <m>8</m>, such that <m>a+b \equiv c</m> (mod 9) and <m>ab \equiv d</m> (mod 9).  Prove your results.  Note:  You may not choose specific values for <m>a</m> and <m>b</m> in your proof.  Make sure to state the theorem you prove as a mathematical statement.
+        (34 pts.) Prove both of the following.  Note that adding two rational numbers together results in a rational number (i.e. the set of rational numbers is closed under addition) and multiplying two rational numbers results in a rational number (i.e. the set of rational numbers is closed under multiplication).  However, adding or multiplying two irrational numbers may not result in an irrational number (e.g. <m>\sqrt{2} \cdot \sqrt{2} = 2</m> and <m>(1+\sqrt{2})+(1-\sqrt{2})=2</m>).  Make sure to state the theorems you prove as mathematical statements (not commands).
+        <ol>
+            <li>
+                <p>
+                    Suppose that <m>x</m> is a nonzero rational number and <m>y</m> is an irrational number (i.e. a real number that is not a rational number).  Prove that <m>xy</m> is an irrational number.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Let <m>x</m> be a real number, and let <m>y</m> be an irrational number.  Prove that either <m>x+y</m> or <m>x-y</m> is an irrational number.
+                </p>
+            </li>
+        </ol>
       </p>
     </statement>
   </exercise>
