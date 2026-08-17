@@ -2,19 +2,36 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="act-temp">
-  <title></title>
+  <title>Composition of Relations</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      For the following, let <m>E_n</m> be the relation on <m>\mathbb{Z}</m> given by <m>aE_nb</m> precisely when  <m>a \equiv b</m> (mod <m>n</m>), let <m>\mid</m> be the divisibility relation on <m>\mathbb{Z}</m>, and let <m>\le</m> be the ordinary <q>less than or equal</q> relation on any set of real numbers.
     </p>
   </introduction>
 
   <exercise>
     <statement>
       <p>
-        
+        Consider the relation <m>R=E_4 \circ E_6</m>.
+        <ol>
+          <li>
+            <p>
+              Find some ordered pairs in this relation.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find all the integers <m>x</m> such that <m>3Rx</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find all the integers <m>y</m>$ such that <m>8Ry</m>.
+            </p>
+          </li>
+        </ol>
       </p>
     </statement>
   </exercise>
@@ -22,7 +39,15 @@
   <exercise>
     <statement>
       <p>
-        
+        Do the same as in #1 for <m>R=E_5 \circ E_4</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Do the same as in #1 for <m>R=\le \circ |</m>.  Also, determine all <m>z</m> such that <m>0Rz</m>.
       </p>
     </statement>
   </exercise>

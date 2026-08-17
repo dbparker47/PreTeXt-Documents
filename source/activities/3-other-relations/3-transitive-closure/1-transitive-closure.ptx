@@ -2,19 +2,56 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="act-temp">
-  <title></title>
+  <title>Transitive Closure</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Work the following transitive closure problems.
     </p>
   </introduction>
 
   <exercise>
     <statement>
       <p>
-        
+        Find the transitive closure of the following relation.
+      </p>
+      <image width="60%">
+        <prefigure xmlns="https://prefigure.org" label="transitive-1">
+          <diagram dimensions="(300,300)" margins="5">
+            <definition>trans={1:[4],2:[1,2,3],4:[2],5:[3]}</definition>
+              <coordinates bbox="(-1,-1,1,1)">
+                <network directed="yes" graph="trans" node-fill="white" labels="yes" 
+                scale="0.8" seed="16" node-stroke="no" node-size="8">
+                  <node at="1" p="(-0.9,0.5)" />
+                  <node at="2" p="(0,0.5)" />
+                  <node at="3" p="(0.9,0.5)" />
+                  <node at="4" p="(-0.5,-0.5)" />
+                  <node at="5" p="(0.5,-0.5)" />
+                </network>
+              </coordinates>
+          </diagram>
+        </prefigure>
+      </image>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Find the transitive closure of
+        <ol>
+          <li>
+            <p>
+              <m>a_1 \rightarrow a_2 \rightarrow a_3 \rightarrow a_4 \rightarrow a_5</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>a_1 \rightarrow a_2 \rightarrow a_3 \rightarrow a_4 \rightarrow a_1</m>
+            </p>
+          </li>
+        </ol>
       </p>
     </statement>
   </exercise>
@@ -22,7 +59,24 @@
   <exercise>
     <statement>
       <p>
-        
+        Let $R$ be the relation on <m>\mathbb{Z}</m> given by <m>aRb</m> precisely when <m>\frac{b}{a}</m> is a prime number.
+        <ol>
+          <li>
+            <p>
+              Find a few ordered pairs in <m>R^+</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove or disprove that <m>9R^+360</m>.  Prove or disprove that <m>9R^+100</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              (Not on quiz) Based on your experiences in (a) and/or (b), conjecture what you believe <m>R^+</m> to be.  Prove your conjecture if you dare.
+            </p>
+          </li>
+        </ol>
       </p>
     </statement>
   </exercise>

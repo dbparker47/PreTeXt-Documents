@@ -7,24 +7,46 @@
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Use Warshall's Algorithm to find the transitive closure of the following relations.  Make sure you show what arrows are added at each step.
     </p>
   </introduction>
 
-  <exercise>
-    <statement>
-      <p>
-        
-      </p>
-    </statement>
-  </exercise>
-
-  <exercise>
-    <statement>
-      <p>
-        
-      </p>
-    </statement>
-  </exercise>
+  <sidebyside widths="45% 45%">
+    <image>
+      <prefigure xmlns="https://prefigure.org" label="warshall-1">
+        <diagram dimensions="(300,300)" margins="5">
+          <definition>warsh1={1:[3],2:[4],3:[4],5:[1,2]}</definition>
+          <coordinates bbox="(-1,-1,1,1)">
+            <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+            scale="0.8" seed="16" node-stroke="no">
+              <node at="1" p="(-0.9,0.5)" />
+              <node at="2" p="(0,0.5)" />
+              <node at="3" p="(0.9,0.5)" />
+              <node at="4" p="(-0.5,-0.5)" />
+              <node at="5" p="(0.5,-0.5)" />
+            </network>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    <image>
+      <prefigure xmlns="https://prefigure.org" label="warshall-2">
+        <diagram dimensions="(300,300)" margins="5">
+          <definition>warsh2={1:[2],2:[6],3:[2], 4:[2],5:[4]}</definition>
+          <coordinates bbox="(-1,-1,1,1)">
+            <network directed="yes" graph="warsh2" node-fill="white" labels="yes" 
+            scale="0.8" seed="16" node-stroke="no">
+              <node at="1" p="(-0.9,0.5)" />
+              <node at="2" p="(0,0.5)" />
+              <node at="3" p="(0.9,0.5)" />
+              <node at="4" p="(-0.9,-0.5)" />
+              <node at="5" p="(0,-0.5)" />
+              <node at="6" p="(0.9,-0.5)" />
+            </network>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+  </sidebyside>
 
 </worksheet>

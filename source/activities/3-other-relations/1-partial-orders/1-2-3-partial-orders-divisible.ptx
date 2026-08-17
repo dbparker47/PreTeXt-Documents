@@ -2,19 +2,19 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="act-temp">
-  <title></title>
+  <title>Partial Orders - Divisibility Relation</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Define the relation <m>R</m> on <m>{\mathbb N}</m> (where <m>\mathbb{N}</m> includes 0) by <m>a R b</m> precisely when <m>a</m> divides evenly into <m>b</m>.
     </p>
   </introduction>
 
   <exercise>
     <statement>
       <p>
-        
+        Prove that this is a partial order.
       </p>
     </statement>
   </exercise>
@@ -22,7 +22,23 @@
   <exercise>
     <statement>
       <p>
-        
+        Find two elements of <m>\mathbb{N}</m> that are comparable, and find two elements that are not comparable.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Identify all maximum, minimum, maximal, and minimal elements.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        (Not on quiz) Do #3 when the set is <m>P=\{ a \in \mathbb{N} : a \ge 2\}</m>.
       </p>
     </statement>
   </exercise>
