@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-hamiltonian">
+  <title>Hamiltonian Cycles</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Work the following problems related to Hamiltonian cycles.
     </p>
   </introduction>
 
   <exercise>
     <statement>
       <p>
-        
+        Determine the values of <m>m</m> and <m>n</m> for which of the following have Hamiltonian cycles.
+        <ol>
+          <li>
+            <p>
+              <m>K_n</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>K_{m,n}</m>
+            </p>
+          </li>
+        </ol>
       </p>
     </statement>
   </exercise>
@@ -22,7 +34,31 @@
   <exercise>
     <statement>
       <p>
-        
+        Suppose that <m>G</m> has a Hamiltonian cycle.  Prove that <m>G</m> is connected.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Let <m>G</m> be the graph pictured below.  Prove that <m>G</m> does not have a Hamiltonian cycle. 
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        (Not on quiz) Let <m>G_1=(V_1,E_1)</m> and <m>G_2=(V_2,E_2)</m> be graphs.  Let <m>v \in V_1</m>  and <m>w \in V_2</m>.  Define the graph <m>H</m> whose vertex set is <m>V_1 \cup V_2 \cup \{ u \}</m> and whose edge set is <m>E_1 \cup E_2 \cup \{ uv, uw \}</m>.  Prove that <m>H</m> does not have a Hamiltonian cycle.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        (Not on quiz) Let <m>G_1=(V_1,E_1)</m> and <m>G_2=(V_2,E_2)</m> be graphs with Hamiltonian cycles.  Let <m>v_1,v_2 \in V_1</m>, and let <m>w_1,w_2 \in V_2</m> such that <m>v_1v2</m> is one of the edges of a Hamiltonian cycle for <m>G_1</m>, and <m>w_1w_2</m> is one of the edges of a Hamiltonian cycle for <m>G_2</m>.  Define the graph $H$ whose vertex set is <m>V_1 \cup V_2</m> and whose edge set is <m>E_1 \cup E_2 \cup \{ v_1w_1, v_2w_2 \}</m>.  Prove that <m>H</m> has a Hamiltonian cycle.
       </p>
     </statement>
   </exercise>

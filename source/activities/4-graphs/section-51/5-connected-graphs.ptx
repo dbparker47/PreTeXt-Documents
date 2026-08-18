@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-connected-graph">
+  <title>Connected Graphs</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Work the following problems related to connected graphs.
     </p>
   </introduction>
 
   <exercise>
     <statement>
       <p>
-        
+        Prove that <m>K_n</m>, <m>K_{m,n}</m>, <m>P_n</m>, and <m>C_n</m> are all connected for <m>m,n \ge 1</m>.
       </p>
     </statement>
   </exercise>
@@ -22,7 +22,7 @@
   <exercise>
     <statement>
       <p>
-        
+        Draw a graph that is not connected, and prove it is not connected.
       </p>
     </statement>
   </exercise>

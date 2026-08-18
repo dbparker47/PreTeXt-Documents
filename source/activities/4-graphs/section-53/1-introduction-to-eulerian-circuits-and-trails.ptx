@@ -1,30 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-eulerian">
+  <title>Introduction to Eulerian Circuits and Trails</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      For each of the following graphs, do the following.
+      <ol>
+        <li>
+          <p>
+            If possible, make a circuit that uses all of the edges.  If it's impossible, prove it.
+          </p>
+        </li>
+        <li>
+          <p>
+            If possible, make a trail that uses all of the edges and that starts and ends at different vertices.  If it's impossible, prove it.
+          </p>
+        </li>
+      </ol>
     </p>
   </introduction>
 
-  <exercise>
-    <statement>
-      <p>
-        
-      </p>
-    </statement>
-  </exercise>
-
-  <exercise>
-    <statement>
-      <p>
-        
-      </p>
-    </statement>
-  </exercise>
+  <sidebyside widths="22% 22% 22% 22%">
+    <image>
+      <prefigure xmlns="https://prefigure.org" label="eulerian-1">
+        <diagram dimensions="(300,300)" margins="5">
+          <definition>undirected1={1:[2,9],2:[3,8,9],3:[4,8,9],4:[5,6,7],5:[6,7],6:[7],7:[8],8:[9]}</definition>
+          <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i'}</definition>
+          <coordinates bbox="(0,-1,1,1.05)">
+            <network directed="no" graph="undirected1" node-fill="white" labels="yes" 
+            label-dictionary="labels" scale="0.8" seed="16" node-stroke="black" >
+              <node at="1" p="(0.5,0.8)" />
+              <node at="2" p="(0.7,0.4)" />
+              <node at="3" p="(0.7,0)" />
+              <node at="4" p="(0.7,-0.4)" />
+              <node at="5" p="(0.7,-0.8)" />
+              <node at="6" p="(0.3,-0.8)" />
+              <node at="7" p="(0.3,-0.4)" />
+              <node at="8" p="(0.3,0)" />
+              <node at="9" p="(0.3,0.4)" />
+            </network>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    <image>
+      <prefigure xmlns="https://prefigure.org" label="eulerian-2">
+        <diagram dimensions="(300,300)" margins="5">
+          <definition>undirected1={1:[2,6],2:[3,5,6],3:[4,6],4:[5],5:[6]}</definition>
+          <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j'}</definition>
+          <coordinates bbox="(0,0,1,1)">
+            <network directed="no" graph="undirected1" node-fill="white" labels="yes" 
+            label-dictionary="labels" scale="0.8" node-stroke="black" >
+              <node at="1" p="(0.5,0.95)" />
+              <node at="2" p="(0.9,0.65)" />
+              <node at="3" p="(0.9,0.35)" />
+              <node at="4" p="(0.5,0.05)" />
+              <node at="5" p="(0.1,0.35)" />
+              <node at="6" p="(0.1,0.65)" />
+            </network>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    <image>
+      <prefigure xmlns="https://prefigure.org" label="eulerian-3">
+        <diagram dimensions="(300,300)" margins="5">
+          <definition>undirected1={1:[2,10],2:[3,9,10],3:[4,9,10],4:[5,7,8],5:[6,7,8],6:[7],7:[8],8:[9],9:[10]}</definition>
+          <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j'}</definition>
+          <coordinates bbox="(0,-1,1,1.03)">
+            <network directed="no" graph="undirected1" node-fill="white" labels="yes" 
+            label-dictionary="labels" scale="0.8" seed="16" node-stroke="black" >
+              <node at="1" p="(0.5,0.95)" />
+              <node at="2" p="(0.7,0.57)" />
+              <node at="3" p="(0.7,0.19)" />
+              <node at="4" p="(0.7,-0.19)" />
+              <node at="5" p="(0.7,-0.57)" />
+              <node at="6" p="(0.5,-0.95)" />
+              <node at="7" p="(0.3,-0.57)" />
+              <node at="8" p="(0.3,-0.19)" />
+              <node at="9" p="(0.3,0.19)" />
+              <node at="10" p="(0.3,0.57)" />
+            </network>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    <image>
+      <prefigure xmlns="https://prefigure.org" label="eulerian-4">
+        <diagram dimensions="(300,300)" margins="5">
+          <definition>undirected1={1:[2,4,6],2:[3,5,6],3:[4,6],4:[5],5:[6]}</definition>
+          <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j'}</definition>
+          <coordinates bbox="(0,0,1,1)">
+            <network directed="no" graph="undirected1" node-fill="white" labels="yes" 
+            label-dictionary="labels" scale="0.8" node-stroke="black" >
+              <node at="1" p="(0.5,0.95)" />
+              <node at="2" p="(0.9,0.65)" />
+              <node at="3" p="(0.9,0.35)" />
+              <node at="4" p="(0.5,0.05)" />
+              <node at="5" p="(0.1,0.35)" />
+              <node at="6" p="(0.1,0.65)" />
+            </network>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+  </sidebyside>
 
 </worksheet>

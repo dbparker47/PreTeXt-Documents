@@ -1,20 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-adj-matrices">
+  <title>Adjacency Matrices</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Work the following adjacency matrix problems.
     </p>
   </introduction>
 
   <exercise>
     <statement>
       <p>
-        
+        Make two different adjacency matrices for the following graph.
+      </p>
+      <image width="60%">
+        <prefigure xmlns="https://prefigure.org" label="adjacency-1">
+          <diagram dimensions="(300,300)" margins="5">
+            <definition>undirected1={1:[2,4,5],2:[5,6],3:[4,5],4:[6],5:[6]}</definition>
+            <definition>N=6</definition>
+            <definition>f(t)=(cos(2*pi*t/N), sin(2*pi*t/N))</definition>
+            <coordinates bbox="(-1.07,-1,1.07,1)">
+              <network directed="no" graph="undirected1" labels="yes" 
+              scale="0.8" node-stroke="black" node-fill="white" >
+                <node at="1" p="f(1)" />
+                <node at="2" p="f(2)" />
+                <node at="3" p="f(3)" />
+                <node at="4" p="f(4)" />
+                <node at="5" p="f(5)" />
+                <node at="6" p="f(6)" />
+              </network>
+            </coordinates>
+          </diagram>
+        </prefigure>
+      </image>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Draw a graph for the following adjacency matrix.
+        <md>
+          \begin{bmatrix} 0 \amp 1 \amp 0 \amp 1 \amp 1 \\ 1 \amp 0 \amp 1 \amp 1 \amp 0 \\ 0 \amp 1 \amp 0 \amp 0 \amp 0 \\ 1 \amp 1 \amp 0 \amp 0 \amp 0 \\ 1 \amp 0 \amp 0 \amp 0 \amp 0 \end{bmatrix}
+        </md>
       </p>
     </statement>
   </exercise>
@@ -22,6 +53,10 @@
   <exercise>
     <statement>
       <p>
+        Explain why the following matrix is not an adjacency matrix.
+        <md>
+          \begin{bmatrix} 0 \amp 1 \amp 0 \amp 1 \amp 1 \\ 1 \amp 0 \amp 1 \amp 1 \amp 0 \\ 0 \amp 1 \amp 0 \amp 0 \amp 0 \\ 1 \amp 1 \amp 0 \amp 0 \amp 0 \\ 1 \amp 0 \amp 0 \amp 1 \amp 0 \end{bmatrix}
+        </md>
         
       </p>
     </statement>

@@ -1,20 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-coloring">
+  <title>Graph Coloring</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Work the following problems related to chromatic number.
     </p>
   </introduction>
 
   <exercise>
     <statement>
       <p>
-        
+        Determine the chromatic number for each of the following graphs.  Prove your result.
+      </p>
+      <sidebyside widths="30% 30% 30%">
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="coloring-1">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected1={1:[2,4],2:[3],3:[4]}</definition>
+              <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
+              <definition>N=4</definition>
+              <definition>f(t)=(cos(2*pi*t/N), sin(2*pi*t/N))</definition>
+              <coordinates bbox="(-1.02,-1.02,1.02,1.02)">
+                <network directed="no" graph="undirected1" labels="no" 
+                label-dictionary="labels" scale="0.8" node-stroke="black" node-fill="black" node-size="7" >
+                  <node at="1" p="f(1)" />
+                  <node at="2" p="f(2)" />
+                  <node at="3" p="f(3)" />
+                  <node at="4" p="f(4)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="coloring-2">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected1={1:[2,5],2:[3],3:[4],4:[5]}</definition>
+              <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
+              <definition>N=5</definition>
+              <definition>f(t)=(cos(2*pi*t/N), sin(2*pi*t/N))</definition>
+              <coordinates bbox="(-1.02,-1.02,1.02,1.02)">
+                <network directed="no" graph="undirected1" labels="no" 
+                label-dictionary="labels" scale="0.8" node-stroke="black" node-fill="black" node-size="7" >
+                  <node at="1" p="f(1)" />
+                  <node at="2" p="f(2)" />
+                  <node at="3" p="f(3)" />
+                  <node at="4" p="f(4)" />
+                  <node at="5" p="f(5)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="coloring-3">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected1={1:[2,6],2:[3],3:[4],4:[5],5:[6]}</definition>
+              <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
+              <definition>N=6</definition>
+              <definition>f(t)=(cos(2*pi*t/N), sin(2*pi*t/N))</definition>
+              <coordinates bbox="(-1.02,-1.02,1.02,1.02)">
+                <network directed="no" graph="undirected1" labels="no" 
+                label-dictionary="labels" scale="0.8" node-stroke="black" node-fill="black" node-size="7" >
+                  <node at="1" p="f(1)" />
+                  <node at="2" p="f(2)" />
+                  <node at="3" p="f(3)" />
+                  <node at="4" p="f(4)" />
+                  <node at="5" p="f(5)" />
+                  <node at="6" p="f(6)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+      </sidebyside>
+      <sidebyside widths="30% 30% 30%">
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="coloring-4">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected1={1:[2,3,4],2:[3],3:[4]}</definition>
+              <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
+              <definition>N=4</definition>
+              <definition>f(t)=(cos(2*pi*t/N), sin(2*pi*t/N))</definition>
+              <coordinates bbox="(-1.02,-1.02,1.02,1.02)">
+                <network directed="no" graph="undirected1" labels="no" 
+                label-dictionary="labels" scale="0.8" node-stroke="black" node-fill="black" node-size="7" >
+                  <node at="1" p="f(1)" />
+                  <node at="2" p="f(2)" />
+                  <node at="3" p="f(3)" />
+                  <node at="4" p="f(4)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="coloring-5">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected1={1:[2,3,5],2:[3],3:[4],4:[5]}</definition>
+              <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
+              <definition>N=5</definition>
+              <definition>f(t)=(cos(2*pi*t/N), sin(2*pi*t/N))</definition>
+              <coordinates bbox="(-1.02,-1.02,1.02,1.02)">
+                <network directed="no" graph="undirected1" labels="no" 
+                label-dictionary="labels" scale="0.8" node-stroke="black" node-fill="black" node-size="7" >
+                  <node at="1" p="f(1)" />
+                  <node at="2" p="f(2)" />
+                  <node at="3" p="f(3)" />
+                  <node at="4" p="f(4)" />
+                  <node at="5" p="f(5)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="coloring-6">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected1={1:[2,3,4],2:[3,4],3:[4]}</definition>
+              <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
+              <definition>N=4</definition>
+              <definition>f(t)=(cos(2*pi*t/N), sin(2*pi*t/N))</definition>
+              <coordinates bbox="(-1.02,-1.02,1.02,1.02)">
+                <network directed="no" graph="undirected1" labels="no" 
+                label-dictionary="labels" scale="0.8" node-stroke="black" node-fill="black" node-size="7" >
+                  <node at="1" p="f(1)" />
+                  <node at="2" p="f(2)" />
+                  <node at="3" p="f(3)" />
+                  <node at="4" p="f(4)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+      </sidebyside>
+      <sidebyside widths="30% 30% 30%">
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="coloring-7">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected1={1:[4,5],2:[4,5],3:[4,5]}</definition>
+              <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
+              <coordinates bbox="(0,0,1,1)">
+                <network directed="no" graph="undirected1" node-fill="black" labels="no" 
+                label-dictionary="labels" scale="0.8" node-stroke="black" node-size="7" >
+                  <node at="1" p="(0.2,0.9)" />
+                  <node at="2" p="(0.2,0.5)" />
+                  <node at="3" p="(0.2,0.1)" />
+                  <node at="4" p="(0.8,0.7)" />
+                  <node at="5" p="(0.8,0.3)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="coloring-8">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected1={1:[2,4,5],2:[3,5,4,7],3:[6],4:[5],5:[6,7],6:[7]}</definition>
+              <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
+              <coordinates bbox="(0,0,1,1)">
+                <network directed="no" graph="undirected1" node-fill="black" labels="no" 
+                label-dictionary="labels" scale="0.8" node-stroke="black" node-size="7" >
+                  <node at="1" p="(0.1,0.7)" />
+                  <node at="2" p="(0.5,0.7)" />
+                  <node at="3" p="(0.9,0.7)" />
+                  <node at="4" p="(0.1,0.3)" />
+                  <node at="5" p="(0.5,0.3)" />
+                  <node at="6" p="(0.9,0.3)" />
+                  <node at="7" p="(0.7,0.5)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="coloring-9">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected1={1:[2,5],2:[3,5,6,7],3:[4,5,6,7],4:[7],5:[6],6:[7]}</definition>
+              <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
+              <coordinates bbox="(0,0,1,1)">
+                <network directed="no" graph="undirected1" node-fill="black" labels="no" 
+                label-dictionary="labels" scale="0.8" node-stroke="black" node-size="7" >
+                  <node at="1" p="(0.05,0.7)" />
+                  <node at="2" p="(0.35,0.7)" />
+                  <node at="3" p="(0.65,0.7)" />
+                  <node at="4" p="(0.95,0.7)" />
+                  <node at="5" p="(0.2,0.3)" />
+                  <node at="6" p="(0.5,0.3)" />
+                  <node at="7" p="(0.8,0.3)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+      </sidebyside>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Compute the following and prove.
+        <ol>
+          <li>
+            <p>
+              <m>\chi (K_n)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\chi (K_{m,n})</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\chi (P_n)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\chi (C_n)</m>
+            </p>
+          </li>
+        </ol>
       </p>
     </statement>
   </exercise>
@@ -22,7 +234,15 @@
   <exercise>
     <statement>
       <p>
-        
+        What are all possible things that can happen to the chromatic number of a graph if you add an edge to the graph without adding any vertices?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Let <m>G</m> be a graph that has a cycle of odd order.  What is the smallest <m>\chi(G)</m> can be?
       </p>
     </statement>
   </exercise>

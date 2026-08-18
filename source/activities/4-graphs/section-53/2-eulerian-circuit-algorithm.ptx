@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-eulerian-algorithm">
+  <title>Eulerian Circuit Algorithm</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Suppose we have a connected graph such that every vertex has even degree.  We will create an algorithm to construct an Eulerian circuit.
     </p>
   </introduction>
 
   <exercise>
     <statement>
       <p>
-        
+        Choose an arbitrary vertex <m>v_0</m>.  What if no edges are incident to <m>v_0</m>?
       </p>
     </statement>
   </exercise>
@@ -22,7 +22,83 @@
   <exercise>
     <statement>
       <p>
-        
+        If we are not finished, choose any edge incident to <m>v_0</m> that we have not yet traveled on and travel along it to another vertex <m>v_1</m> along this edge.  Why can we do this?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Keep repeating step 2 until we cannot do it anymore.
+        <ol>
+          <li>
+            <p>
+              Why will we eventually have to stop?
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that when we stop, we are on the vertex <m>v_0</m>.  Hint:  Assume we are on any other vertex and find a contradiction.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        So we have the circuit <m>v_0v_1 \cdots v_nv_0</m>. What do we do if we have traveled along each edge in the graph?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        What if we have some edges not yet traveled along, but none of them are incident to any of <m>v_0</m>, <m>v_1, \ldots , v_n</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose one of the vertices on our circuit is incident to an unused edge.  Relabel our vertices so that this one is <m>v_0</m> and our circuit is <m>v_0v_1 \cdots v_nv_0</m>.  Why is it safe to assume that <m>v_0</m> is the first vertex in the circuit?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Repeat steps 2-4 to create a new circuit <m>v_0w_1w_2 \cdots w_mv_0</m>.  Again, think about why we can do this.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Take the circuits we created in step 3 and step 7 and turn them into a single circuit.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Repeat steps 4-8 until we are forced to stop.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Can this process go on forever?  If not, what happens when the process stops?
       </p>
     </statement>
   </exercise>

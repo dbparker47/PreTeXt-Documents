@@ -2,19 +2,36 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="act-temp">
-  <title></title>
+  <title>Handshake Theorem</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      In these problems, we compare the number of edges in a graph with the degrees of the vertices.
     </p>
   </introduction>
 
   <exercise>
     <statement>
       <p>
-        
+        Consider the graph <m>P_n</m> (path graph on <m>n</m> vertices).
+        <ol>
+          <li>
+            <p>
+              What are the degrees of the vertices of <m>P_n</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              What number do you get when you add all the degrees of the vertices?
+            </p>
+          </li>
+          <li>
+            <p>
+              How many edges does <m>P_n</m> have?
+            </p>
+          </li>
+        </ol>
       </p>
     </statement>
   </exercise>
@@ -22,7 +39,57 @@
   <exercise>
     <statement>
       <p>
-        
+        Consider the graph <m>C_n</m> (cycle graph on <m>n</m> vertices).
+        <ol>
+          <li>
+            <p>
+              What are the degrees of the vertices of <m>C_n</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              What number do you get when you add all the degrees of the vertices?
+            </p>
+          </li>
+          <li>
+            <p>
+              How many edges does <m>C_n</m> have?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Consider the graph <m>K_n</m> (complete graph on <m>n</m> vertices).
+        <ol>
+          <li>
+            <p>
+              What are the degrees of the vertices of <m>K_n</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              What number do you get when you add all the degrees of the vertices?
+            </p>
+          </li>
+          <li>
+            <p>
+              How many edges does <m>K_n</m> have?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Let <m>G=(V,E)</m>.  What do you get when you add up all of the degrees of the vertices of <m>G</m>?  Prove your conjecture.
       </p>
     </statement>
   </exercise>

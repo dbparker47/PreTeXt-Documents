@@ -1,20 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-intro-graphs">
+  <title>Introduction to Graphs (Not on Quiz)</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      The following problems are to help you understand graphs.
     </p>
   </introduction>
 
   <exercise>
     <statement>
       <p>
-        
+        Suppose you have a group of people.  With your graph, you want to describe who is friends with whom among the group.
+        <ol>
+          <li>
+            <p>
+              Pick about 10 people you know and draw a graph describing their relationships.
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose you have two subsets of people in which there are no edges between vertices in the subsets.  How would you interpret that?
+            </p>
+          </li>
+          <li>
+            <p>
+              What if you had a vertex that was not part of any edge?
+            </p>
+          </li>
+        </ol>
       </p>
     </statement>
   </exercise>
@@ -22,7 +39,37 @@
   <exercise>
     <statement>
       <p>
-        
+        Now consider the states of the United States, or the countries of your favorite continent.
+        <ol>
+          <li>
+            <p>
+              What are some different relationships you can express with a graph?
+            </p>
+          </li>
+          <li>
+            <p>
+              Draw a graph to describe which states/countries share a border with a given state/country.
+            </p>
+          </li>
+          <li>
+            <p>
+              What information is shared by your graph in (b)?  What information is not shared?
+            </p>
+          </li>
+          <li>
+            <p>
+              What are you doing if you are following edges from state to state (or country to country).
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose you have a group of 4 people, and you want to look at all 2-person groups that you can make out of them.  Two groups are <q>related</q> if they share a person in common.  Draw a graph of this situation.
       </p>
     </statement>
   </exercise>

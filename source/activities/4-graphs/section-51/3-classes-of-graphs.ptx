@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-graph-class">
+  <title>Classes of Graphs</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      In each problem below, try drawing a graph that looks like what is described.
     </p>
   </introduction>
 
   <exercise>
     <statement>
       <p>
-        
+        Draw a graph that is one long path.
       </p>
     </statement>
   </exercise>
@@ -22,7 +22,23 @@
   <exercise>
     <statement>
       <p>
-        
+        Draw a graph that goes in a circle.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Put down as many vertices as you would like, and draw as many edges as you can without any pair of vertices having more than one edge.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Put your vertices into two teams.  Each player on one team plays each player on the other team.  No one plays anyone on her or his own team.  If two players play each other, you draw an edge between them.
       </p>
     </statement>
   </exercise>

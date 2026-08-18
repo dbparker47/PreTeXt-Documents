@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-eulerian-algorithm-steps">
+  <title>Eulerian Circuit Algorithm Steps</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Suppose we have a connected graph with at least two vertices such that every vertex has even degree.  Here is the algorithm for constructing an Eulerian circuit.  Fill in justification for each step.
     </p>
   </introduction>
 
   <exercise>
     <statement>
       <p>
-        
+        Choose an arbitrary vertex <m>v_0</m>.
       </p>
     </statement>
   </exercise>
@@ -22,7 +22,83 @@
   <exercise>
     <statement>
       <p>
-        
+        Choose any edge incident to <m>v_0</m> that we have not yet traveled on and travel along it to another vertex <m>v_1</m> along this edge.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Keep repeating step 2 until we cannot do it anymore. At this point, we are back on vertex <m>v_0</m>.
+        <ol>
+          <li>
+            <p>
+              Why will we eventually have to stop?
+            </p>
+          </li>
+          <li>
+            <p>
+              Why do we end up on the vertex <m>v_0</m>?  Hint:  Assume we are on any other vertex and find a contradiction.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        At this point, we have a circuit <m>v_0v_1 \cdots v_nv_0</m>. If we have traveled along each edge in the graph, we are done.  Why?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        If we have some edges not yet traveled along, at least one of them is incident to one of <m>v_0$, $v_1, \ldots , v_n</m>.  Why?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        From #5, we now know that one of the vertices on our circuit is incident to an unused edge.  Relabel our vertices so that this one is <m>v_0</m> and our circuit is <m>v_0v_1 \cdots v_nv_0</m>.  Why is it safe to assume that <m>v_0</m> is the first vertex in the circuit?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Repeat steps 2-4 to create a new circuit <m>v_0w_1w_2 \cdots w_mv_0</m>.  Why will we end up at <m>v_0</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Take the circuits we created in step 3 and step 7 and turn them into a single circuit.  How is this done?  How do you know it is a circuit?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Repeat steps 4-8 until we are forced to stop.  Why are we eventually forced to stop?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        When we are forced to stop, we have created an Eulerian circuit.  Why?
       </p>
     </statement>
   </exercise>

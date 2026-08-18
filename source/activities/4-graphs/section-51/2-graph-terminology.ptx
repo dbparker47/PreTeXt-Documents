@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-graph-term">
+  <title>Graph Terminology</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Consider the graph <m>G=(V,E)</m> given below.  Each question that follows is about a definition related to graphs.  Answer the question and note in the answers below what defined term the problem is about.
     </p>
   </introduction>
 
+  <image width="60%">
+    <prefigure xmlns="https://prefigure.org" label="terminology-main">
+      <diagram dimensions="(300,300)" margins="5">
+        <definition>undirected={1:[2,3],2:[3],3:[4],4:[5,6]}</definition>
+        <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
+        <coordinates bbox="(-1,-1,1,1)">
+          <network directed="no" graph="undirected" node-fill="white" labels="yes" 
+          label-dictionary="labels" scale="0.8" seed="16" node-stroke="no">
+            <node at="1" p="(-0.5,0.5)" />
+            <node at="2" p="(0.5,0.5)" />
+            <node at="3" p="(0,0)" />
+            <node at="4" p="(0,-0.5)" />
+            <node at="5" p="(0.5,-0.5)" />
+            <node at="6" p="(-0.5,-0.5)" />
+          </network>
+        </coordinates>
+      </diagram>
+    </prefigure>
+  </image>
+
   <exercise>
     <statement>
       <p>
-        
+        What is the vertex set <m>V</m>?
       </p>
     </statement>
   </exercise>
@@ -22,9 +42,144 @@
   <exercise>
     <statement>
       <p>
-        
+        What is the edge set <m>E</m>?
       </p>
     </statement>
   </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        For each vertex, give a list of vertices that share an edge with the vertex.  Does this seem like a dictionary? This is called the <em>neighborhood</em> of the given vertex.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        For each vertex, list the edges that the vertex is a part of.  These are called <em>incident</em> edges to the vertices.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        For each vertex, determine how many vertices share an edge with the vertex.  You could also think of this as the number of edges the vertex is a part of.   This is called the <em>degree</em> of the given vertex.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Can you find the following graph somewhere in the graph above?  What would the graph below look like if you included the <q>missing edges</q>?   This is called a <em>subgraph</em> of <m>G</m>.  The subgraph with the <q>missing edges</q> is called the subgraph <em>induced</em> by the vertices.
+      </p>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="terminology-6">
+          <diagram dimensions="(300,300)" margins="5">
+            <definition>undirected={1:[2],2:[3],4:[5],5:[6]}</definition>
+            <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
+            <coordinates bbox="(-1,0,1,1)">
+              <network directed="no" graph="undirected" node-fill="black" labels="no" 
+              label-dictionary="labels" scale="0.8" seed="16" node-stroke="black" node-size="5">
+                <node at="1" p="(-0.7,0.7)" />
+                <node at="2" p="(0,0.7)" />
+                <node at="3" p="(0.7,0.7)" />
+                <node at="4" p="(-0.7,0.2)" />
+                <node at="5" p="(0,0.2)" />
+                <node at="6" p="(0.7,0.2)" />
+              </network>
+            </coordinates>
+          </diagram>
+        </prefigure>
+      </image>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Start on any vertex you want and take a walk from vertex to vertex by only walking along edges.  List the vertices, in order, that you walk on, and make sure to wander a lot. This ordered list is called a <em>walk</em>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Walk from <m>e</m> to <m>a</m> very purposefully.  List the vertices on your path.  No wandering. This is called a <em>path</em>.
+      </p>
+    </statement>
+  </exercise>
+
+  <p>
+    Answers:
+    <ol>
+      <li>
+        <p>
+          <m>V=\{a,b,c,d,e,f\}</m> (vertices)
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>E=\{ab,bc,ac,cd,df,de\}</m> (edges)
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>a:[b,c]</m>, <m>b:[a,c]</m>, <m>c:[a,b,d]</m>, <m>d:[c,e,f]</m>, <m>e:[d]</m>, <m>f:[d]</m> (adjacent vertices or neighbors or neighborhood)
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>a:[ab,ac]</m>, <m>b:[ab,bc]</m>, <m>c:[ac,bc,cd]</m>, <m>d:[cd,de,df]</m>, <m>e:[de]</m>, <m>f:[df]</m> (vertices and edges that are incident)
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>a:2</m>, <m>b:2</m>, <m>c:3</m>, <m>d:3</m>, <m>e:1</m>, <m>f:1</m> (degree of a vertex)
+        </p>
+      </li>
+      <li>
+        <p>
+          First Question:  Yes.  An example would be <m>f-d-e</m>  <m>a-b-c</m> (subgraph)
+        </p>
+        <p>
+          Second Question:  This would look like
+        </p>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="terminology-answers">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected={1:[2,3],2:[3],4:[5,6]}</definition>
+              <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
+              <coordinates bbox="(-1,-1,1,1)">
+                <network directed="no" graph="undirected" node-fill="white" labels="yes" 
+                label-dictionary="labels" scale="0.8" seed="16" node-stroke="no">
+                  <node at="1" p="(-0.5,0.5)" />
+                  <node at="2" p="(0.5,0.5)" />
+                  <node at="3" p="(0,0)" />
+                  <node at="4" p="(0,-0.5)" />
+                  <node at="5" p="(0.5,-0.5)" />
+                  <node at="6" p="(-0.5,-0.5)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+      </li>
+      <li>
+        <p>
+          An example would be <m>bcdedfdca</m> (walk)
+        </p>
+      </li>
+      <li>
+        <p>
+          You could have <m>edca</m> or <m>edcba</m> (path or shortest path)
+        </p>
+      </li>
+    </ol>
+  </p>
 
 </worksheet>
