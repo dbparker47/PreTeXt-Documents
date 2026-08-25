@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="isomorphism-4-figure" width="310" height="310" viewBox="0 0 310 310">
+  <defs>
+    <clipPath id="isomorphism-4-clipPath-0">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="isomorphism-4-clipPath-1">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+  </defs>
+  <g id="isomorphism-4-group-0">
+    <g id="isomorphism-4-group-1">
+      <path id="isomorphism-4-edge-1-2" d="M 65.0 65.0 Q 110.0 65.0 155.0 65.0 Q 200.0 65.0 245.0 65.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#isomorphism-4-clipPath-1)"/>
+      <path id="isomorphism-4-edge-1-3" d="M 65.0 65.0 Q 65.0 110.0 65.0 155.0 Q 65.0 200.0 65.0 245.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#isomorphism-4-clipPath-1)"/>
+      <path id="isomorphism-4-edge-1-4" d="M 65.0 65.0 Q 110.0 110.0 155.0 155.0 Q 200.0 200.0 245.0 245.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#isomorphism-4-clipPath-1)"/>
+      <path id="isomorphism-4-edge-2-4" d="M 245.0 65.0 Q 245.0 110.0 245.0 155.0 Q 245.0 200.0 245.0 245.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#isomorphism-4-clipPath-1)"/>
+    </g>
+    <g id="isomorphism-4-group-2">
+      <circle id="isomorphism-4-node-1" cx="65.0" cy="65.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="isomorphism-4-node-2" cx="245.0" cy="65.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="isomorphism-4-node-3" cx="65.0" cy="245.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="isomorphism-4-node-4" cx="245.0" cy="245.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+    </g>
+  </g>
+</svg>

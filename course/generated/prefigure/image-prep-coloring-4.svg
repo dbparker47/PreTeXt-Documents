@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="image-prep-coloring-4-figure" width="310" height="310" viewBox="0 0 310 310">
+  <defs>
+    <clipPath id="image-prep-coloring-4-clipPath-0">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="image-prep-coloring-4-clipPath-1">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+  </defs>
+  <g id="image-prep-coloring-4-group-0">
+    <g id="image-prep-coloring-4-group-1">
+      <path id="image-prep-coloring-4-edge-1-2" d="M 155.0 7.9 Q 118.2 44.7 81.5 81.5 Q 44.7 118.2 7.9 155.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-prep-coloring-4-clipPath-1)"/>
+      <path id="image-prep-coloring-4-edge-1-3" d="M 155.0 7.9 Q 155.0 81.5 155.0 155.0 Q 155.0 228.5 155.0 302.1" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-prep-coloring-4-clipPath-1)"/>
+      <path id="image-prep-coloring-4-edge-1-4" d="M 155.0 7.9 Q 191.8 44.7 228.5 81.5 Q 265.3 118.2 302.1 155.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-prep-coloring-4-clipPath-1)"/>
+      <path id="image-prep-coloring-4-edge-2-3" d="M 7.9 155.0 Q 44.7 191.8 81.5 228.5 Q 118.2 265.3 155.0 302.1" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-prep-coloring-4-clipPath-1)"/>
+      <path id="image-prep-coloring-4-edge-3-4" d="M 155.0 302.1 Q 191.8 265.3 228.5 228.5 Q 265.3 191.8 302.1 155.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-prep-coloring-4-clipPath-1)"/>
+    </g>
+    <g id="image-prep-coloring-4-group-2">
+      <circle id="image-prep-coloring-4-node-1" cx="155.0" cy="7.9" r="7" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-prep-coloring-4-node-2" cx="7.9" cy="155.0" r="7" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-prep-coloring-4-node-3" cx="155.0" cy="302.1" r="7" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-prep-coloring-4-node-4" cx="302.1" cy="155.0" r="7" stroke="black" stroke-width="1" fill="black"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="image-prep-isomorphism-1-figure" width="310" height="310" viewBox="0 0 310 310">
+  <defs>
+    <clipPath id="image-prep-isomorphism-1-clipPath-0">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="image-prep-isomorphism-1-clipPath-1">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+  </defs>
+  <g id="image-prep-isomorphism-1-group-0">
+    <g id="image-prep-isomorphism-1-group-1">
+      <path id="image-prep-isomorphism-1-edge-1-2" d="M 65.0 155.0 Q 87.5 155.0 110.0 155.0 Q 132.5 155.0 155.0 155.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-prep-isomorphism-1-clipPath-1)"/>
+      <path id="image-prep-isomorphism-1-edge-1-4" d="M 65.0 155.0 Q 110.0 177.5 155.0 200.0 Q 200.0 222.5 245.0 245.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-prep-isomorphism-1-clipPath-1)"/>
+      <path id="image-prep-isomorphism-1-edge-2-3" d="M 155.0 155.0 Q 177.5 132.5 200.0 110.0 Q 222.5 87.5 245.0 65.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-prep-isomorphism-1-clipPath-1)"/>
+      <path id="image-prep-isomorphism-1-edge-2-4" d="M 155.0 155.0 Q 177.5 177.5 200.0 200.0 Q 222.5 222.5 245.0 245.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-prep-isomorphism-1-clipPath-1)"/>
+    </g>
+    <g id="image-prep-isomorphism-1-group-2">
+      <circle id="image-prep-isomorphism-1-node-1" cx="65.0" cy="155.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-prep-isomorphism-1-node-2" cx="155.0" cy="155.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-prep-isomorphism-1-node-3" cx="245.0" cy="65.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-prep-isomorphism-1-node-4" cx="245.0" cy="245.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+    </g>
+  </g>
+</svg>

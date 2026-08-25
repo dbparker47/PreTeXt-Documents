@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="image-act-terminology-6-figure" width="310" height="310" viewBox="0 0 310 310">
+  <defs>
+    <clipPath id="image-act-terminology-6-clipPath-0">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="image-act-terminology-6-clipPath-1">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+  </defs>
+  <g id="image-act-terminology-6-group-0">
+    <g id="image-act-terminology-6-group-1">
+      <path id="image-act-terminology-6-edge-1-2" d="M 50.0 95.0 Q 76.2 95.0 102.5 95.0 Q 128.8 95.0 155.0 95.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-terminology-6-clipPath-1)"/>
+      <path id="image-act-terminology-6-edge-2-3" d="M 155.0 95.0 Q 181.2 95.0 207.5 95.0 Q 233.8 95.0 260.0 95.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-terminology-6-clipPath-1)"/>
+      <path id="image-act-terminology-6-edge-4-5" d="M 50.0 245.0 Q 76.2 245.0 102.5 245.0 Q 128.8 245.0 155.0 245.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-terminology-6-clipPath-1)"/>
+      <path id="image-act-terminology-6-edge-5-6" d="M 155.0 245.0 Q 181.2 245.0 207.5 245.0 Q 233.8 245.0 260.0 245.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-terminology-6-clipPath-1)"/>
+    </g>
+    <g id="image-act-terminology-6-group-2">
+      <circle id="image-act-terminology-6-node-1" cx="50.0" cy="95.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-act-terminology-6-node-2" cx="155.0" cy="95.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-act-terminology-6-node-3" cx="260.0" cy="95.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-act-terminology-6-node-4" cx="50.0" cy="245.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-act-terminology-6-node-5" cx="155.0" cy="245.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-act-terminology-6-node-6" cx="260.0" cy="245.0" r="5" stroke="black" stroke-width="1" fill="black"/>
+    </g>
+  </g>
+</svg>

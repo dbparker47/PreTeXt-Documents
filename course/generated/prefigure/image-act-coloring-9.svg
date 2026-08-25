@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="image-act-coloring-9-figure" width="310" height="310" viewBox="0 0 310 310">
+  <defs>
+    <clipPath id="image-act-coloring-9-clipPath-0">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="image-act-coloring-9-clipPath-1">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+  </defs>
+  <g id="image-act-coloring-9-group-0">
+    <g id="image-act-coloring-9-group-1">
+      <path id="image-act-coloring-9-edge-1-2" d="M 20.0 95.0 Q 42.5 95.0 65.0 95.0 Q 87.5 95.0 110.0 95.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-coloring-9-clipPath-1)"/>
+      <path id="image-act-coloring-9-edge-1-5" d="M 20.0 95.0 Q 31.2 125.0 42.5 155.0 Q 53.8 185.0 65.0 215.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-coloring-9-clipPath-1)"/>
+      <path id="image-act-coloring-9-edge-2-3" d="M 110.0 95.0 Q 132.5 95.0 155.0 95.0 Q 177.5 95.0 200.0 95.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-coloring-9-clipPath-1)"/>
+      <path id="image-act-coloring-9-edge-2-5" d="M 110.0 95.0 Q 98.8 125.0 87.5 155.0 Q 76.2 185.0 65.0 215.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-coloring-9-clipPath-1)"/>
+      <path id="image-act-coloring-9-edge-2-6" d="M 110.0 95.0 Q 121.2 125.0 132.5 155.0 Q 143.8 185.0 155.0 215.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-coloring-9-clipPath-1)"/>
+      <path id="image-act-coloring-9-edge-2-7" d="M 110.0 95.0 Q 143.8 125.0 177.5 155.0 Q 211.2 185.0 245.0 215.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-coloring-9-clipPath-1)"/>
+      <path id="image-act-coloring-9-edge-3-4" d="M 200.0 95.0 Q 222.5 95.0 245.0 95.0 Q 267.5 95.0 290.0 95.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-coloring-9-clipPath-1)"/>
+      <path id="image-act-coloring-9-edge-3-5" d="M 200.0 95.0 Q 166.2 125.0 132.5 155.0 Q 98.8 185.0 65.0 215.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-coloring-9-clipPath-1)"/>
+      <path id="image-act-coloring-9-edge-3-6" d="M 200.0 95.0 Q 188.8 125.0 177.5 155.0 Q 166.2 185.0 155.0 215.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-coloring-9-clipPath-1)"/>
+      <path id="image-act-coloring-9-edge-3-7" d="M 200.0 95.0 Q 211.2 125.0 222.5 155.0 Q 233.8 185.0 245.0 215.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-coloring-9-clipPath-1)"/>
+      <path id="image-act-coloring-9-edge-4-7" d="M 290.0 95.0 Q 278.8 125.0 267.5 155.0 Q 256.2 185.0 245.0 215.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-coloring-9-clipPath-1)"/>
+      <path id="image-act-coloring-9-edge-5-6" d="M 65.0 215.0 Q 87.5 215.0 110.0 215.0 Q 132.5 215.0 155.0 215.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-coloring-9-clipPath-1)"/>
+      <path id="image-act-coloring-9-edge-6-7" d="M 155.0 215.0 Q 177.5 215.0 200.0 215.0 Q 222.5 215.0 245.0 215.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#image-act-coloring-9-clipPath-1)"/>
+    </g>
+    <g id="image-act-coloring-9-group-2">
+      <circle id="image-act-coloring-9-node-1" cx="20.0" cy="95.0" r="7" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-act-coloring-9-node-2" cx="110.0" cy="95.0" r="7" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-act-coloring-9-node-3" cx="200.0" cy="95.0" r="7" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-act-coloring-9-node-4" cx="290.0" cy="95.0" r="7" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-act-coloring-9-node-5" cx="65.0" cy="215.0" r="7" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-act-coloring-9-node-6" cx="155.0" cy="215.0" r="7" stroke="black" stroke-width="1" fill="black"/>
+      <circle id="image-act-coloring-9-node-7" cx="245.0" cy="215.0" r="7" stroke="black" stroke-width="1" fill="black"/>
+    </g>
+  </g>
+</svg>
