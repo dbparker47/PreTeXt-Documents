@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-2-10">
+  <title>Resources for 2/10</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Explain the definition of an <em>anti-symmetric relation</em>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain the definition of a <em>partial order</em> on a set.
+        </p>
+      </li>
+      <li>
+        <p>
+          Describe examples of partial orders (e.g. the set of real numbers, the power set of a set).
+        </p>
+      </li>
+      <li>
+        <p>
+          Given a set with a relation, determine whether or not the relation is a partial order, and prove your result.
+        </p>
+      </li>
+      <li>
+        <p>
+          Given two elements in a <em>partially ordered set (i.e. poset)</em>, determine whether or not they are <em>comparable</em>.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-partial-order">
+    <title>Video &amp; Activities for Partial Orders</title>
+    <p>
+      Below is are two YouTube videos on <em>partial orders</em>. One is an introduction to partial orders, and the other is about an important concept in partial orders called <em>comparability</em>. They are followed by links to sets of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <sidebyside widths="45% 45%">
+      <video youtube="IZzOgiYB4o4" />
+      <video youtube="IZzOgiYB4o4" />
+    </sidebyside>
+
+    <problem>
+      <title>Partial Orders - Directed Graph Model</title>
+      <p>
+      Solve the following partial order problems.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Let <m>A = \mathbb{R} \times \mathbb{R}</m> (i.e. the set of points on the Cartesian plane).  We define the relation <m>R</m> on <m>A</m> by <m>(a,b) R (c,d)</m> when <m>a \le c</m> and <m>b \le d</m>.
+              <ol>
+                <li>
+                  <p>
+                    Prove that <m>R</m> is a partial order.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Prove that <m>R</m> is <em>not</em> a total order (i.e. it is not connex).
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              Define a relation <m>R</m> on the set of vertices of the figure below by <m>xRy</m> precisely when <m>x \rightarrow y</m>.
+            </p>
+            <image width="60%">
+              <prefigure xmlns="https://prefigure.org" label="image-prep-partial-order-2">
+                <diagram dimensions="(300,300)" margins="5">
+                  <definition>relation={1:[2],2:[4],3:[2]}</definition>
+                  <definition>labels={1:'a',2:'b',3:'c',4:'d'}</definition>
+                  <coordinates bbox="(0,0,1.04,1)">
+                    <network directed="yes" graph="relation" labels="yes" label-dictionary="labels"
+                    scale="0.8" node-stroke="black" node-fill="white" >
+                      <node at="1" p="(0.2,0.8)" />
+                      <node at="2" p="(0.8,0.8)" />
+                      <node at="3" p="(0.2,0.2)" />
+                      <node at="4" p="(0.8,0.2)" />
+                    </network>
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Is this a partial order?  Why or why not?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    What arrows would have to be added to make this a partial order?  Go ahead and add them.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    What pairs of elements are comparable in the relation you created in (b)?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Identify all maximum, minimum, maximal, and minimal elements of the partial order you created in (b).
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              Do the same as #2 with the following figure.
+            </p>
+            <image width="60%">
+              <prefigure xmlns="https://prefigure.org" label="image-prep-partial-order-3">
+                <diagram dimensions="(300,300)" margins="5">
+                  <definition>relation={1:[2],3:[4,5,6],4:[1,2],5:[2],6:[1,5]}</definition>
+                  <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
+                  <coordinates bbox="(-1,-1,1,1)">
+                    <network directed="yes" graph="relation" node-fill="white" labels="yes" 
+                    label-dictionary="labels" scale="0.8" seed="1" />
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+          </li>
+          <li>
+            <p>
+              Can the following figure have arrows added to make it a partial order?  Why or why not?
+            </p>
+            <image width="60%">
+              <prefigure xmlns="https://prefigure.org" label="image-prep-partial-order-4">
+                <diagram dimensions="(300,300)" margins="5">
+                  <definition>relation={1:[2,3,5],2:[5],3:[4],4:[1,2,5]}</definition>
+                  <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
+                  <coordinates bbox="(-1,-1,1,1)">
+                    <network directed="yes" graph="relation" node-fill="white" labels="yes" 
+                    label-dictionary="labels" scale="0.8" seed="9" />
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+          </li>
+        </ol>
+      </p>
+    </problem>
+    <problem>
+      <title>Partial Orders - Divisibility Relation</title>
+      <p>
+      Define the relation <m>R</m> on <m>{\mathbb N}</m> (where <m>\mathbb{N}</m> includes 0) by <m>a R b</m> precisely when <m>a</m> divides evenly into <m>b</m>.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Prove that this is a partial order.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find two elements of <m>\mathbb{N}</m> that are comparable, and find two elements that are not comparable.
+            </p>
+          </li>
+          <li>
+            <p>
+              Identify all maximum, minimum, maximal, and minimal elements.
+            </p>
+          </li>
+          <li>
+            <p>
+              (Not on quiz) Do #3 when the set is <m>P=\{ a \in \mathbb{N} : a \ge 2\}</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      <url href="">Partial Orders and Partially Ordered Sets</url> 
+    </p>
+  </subsection>
+</section>

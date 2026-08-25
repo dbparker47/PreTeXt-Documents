@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-3-3">
+  <title>Resources for 3/3</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Explain the definition of an \emph{Eulerian trail or circuit}.
+        </p>
+      </li>
+      <li>
+        <p>
+          Determine whether or not a given graph has an Eulerian trail or Eulerian circuit based on the degrees of the vertices.
+        </p>
+      </li>
+      <li>
+        <p>
+          Construct an Eulerian trail or circuit on a graph, if it is possible.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-special-walks">
+    <title>Video &amp; Activities for Special Walks in a Graph</title>
+    <p>
+      Below is a YouTube video on various types of walks in a graph. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Introduction to Eulerian Circuits and Trails</title>
+      <p>
+        For each of the following graphs, do the following.
+        <ol>
+          <li>
+            <p>
+              If possible, make a circuit that uses all of the edges.  If it's impossible, prove it.
+            </p>
+          </li>
+          <li>
+            <p>
+              If possible, make a trail that uses all of the edges and that starts and ends at different vertices.  If it's impossible, prove it.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <sidebyside widths="22% 22% 22% 22%">
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="image-prep-eulerian-1">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected1={1:[2,9],2:[3,8,9],3:[4,8,9],4:[5,6,7],5:[6,7],6:[7],7:[8],8:[9]}</definition>
+              <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i'}</definition>
+              <coordinates bbox="(0,-1,1,1.05)">
+                <network directed="no" graph="undirected1" node-fill="white" labels="yes" 
+                label-dictionary="labels" scale="0.8" seed="16" node-stroke="black" >
+                  <node at="1" p="(0.5,0.8)" />
+                  <node at="2" p="(0.7,0.4)" />
+                  <node at="3" p="(0.7,0)" />
+                  <node at="4" p="(0.7,-0.4)" />
+                  <node at="5" p="(0.7,-0.8)" />
+                  <node at="6" p="(0.3,-0.8)" />
+                  <node at="7" p="(0.3,-0.4)" />
+                  <node at="8" p="(0.3,0)" />
+                  <node at="9" p="(0.3,0.4)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="image-prep-eulerian-2">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected1={1:[2,6],2:[3,5,6],3:[4,6],4:[5],5:[6]}</definition>
+              <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j'}</definition>
+              <coordinates bbox="(0,0,1,1)">
+                <network directed="no" graph="undirected1" node-fill="white" labels="yes" 
+                label-dictionary="labels" scale="0.8" node-stroke="black" >
+                  <node at="1" p="(0.5,0.95)" />
+                  <node at="2" p="(0.9,0.65)" />
+                  <node at="3" p="(0.9,0.35)" />
+                  <node at="4" p="(0.5,0.05)" />
+                  <node at="5" p="(0.1,0.35)" />
+                  <node at="6" p="(0.1,0.65)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="image-prep-eulerian-3">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected1={1:[2,10],2:[3,9,10],3:[4,9,10],4:[5,7,8],5:[6,7,8],6:[7],7:[8],8:[9],9:[10]}</definition>
+              <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j'}</definition>
+              <coordinates bbox="(0,-1,1,1.03)">
+                <network directed="no" graph="undirected1" node-fill="white" labels="yes" 
+                label-dictionary="labels" scale="0.8" seed="16" node-stroke="black" >
+                  <node at="1" p="(0.5,0.95)" />
+                  <node at="2" p="(0.7,0.57)" />
+                  <node at="3" p="(0.7,0.19)" />
+                  <node at="4" p="(0.7,-0.19)" />
+                  <node at="5" p="(0.7,-0.57)" />
+                  <node at="6" p="(0.5,-0.95)" />
+                  <node at="7" p="(0.3,-0.57)" />
+                  <node at="8" p="(0.3,-0.19)" />
+                  <node at="9" p="(0.3,0.19)" />
+                  <node at="10" p="(0.3,0.57)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="image-prep-eulerian-4">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>undirected1={1:[2,4,6],2:[3,5,6],3:[4,6],4:[5],5:[6]}</definition>
+              <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j'}</definition>
+              <coordinates bbox="(0,0,1,1)">
+                <network directed="no" graph="undirected1" node-fill="white" labels="yes" 
+                label-dictionary="labels" scale="0.8" node-stroke="black" >
+                  <node at="1" p="(0.5,0.95)" />
+                  <node at="2" p="(0.9,0.65)" />
+                  <node at="3" p="(0.9,0.35)" />
+                  <node at="4" p="(0.5,0.05)" />
+                  <node at="5" p="(0.1,0.35)" />
+                  <node at="6" p="(0.1,0.65)" />
+                </network>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+      </sidebyside>
+    </problem>
+  </subsection>
+
+  <subsection xml:id="video-activity-eulerian-circuit">
+    <title>Video &amp; Activities for Eulerian Circuits</title>
+    <p>
+      Below are two YouTube videos on <em>Eulerian circuits</em> of a graph. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Eulerian Circuit Algorithm</title>
+      <p>
+      Suppose we have a connected graph such that every vertex has even degree.  We will create an algorithm to construct an Eulerian circuit.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Choose an arbitrary vertex <m>v_0</m>.  What if no edges are incident to <m>v_0</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              If we are not finished, choose any edge incident to <m>v_0</m> that we have not yet traveled on and travel along it to another vertex <m>v_1</m> along this edge.  Why can we do this?
+            </p>
+          </li>
+          <li>
+            <p>
+              Keep repeating step 2 until we cannot do it anymore.
+              <ol>
+                <li>
+                  <p>
+                    Why will we eventually have to stop?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Prove that when we stop, we are on the vertex <m>v_0</m>.  Hint:  Assume we are on any other vertex and find a contradiction.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              So we have the circuit <m>v_0v_1 \cdots v_nv_0</m>. What do we do if we have traveled along each edge in the graph?
+            </p>
+          </li>
+          <li>
+            <p>
+              What if we have some edges not yet traveled along, but none of them are incident to any of <m>v_0</m>, <m>v_1, \ldots , v_n</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose one of the vertices on our circuit is incident to an unused edge.  Relabel our vertices so that this one is <m>v_0</m> and our circuit is <m>v_0v_1 \cdots v_nv_0</m>.  Why is it safe to assume that <m>v_0</m> is the first vertex in the circuit?
+            </p>
+          </li>
+          <li>
+            <p>
+              Repeat steps 2-4 to create a new circuit <m>v_0w_1w_2 \cdots w_mv_0</m>.  Again, think about why we can do this.
+            </p>
+          </li>
+          <li>
+            <p>
+              Take the circuits we created in step 3 and step 7 and turn them into a single circuit.
+            </p>
+          </li>
+          <li>
+            <p>
+              Repeat steps 4-8 until we are forced to stop.
+            </p>
+          </li>
+          <li>
+            <p>
+              Can this process go on forever?  If not, what happens when the process stops?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      Section 5.3 (Keller &amp; Trotter): pp. 75-80
+    </p>
+  </subsection>
+</section>

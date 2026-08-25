@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-2-19">
+  <title>Resources for 2/19</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Explain the definition of the \emph{composition} of two relations.
+        </p>
+      </li>
+      <li>
+        <p>
+          Relate composition of relations to composition of functions.
+        </p>
+      </li>
+      <li>
+        <p>
+          Given two appropriate relations, determine elements related under the composition of relations.
+        </p>
+      </li>
+      <li>
+        <p>
+          Prove theorems about composition of relations.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-composition">
+    <title>Video &amp; Activities for Composition of Relations</title>
+    <p>
+      Below is a YouTube video on <em>composition of relations</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Composition of Relations</title>
+      <p>
+      For the following, let <m>E_n</m> be the relation on <m>\mathbb{Z}</m> given by <m>aE_nb</m> precisely when  <m>a \equiv b</m> (mod <m>n</m>), let <m>\mid</m> be the divisibility relation on <m>\mathbb{Z}</m>, and let <m>\le</m> be the ordinary <q>less than or equal</q> relation on any set of real numbers.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Consider the relation <m>R=E_4 \circ E_6</m>.
+              <ol>
+                <li>
+                  <p>
+                    Find some ordered pairs in this relation.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Find all the integers <m>x</m> such that <m>3Rx</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Find all the integers <m>y</m>$ such that <m>8Ry</m>.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              Do the same as in #1 for <m>R=E_5 \circ E_4</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Do the same as in #1 for <m>R=\le \circ \mid</m>.  Also, determine all <m>z</m> such that <m>0Rz</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      <url href="">Composition of Relations</url>
+    </p>
+  </subsection>
+</section>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-4-12">
+  <title>Resources for 4/12</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          State and apply the definition of a <em>digraph</em>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Describe basic terminology related to digraphs, including <em>vertex, arc, walk, path, cycle, trail</em>, and <em>circuit</em>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use Dijkstra's Algorithm or the Improved Dijkstra's Algorithm to find shortest paths between vertices in digraphs.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-digraphs">
+    <title>Video &amp; Activities for Directed Graphs</title>
+    <p>
+      Below is a YouTube video on <em>directed graphs</em>, also known as <em>digraphs</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Digraphs &amp; Shortest Path Algorithms (No Quiz)</title>
+
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="image-prep-short-path-digraph">
+          <diagram dimensions="(300,300)" margins="5">
+            <definition>graph={1:[2,5],2:[3],3:[4],4:[5]}</definition>
+            <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g'}</definition>
+            <coordinates bbox="(0,0,1,1)">
+              <network directed="yes" labels="yes" label-dictionary="labels"
+              scale="0.8" node-stroke="black" node-fill="white" >
+                <node at="1" p="(0.1,0.5)" />
+                <node at="2" p="(0.3,0.8)" />
+                <node at="3" p="(0.7,0.8)" />
+                <node at="4" p="(0.9,0.5)" />
+                <node at="5" p="(0.7,0.2)" />
+                <node at="6" p="(0.3,0.2)" />
+                <node at="7" p="(0.5,0.5)" />
+                <edge vertices="(1,2)"><m>4</m></edge>
+                <edge vertices="(1,6)"><m>5</m></edge>
+                <edge vertices="(2,3)"><m>2</m></edge>
+                <edge vertices="(2,7)"><m>1</m></edge>
+                <edge vertices="(3,4)"><m>10</m></edge>
+                <edge vertices="(3,7)"><m>3</m></edge>
+                <edge vertices="(4,5)"><m>6</m></edge>
+                <edge vertices="(5,6)"><m>4</m></edge>
+                <edge vertices="(7,1)"><m>2</m></edge>
+                <edge vertices="(7,4)"><m>2</m></edge>
+                <edge vertices="(7,5)"><m>4</m></edge>
+                <edge vertices="(7,6)"><m>8</m></edge>
+              </network>
+            </coordinates>
+          </diagram>
+        </prefigure>
+      </image>
+
+      <p>
+        Use either Dijkstra's or Improved Dijkstra's Algorithm on the weighted digraph above to determine the distance between <m>a</m> and the other vertices.
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      <url href="">Digraphs and Shortest Paths</url>
+    </p>
+  </subsection>
+</section>

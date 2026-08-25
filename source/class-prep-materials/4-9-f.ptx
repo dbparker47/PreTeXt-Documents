@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-4-9">
+  <title>Resources for 4/9</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Explain our algorithm for solving the Route Inspection problem.
+        </p>
+      </li>
+      <li>
+        <p>
+          Given a weighted graph, use the algorithm to solve the Route Inspection problem.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-route-inspection">
+    <title>Video &amp; Activities for Route Inspection Problem</title>
+    <p>
+      Below is a YouTube video on an algorithm for the <em>Route Inspection Problem</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>More Route Inspection</title>
+      <p>
+        Work the following route inspection problems.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Solve the Route Inspection Problem for the weighted graphs below.
+            </p>
+	          <sidebyside widths="45% 45%">
+          		<image>
+    		        <prefigure xmlns="https://prefigure.org" label="image-prep-route-inspection-graph-1">
+          				<diagram dimensions="(300,300)" margins="5">
+                		<definition>graph={1:[2,5],2:[3],3:[4],4:[5]}</definition>
+            	    	<definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'v_6'}</definition>
+            		    <coordinates bbox="(0,0,1,1)">
+                		  <network directed="no" labels="yes" label-dictionary="labels"
+                		  scale="0.8" node-stroke="black" node-fill="white" >
+                  			<node at="1" p="(0.1,0.5)" />
+                  			<node at="2" p="(0.3,0.2)" />
+                  			<node at="3" p="(0.3,0.8)" />
+                  			<node at="4" p="(0.7,0.2)" />
+                  			<node at="5" p="(0.5,0.5)" />
+                  			<node at="6" p="(0.9,0.5)" />
+                  			<edge vertices="(1,2)"><m>10</m></edge>
+                  			<edge vertices="(1,3)"><m>20</m></edge>
+                  			<edge vertices="(1,5)"><m>12</m></edge>
+                  			<edge vertices="(2,4)"><m>50</m></edge>
+                  			<edge vertices="(3,5)"><m>33</m></edge>
+                  			<edge vertices="(3,6)"><m>22</m></edge>
+                  			<edge vertices="(4,5)"><m>5</m></edge>
+                  			<edge vertices="(4,6)"><m>12</m></edge>
+                  			<edge vertices="(5,6)"><m>1</m></edge>
+                  		</network>
+                		</coordinates>
+              		</diagram>
+          			</prefigure>
+          		</image>
+          		<image>
+            		<prefigure xmlns="https://prefigure.org" label="image-prep-route-inspection-graph-2">
+          				<diagram dimensions="(300,300)" margins="5">
+                		<definition>graph={1:[2,5],2:[3],3:[4],4:[5]}</definition>
+                		<definition>labels={1:'A',2:'B',3:'C',4:'D',5:'E',6:'F',7:'G'}</definition>
+                		<coordinates bbox="(0,0,1,1)">
+                  		<network directed="no" labels="yes" label-dictionary="labels"
+                  		scale="0.8" node-stroke="black" node-fill="white" >
+                  			<node at="1" p="(0.1,0.5)" />
+                  			<node at="2" p="(0.3,0.8)" />
+                  			<node at="3" p="(0.7,0.8)" />
+                  			<node at="4" p="(0.9,0.5)" />
+                  			<node at="5" p="(0.5,0.2)" />
+                  			<node at="6" p="(0.3,0.5)" />
+                  			<node at="7" p="(0.7,0.5)" />
+                  			<edge vertices="(1,2)"><m>5</m></edge>
+                  			<edge vertices="(1,5)"><m>4</m></edge>
+                  			<edge vertices="(1,6)"><m>2</m></edge>
+                  			<edge vertices="(2,3)"><m>2</m></edge>
+                  			<edge vertices="(3,4)"><m>1</m></edge>
+                  			<edge vertices="(3,6)"><m>1</m></edge>
+                  			<edge vertices="(3,7)"><m>2</m></edge>
+                  			<edge vertices="(4,5)"><m>5</m></edge>
+                  			<edge vertices="(4,7)"><m>2</m></edge>
+                  		</network>
+                		</coordinates>
+              		</diagram>
+          			</prefigure>
+          		</image>
+        	  </sidebyside>
+          </li>
+          <li>
+            <p>
+              Prove that the Route Inspection algorithm cannot give us two pairs of odd vertices <m>\{ v_1,w_1 \}</m> and <m>\{ v_2,w_2 \}</m> such that the shortest paths between <m>v_1</m> &amp; <m>w_1</m> and between <m>v_2</m> &amp; <m>w_2</m> go through the same edge <m>uv</m>.  Hint: Prove by contradiction, and let <m>d_1</m> be the distance from <m>v_1</m> to <m>uv</m>, <m>d_2</m> be the distance from <m>v_2</m> to <m>uv</m>, <m>d_3</m> be the distance from <m>w_1</m> to <m>uv</m> and <m>d_4</m> be the distance from <m>w_2</m> to <m>uv</m>.  Consider the following questions.
+          		<ul>
+          			<li>
+          				<p>
+					          What is the total distance covered by the shortest paths between these two pairs?
+          				</p>
+          			</li>
+          			<li>
+          				<p>
+          					Can you find a pairing of the vertices that gives a shorter distance?
+          				</p>
+          			</li>
+          		</ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Let <m>G</m> be a connected weighted graph with precisely four odd vertices (say <m>u</m>, <m>v</m>, <m>w</m>, and <m>x</m>).  Let <m>P_1</m> be a path between <m>u</m> and <m>v</m>, and let <m>P_2</m> be a path between <m>w</m> and <m>x</m>.  Suppose also that <m>P_1</m> and <m>P_2</m> share no edges.  Prove that duplicating the edges of <m>P_1</m> and <m>P_2</m> transforms <m>G</m> into an Eulerian multigraph.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      <url href="">Route Inspection Algorithm for Weighted Graphs</url>
+    </p>
+  </subsection>
+</section>

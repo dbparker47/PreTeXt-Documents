@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-2-3">
+  <title>Resources for 2/3</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Explain the definitions of <em>reflexive</em>, <em>symmetric</em>, and <em>transitive</em> relations.
+        </p>
+      </li>
+      <li>
+        <p>
+          Given a relation, determine and prove whether or not it is reflexive, symmetric, or transitive.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain the definition of an <em>equivalence relation</em>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Given a relation, determine and prove whether or not it is an equivalence relation.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-relation-models-2">
+    <title>Video &amp; Activities for Models of Relations (Continued from Last Class)</title>
+    <p>
+      Below is a YouTube video on <em>models we use to understand relations</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>More Relations</title>
+      <p>
+        Work the following relation problems.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              For a relation <m>R \subseteq A \times B</m> and for <m>b \in B</m>, let <m>R[b]</m> be the set of elements of <m>A</m> that are related to <m>b</m>.  Write <m>R[b]</m> formally as a set in set builder notation.
+            </p>
+          </li>
+          <li>
+            <p>
+              We define a relation <m>E</m> on <m>\mathbb Z</m>, where <m>aEb</m> means <m>a \equiv b</m> (mod 3).
+              <ol>
+                <li>
+                  <p>
+                    Define <m>E</m> as a subset of <m>{\mathbb Z} \times {\mathbb Z}</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    What numbers are in <m>E[1]</m>?  In <m>E[5]</m>?
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              Let <m>n \in {\mathbb Z}</m>, and define <m>E</m> on <m>\mathbb Z</m>, where <m>aEb</m> means <m>a \equiv b</m> (mod <m>n</m>).
+              <ol>
+                <li>
+                  <p>
+                    Define <m>E</m> as a subset of <m>{\mathbb Z} \times {\mathbb Z}</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Let <m>b \in {\mathbb Z}</m>.  What are the elements in <m>E[b]</m>?
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove the relations in #2 and #3 are reflexive, symmetric, and transitive.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection xml:id="video-activity-equivalence-relation">
+    <title>Video &amp; Activities for Equivalence Relations</title>
+    <p>
+      Below is a YouTube video on <em>equivalence relations</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Equivalence Relations</title>
+      <p>
+        Work the following problems related to equivalence relations.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              We define <m>R</m> on <m>\mathbb R</m> by <m>aRb</m> precisely when <m>a \leq b</m>.  Determine whether or not <m>R</m> is reflexive, symmetric, or transitive.  Is <m>R</m> an equivalence relation?
+            </p>
+          </li>
+          <li>
+            <p>
+              We define <m>R</m> on <m>\mathbb R</m> by  <m>aRb</m> precisely when <m>a - b \in {\mathbb Z}</m>.
+              <ol>
+                <li>
+                  <p>
+                    List 6 elements of <m>R</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Prove that <m>R</m> is an equivalence relation.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Let <m>R[b] = \{ a \in {\mathbb R} : aRb \}</m>.  What are the elements in <m>R \left[ \frac{2}{3} \right]</m>?  In <m>R[5]</m>?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    If <m>R[a] \neq R[b]</m>, find <m>R[a] \cap R[b]</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    (Not on quiz) Look at the different <m>R[a]</m>'s, starting with <m>R[0]</m>.  When do the <m>R[a]</m>'s start repeating themselves?  Use this to describe a set of distinct <m>R[a]</m>'s that form a complete list.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              Here is how we mathematically define rational numbers. Let <m>A = \{ (a,b) \in \mathbb{Z} \times \mathbb{Z} : b \ne 0 \}</m>, and define <m>R</m> on <m>A</m> by <m>(a,b)R(c,d)</m> precisely when <m>ad = bc</m>.
+              <ol>
+                <li>
+                  <p>
+                    List 4 elements of <m>R</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Prove that <m>R</m> is an equivalence relation.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      Section 7.1 (Sundstrom): pp. 367-370
+    </p>
+    <p>
+      Section 7.2 (Sundstrom): pp. 375-382
+    </p>
+  </subsection>
+</section>

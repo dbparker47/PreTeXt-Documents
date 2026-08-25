@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-3-5">
+  <title>Resources for 3/5</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Explain the definition of a <em>Hamiltonian cycle</em>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Determine whether or not a given graph has an Eulerian trail or Eulerian circuit based on the degrees of the vertices.
+        </p>
+      </li>
+      <li>
+        <p>
+          Construct a Hamiltonian cycle on a given graph, if it is possible.
+        </p>
+      </li>
+      <li>
+        <p>
+          Prove theorems about Eulerian trails &amp; circuits, and about Hamiltonian paths &amp; cycles.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-eulerian-circuit-2">
+    <title>Video &amp; Activities for Eulerian Circuits (Continued from Last Class)</title>
+    <p>
+      Below are two YouTube videos on <em>Eulerian circuits</em> of a graph. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Eulerian Circuit Algorithm</title>
+      <p>
+      Suppose we have a connected graph such that every vertex has even degree.  We will create an algorithm to construct an Eulerian circuit.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Choose an arbitrary vertex <m>v_0</m>.  What if no edges are incident to <m>v_0</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              If we are not finished, choose any edge incident to <m>v_0</m> that we have not yet traveled on and travel along it to another vertex <m>v_1</m> along this edge.  Why can we do this?
+            </p>
+          </li>
+          <li>
+            <p>
+              Keep repeating step 2 until we cannot do it anymore.
+              <ol>
+                <li>
+                  <p>
+                    Why will we eventually have to stop?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Prove that when we stop, we are on the vertex <m>v_0</m>.  Hint:  Assume we are on any other vertex and find a contradiction.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              So we have the circuit <m>v_0v_1 \cdots v_nv_0</m>. What do we do if we have traveled along each edge in the graph?
+            </p>
+          </li>
+          <li>
+            <p>
+              What if we have some edges not yet traveled along, but none of them are incident to any of <m>v_0</m>, <m>v_1, \ldots , v_n</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose one of the vertices on our circuit is incident to an unused edge.  Relabel our vertices so that this one is <m>v_0</m> and our circuit is <m>v_0v_1 \cdots v_nv_0</m>.  Why is it safe to assume that <m>v_0</m> is the first vertex in the circuit?
+            </p>
+          </li>
+          <li>
+            <p>
+              Repeat steps 2-4 to create a new circuit <m>v_0w_1w_2 \cdots w_mv_0</m>.  Again, think about why we can do this.
+            </p>
+          </li>
+          <li>
+            <p>
+              Take the circuits we created in step 3 and step 7 and turn them into a single circuit.
+            </p>
+          </li>
+          <li>
+            <p>
+              Repeat steps 4-8 until we are forced to stop.
+            </p>
+          </li>
+          <li>
+            <p>
+              Can this process go on forever?  If not, what happens when the process stops?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection xml:id="video-activity-hamiltonian">
+    <title>Video &amp; Activities for Hamiltonian Cycles</title>
+    <p>
+      Below is a YouTube video on <em>Hamiltonian cycles</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Hamiltonian Cycles</title>
+      <p>
+      Work the following problems related to Hamiltonian cycles.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Determine the values of <m>m</m> and <m>n</m> for which of the following have Hamiltonian cycles.
+              <ol>
+                <li>
+                  <p>
+                    <m>K_n</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>K_{m,n}</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose that <m>G</m> has a Hamiltonian cycle.  Prove that <m>G</m> is connected.
+            </p>
+          </li>
+          <li>
+            <p>
+              Let <m>G</m> be the graph pictured below.  Prove that <m>G</m> does not have a Hamiltonian cycle. 
+            </p>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="image-prep-hamiltonian-1">
+                <diagram dimensions="(300,300)" margins="5">
+                  <definition>undirected1={1:[2,5],2:[3],3:[4,6,8],4:[5],6:[7],7:[8]}</definition>
+                  <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
+                  <coordinates bbox="(0,0,1,1)">
+                    <network directed="no" graph="undirected1" node-fill="white" labels="yes" 
+                    label-dictionary="labels" scale="0.8" node-stroke="black" >
+                      <node at="1" p="(0.1,0.7)" />
+                      <node at="2" p="(0.3,0.7)" />
+                      <node at="3" p="(0.5,0.5)" />
+                      <node at="4" p="(0.3,0.3)" />
+                      <node at="5" p="(0.1,0.3)" />
+                      <node at="6" p="(0.7,0.7)" />
+                      <node at="7" p="(0.9,0.5)" />
+                      <node at="8" p="(0.7,0.3)" />
+                    </network>
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+          </li>
+          <li>
+            <p>
+              (Not on quiz) Let <m>G_1=(V_1,E_1)</m> and <m>G_2=(V_2,E_2)</m> be graphs.  Let <m>v \in V_1</m>  and <m>w \in V_2</m>.  Define the graph <m>H</m> whose vertex set is <m>V_1 \cup V_2 \cup \{ u \}</m> and whose edge set is <m>E_1 \cup E_2 \cup \{ uv, uw \}</m>.  Prove that <m>H</m> does not have a Hamiltonian cycle.
+            </p>
+          </li>
+          <li>
+            <p>
+              (Not on quiz) Let <m>G_1=(V_1,E_1)</m> and <m>G_2=(V_2,E_2)</m> be graphs with Hamiltonian cycles.  Let <m>v_1,v_2 \in V_1</m>, and let <m>w_1,w_2 \in V_2</m> such that <m>v_1v2</m> is one of the edges of a Hamiltonian cycle for <m>G_1</m>, and <m>w_1w_2</m> is one of the edges of a Hamiltonian cycle for <m>G_2</m>.  Define the graph $H$ whose vertex set is <m>V_1 \cup V_2</m> and whose edge set is <m>E_1 \cup E_2 \cup \{ v_1w_1, v_2w_2 \}</m>.  Prove that <m>H</m> has a Hamiltonian cycle.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      Section 5.3 (Keller &amp; Trotter): pp. 75-80
+    </p>
+  </subsection>
+</section>

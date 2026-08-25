@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-2-8">
+  <title>Resources for 2/8</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Explain the definition of an <em>equivalence class</em> of a relatio
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain how only equivalence relations give rise to equivalence classes.
+        </p>
+      </li>
+      <li>
+        <p>
+          Prove theorems about equivalence relations and equivalence classes.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-equivalence-class-thm">
+    <title>Video &amp; Activities for Equivalence Classes - Theorems</title>
+    <p>
+      Below is a YouTube video on <em>equivalence classes</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Equivalence Class Theorems</title>
+      <p>
+        Let the relation <m>R</m> on <m>A</m> (i.e. from <m>A</m> to <m>A</m>) be an equivalence relation.  As before, for each <m>b \in A</m>, let <m>R[b] = \{ a \in A : aRb \}</m>.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Prove that <m>b \in R[b]</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that for all <m>x \in R[b]</m>, we have <m>xRb</m> and <m>bRx</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that for all <m>x,y \in R[b]</m>, <m>xRy</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that if <m>xRy</m> and <m>a \in R[x]</m>, then <m>a \in R[y]</m>.  Similarly, prove that if <m>a \in R[y]</m>, then <m>a \in R[x]</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use what you proved above to prove that <m>R[x] = R[y]</m> if and only if <m>xRy</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose that <m>a \in R[b] \cap R[c]</m>.  What can you say about <m>R[a]</m>, <m>R[b]</m>, and <m>R[c]</m>?  Prove it.
+            </p>
+          </li>
+          <li>
+            <p>
+              Let <m>R[b_1]</m>, <m>R[b_2], \ldots , R[b_r]</m> be all the distinct <m>R[b]</m>'s (i.e. all the distinct families).  If <m>a \in A</m>, prove that <m>a \in R[b_1] \cup R[b_2] \cup \cdots \cup R[b_r]</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      Section 7.3 (Sundstrom): pp. 387-396
+    </p>
+  </subsection>
+</section>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-3-31">
+  <title>Resources for 3/31</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Explain the definition of a <em>rooted tree</em>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain why every tree can be interpreted as a rooted tree.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain why every vertex in a tree can be the root of a rooted tree.
+        </p>
+      </li>
+      <li>
+        <p>
+          Given any tree and any vertex <m>v</m> of the tree, represent the tree as a rooted tree with root <m>v</m>, making clear all <q>parent-child relationships</q> between the vertices.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain the recursive definition of a <em>binary tree</em>.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-rooted-tree">
+    <title>Video &amp; Activities for Rooted Trees</title>
+    <p>
+      Below is a YouTube video on making a tree into a <em>rooted tree</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Rooted Trees (Not on Quiz)</title>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="image-prep-rooted-tree-ex">
+          <diagram dimensions="(300,300)" margins="5">
+            <definition>graph={1:[2,3,4],3:[6,7],4:[5,9],7:[8],9:[10,11]}</definition>
+            <coordinates bbox="(0,0,1,1)">
+                <network directed="no" labels="yes" graph="graph"
+                scale="0.8" node-stroke="black" node-fill="white" >
+                  <node at="1" p="(0.3,0.78)" />
+                  <node at="2" p="(0.1,0.96)" />
+                  <node at="3" p="(0.7,0.96)" />
+                  <node at="4" p="(0.3,0.42)" />
+                  <node at="5" p="(0.1,0.42)" />
+                  <node at="6" p="(0.9,0.6)" />
+                  <node at="7" p="(0.5,0.6)" />
+                  <node at="8" p="(0.7,0.42)" />
+                  <node at="9" p="(0.3,0.24)" />
+                  <node at="10" p="(0.5,0.24)" />
+                  <node at="11" p="(0.1,0.06)" />
+                </network>
+            </coordinates>
+          </diagram>
+        </prefigure>
+      </image>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Look at the above tree.  Which vertex is the root?
+            </p>
+          </li>
+          <li>
+            <p>
+              Think of the root as the common ancestor of all of the vertices.  Who are the children of the root?
+            </p>
+          </li>
+          <li>
+            <p>
+              Who are the grandchildren of the root?
+            </p>
+          </li>
+          <li>
+            <p>
+              Keep going and redraw the tree as a <q>family tree</q>, with your root vertex being the <q>first generation</q>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Pick another vertex to be the root.  Do the same analysis as above with this vertex.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection xml:id="video-activity-binary-tree">
+    <title>Video &amp; Activities for Binary Tree</title>
+    <p>
+      Below is a YouTube video on a type of rooted tree called a <em>binary tree</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Binary Trees</title>
+      <p>
+        It is your task to build a set of trees.  Here are the rules for constructing them.
+        <ol>
+          <li>
+            <p>
+              An empty tree (i.e. with no vertices) is in your set of trees.
+            </p>
+          </li>
+          <li>
+            <p>
+              You can construct a new tree only by taking a vertex and connecting it to the roots of two other trees in the set, one on the left, and one on the right.  Your new vertex becomes the root of this new tree.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        Using only the rules above, construct as many of these trees as you can.
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      Section 10.3 (Doerr &amp; Levasseur): pp. 247-252
+    </p>
+    <p>
+      Section 10.4 (Doerr &amp; Levasseur): pp. 253-256
+    </p>
+  </subsection>
+</section>

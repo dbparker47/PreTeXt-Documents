@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-3-29">
+  <title>Resources for 3/29</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Explain the definition of a <em>spanning tree</em> of a graph.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain what is meant by a <em>weighted graph</em>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain real-world interpretations of weighted graphs.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain the definition of a <em>minimum spanning tree</em> of a weighted graph.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain and implement <em>Prim's algorithm</em> to determine a minimum spanning tree of a connected weighted graph.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain and implement <em>Kruskal's algorithm</em> to determine a minimum spanning tree of a connected weighted graph.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-spanning-tree-2">
+    <title>Video &amp; Activities for Minimum Spanning Trees (Continued from Last Class)</title>
+    <p>
+      Below is a YouTube video on <em>spanning trees of a connected graph</em>, along with determining a spanning tree of <em>minimum weight</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Minimum Spanning Trees</title>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="image-prep-2-min-span">
+          <diagram dimensions="(300,300)" margins="5">
+            <definition>labels={1:'A',2:'B',3:'C',4:'D',5:'E',6:'F',7:'G',8:'H',9:'I',10:'J',11:'K',12:'L',13:'M'}</definition>
+            <coordinates bbox="(0,0,1,1)">
+              <network directed="no" labels="yes" label-dictionary="labels"
+              scale="0.8" node-stroke="black" node-fill="white" >
+                <node at="1" p="(0.05,0.5)" />
+                <node at="2" p="(0.18,0.8)" />
+                <node at="3" p="(0.31,0.5)" />
+                <node at="4" p="(0.18,0.2)" />
+                <node at="5" p="(0.44,0.8)" />
+                <node at="6" p="(0.57,0.5)" />
+                <node at="7" p="(0.44,0.2)" />
+                <node at="8" p="(0.7,0.8)" />
+                <node at="9" p="(0.765,0.5)" />
+                <node at="10" p="(0.7,0.2)" />
+                <node at="11" p="(0.96,0.8)" />
+                <node at="12" p="(0.96,0.5)" />
+                <node at="13" p="(0.96,0.2)" />
+                <edge vertices="(1,2)"><m>2</m></edge>
+                <edge vertices="(1,3)"><m>7</m></edge>
+                <edge vertices="(1,4)"><m>3</m></edge>
+                <edge vertices="(2,3)"><m>4</m></edge>
+                <edge vertices="(2,5)"><m>2</m></edge>
+                <edge vertices="(3,4)"><m>4</m></edge>
+                <edge vertices="(3,5)"><m>1</m></edge>
+                <edge vertices="(3,6)"><m>2</m></edge>
+                <edge vertices="(3,7)"><m>3</m></edge>
+                <edge vertices="(4,7)"><m>4</m></edge>
+                <edge vertices="(5,6)"><m>5</m></edge>
+                <edge vertices="(5,8)"><m>6</m></edge>
+                <edge vertices="(5,9)"><m>8</m></edge>
+                <edge vertices="(6,7)"><m>3</m></edge>
+                <edge vertices="(6,9)"><m>2</m></edge>
+                <edge vertices="(7,9)"><m>3</m></edge>
+                <edge vertices="(7,10)"><m>4</m></edge>
+                <edge vertices="(8,11)"><m>4</m></edge>
+                <edge vertices="(9,11)"><m>2</m></edge>
+                <edge vertices="(9,12)"><m>6</m></edge>
+                <edge vertices="(10,13)"><m>7</m></edge>
+                <edge vertices="(11,12)"><m>3</m></edge>
+                <edge vertices="(12,13)"><m>2</m></edge>
+              </network>
+            </coordinates>
+          </diagram>
+        </prefigure>
+      </image>
+      <p>
+        <ol>
+          <li>
+            <p>
+              (Kruskal's Algorithm) We construct a spanning tree of minimum weight for the graph above (i.e. a minimum spanning tree).  Note that, for the most part, edge weights are written <em>below</em> the edge.
+              <ol>
+                <li>
+                  <p>
+                    Which edge would you choose first?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Which 6 edges would you choose next?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Which 5 edges would you like to choose next?  Why can you not choose all of them?  Okay, choose as many as you can.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Repeat this process, choosing the <q>best</q> edges that do not break the rules, until you get a spanning tree.  Find the total weight of your tree.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              (Prim's Algorithm) For your next minimum spanning tree, choose a vertex at random that is not <m>C</m> or <m>E</m>.
+              <ol>
+                <li>
+                  <p>
+                    Which edge would you choose that is incident to this vertex?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Which additional edge would you choose that would keep the graph you are building a tree (no cycles and <em>connected</em>).
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Continue this process until you have a spanning tree. Find its total weight and compare to #1.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      Section 10.2 (Doerr &amp; Levasseur): pp. 240-245
+    </p>
+  </subsection>
+</section>

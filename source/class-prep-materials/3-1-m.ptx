@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-3-1">
+  <title>Resources for 3/1</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Explain what a <em>connected graph</em> is, both conceptually and using the formal definition.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain the statement and reasoning behind the <em>Handshake Theorem</em>, which states that the sum of the degrees of the vertices in a graph is twice the number of edges in the graph.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain what an <em>isomorphism</em> between two graphs is.
+        </p>
+      </li>
+      <li>
+        <p>
+          Identify graphs that are <em>isomorphic</em>, and define an isomorphism between them.
+        </p>
+      </li>
+      <li>
+        <p>
+          Determine when two graphs are not isomorphic, and explain why.
+        </p>
+      </li>
+      <li>
+        <p>
+          Prove theorems of basic facts about graphs.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-handshake">
+    <title>Video &amp; Activities for Handshake Theorem</title>
+    <p>
+      Below is a YouTube video on the <em>Handshake Theorem</em>, which describes the relationship between the degrees of the vertices and number of edges in a graph. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Handshake Theorem</title>
+      <p>
+      In these problems, we compare the number of edges in a graph with the degrees of the vertices.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Consider the graph <m>P_n</m> (path graph on <m>n</m> vertices).
+              <ol>
+                <li>
+                  <p>
+                    What are the degrees of the vertices of <m>P_n</m>?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    What number do you get when you add all the degrees of the vertices?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    How many edges does <m>P_n</m> have?
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              Consider the graph <m>C_n</m> (cycle graph on <m>n</m> vertices).
+              <ol>
+                <li>
+                  <p>
+                    What are the degrees of the vertices of <m>C_n</m>?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    What number do you get when you add all the degrees of the vertices?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    How many edges does <m>C_n</m> have?
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              Consider the graph <m>K_n</m> (complete graph on <m>n</m> vertices).
+              <ol>
+                <li>
+                  <p>
+                    What are the degrees of the vertices of <m>K_n</m>?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    What number do you get when you add all the degrees of the vertices?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    How many edges does <m>K_n</m> have?
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              Let <m>G=(V,E)</m>.  What do you get when you add up all of the degrees of the vertices of <m>G</m>?  Prove your conjecture.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection xml:id="video-activity-connected">
+    <title>Video &amp; Activities for Connected Graphs</title>
+    <p>
+      Below is a YouTube video on <em>connected graphs</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Connected Graphs</title>
+      <p>
+      Work the following problems related to connected graphs.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Prove that <m>K_n</m>, <m>K_{m,n}</m>, <m>P_n</m>, and <m>C_n</m> are all connected for <m>m,n \ge 1</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Draw a graph that is not connected, and prove it is not connected.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection xml:id="video-activity-isomorphism">
+    <title>Video &amp; Activities for Isomorphic Graphs</title>
+    <p>
+      Below is a YouTube video on <em>isomorphisms</em>, which tell us when two graphs are essentially the same graph. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Graph Isomorphisms</title>
+      <p>
+      Work the following problems related to isomorphic graphs.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Find all pairs of graphs that are isomorphic.  Define the isomorphism, and show that it is an isomorphism.  Find the pairs that are not isomorphic, and show no isomorphism exists in those cases.
+            </p>
+            <sidebyside widths="30% 30% 30%">
+              <image>
+                <prefigure xmlns="https://prefigure.org" label="image-prep-isomorphism-1">
+                  <diagram dimensions="(300,300)" margins="5">
+                  <definition>undirected1={1:[2,4],2:[3,4]}</definition>
+                  <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
+                  <coordinates bbox="(0,0,1,1)">
+                    <network directed="no" graph="undirected1" node-fill="black" labels="no" 
+                    label-dictionary="labels" scale="0.8" seed="16" node-stroke="black" node-size="5">
+                      <node at="1" p="(0.2,0.5)" />
+                      <node at="2" p="(0.5,0.5)" />
+                      <node at="3" p="(0.8,0.8)" />
+                      <node at="4" p="(0.8,0.2)" />
+                    </network>
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="image-prep-isomorphism-2">
+                <diagram dimensions="(300,300)" margins="5">
+                  <definition>undirected1={1:[3],2:[4],3:[4,5],4:[5]}</definition>
+                  <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
+                  <coordinates bbox="(0,0,1,1)">
+                    <network directed="no" graph="undirected1" node-fill="black" labels="no" 
+                    label-dictionary="labels" scale="0.8" seed="16" node-stroke="black" node-size="5">
+                      <node at="1" p="(0.2,0.8)" />
+                      <node at="2" p="(0.8,0.8)" />
+                      <node at="3" p="(0.2,0.4)" />
+                      <node at="4" p="(0.8,0.4)" />
+                      <node at="5" p="(0.5,0.1)" />
+                    </network>
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="image-prep-isomorphism-3">
+                <diagram dimensions="(300,300)" margins="5">
+                  <definition>undirected1={1:[2],2:[4,5],3:[5],4:[5]}</definition>
+                  <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
+                  <coordinates bbox="(0,0,1,1)">
+                    <network directed="no" graph="undirected1" node-fill="black" labels="no" 
+                    label-dictionary="labels" scale="0.8" seed="16" node-stroke="black" node-size="5">
+                      <node at="1" p="(0.2,0.8)" />
+                      <node at="2" p="(0.8,0.8)" />
+                      <node at="3" p="(0.6,0.4)" />
+                      <node at="4" p="(0.2,0.2)" />
+                      <node at="5" p="(0.8,0.2)" />
+                    </network>
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+          </sidebyside>
+          <sidebyside widths="30% 30% 30%">
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="image-prep-isomorphism-4">
+                <diagram dimensions="(300,300)" margins="5">
+                  <definition>undirected1={1:[2,3,4],2:[4]}</definition>
+                  <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
+                  <coordinates bbox="(0,0,1,1)">
+                    <network directed="no" graph="undirected1" node-fill="black" labels="no" 
+                    label-dictionary="labels" scale="0.8" seed="16" node-stroke="black" node-size="5">
+                      <node at="1" p="(0.2,0.8)" />
+                      <node at="2" p="(0.8,0.8)" />
+                      <node at="3" p="(0.2,0.2)" />
+                      <node at="4" p="(0.8,0.2)" />
+                    </network>
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="image-prep-isomorphism-5">
+                <diagram dimensions="(300,300)" margins="5">
+                  <definition>undirected1={1:[2,3,4]}</definition>
+                  <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
+                  <coordinates bbox="(0,0,1,1)">
+                    <network directed="no" graph="undirected1" node-fill="black" labels="no" 
+                    label-dictionary="labels" scale="0.8" seed="16" node-stroke="black" node-size="5">
+                      <node at="1" p="(0.2,0.8)" />
+                      <node at="2" p="(0.8,0.8)" />
+                      <node at="3" p="(0.2,0.2)" />
+                      <node at="4" p="(0.8,0.2)" />
+                    </network>
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="image-prep-isomorphism-6">
+                <diagram dimensions="(300,300)" margins="5">
+                  <definition>undirected1={1:[2,3,4],2:[5],3:[4]}</definition>
+                  <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
+                  <coordinates bbox="(0,0,1,1)">
+                    <network directed="no" graph="undirected1" node-fill="black" labels="no" 
+                    label-dictionary="labels" scale="0.8" seed="16" node-stroke="black" node-size="5">
+                      <node at="1" p="(0.2,0.8)" />
+                      <node at="2" p="(0.6,0.8)" />
+                      <node at="3" p="(0.2,0.2)" />
+                      <node at="4" p="(0.6,0.2)" />
+                      <node at="5" p="(0.9,0.5)" />
+                    </network>
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+          </sidebyside>
+
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="image-prep-isomorphism-7">
+              <diagram dimensions="(300,300)" margins="5">
+                <definition>undirected1={1:[3,4],2:[3,5],3:[5]}</definition>
+                <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
+                <coordinates bbox="(0,0,1,1)">
+                  <network directed="no" graph="undirected1" node-fill="black" labels="no" 
+                  label-dictionary="labels" scale="0.8" seed="16" node-stroke="black" node-size="5">
+                    <node at="1" p="(0.2,0.8)" />
+                    <node at="2" p="(0.8,0.8)" />
+                    <node at="3" p="(0.2,0.4)" />
+                    <node at="4" p="(0.8,0.4)" />
+                    <node at="5" p="(0.5,0.1)" />
+                  </network>
+                </coordinates>
+              </diagram>
+            </prefigure>
+          </image>
+          </li>
+          <li>
+            <p>
+              (Not on quiz) Find all nonisomorphic graphs with seven vertices that all have degree 2.  Prove your result.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      Section 5.1 (Keller &amp; Trotter): pp. 69-74
+    </p>
+  </subsection>
+</section>

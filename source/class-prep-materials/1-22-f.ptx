@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-1-22">
+  <title>Resources for 1/22</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Use the logical equivalence <m>P \leftrightarrow Q \equiv (P \rightarrow Q) \wedge (Q \rightarrow P)</m> to prove biconditional statements.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use logical equivalences (e.g. De Morgan's laws) to construct the <em>negation</em> of a given statement.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-biconditional">
+    <title>Video &amp; Activities for Biconditional Statements</title>
+    <p>
+      Below is a YouTube video on <em>proving biconditional statements</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Biconditional Statements</title>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Verify that <m>p \leftrightarrow q</m> is logically equivalent to <m>(p \rightarrow q) \wedge (q \rightarrow p)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Let <m>n \in {\mathbb Z}</m>.  Prove that <m>n^2</m> is odd if and only if <m>n</m> is odd.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection xml:id="video-activity-contradiction">
+    <title>Video &amp; Activities for Contradiction</title>
+    <p>
+      Below is a YouTube video on <em>proving theorems by contradiction</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Proof by Contradiction</title>
+      <p>
+        Find the negations of the following statements.  Use them to prove the original statements.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              There is no largest integer  (i.e. one that is larger than all other integers).
+            </p>
+          </li>
+          <li>
+            <p>
+              There is no smallest positive rational number (i.e. one that is smaller than all other positive rational numbers).
+            </p>
+          </li>
+          <li>
+            <p>
+              No integer can be both even and odd.
+            </p>
+          </li>
+          <li>
+            <p>
+              Let <m>F</m> be a statement that is always false (i.e. a contradiction).  Prove that <m>P</m> is logically equivalent to <m>(\neg P) \rightarrow F</m>. What does this have to do with proof by contradiction?
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove every natural number is either even or odd.  Hint: Assume that <m>n</m> is the smallest natural number that is neither even nor odd.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      Section 3.2 (Sundstrom): pp. 107-109
+    </p>
+    <p>
+      Section 3.3 (Sundstrom): pp. 116-121
+    </p>
+  </subsection>
+</section>

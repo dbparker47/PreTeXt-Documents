@@ -4,7 +4,7 @@
   <title>Dijkstra's Algorithm</title>
 
   <image>
-    <prefigure xmlns="https://prefigure.org" label="image-act-dikkstra">
+    <prefigure xmlns="https://prefigure.org" label="image-act-dijkstra">
         <diagram dimensions="(300,300)" margins="5">
             <definition>labels={1:'A',2:'B',3:'C',4:'D',5:'E',6:'F',7:'G',8:'H',9:'I',10:'J',11:'K',12:'L',13:'M'}</definition>
             <coordinates bbox="(0,0,1,1)">

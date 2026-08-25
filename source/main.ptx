@@ -56,6 +56,42 @@
       <xi:include href="./homework-coding/coding-9.ptx"/>
     </chapter>
 
+    <chapter xml:id="class-prep">
+      <title>Class Preparation Materials</title>
+      <xi:include href="./class-prep-materials/1-13-w.ptx" />
+      <xi:include href="./class-prep-materials/1-15-f.ptx" />
+      <xi:include href="./class-prep-materials/1-20-w.ptx" />
+      <xi:include href="./class-prep-materials/1-22-f.ptx" />
+      <xi:include href="./class-prep-materials/1-25-m.ptx" />
+      <xi:include href="./class-prep-materials/1-27-w.ptx" />
+      <xi:include href="./class-prep-materials/1-29-f.ptx" />
+      <xi:include href="./class-prep-materials/2-1-m.ptx" />
+      <xi:include href="./class-prep-materials/2-3-w.ptx" />
+      <xi:include href="./class-prep-materials/2-5-f.ptx" />
+      <xi:include href="./class-prep-materials/2-8-m.ptx" />
+      <xi:include href="./class-prep-materials/2-10-w.ptx" />
+      <xi:include href="./class-prep-materials/2-15-m.ptx" />
+      <xi:include href="./class-prep-materials/2-19-f.ptx" />
+      <xi:include href="./class-prep-materials/2-22-m.ptx" />
+      <xi:include href="./class-prep-materials/2-24-w.ptx" />
+      <xi:include href="./class-prep-materials/2-26-f.ptx" />
+      <xi:include href="./class-prep-materials/3-1-m.ptx" />
+      <xi:include href="./class-prep-materials/3-3-w.ptx" />
+      <xi:include href="./class-prep-materials/3-5-f.ptx" />
+      <xi:include href="./class-prep-materials/3-15-m.ptx" />
+      <xi:include href="./class-prep-materials/3-17-w.ptx" />
+      <xi:include href="./class-prep-materials/3-22-m.ptx" />
+      <xi:include href="./class-prep-materials/3-26-f.ptx" />
+      <xi:include href="./class-prep-materials/3-29-m.ptx" />
+      <xi:include href="./class-prep-materials/3-31-w.ptx" />
+      <xi:include href="./class-prep-materials/4-2-f.ptx" />
+      <xi:include href="./class-prep-materials/4-5-m.ptx" />
+      <xi:include href="./class-prep-materials/4-7-w.ptx" />
+      <xi:include href="./class-prep-materials/4-9-f.ptx" />
+      <xi:include href="./class-prep-materials/4-12-m.ptx" />
+      <xi:include href="./class-prep-materials/4-14-w.ptx" />
+    </chapter>
+
     <chapter xml:id="in-class-12-31">
       <title>In-Class Activities: Sections 1.2 &amp; 3.1</title>
       <xi:include href=".//activities/1-proofs/section-12-31/1-introduction-to-proofs.ptx"/>

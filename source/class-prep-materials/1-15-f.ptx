@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-1-15">
+  <title>Resources for 1/15</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Explain what it means for one integer to be <em>divisible</em> by another integer. Use in proofs.
+        </p>
+      </li>
+      <li>
+        <p>
+          Given an integer <m>n</m>, explain what it means for two integers to be <em>congruent modulo <m>n</m></em>.  Use in proofs.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-divisibility-congruence">
+    <title>Video &amp; Activities for Divisibility and Congruence</title>
+    <p>
+      Below is a YouTube video on <em>divisibility and congruence</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Divisibility and Congruence</title>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Among all integers between 2 and 10, find all <m>m</m> and <m>n</m> such that <m>m|n</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose <m>m</m>, <m>n</m>, and <m>p</m> are integers.  Prove that if <m>m|n</m> and <m>n|p</m>, then <m>m|p</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find five solutions to the equivalence <m>x \equiv 3</m> (mod 8)
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose that <m>x \equiv 7</m> (mod 11).  Determine what <m>x+8</m> is modulo 11 (where the number you come up with is between 0 and 10).  Prove your result.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      Section 3.1 (Sundstrom): pp. 82-95
+    </p>
+  </subsection>
+</section>

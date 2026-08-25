@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-1-29">
+  <title>Resources for 1/29</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Explain what kinds of statements can be proven by <em>Strong Induction</em>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explain the steps necessary to prove theorems using all types of induction.
+        </p>
+      </li>
+      <li>
+        <p>
+          Prove theorems by using appropriate types of induction.
+        </p>
+      </li>
+      <li>
+        <p>
+          Prove theorems about <em>sequences</em> using appropriate types of induction.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-strong-induction">
+    <title>Video &amp; Activities for Proof by Strong Induction</title>
+    <p>
+      Below is a YouTube video on <em>proving theorems by strong induction</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Strong Induction</title>
+      <p>
+        Prove the following by induction.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Suppose you have a sequence of numbers <m>\{ y_0,y_1,y_2, \ldots , y_n , \ldots \}</m>.  In addition, <m>y_0=4</m>, <m>y_1=10</m>, and the <m>y_n=6y_{n-1}-8y_{n-2}</m> for all <m>n \geq 2</m>.  Prove that <m>y_n=3 \cdot 2^n+4^n</m> for all integers <m>n \geq 0</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Let the Fibonacci sequence be defined by <m>f_0 = 0</m>, <m>f_1=1</m>, and <m>f_n=f_{n-1}+f_{n-2}</m> for all <m>n \ge 2</m>.
+              <ol>
+                <li>
+                  <p>
+                    Write down the first ten numbers in the sequence.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Prove that <m>f_{3k}</m> is even for all <m>k \ge 0</m>.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              (Not on quiz) Suppose you have a system of buildings where each pair of buildings is connected by a one-way road.  Prove that there is a route that enables you to visit every building.  Hint: Let <m>n</m> be the number of buildings. For the induction step, Choose a random building <m>b</m> and let <m>A</m> be the set of buildings from which you can get to <m>b</m> by a single road.  Let <m>B</m> be the set of buildings you can get to from <m>b</m> with a single road.
+            </p>
+          </li>
+          <li>
+            <p>
+              (Not on quiz) We proved that <m>f_{3k}</m> is even for all integers <m>k \geq 0</m>.  Are any other Fibonacci numbers even?  Prove your conjecture.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      Section 4.2 (Sundstrom): pp. 188-196
+    </p>
+  </subsection>
+</section>

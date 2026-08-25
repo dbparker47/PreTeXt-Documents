@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="prep-2-22">
+  <title>Resources for 2/22</title>
+
+  <objectives>
+    <introduction>
+      <p>For the content of this class, you will be expected to be able to do the following:</p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Explain the definition of the <em>transitive closure</em> of a relation.
+        </p>
+      </li>
+      <li>
+        <p>
+          Given a relation, construct the transitive closure of the relation.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="video-activity-transitive-closure">
+    <title>Video &amp; Activities for Transitive Closure</title>
+    <p>
+      Below is a YouTube video on the <em>transitive closure of a relation</em>. It is followed by a link to a set of activities that we will be working on in class. Please watch the video and do as many of the activities as you can before class.
+    </p>
+
+    <video youtube="IZzOgiYB4o4" />
+
+    <problem>
+      <title>Transitive Closure</title>
+      <p>
+      Work the following transitive closure problems.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Find the transitive closure of the following relation.
+            </p>
+            <image width="60%">
+              <prefigure xmlns="https://prefigure.org" label="image-prep-transitive-1">
+                <diagram dimensions="(300,300)" margins="5">
+                  <definition>trans={1:[4],2:[1,2,3],4:[2],5:[3]}</definition>
+                    <coordinates bbox="(-1,-1,1,1)">
+                      <network directed="yes" graph="trans" node-fill="white" labels="yes" 
+                      scale="0.8" seed="16" node-stroke="no" node-size="8">
+                        <node at="1" p="(-0.9,0.5)" />
+                        <node at="2" p="(0,0.5)" />
+                        <node at="3" p="(0.9,0.5)" />
+                        <node at="4" p="(-0.5,-0.5)" />
+                        <node at="5" p="(0.5,-0.5)" />
+                      </network>
+                    </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+          </li>
+          <li>
+            <p>
+              Find the transitive closure of
+              <ol>
+                <li>
+                  <p>
+                    <m>a_1 \rightarrow a_2 \rightarrow a_3 \rightarrow a_4 \rightarrow a_5</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>a_1 \rightarrow a_2 \rightarrow a_3 \rightarrow a_4 \rightarrow a_1</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              Let $R$ be the relation on <m>\mathbb{Z}</m> given by <m>aRb</m> precisely when <m>\frac{b}{a}</m> is a prime number.
+              <ol>
+                <li>
+                  <p>
+                    Find a few ordered pairs in <m>R^+</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Prove or disprove that <m>9R^+360</m>.  Prove or disprove that <m>9R^+100</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    (Not on quiz) Based on your experiences in (a) and/or (b), conjecture what you believe <m>R^+</m> to be.  Prove your conjecture if you dare.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </problem>
+  </subsection>
+
+  <subsection>
+    <title>Optional Reading</title>
+    <p>
+      <url href="">Transitive Closure and Warshall's Algorithm</url>
+    </p>
+  </subsection>
+</section>
