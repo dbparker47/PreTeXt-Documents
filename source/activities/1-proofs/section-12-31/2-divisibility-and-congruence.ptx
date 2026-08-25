@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet>
+<worksheet xml:id="act-divisibility-congruence">
   <title>Divisibility and Congruence</title>
 
   <!-- Optional introduction -->

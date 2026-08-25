@@ -25,7 +25,7 @@
 
   <sidebyside widths="22% 22% 22% 22%">
     <image>
-      <prefigure xmlns="https://prefigure.org" label="eulerian-1">
+      <prefigure xmlns="https://prefigure.org" label="image-act-eulerian-1">
         <diagram dimensions="(300,300)" margins="5">
           <definition>undirected1={1:[2,9],2:[3,8,9],3:[4,8,9],4:[5,6,7],5:[6,7],6:[7],7:[8],8:[9]}</definition>
           <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i'}</definition>
@@ -47,7 +47,7 @@
       </prefigure>
     </image>
     <image>
-      <prefigure xmlns="https://prefigure.org" label="eulerian-2">
+      <prefigure xmlns="https://prefigure.org" label="image-act-eulerian-2">
         <diagram dimensions="(300,300)" margins="5">
           <definition>undirected1={1:[2,6],2:[3,5,6],3:[4,6],4:[5],5:[6]}</definition>
           <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j'}</definition>
@@ -66,7 +66,7 @@
       </prefigure>
     </image>
     <image>
-      <prefigure xmlns="https://prefigure.org" label="eulerian-3">
+      <prefigure xmlns="https://prefigure.org" label="image-act-eulerian-3">
         <diagram dimensions="(300,300)" margins="5">
           <definition>undirected1={1:[2,10],2:[3,9,10],3:[4,9,10],4:[5,7,8],5:[6,7,8],6:[7],7:[8],8:[9],9:[10]}</definition>
           <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j'}</definition>
@@ -89,7 +89,7 @@
       </prefigure>
     </image>
     <image>
-      <prefigure xmlns="https://prefigure.org" label="eulerian-4">
+      <prefigure xmlns="https://prefigure.org" label="image-act-eulerian-4">
         <diagram dimensions="(300,300)" margins="5">
           <definition>undirected1={1:[2,4,6],2:[3,5,6],3:[4,6],4:[5],5:[6]}</definition>
           <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j'}</definition>

@@ -1,28 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-intro-trees">
+  <title>Introduction to Trees</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Work the following problems related to trees.
     </p>
   </introduction>
 
-  <exercise>
+  <exercise workspace="2in">
     <statement>
       <p>
-        
+        Draw pictures of some trees and some forests.
       </p>
     </statement>
   </exercise>
 
-  <exercise>
+  <exercise workspace="2in">
     <statement>
       <p>
-        
+        Can you draw a picture of a tree with a vertex in a tree and/or forest of very high degree? Prove it.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Suppose you have a tree <m>T</m> with a vertex <m>v</m> of degree 1 (called a <em>leaf</em>).  Prove that if you remove <m>v</m> and any edge that is incident with it to get the graph <m>T'</m>, then <m>T'</m> is a tree.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Can you draw a tree with at least one edge and without any leaves?  Can you draw a tree with at least one edge and just one leaf?  Prove the first answer by contradiction using an algorithm and the second answer by induction.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Count the vertices and edges in your trees.  Are there any patterns?  Prove it using induction.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Count the vertices and edges in your forests.  Are there any patterns? Prove it using what you proved above.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        In a tree or forest, is it possible to take two different paths between two vertices?  Prove by contradiction.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        In a tree, what happens when you add an edge to the graph without changing the vertices?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        In a forest, what can happen when you add an edge to the graph without changing the vertices?
       </p>
     </statement>
   </exercise>

@@ -18,7 +18,7 @@
       </p>
       <sidebyside widths="30% 30% 30%">
         <image>
-          <prefigure xmlns="https://prefigure.org" label="coloring-1">
+          <prefigure xmlns="https://prefigure.org" label="image-act-coloring-1">
             <diagram dimensions="(300,300)" margins="5">
               <definition>undirected1={1:[2,4],2:[3],3:[4]}</definition>
               <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
@@ -37,7 +37,7 @@
           </prefigure>
         </image>
         <image>
-          <prefigure xmlns="https://prefigure.org" label="coloring-2">
+          <prefigure xmlns="https://prefigure.org" label="image-act-coloring-2">
             <diagram dimensions="(300,300)" margins="5">
               <definition>undirected1={1:[2,5],2:[3],3:[4],4:[5]}</definition>
               <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
@@ -57,7 +57,7 @@
           </prefigure>
         </image>
         <image>
-          <prefigure xmlns="https://prefigure.org" label="coloring-3">
+          <prefigure xmlns="https://prefigure.org" label="image-act-coloring-3">
             <diagram dimensions="(300,300)" margins="5">
               <definition>undirected1={1:[2,6],2:[3],3:[4],4:[5],5:[6]}</definition>
               <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
@@ -80,7 +80,7 @@
       </sidebyside>
       <sidebyside widths="30% 30% 30%">
         <image>
-          <prefigure xmlns="https://prefigure.org" label="coloring-4">
+          <prefigure xmlns="https://prefigure.org" label="image-act-coloring-4">
             <diagram dimensions="(300,300)" margins="5">
               <definition>undirected1={1:[2,3,4],2:[3],3:[4]}</definition>
               <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
@@ -99,7 +99,7 @@
           </prefigure>
         </image>
         <image>
-          <prefigure xmlns="https://prefigure.org" label="coloring-5">
+          <prefigure xmlns="https://prefigure.org" label="image-act-coloring-5">
             <diagram dimensions="(300,300)" margins="5">
               <definition>undirected1={1:[2,3,5],2:[3],3:[4],4:[5]}</definition>
               <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
@@ -119,7 +119,7 @@
           </prefigure>
         </image>
         <image>
-          <prefigure xmlns="https://prefigure.org" label="coloring-6">
+          <prefigure xmlns="https://prefigure.org" label="image-act-coloring-6">
             <diagram dimensions="(300,300)" margins="5">
               <definition>undirected1={1:[2,3,4],2:[3,4],3:[4]}</definition>
               <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
@@ -140,7 +140,7 @@
       </sidebyside>
       <sidebyside widths="30% 30% 30%">
         <image>
-          <prefigure xmlns="https://prefigure.org" label="coloring-7">
+          <prefigure xmlns="https://prefigure.org" label="image-act-coloring-7">
             <diagram dimensions="(300,300)" margins="5">
               <definition>undirected1={1:[4,5],2:[4,5],3:[4,5]}</definition>
               <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
@@ -158,7 +158,7 @@
           </prefigure>
         </image>
         <image>
-          <prefigure xmlns="https://prefigure.org" label="coloring-8">
+          <prefigure xmlns="https://prefigure.org" label="image-act-coloring-8">
             <diagram dimensions="(300,300)" margins="5">
               <definition>undirected1={1:[2,4,5],2:[3,5,4,7],3:[6],4:[5],5:[6,7],6:[7]}</definition>
               <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
@@ -178,7 +178,7 @@
           </prefigure>
         </image>
         <image>
-          <prefigure xmlns="https://prefigure.org" label="coloring-9">
+          <prefigure xmlns="https://prefigure.org" label="image-act-coloring-9">
             <diagram dimensions="(300,300)" margins="5">
               <definition>undirected1={1:[2,5],2:[3,5,6,7],3:[4,5,6,7],4:[7],5:[6],6:[7]}</definition>
               <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>

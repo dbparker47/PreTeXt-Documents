@@ -12,7 +12,7 @@
   </introduction>
 
   <image width="60%">
-    <prefigure xmlns="https://prefigure.org" label="terminology-main">
+    <prefigure xmlns="https://prefigure.org" label="image-act-terminology-main">
       <diagram dimensions="(300,300)" margins="5">
         <definition>undirected={1:[2,3],2:[3],3:[4],4:[5,6]}</definition>
         <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
@@ -77,7 +77,7 @@
         Can you find the following graph somewhere in the graph above?  What would the graph below look like if you included the <q>missing edges</q>?   This is called a <em>subgraph</em> of <m>G</m>.  The subgraph with the <q>missing edges</q> is called the subgraph <em>induced</em> by the vertices.
       </p>
       <image>
-        <prefigure xmlns="https://prefigure.org" label="terminology-6">
+        <prefigure xmlns="https://prefigure.org" label="image-act-terminology-6">
           <diagram dimensions="(300,300)" margins="5">
             <definition>undirected={1:[2],2:[3],4:[5],5:[6]}</definition>
             <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
@@ -150,7 +150,7 @@
           Second Question:  This would look like
         </p>
         <image>
-          <prefigure xmlns="https://prefigure.org" label="terminology-answers">
+          <prefigure xmlns="https://prefigure.org" label="image-act-terminology-answers">
             <diagram dimensions="(300,300)" margins="5">
               <definition>undirected={1:[2,3],2:[3],4:[5,6]}</definition>
               <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>

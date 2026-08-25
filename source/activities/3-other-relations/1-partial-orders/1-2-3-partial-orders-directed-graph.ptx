@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
+<worksheet xml:id="act-partial-order-graph">
   <title>Partial Orders - Directed Graph Model</title>
 
   <!-- Optional introduction -->
@@ -37,7 +37,7 @@
         Define a relation <m>R</m> on the set of vertices of the figure below by <m>xRy</m> precisely when <m>x \rightarrow y</m>.
       </p>
       <image width="60%">
-        <prefigure xmlns="https://prefigure.org" label="partial-order-2">
+        <prefigure xmlns="https://prefigure.org" label="image-act-partial-order-2">
           <diagram dimensions="(300,300)" margins="5">
             <definition>relation={1:[2],2:[4],3:[2]}</definition>
             <definition>labels={1:'a',2:'b',3:'c',4:'d'}</definition>
@@ -86,7 +86,7 @@
         Do the same as #2 with the following figure.
       </p>
       <image width="60%">
-        <prefigure xmlns="https://prefigure.org" label="partial-order-3">
+        <prefigure xmlns="https://prefigure.org" label="image-act-partial-order-3">
           <diagram dimensions="(300,300)" margins="5">
             <definition>relation={1:[2],3:[4,5,6],4:[1,2],5:[2],6:[1,5]}</definition>
             <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
@@ -106,7 +106,7 @@
         Can the following figure have arrows added to make it a partial order?  Why or why not?
       </p>
       <image width="60%">
-        <prefigure xmlns="https://prefigure.org" label="partial-order-4">
+        <prefigure xmlns="https://prefigure.org" label="image-act-partial-order-4">
           <diagram dimensions="(300,300)" margins="5">
             <definition>relation={1:[2,3,5],2:[5],3:[4],4:[1,2,5]}</definition>
             <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>

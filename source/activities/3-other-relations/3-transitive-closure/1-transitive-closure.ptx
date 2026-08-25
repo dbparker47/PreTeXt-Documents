@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
+<worksheet xml:id="act-transitive-closure">
   <title>Transitive Closure</title>
 
   <!-- Optional introduction -->
@@ -17,7 +17,7 @@
         Find the transitive closure of the following relation.
       </p>
       <image width="60%">
-        <prefigure xmlns="https://prefigure.org" label="transitive-1">
+        <prefigure xmlns="https://prefigure.org" label="image-act-transitive-1">
           <diagram dimensions="(300,300)" margins="5">
             <definition>trans={1:[4],2:[1,2,3],4:[2],5:[3]}</definition>
               <coordinates bbox="(-1,-1,1,1)">

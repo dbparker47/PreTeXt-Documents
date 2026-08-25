@@ -1,28 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-scheduling">
+  <title>Scheduling Problems</title>
 
-  <!-- Optional introduction -->
-  <introduction>
-    <p>
-      
-    </p>
-  </introduction>
+  <p>
+    Joanne is writing her dissertation in mathematics.  She has already chosen the general area in which she wants to work.  She must complete the following tasks, not necessarily in the order given.
+    <ul>
+        <li>
+            <p>
+                Work examples and find patterns (E).
+            </p>
+        </li>
+        <li>
+            <p>
+                Formulate her theorems and prove them (T).
+            </p>
+        </li>
+        <li>
+            <p>
+                Read journal articles related to her problem (R).
+            </p>
+        </li>
+        <li>
+            <p>
+                Make a bibliography (B).
+            </p>
+        </li>
+        <li>
+            <p>
+                Write her dissertation (W).
+            </p>
+        </li>
+    </ul>
+  </p>
 
-  <exercise>
+  <p>
+    She must do (E) before (T).  She must do (R) before (B).  She cannot start (W) until (T) is done.  If she does (E) before (R), then (E) takes 4 time units to complete; otherwise, it takes 2 time units.  If she does (T) before (R), then (T) takes 10 time units; otherwise it takes 7 time units.  If she does (R) before (T), then (R) takes 6 time units; otherwise it takes 4 time units.  If she starts (B) before (W), then (B) takes 3 time units; otherwise it takes 1 time unit.  If (W) starts before (R), then (W) takes 6 time units; otherwise, it takes 4 time units.
+  </p>
+
+  <exercise workspace="2in">
     <statement>
       <p>
-        
+        Represent this as a weighted digraph, where the vertices are the lists of tasks you have done and each arc is a task done between two vertices.  Note that your vertices are sets (e.g. <m>\{ E,T \}</m>).
       </p>
     </statement>
   </exercise>
 
-  <exercise>
+  <exercise workspace="2in">
     <statement>
       <p>
-        
+        Determine the order that Joanne should do the tasks to finish in the shortest amount of time.
       </p>
     </statement>
   </exercise>

@@ -1,28 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-intro-short-path">
+  <title>Introduction to Shortest Path Algorithms (Not on Quiz)</title>
 
-  <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Consider the following weighted graph.
     </p>
   </introduction>
 
-  <exercise>
+  <image>
+    <prefigure xmlns="https://prefigure.org" label="image-act-short-path-graph">
+        <diagram dimensions="(300,300)" margins="5">
+            <definition>N=5</definition>
+            <definition>f(t)=(cos(2*pi*t/N), sin(2*pi*t/N))</definition>
+            <definition>graph={1:[2,5],2:[3],3:[4],4:[5]}</definition>
+            <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5'}</definition>
+            <coordinates bbox="(-1,-1.02,1.06,1.03)">
+                <network directed="no" labels="yes" label-dictionary="labels"
+                scale="0.8" node-stroke="black" node-fill="white" >
+                  <node at="1" p="f(1)" />
+                  <node at="2" p="f(2)" />
+                  <node at="3" p="f(3)" />
+                  <node at="4" p="f(4)" />
+                  <node at="5" p="f(5)" />
+                  <edge vertices="(1,2)">2</edge>
+                  <edge vertices="(1,3)">4</edge>
+                  <edge vertices="(2,3)">1</edge>
+                  <edge vertices="(2,4)">3</edge>
+                  <edge vertices="(3,5)">2</edge>
+                </network>
+            </coordinates>
+        </diagram>
+    </prefigure>
+  </image>
+
+  <exercise workspace="2in">
     <statement>
       <p>
-        
+        Using your wits, find the lengths of the shortest paths between all the pairs of vertices.
       </p>
     </statement>
   </exercise>
 
-  <exercise>
+  <exercise workspace="2in">
     <statement>
       <p>
-        
+        (Dijkstra) Finding a shortest path from <m>v_1</m> to all other vertices.
+        <ol>
+            <li>
+                <p>
+                    Which vertex is closest to <m>v_1</m>?  How would you label this vertex so that you can remember how far it is to <m>v_1</m> and how you got there?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Look at the vertices adjacent to both the vertices in (a).  Which of those is closest to <m>v_1</m>?  How would you label this vertex so that you can remember how far it is to <m>v_1</m> and how you got there?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Look at the vertices adjacent to the vertices in (a) and (b).  Which of those is closest to <m>v_1</m>?  How would you label this vertex so that you can remember how far it is to <m>v_1</m> and how you got there? Repeat.
+                </p>
+            </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        (Improved Dijkstra) Finding a shortest path from <m>v_1</m> to all other vertices.
+        <ol>
+            <li>
+                <p>
+                    How far is <m>v_1</m> from itself?  Label <m>v_1</m> with this distance.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Look at all labels adjacent to <m>v_1</m>.  Based on these edges, make a preliminary guess as to how far they are from <m>v_1</m>, and label these vertices temporarily with these guesses.  Is there one of these labels that you are sure is correct?  Make that label permanent.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Look at all vertices adjacent to the <q>permanent</q> vertex you found in (b). Give them all temporary labels.  Make one of them permanent.  Repeat.
+                </p>
+            </li>
+        </ol>
       </p>
     </statement>
   </exercise>

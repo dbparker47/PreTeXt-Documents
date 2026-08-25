@@ -1,28 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-min-spanning-tree">
+  <title>Minimum Spanning Trees</title>
 
-  <!-- Optional introduction -->
-  <introduction>
-    <p>
-      
-    </p>
-  </introduction>
+  <image>
+    <prefigure xmlns="https://prefigure.org" label="image-act-min-span">
+      <diagram dimensions="(300,300)" margins="5">
+        <definition>labels={1:'A',2:'B',3:'C',4:'D',5:'E',6:'F',7:'G',8:'H',9:'I',10:'J',11:'K',12:'L',13:'M'}</definition>
+        <coordinates bbox="(0,0,1,1)">
+          <network directed="no" labels="yes" label-dictionary="labels"
+          scale="0.8" node-stroke="black" node-fill="white" >
+            <node at="1" p="(0.05,0.5)" />
+            <node at="2" p="(0.18,0.8)" />
+            <node at="3" p="(0.31,0.5)" />
+            <node at="4" p="(0.18,0.2)" />
+            <node at="5" p="(0.44,0.8)" />
+            <node at="6" p="(0.57,0.5)" />
+            <node at="7" p="(0.44,0.2)" />
+            <node at="8" p="(0.7,0.8)" />
+            <node at="9" p="(0.765,0.5)" />
+            <node at="10" p="(0.7,0.2)" />
+            <node at="11" p="(0.96,0.8)" />
+            <node at="12" p="(0.96,0.5)" />
+            <node at="13" p="(0.96,0.2)" />
+            <edge vertices="(1,2)"><m>2</m></edge>
+            <edge vertices="(1,3)"><m>7</m></edge>
+            <edge vertices="(1,4)"><m>3</m></edge>
+            <edge vertices="(2,3)"><m>4</m></edge>
+            <edge vertices="(2,5)"><m>2</m></edge>
+            <edge vertices="(3,4)"><m>4</m></edge>
+            <edge vertices="(3,5)"><m>1</m></edge>
+            <edge vertices="(3,6)"><m>2</m></edge>
+            <edge vertices="(3,7)"><m>3</m></edge>
+            <edge vertices="(4,7)"><m>4</m></edge>
+            <edge vertices="(5,6)"><m>5</m></edge>
+            <edge vertices="(5,8)"><m>6</m></edge>
+            <edge vertices="(5,9)"><m>8</m></edge>
+            <edge vertices="(6,7)"><m>3</m></edge>
+            <edge vertices="(6,9)"><m>2</m></edge>
+            <edge vertices="(7,9)"><m>3</m></edge>
+            <edge vertices="(7,10)"><m>4</m></edge>
+            <edge vertices="(8,11)"><m>4</m></edge>
+            <edge vertices="(9,11)"><m>2</m></edge>
+            <edge vertices="(9,12)"><m>6</m></edge>
+            <edge vertices="(10,13)"><m>7</m></edge>
+            <edge vertices="(11,12)"><m>3</m></edge>
+            <edge vertices="(12,13)"><m>2</m></edge>
+          </network>
+        </coordinates>
+      </diagram>
+    </prefigure>
+  </image>
 
-  <exercise>
+  <exercise workspace="2in">
     <statement>
       <p>
-        
+        (Kruskal's Algorithm) We construct a spanning tree of minimum weight for the graph above (i.e. a minimum spanning tree).  Note that, for the most part, edge weights are written <em>below</em> the edge.
+        <ol>
+          <li>
+            <p>
+              Which edge would you choose first?
+            </p>
+          </li>
+          <li>
+            <p>
+              Which 6 edges would you choose next?
+            </p>
+          </li>
+          <li>
+            <p>
+              Which 5 edges would you like to choose next?  Why can you not choose all of them?  Okay, choose as many as you can.
+            </p>
+          </li>
+          <li>
+            <p>
+              Repeat this process, choosing the <q>best</q> edges that do not break the rules, until you get a spanning tree.  Find the total weight of your tree.
+            </p>
+          </li>
+        </ol>
       </p>
     </statement>
   </exercise>
 
-  <exercise>
+  <exercise workspace="2in">
     <statement>
       <p>
-        
+        (Prim's Algorithm) For your next minimum spanning tree, choose a vertex at random that is not <m>C</m> or <m>E</m>.
+        <ol>
+          <li>
+            <p>
+              Which edge would you choose that is incident to this vertex?
+            </p>
+          </li>
+          <li>
+            <p>
+              Which additional edge would you choose that would keep the graph you are building a tree (no cycles and <em>connected</em>).
+            </p>
+          </li>
+          <li>
+            <p>
+              Continue this process until you have a spanning tree. Find its total weight and compare to #1.
+            </p>
+          </li>
+        </ol>
       </p>
     </statement>
   </exercise>

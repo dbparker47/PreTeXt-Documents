@@ -1,30 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-traversal">
+  <title>Traversals</title>
 
-  <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Consider the following binary trees.
     </p>
   </introduction>
 
-  <exercise>
-    <statement>
-      <p>
-        
-      </p>
-    </statement>
-  </exercise>
+  <sidebyside widths="45% 45%">
+    <image>
+        <prefigure xmlns="https://prefigure.org" label="image-act-binary-tree-1">
+            <diagram dimensions="(300,300)" margins="5">
+                <definition>graph={1:[2,3],2:[4,5],3:[7,8],4:[6],5:[10,9],8:[11]}</definition>
+                <definition>labels={1:'A',2:'B',3:'C',4:'D',5:'E',6:'F',7:'G',8:'H',9:'I',10:'J',11:'K'}</definition>
+                <coordinates bbox="(0,0,1,1)">
+                    <network directed="no" labels="yes" label-dictionary="labels" graph="graph"
+                    scale="0.8" node-stroke="black" node-fill="white" >
+                        <node at="1" p="(0.57,0.95)" />
+                        <node at="2" p="(0.31,0.65)" />
+                        <node at="3" p="(0.83,0.65)" />
+                        <node at="4" p="(0.18,0.35)" />
+                        <node at="5" p="(0.44,0.35)" />
+                        <node at="6" p="(0.05,0.05)" />
+                        <node at="7" p="(0.7,.35)" />
+                        <node at="8" p="(0.96,0.35)" />
+                        <node at="9" p="(0.57,0.05)" />
+                        <node at="10" p="(0.31,0.05)" />
+                        <node at="11" p="(0.83,0.05)" />
+                    </network>
+                </coordinates>
+            </diagram>
+        </prefigure>
+    </image>
+    <image>
+        <prefigure xmlns="https://prefigure.org" label="image-act-binary-tree-2">
+            <diagram dimensions="(300,300)" margins="5">
+                <definition>graph={1:[2,3],2:[4],3:[7,8],4:[5,6],7:[9],8:[10,11]}</definition>
+                <coordinates bbox="(-0.02,0,1.02,1)">
+                    <network directed="no" labels="yes" graph="graph"
+                    scale="0.8" node-stroke="black" node-fill="white" >
+                        <node at="1" p="(0.38,0.95)" />
+                        <node at="2" p="(0.14,0.65)" />
+                        <node at="3" p="(0.62,0.65)" />
+                        <node at="4" p="(0.26,0.35)" />
+                        <node at="5" p="(0.02,0.05)" />
+                        <node at="6" p="(0.38,0.05)" />
+                        <node at="7" p="(0.5,.35)" />
+                        <node at="8" p="(0.86,0.35)" />
+                        <node at="9" p="(0.62,0.05)" />
+                        <node at="10" p="(0.74,0.05)" />
+                        <node at="11" p="(0.98,0.05)" />
+                    </network>
+                </coordinates>
+            </diagram>
+        </prefigure>
+    </image>
+  </sidebyside>
 
-  <exercise>
-    <statement>
-      <p>
-        
-      </p>
-    </statement>
-  </exercise>
+  <p>
+    As you traverse your tree, you will look at all the subtrees, starting with the entire tree.  For each subtree, there are three possible <q>commands</q> you can give your searcher.
+    <ol>
+        <li>
+            <p>
+                Visit the root of your tree.
+            </p>
+        </li>
+        <li>
+            <p>
+                Traverse the left subtree of the root of your tree.
+            </p>
+        </li>
+        <li>
+            <p>
+                Traverse the right subtree of the root of your tree.
+            </p>
+        </li>
+    </ol>
+  </p>
+  <p>
+    For your traversal algorithm, you will prioritize your commands (i.e. you will put them in an order, where the first command is always done first, the second command is always done second, and the third command is always done third).  You will run your algorithm recursively.  There are six ways to do this.  Put the commands in as many different orders as you can and write out what order the vertices will be chosen.  Here are the different orderings.
+    <ol>
+        <li>
+            <p>
+                Root <m>\rightarrow</m> Left Subtree <m>\rightarrow</m> Right Subtree
+            </p>
+        </li>
+        <li>
+            <p>
+                Root <m>\rightarrow</m> Right Subtree <m>\rightarrow</m> Left Subtree
+            </p>
+        </li>
+        <li>
+            <p>
+                Left Subtree <m>\rightarrow</m> Root <m>\rightarrow</m> Right Subtree
+            </p>
+        </li>
+        <li>
+            <p>
+                Left Subtree <m>\rightarrow</m> Right Subtree <m>\rightarrow</m> Root
+            </p>
+        </li>
+        <li>
+            <p>
+                Right Subtree <m>\rightarrow</m> Left Subtree <m>\rightarrow</m> Root
+            </p>
+        </li>
+        <li>
+            <p>
+                Right Subtree <m>\rightarrow</m> Root <m>\rightarrow</m> Left Subtree
+            </p>
+        </li>
+    </ol>
+  </p>
 
 </worksheet>

@@ -17,7 +17,7 @@
         Make two different adjacency matrices for the following graph.
       </p>
       <image width="60%">
-        <prefigure xmlns="https://prefigure.org" label="adjacency-1">
+        <prefigure xmlns="https://prefigure.org" label="image-act-adjacency-1">
           <diagram dimensions="(300,300)" margins="5">
             <definition>undirected1={1:[2,4,5],2:[5,6],3:[4,5],4:[6],5:[6]}</definition>
             <definition>N=6</definition>

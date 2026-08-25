@@ -1,28 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-intro-route-inspection">
+  <title>Introduction to the Route Inspection Problem (Not on Quiz)</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      
+      Suppose the walk <m>v_1v_2v_3v_4v_5v_6v_7v_1v_8v_7v_6v_5v_8v_3v_2v_1</m> goes over every edge in the connected graph <m>G</m>.
     </p>
   </introduction>
 
-  <exercise>
+  <exercise workspace="2in">
     <statement>
       <p>
-        
+        Draw a picture of the graph <m>G</m>.
       </p>
     </statement>
   </exercise>
 
-  <exercise>
+  <exercise workspace="2in">
     <statement>
       <p>
-        
+        Draw a multigraph for which the above walk is an Eulerian circuit.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Find the odd-degree vertices of <m>G</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        The following table gives the weights of the edges of <m>G</m>.
+      </p>
+      <tabular halign="right">
+        <row>
+          <cell bottom="minor" right="minor"></cell>
+          <cell bottom="minor" right="minor"><m>v_1</m></cell>
+          <cell bottom="minor" right="minor"><m>v_2</m></cell>
+          <cell bottom="minor" right="minor"><m>v_3</m></cell>
+          <cell bottom="minor" right="minor"><m>v_4</m></cell>
+          <cell bottom="minor" right="minor"><m>v_5</m></cell>
+          <cell bottom="minor" right="minor"><m>v_6</m></cell>
+          <cell bottom="minor" right="minor"><m>v_7</m></cell>
+          <cell bottom="minor" right="minor"><m>v_8</m></cell>
+        </row>
+        <row>
+          <cell right="minor"><m>v_1</m></cell>
+          <cell right="minor"></cell>
+          <cell right="minor">7</cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor">8</cell>
+          <cell right="minor">4</cell>
+        </row>
+        <row>
+          <cell right="minor"><m>v_2</m></cell>
+          <cell right="minor">7</cell>
+          <cell right="minor"></cell>
+          <cell right="minor">8</cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+        </row>
+        <row>
+          <cell right="minor"><m>v_3</m></cell>
+          <cell right="minor"></cell>
+          <cell right="minor">8</cell>
+          <cell right="minor"></cell>
+          <cell right="minor">5</cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor">5</cell>
+        </row>
+        <row>
+          <cell right="minor"><m>v_4</m></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor">5</cell>
+          <cell right="minor"></cell>
+          <cell right="minor">3</cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+        </row>
+        <row>
+          <cell right="minor"><m>v_5</m></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor">3</cell>
+          <cell right="minor"></cell>
+          <cell right="minor">10</cell>
+          <cell right="minor"></cell>
+          <cell right="minor">9</cell>
+        </row>
+        <row>
+          <cell right="minor"><m>v_6</m></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor">10</cell>
+          <cell right="minor"></cell>
+          <cell right="minor">7</cell>
+          <cell right="minor"></cell>
+        </row>
+        <row>
+          <cell right="minor"><m>v_7</m></cell>
+          <cell right="minor">8</cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor"></cell>
+          <cell right="minor">7</cell>
+          <cell right="minor"></cell>
+          <cell right="minor">2</cell>
+        </row>
+        <row>
+          <cell right="minor"><m>v_8</m></cell>
+          <cell right="minor">4</cell>
+          <cell right="minor"></cell>
+          <cell right="minor">5</cell>
+          <cell right="minor"></cell>
+          <cell right="minor">9</cell>
+          <cell right="minor"></cell>
+          <cell right="minor">2</cell>
+          <cell right="minor"></cell>
+        </row>
+      </tabular>
+      <p>
+        <ol>
+            <li>
+                <p>
+                    Pair up the odd-degree vertices, and find shortest paths between each pair.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Use this to solve the Route Inspection problem for this weighted graph.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Represent your solution as an Eulerian circuit of a multigraph. 
+                </p>
+            </li>
+        </ol>
       </p>
     </statement>
   </exercise>

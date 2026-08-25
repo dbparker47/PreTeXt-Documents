@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-binary-tree">
+  <title>Binary Trees</title>
+  <p>
+    It is your task to build a set of trees.  Here are the rules for constructing them.
+    <ol>
+        <li>
+            <p>
+                An empty tree (i.e. with no vertices) is in your set of trees.
+            </p>
+        </li>
+        <li>
+            <p>
+                You can construct a new tree only by taking a vertex and connecting it to the roots of two other trees in the set, one on the left, and one on the right.  Your new vertex becomes the root of this new tree.
+            </p>
+        </li>
+    </ol>
+  </p>
 
-  <!-- Optional introduction -->
-  <introduction>
-    <p>
-      
-    </p>
-  </introduction>
-
-  <exercise>
-    <statement>
-      <p>
-        
-      </p>
-    </statement>
-  </exercise>
-
-  <exercise>
-    <statement>
-      <p>
-        
-      </p>
-    </statement>
-  </exercise>
-
+  <p>
+    Using only the rules above, construct as many of these trees as you can.
+  </p>
 </worksheet>

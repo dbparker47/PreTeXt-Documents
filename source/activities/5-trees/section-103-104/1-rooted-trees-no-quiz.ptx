@@ -1,28 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="act-temp">
-  <title></title>
+<worksheet xml:id="act-rooted-tree">
+  <title>Rooted Trees (Not on Quiz)</title>
 
-  <!-- Optional introduction -->
-  <introduction>
-    <p>
-      
-    </p>
-  </introduction>
+  <image>
+    <prefigure xmlns="https://prefigure.org" label="image-act-rooted-tree-ex">
+        <diagram dimensions="(300,300)" margins="5">
+            <definition>graph={1:[2,3,4],3:[6,7],4:[5,9],7:[8],9:[10,11]}</definition>
+            <coordinates bbox="(0,0,1,1)">
+                <network directed="no" labels="yes" graph="graph"
+                scale="0.8" node-stroke="black" node-fill="white" >
+                  <node at="1" p="(0.3,0.78)" />
+                  <node at="2" p="(0.1,0.96)" />
+                  <node at="3" p="(0.7,0.96)" />
+                  <node at="4" p="(0.3,0.42)" />
+                  <node at="5" p="(0.1,0.42)" />
+                  <node at="6" p="(0.9,0.6)" />
+                  <node at="7" p="(0.5,0.6)" />
+                  <node at="8" p="(0.7,0.42)" />
+                  <node at="9" p="(0.3,0.24)" />
+                  <node at="10" p="(0.5,0.24)" />
+                  <node at="11" p="(0.1,0.06)" />
+                </network>
+            </coordinates>
+        </diagram>
+    </prefigure>
+  </image>
 
-  <exercise>
+  <exercise workspace="2in">
     <statement>
       <p>
-        
+        Look at the above tree.  Which vertex is the root?
       </p>
     </statement>
   </exercise>
 
-  <exercise>
+  <exercise workspace="2in">
     <statement>
       <p>
-        
+        Think of the root as the common ancestor of all of the vertices.  Who are the children of the root?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Who are the grandchildren of the root?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Keep going and redraw the tree as a <q>family tree</q>, with your root vertex being the <q>first generation</q>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Pick another vertex to be the root.  Do the same analysis as above with this vertex.
       </p>
     </statement>
   </exercise>
