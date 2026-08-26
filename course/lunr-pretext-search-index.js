@@ -553,7 +553,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-intro-proofs-4",
   "level": "2",
   "url": "prep-1-13.html#video-activity-intro-proofs-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "1",
   "title": "Introduction to Proofs.",
   "body": " Introduction to Proofs  Solve the following problems. Write some kind of outline your proof (which can be a Know-Show table, but does not have to be).     Let be an odd integer. Determine whether is odd or even. Prove your result.    Let and be odd integers. Determine whether is odd or even. Prove your result.    (Not on quiz) Let and be even integers. Determine whether is odd or even, and prove your result.     "
@@ -580,7 +580,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-divisibility-congruence-4",
   "level": "2",
   "url": "prep-1-15.html#video-activity-divisibility-congruence-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "2",
   "title": "Divisibility and Congruence.",
   "body": " Divisibility and Congruence     Among all integers between 2 and 10, find all and such that .    Suppose , , and are integers. Prove that if and , then .    Find five solutions to the equivalence (mod 8)    Suppose that (mod 11). Determine what is modulo 11 (where the number you come up with is between 0 and 10). Prove your result.     "
@@ -607,7 +607,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-contrapositive-4",
   "level": "2",
   "url": "prep-1-20.html#video-activity-contrapositive-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "3",
   "title": "Introduction to Proof by Contrapositive(Not on Quiz).",
   "body": " Introduction to Proof by Contrapositive(Not on Quiz)     Consider the theorem we proved: If (mod 11), then (mod 11).   If you assume (mod 11), what can you conclude about ?    State what you found in (a) as a conditional statement.       Assume the statement If , then .   If you assume is false (i.e. is true), what can you conclude about ?    State what you found in (a) as as conditional statement.       Find the truth tables for , and .     "
@@ -616,7 +616,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-contrapositive-5",
   "level": "2",
   "url": "prep-1-20.html#video-activity-contrapositive-5",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "4",
   "title": "Proof by Contrapositive.",
   "body": " Proof by Contrapositive  Use a logically equivalent form of the statement to prove the following theorems.     If the sum of two real numbers is less than 50, then at least one of the numbers is less than 25.    If , , and are integers and does not divide , then does not divide . Hint: Separate out one of the assumptions to make the contrapositive easier to prove.    (Not on quiz) For all integers and , if is even, then and are both even or and are both odd.    (Not on quiz) Let , , and be integers. If and does not divide , then does not divide .     "
@@ -643,7 +643,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-biconditional-4",
   "level": "2",
   "url": "prep-1-22.html#video-activity-biconditional-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "5",
   "title": "Biconditional Statements.",
   "body": " Biconditional Statements     Verify that is logically equivalent to .    Let . Prove that is odd if and only if is odd.     "
@@ -652,7 +652,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-contradiction-4",
   "level": "2",
   "url": "prep-1-22.html#video-activity-contradiction-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "6",
   "title": "Proof by Contradiction.",
   "body": " Proof by Contradiction  Find the negations of the following statements. Use them to prove the original statements.     There is no largest integer (i.e. one that is larger than all other integers).    There is no smallest positive rational number (i.e. one that is smaller than all other positive rational numbers).    No integer can be both even and odd.    Let be a statement that is always false (i.e. a contradiction). Prove that is logically equivalent to . What does this have to do with proof by contradiction?    Prove every natural number is either even or odd. Hint: Assume that is the smallest natural number that is neither even nor odd.     "
@@ -679,7 +679,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-contradiction-2-4",
   "level": "2",
   "url": "prep-1-25.html#video-activity-contradiction-2-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "7",
   "title": "Proof by Contradiction.",
   "body": " Proof by Contradiction  Find the negations of the following statements. Use them to prove the original statements.     There is no largest integer (i.e. one that is larger than all other integers).    There is no smallest positive rational number (i.e. one that is smaller than all other positive rational numbers).    No integer can be both even and odd.    Let be a statement that is always false (i.e. a contradiction). Prove that is logically equivalent to . What does this have to do with proof by contradiction?    Prove every natural number is either even or odd. Hint: Assume that is the smallest natural number that is neither even nor odd.     "
@@ -688,7 +688,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-irrational-4",
   "level": "2",
   "url": "prep-1-25.html#video-activity-irrational-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "8",
   "title": "Irrational Numbers.",
   "body": " Irrational Numbers  Prove the following about irrational numbers.     Consider , , , and . Prove that each of them is an irrational number.    Prove that is irrational. Hint: Think exponentially.     "
@@ -715,7 +715,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-weak-induction-4",
   "level": "2",
   "url": "prep-1-27.html#video-activity-weak-induction-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "9",
   "title": "Proof by Induction.",
   "body": " Proof by Induction  Use induction to prove the following.                "
@@ -742,7 +742,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-strong-induction-4",
   "level": "2",
   "url": "prep-1-29.html#video-activity-strong-induction-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "10",
   "title": "Strong Induction.",
   "body": " Strong Induction  Prove the following by induction.     Suppose you have a sequence of numbers . In addition, , , and the for all . Prove that for all integers .    Let the Fibonacci sequence be defined by , , and for all .   Write down the first ten numbers in the sequence.    Prove that is even for all .       (Not on quiz) Suppose you have a system of buildings where each pair of buildings is connected by a one-way road. Prove that there is a route that enables you to visit every building. Hint: Let be the number of buildings. For the induction step, Choose a random building and let be the set of buildings from which you can get to by a single road. Let be the set of buildings you can get to from with a single road.    (Not on quiz) We proved that is even for all integers . Are any other Fibonacci numbers even? Prove your conjecture.     "
@@ -769,7 +769,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-intro-relations-4",
   "level": "2",
   "url": "prep-2-1.html#video-activity-intro-relations-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "11",
   "title": "Introduction to Relations.",
   "body": " Introduction to Relations  For the following, recall that if is a relation, the statement means that is related to under the relation.     Come up with some relations (human, number, set, and other) apart from the ones discussed in the video.    For the relations (i.e. less than or equal), (i.e. divisibility), and (i.e. subset relation), define the relation formally as a set of ordered pairs, using set builder notation.    Find 4 elements of each relation in #2 (i.e. 4 ordered pairs).    Define the hostility relationship on the set of all people where means that is mad at . Let Jojo be a person. Describe the following set, interpreting as a set of ordered pairs, and using set builder notation: The set of people who are mad at Jojo (poor Jojo!).    Do what you did in #3 for all the other relations we discussed in class. Describe the sets informally, and then describe them formally using set builder notation.     "
@@ -778,7 +778,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-relation-models-4",
   "level": "2",
   "url": "prep-2-1.html#video-activity-relation-models-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "12",
   "title": "More Relations.",
   "body": " More Relations  Work the following relation problems.     For a relation and for , let be the set of elements of that are related to . Write formally as a set in set builder notation.    We define a relation on , where means (mod 3).   Define as a subset of .    What numbers are in ? In ?       Let , and define on , where means (mod ).   Define as a subset of .    Let . What are the elements in ?       Prove the relations in #2 and #3 are reflexive, symmetric, and transitive.     "
@@ -805,7 +805,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-relation-models-2-4",
   "level": "2",
   "url": "prep-2-3.html#video-activity-relation-models-2-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "13",
   "title": "More Relations.",
   "body": " More Relations  Work the following relation problems.     For a relation and for , let be the set of elements of that are related to . Write formally as a set in set builder notation.    We define a relation on , where means (mod 3).   Define as a subset of .    What numbers are in ? In ?       Let , and define on , where means (mod ).   Define as a subset of .    Let . What are the elements in ?       Prove the relations in #2 and #3 are reflexive, symmetric, and transitive.     "
@@ -814,7 +814,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-equivalence-relation-4",
   "level": "2",
   "url": "prep-2-3.html#video-activity-equivalence-relation-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "14",
   "title": "Equivalence Relations.",
   "body": " Equivalence Relations  Work the following problems related to equivalence relations.     We define on by precisely when . Determine whether or not is reflexive, symmetric, or transitive. Is an equivalence relation?    We define on by precisely when .   List 6 elements of .    Prove that is an equivalence relation.    Let . What are the elements in ? In ?    If , find .    (Not on quiz) Look at the different 's, starting with . When do the 's start repeating themselves? Use this to describe a set of distinct 's that form a complete list.       Here is how we mathematically define rational numbers. Let , and define on by precisely when .   List 4 elements of .    Prove that is an equivalence relation.        "
@@ -841,7 +841,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-equivalence-class-ex-4",
   "level": "2",
   "url": "prep-2-5.html#video-activity-equivalence-class-ex-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "15",
   "title": "Equivalence Class Examples.",
   "body": " Equivalence Class Examples  Find the equivalence classes of the following relations.     Let be the set of all the ways you can write the numbers 1, 2, 3, and 4 in a square. Define the relation on as follows. For each pair of squares , we say that if can be rotated so that it looks exactly like .   Write down two squares that are related to one another.    Write down two squares that are not related to one another.    Prove that is an equivalence relation.    Find all equivalence classes of .       Let , and define on by precisely when (mod 6). Do parts (a) through (d) above for .     "
@@ -868,7 +868,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-equivalence-class-thm-4",
   "level": "2",
   "url": "prep-2-8.html#video-activity-equivalence-class-thm-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "16",
   "title": "Equivalence Class Theorems.",
   "body": " Equivalence Class Theorems  Let the relation on (i.e. from to ) be an equivalence relation. As before, for each , let .     Prove that .    Prove that for all , we have and .    Prove that for all , .    Prove that if and , then . Similarly, prove that if , then .    Use what you proved above to prove that if and only if .    Suppose that . What can you say about , , and ? Prove it.    Let , be all the distinct 's (i.e. all the distinct families). If , prove that .     "
@@ -895,7 +895,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-partial-order-4",
   "level": "2",
   "url": "prep-2-10.html#video-activity-partial-order-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "17",
   "title": "Partial Orders - Directed Graph Model.",
   "body": " Partial Orders - Directed Graph Model  Solve the following partial order problems.     Let (i.e. the set of points on the Cartesian plane). We define the relation on by when and .   Prove that is a partial order.    Prove that is not a total order (i.e. it is not connex).       Define a relation on the set of vertices of the figure below by precisely when .     relation={1:[2],2:[4],3:[2]}  labels={1:'a',2:'b',3:'c',4:'d'}                Is this a partial order? Why or why not?    What arrows would have to be added to make this a partial order? Go ahead and add them.    What pairs of elements are comparable in the relation you created in (b)?    Identify all maximum, minimum, maximal, and minimal elements of the partial order you created in (b).       Do the same as #2 with the following figure.     relation={1:[2],3:[4,5,6],4:[1,2],5:[2],6:[1,5]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}          Can the following figure have arrows added to make it a partial order? Why or why not?     relation={1:[2,3,5],2:[5],3:[4],4:[1,2,5]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}           "
@@ -904,7 +904,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-partial-order-5",
   "level": "2",
   "url": "prep-2-10.html#video-activity-partial-order-5",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "18",
   "title": "Partial Orders - Divisibility Relation.",
   "body": " Partial Orders - Divisibility Relation  Define the relation on (where includes 0) by precisely when divides evenly into .     Prove that this is a partial order.    Find two elements of that are comparable, and find two elements that are not comparable.    Identify all maximum, minimum, maximal, and minimal elements.    (Not on quiz) Do #3 when the set is .     "
@@ -931,7 +931,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-comparability-max-min-4",
   "level": "2",
   "url": "prep-2-15.html#video-activity-comparability-max-min-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "19",
   "title": "Partial Orders - Directed Graph Model.",
   "body": " Partial Orders - Directed Graph Model  Solve the following partial order problems.     Let (i.e. the set of points on the Cartesian plane). We define the relation on by when and .   Prove that is a partial order.    Prove that is not a total order (i.e. it is not connex).       Define a relation on the set of vertices of the figure below by precisely when .     relation={1:[2],2:[4],3:[2]}  labels={1:'a',2:'b',3:'c',4:'d'}                Is this a partial order? Why or why not?    What arrows would have to be added to make this a partial order? Go ahead and add them.    What pairs of elements are comparable in the relation you created in (b)?    Identify all maximum, minimum, maximal, and minimal elements of the partial order you created in (b).       Do the same as #2 with the following figure.     relation={1:[2],3:[4,5,6],4:[1,2],5:[2],6:[1,5]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}          Can the following figure have arrows added to make it a partial order? Why or why not?     relation={1:[2,3,5],2:[5],3:[4],4:[1,2,5]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}           "
@@ -940,7 +940,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-comparability-max-min-5",
   "level": "2",
   "url": "prep-2-15.html#video-activity-comparability-max-min-5",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "20",
   "title": "Partial Orders - Divisibility Relation.",
   "body": " Partial Orders - Divisibility Relation  Define the relation on (where includes 0) by precisely when divides evenly into .     Prove that this is a partial order.    Find two elements of that are comparable, and find two elements that are not comparable.    Identify all maximum, minimum, maximal, and minimal elements.    (Not on quiz) Do #3 when the set is .     "
@@ -967,7 +967,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-composition-4",
   "level": "2",
   "url": "prep-2-19.html#video-activity-composition-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "21",
   "title": "Composition of Relations.",
   "body": " Composition of Relations  For the following, let be the relation on given by precisely when (mod ), let be the divisibility relation on , and let be the ordinary less than or equal relation on any set of real numbers.     Consider the relation .   Find some ordered pairs in this relation.    Find all the integers such that .    Find all the integers $ such that .       Do the same as in #1 for .    Do the same as in #1 for . Also, determine all such that .     "
@@ -994,7 +994,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-transitive-closure-4",
   "level": "2",
   "url": "prep-2-22.html#video-activity-transitive-closure-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "22",
   "title": "Transitive Closure.",
   "body": " Transitive Closure  Work the following transitive closure problems.     Find the transitive closure of the following relation.     trans={1:[4],2:[1,2,3],4:[2],5:[3]}                Find the transitive closure of                Let $R$ be the relation on given by precisely when is a prime number.   Find a few ordered pairs in .    Prove or disprove that . Prove or disprove that .    (Not on quiz) Based on your experiences in (a) and\/or (b), conjecture what you believe to be. Prove your conjecture if you dare.        "
@@ -1021,7 +1021,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-warshall-4",
   "level": "2",
   "url": "prep-2-24.html#video-activity-warshall-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "23",
   "title": "Warshall’s Algorithm.",
   "body": " Warshall's Algorithm  Use Warshall's Algorithm to find the transitive closure of the following relations. Make sure you show what arrows are added at each step.      warsh1={1:[3],2:[4],3:[4],5:[1,2]}                 warsh2={1:[2],2:[6],3:[2], 4:[2],5:[4]}                "
@@ -1048,7 +1048,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-graph-theory-4",
   "level": "2",
   "url": "prep-2-26.html#video-activity-graph-theory-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "24",
   "title": "Introduction to Graphs (Not on Quiz).",
   "body": " Introduction to Graphs (Not on Quiz)  The following problems are to help you understand graphs.     Suppose you have a group of people. With your graph, you want to describe who is friends with whom among the group.   Pick about 10 people you know and draw a graph describing their relationships.    Suppose you have two subsets of people in which there are no edges between vertices in the subsets. How would you interpret that?    What if you had a vertex that was not part of any edge?       Now consider the states of the United States, or the countries of your favorite continent.   What are some different relationships you can express with a graph?    Draw a graph to describe which states\/countries share a border with a given state\/country.    What information is shared by your graph in (b)? What information is not shared?    What are you doing if you are following edges from state to state (or country to country).       Suppose you have a group of 4 people, and you want to look at all 2-person groups that you can make out of them. Two groups are related if they share a person in common. Draw a graph of this situation.     "
@@ -1057,7 +1057,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-irrational-number-4",
   "level": "2",
   "url": "prep-2-26.html#video-activity-irrational-number-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "25",
   "title": "Graph Terminology.",
   "body": " Graph Terminology  Consider the graph given below. Each question that follows is about a definition related to graphs. Answer the question and note in the answers below what defined term the problem is about.     undirected={1:[2,3],2:[3],3:[4],4:[5,6]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}                  What is the vertex set ?    What is the edge set ?    For each vertex, give a list of vertices that share an edge with the vertex. Does this seem like a dictionary? This is called the neighborhood of the given vertex.    For each vertex, list the edges that the vertex is a part of. These are called incident edges to the vertices.    For each vertex, determine how many vertices share an edge with the vertex. You could also think of this as the number of edges the vertex is a part of. This is called the degree of the given vertex.    Can you find the following graph somewhere in the graph above? What would the graph below look like if you included the missing edges ? This is called a subgraph of . The subgraph with the missing edges is called the subgraph induced by the vertices.     undirected={1:[2],2:[3],4:[5],5:[6]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}                 Start on any vertex you want and take a walk from vertex to vertex by only walking along edges. List the vertices, in order, that you walk on, and make sure to wander a lot. This ordered list is called a walk .    Walk from to very purposefully. List the vertices on your path. No wandering. This is called a path .     Answers:    (vertices)     (edges)     , , , , , (adjacent vertices or neighbors or neighborhood)     , , , , , (vertices and edges that are incident)     , , , , , (degree of a vertex)    First Question: Yes. An example would be  (subgraph)  Second Question: This would look like     undirected={1:[2,3],2:[3],4:[5,6]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}                 An example would be (walk)    You could have or (path or shortest path)     "
@@ -1066,7 +1066,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-classes-4",
   "level": "2",
   "url": "prep-2-26.html#video-activity-classes-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "26",
   "title": "Classes of Graphs.",
   "body": " Classes of Graphs  In each problem below, try drawing a graph that looks like what is described.     Draw a graph that is one long path.    Draw a graph that goes in a circle.    Put down as many vertices as you would like, and draw as many edges as you can without any pair of vertices having more than one edge.    Put your vertices into two teams. Each player on one team plays each player on the other team. No one plays anyone on her or his own team. If two players play each other, you draw an edge between them.     "
@@ -1093,7 +1093,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-handshake-4",
   "level": "2",
   "url": "prep-3-1.html#video-activity-handshake-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "27",
   "title": "Handshake Theorem.",
   "body": " Handshake Theorem  In these problems, we compare the number of edges in a graph with the degrees of the vertices.     Consider the graph (path graph on vertices).   What are the degrees of the vertices of ?    What number do you get when you add all the degrees of the vertices?    How many edges does have?       Consider the graph (cycle graph on vertices).   What are the degrees of the vertices of ?    What number do you get when you add all the degrees of the vertices?    How many edges does have?       Consider the graph (complete graph on vertices).   What are the degrees of the vertices of ?    What number do you get when you add all the degrees of the vertices?    How many edges does have?       Let . What do you get when you add up all of the degrees of the vertices of ? Prove your conjecture.     "
@@ -1102,7 +1102,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-connected-4",
   "level": "2",
   "url": "prep-3-1.html#video-activity-connected-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "28",
   "title": "Connected Graphs.",
   "body": " Connected Graphs  Work the following problems related to connected graphs.     Prove that , , , and are all connected for .    Draw a graph that is not connected, and prove it is not connected.     "
@@ -1111,7 +1111,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-isomorphism-4",
   "level": "2",
   "url": "prep-3-1.html#video-activity-isomorphism-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "29",
   "title": "Graph Isomorphisms.",
   "body": " Graph Isomorphisms  Work the following problems related to isomorphic graphs.     Find all pairs of graphs that are isomorphic. Define the isomorphism, and show that it is an isomorphism. Find the pairs that are not isomorphic, and show no isomorphism exists in those cases.      undirected1={1:[2,4],2:[3,4]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}                undirected1={1:[3],2:[4],3:[4,5],4:[5]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}                 undirected1={1:[2],2:[4,5],3:[5],4:[5]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}                   undirected1={1:[2,3,4],2:[4]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}                undirected1={1:[2,3,4]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}                undirected1={1:[2,3,4],2:[5],3:[4]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}                  undirected1={1:[3,4],2:[3,5],3:[5]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}                (Not on quiz) Find all nonisomorphic graphs with seven vertices that all have degree 2. Prove your result.     "
@@ -1138,7 +1138,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-special-walks-4",
   "level": "2",
   "url": "prep-3-3.html#video-activity-special-walks-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "30",
   "title": "Introduction to Eulerian Circuits and Trails.",
   "body": " Introduction to Eulerian Circuits and Trails  For each of the following graphs, do the following.   If possible, make a circuit that uses all of the edges. If it's impossible, prove it.    If possible, make a trail that uses all of the edges and that starts and ends at different vertices. If it's impossible, prove it.         undirected1={1:[2,9],2:[3,8,9],3:[4,8,9],4:[5,6,7],5:[6,7],6:[7],7:[8],8:[9]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i'}                     undirected1={1:[2,6],2:[3,5,6],3:[4,6],4:[5],5:[6]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j'}                  undirected1={1:[2,10],2:[3,9,10],3:[4,9,10],4:[5,7,8],5:[6,7,8],6:[7],7:[8],8:[9],9:[10]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j'}                      undirected1={1:[2,4,6],2:[3,5,6],3:[4,6],4:[5],5:[6]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j'}                "
@@ -1147,7 +1147,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-eulerian-circuit-5",
   "level": "2",
   "url": "prep-3-3.html#video-activity-eulerian-circuit-5",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "31",
   "title": "Eulerian Circuit Algorithm.",
   "body": " Eulerian Circuit Algorithm  Suppose we have a connected graph such that every vertex has even degree. We will create an algorithm to construct an Eulerian circuit.     Choose an arbitrary vertex . What if no edges are incident to ?    If we are not finished, choose any edge incident to that we have not yet traveled on and travel along it to another vertex along this edge. Why can we do this?    Keep repeating step 2 until we cannot do it anymore.   Why will we eventually have to stop?    Prove that when we stop, we are on the vertex . Hint: Assume we are on any other vertex and find a contradiction.       So we have the circuit . What do we do if we have traveled along each edge in the graph?    What if we have some edges not yet traveled along, but none of them are incident to any of , ?    Suppose one of the vertices on our circuit is incident to an unused edge. Relabel our vertices so that this one is and our circuit is . Why is it safe to assume that is the first vertex in the circuit?    Repeat steps 2-4 to create a new circuit . Again, think about why we can do this.    Take the circuits we created in step 3 and step 7 and turn them into a single circuit.    Repeat steps 4-8 until we are forced to stop.    Can this process go on forever? If not, what happens when the process stops?     "
@@ -1174,7 +1174,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-eulerian-circuit-2-5",
   "level": "2",
   "url": "prep-3-5.html#video-activity-eulerian-circuit-2-5",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "32",
   "title": "Eulerian Circuit Algorithm.",
   "body": " Eulerian Circuit Algorithm  Suppose we have a connected graph such that every vertex has even degree. We will create an algorithm to construct an Eulerian circuit.     Choose an arbitrary vertex . What if no edges are incident to ?    If we are not finished, choose any edge incident to that we have not yet traveled on and travel along it to another vertex along this edge. Why can we do this?    Keep repeating step 2 until we cannot do it anymore.   Why will we eventually have to stop?    Prove that when we stop, we are on the vertex . Hint: Assume we are on any other vertex and find a contradiction.       So we have the circuit . What do we do if we have traveled along each edge in the graph?    What if we have some edges not yet traveled along, but none of them are incident to any of , ?    Suppose one of the vertices on our circuit is incident to an unused edge. Relabel our vertices so that this one is and our circuit is . Why is it safe to assume that is the first vertex in the circuit?    Repeat steps 2-4 to create a new circuit . Again, think about why we can do this.    Take the circuits we created in step 3 and step 7 and turn them into a single circuit.    Repeat steps 4-8 until we are forced to stop.    Can this process go on forever? If not, what happens when the process stops?     "
@@ -1183,7 +1183,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-hamiltonian-4",
   "level": "2",
   "url": "prep-3-5.html#video-activity-hamiltonian-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "33",
   "title": "Hamiltonian Cycles.",
   "body": " Hamiltonian Cycles  Work the following problems related to Hamiltonian cycles.     Determine the values of and for which of the following have Hamiltonian cycles.                Suppose that has a Hamiltonian cycle. Prove that is connected.    Let be the graph pictured below. Prove that does not have a Hamiltonian cycle.     undirected1={1:[2,5],2:[3],3:[4,6,8],4:[5],6:[7],7:[8]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}                   (Not on quiz) Let and be graphs. Let and . Define the graph whose vertex set is and whose edge set is . Prove that does not have a Hamiltonian cycle.    (Not on quiz) Let and be graphs with Hamiltonian cycles. Let , and let such that is one of the edges of a Hamiltonian cycle for , and is one of the edges of a Hamiltonian cycle for . Define the graph $H$ whose vertex set is and whose edge set is . Prove that has a Hamiltonian cycle.     "
@@ -1210,7 +1210,7 @@ var ptx_lunr_docs = [
   "id": "video-activity--4",
   "level": "2",
   "url": "prep-3-15.html#video-activity--4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "34",
   "title": "Graph Coloring.",
   "body": " Graph Coloring  Work the following problems related to chromatic number.     Determine the chromatic number for each of the following graphs. Prove your result.      undirected1={1:[2,4],2:[3],3:[4]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}  N=4  f(t)=(cos(2*pi*t\/N), sin(2*pi*t\/N))                undirected1={1:[2,5],2:[3],3:[4],4:[5]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}  N=5  f(t)=(cos(2*pi*t\/N), sin(2*pi*t\/N))                 undirected1={1:[2,6],2:[3],3:[4],4:[5],5:[6]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}  N=6  f(t)=(cos(2*pi*t\/N), sin(2*pi*t\/N))                    undirected1={1:[2,3,4],2:[3],3:[4]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}  N=4  f(t)=(cos(2*pi*t\/N), sin(2*pi*t\/N))                undirected1={1:[2,3,5],2:[3],3:[4],4:[5]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}  N=5  f(t)=(cos(2*pi*t\/N), sin(2*pi*t\/N))                 undirected1={1:[2,3,4],2:[3,4],3:[4]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}  N=4  f(t)=(cos(2*pi*t\/N), sin(2*pi*t\/N))                  undirected1={1:[4,5],2:[4,5],3:[4,5]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}                 undirected1={1:[2,4,5],2:[3,5,4,7],3:[6],4:[5],5:[6,7],6:[7]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}                   undirected1={1:[2,5],2:[3,5,6,7],3:[4,5,6,7],4:[7],5:[6],6:[7]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}                   Compute the following and prove.                          What are all possible things that can happen to the chromatic number of a graph if you add an edge to the graph without adding any vertices?    Let be a graph that has a cycle of odd order. What is the smallest can be?     "
@@ -1237,7 +1237,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-adjacency-matrix-4",
   "level": "2",
   "url": "prep-3-17.html#video-activity-adjacency-matrix-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "35",
   "title": "Adjacency Matrices.",
   "body": " Adjacency Matrices  Work the following adjacency matrix problems.     Make two different adjacency matrices for the following graph.     undirected1={1:[2,4,5],2:[5,6],3:[4,5],4:[6],5:[6]}  N=6  f(t)=(cos(2*pi*t\/N), sin(2*pi*t\/N))                 Draw a graph for the following adjacency matrix.     Explain why the following matrix is not an adjacency matrix.      "
@@ -1264,7 +1264,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-tree-4",
   "level": "2",
   "url": "prep-3-22.html#video-activity-tree-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "36",
   "title": "Introduction to Trees.",
   "body": " Introduction to Trees  Work the following problems related to trees.     Draw pictures of some trees and some forests.    Can you draw a picture of a tree with a vertex in a tree and\/or forest of very high degree? Prove it.    Suppose you have a tree with a vertex of degree 1 (called a leaf ). Prove that if you remove and any edge that is incident with it to get the graph , then is a tree.    Can you draw a tree with at least one edge and without any leaves? Can you draw a tree with at least one edge and just one leaf? Prove the first answer by contradiction using an algorithm and the second answer by induction.    Count the vertices and edges in your trees. Are there any patterns? Prove it using induction.    Count the vertices and edges in your forests. Are there any patterns? Prove it using what you proved above.    In a tree or forest, is it possible to take two different paths between two vertices? Prove by contradiction.    In a tree, what happens when you add an edge to the graph without changing the vertices?    In a forest, what can happen when you add an edge to the graph without changing the vertices?     "
@@ -1291,7 +1291,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-spanning-tree-4",
   "level": "2",
   "url": "prep-3-26.html#video-activity-spanning-tree-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "37",
   "title": "Minimum Spanning Trees.",
   "body": " Minimum Spanning Trees     labels={1:'A',2:'B',3:'C',4:'D',5:'E',6:'F',7:'G',8:'H',9:'I',10:'J',11:'K',12:'L',13:'M'}                 2  7  3  4  2  4  1  2  3  4  5  6  8  3  2  3  4  4  2  6  7  3  2          (Kruskal's Algorithm) We construct a spanning tree of minimum weight for the graph above (i.e. a minimum spanning tree). Note that, for the most part, edge weights are written below the edge.   Which edge would you choose first?    Which 6 edges would you choose next?    Which 5 edges would you like to choose next? Why can you not choose all of them? Okay, choose as many as you can.    Repeat this process, choosing the best edges that do not break the rules, until you get a spanning tree. Find the total weight of your tree.       (Prim's Algorithm) For your next minimum spanning tree, choose a vertex at random that is not or .   Which edge would you choose that is incident to this vertex?    Which additional edge would you choose that would keep the graph you are building a tree (no cycles and connected ).    Continue this process until you have a spanning tree. Find its total weight and compare to #1.        "
@@ -1318,7 +1318,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-spanning-tree-2-4",
   "level": "2",
   "url": "prep-3-29.html#video-activity-spanning-tree-2-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "38",
   "title": "Minimum Spanning Trees.",
   "body": " Minimum Spanning Trees     labels={1:'A',2:'B',3:'C',4:'D',5:'E',6:'F',7:'G',8:'H',9:'I',10:'J',11:'K',12:'L',13:'M'}                 2  7  3  4  2  4  1  2  3  4  5  6  8  3  2  3  4  4  2  6  7  3  2          (Kruskal's Algorithm) We construct a spanning tree of minimum weight for the graph above (i.e. a minimum spanning tree). Note that, for the most part, edge weights are written below the edge.   Which edge would you choose first?    Which 6 edges would you choose next?    Which 5 edges would you like to choose next? Why can you not choose all of them? Okay, choose as many as you can.    Repeat this process, choosing the best edges that do not break the rules, until you get a spanning tree. Find the total weight of your tree.       (Prim's Algorithm) For your next minimum spanning tree, choose a vertex at random that is not or .   Which edge would you choose that is incident to this vertex?    Which additional edge would you choose that would keep the graph you are building a tree (no cycles and connected ).    Continue this process until you have a spanning tree. Find its total weight and compare to #1.        "
@@ -1345,7 +1345,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-rooted-tree-4",
   "level": "2",
   "url": "prep-3-31.html#video-activity-rooted-tree-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "39",
   "title": "Rooted Trees (Not on Quiz).",
   "body": " Rooted Trees (Not on Quiz)     graph={1:[2,3,4],3:[6,7],4:[5,9],7:[8],9:[10,11]}                       Look at the above tree. Which vertex is the root?    Think of the root as the common ancestor of all of the vertices. Who are the children of the root?    Who are the grandchildren of the root?    Keep going and redraw the tree as a family tree , with your root vertex being the first generation .    Pick another vertex to be the root. Do the same analysis as above with this vertex.     "
@@ -1354,7 +1354,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-binary-tree-4",
   "level": "2",
   "url": "prep-3-31.html#video-activity-binary-tree-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "40",
   "title": "Binary Trees.",
   "body": " Binary Trees  It is your task to build a set of trees. Here are the rules for constructing them.   An empty tree (i.e. with no vertices) is in your set of trees.    You can construct a new tree only by taking a vertex and connecting it to the roots of two other trees in the set, one on the left, and one on the right. Your new vertex becomes the root of this new tree.     Using only the rules above, construct as many of these trees as you can.  "
@@ -1381,7 +1381,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-traversal-4",
   "level": "2",
   "url": "prep-4-2.html#video-activity-traversal-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "41",
   "title": "Traversals.",
   "body": " Traversals  Consider the following binary trees.      graph={1:[2,3],2:[4,5],3:[7,8],4:[6],5:[10,9],8:[11]}  labels={1:'A',2:'B',3:'C',4:'D',5:'E',6:'F',7:'G',8:'H',9:'I',10:'J',11:'K'}                       graph={1:[2,3],2:[4],3:[7,8],4:[5,6],7:[9],8:[10,11]}                     As you traverse your tree, you will look at all the subtrees, starting with the entire tree. For each subtree, there are three possible commands you can give your searcher.   Visit the root of your tree.    Traverse the left subtree of the root of your tree.    Traverse the right subtree of the root of your tree.     For your traversal algorithm, you will prioritize your commands (i.e. you will put them in an order, where the first command is always done first, the second command is always done second, and the third command is always done third). You will run your algorithm recursively. There are six ways to do this. Put the commands in as many different orders as you can and write out what order the vertices will be chosen. Here are the different orderings.   Root Left Subtree Right Subtree    Root Right Subtree Left Subtree    Left Subtree Root Right Subtree    Left Subtree Right Subtree Root    Right Subtree Left Subtree Root    Right Subtree Root Left Subtree     "
@@ -1390,7 +1390,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-shortest-path-4",
   "level": "2",
   "url": "prep-4-2.html#video-activity-shortest-path-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "42",
   "title": "Introduction to Shortest Path Algorithms (Not on Quiz).",
   "body": " Introduction to Shortest Path Algorithms (Not on Quiz)  Consider the following weighted graph.     N=5  f(t)=(cos(2*pi*t\/N), sin(2*pi*t\/N))  graph={1:[2,5],2:[3],3:[4],4:[5]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5'}         2  4  1  3  2          Using your wits, find the lengths of the shortest paths between all the pairs of vertices.    (Dijkstra) Finding a shortest path from to all other vertices.   Which vertex is closest to ? How would you label this vertex so that you can remember how far it is to and how you got there?    Look at the vertices adjacent to both the vertices in (a). Which of those is closest to ? How would you label this vertex so that you can remember how far it is to and how you got there?    Look at the vertices adjacent to the vertices in (a) and (b). Which of those is closest to ? How would you label this vertex so that you can remember how far it is to and how you got there? Repeat.       (Improved Dijkstra) Finding a shortest path from to all other vertices.   How far is from itself? Label with this distance.    Look at all labels adjacent to . Based on these edges, make a preliminary guess as to how far they are from , and label these vertices temporarily with these guesses. Is there one of these labels that you are sure is correct? Make that label permanent.    Look at all vertices adjacent to the permanent vertex you found in (b). Give them all temporary labels. Make one of them permanent. Repeat.        "
@@ -1417,7 +1417,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-shortest-path-2-4",
   "level": "2",
   "url": "prep-4-5.html#video-activity-shortest-path-2-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "43",
   "title": "Dijkstra’s Algorithm.",
   "body": " Dijkstra's Algorithm     labels={1:'A',2:'B',3:'C',4:'D',5:'E',6:'F',7:'G',8:'H',9:'I',10:'J',11:'K',12:'L',13:'M'}                 2  7  3  4  2  4  1  2  3  4  5  6  8  3  2  3  4  4  2  6  7  3  2          Use Dijkstra's algorithm to find distances between vertices of the graph above. In particular, find the distances between and all other vertices, and find the distances between and all other vertices.    Use Improved Dijkstra's algorithm to find distances between vertices of the graph above. Try different vertices as starting points. In particular, find the distances between and all other vertices, and find the distances between and all other vertices.     "
@@ -1444,7 +1444,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-multigraph-4",
   "level": "2",
   "url": "prep-4-7.html#video-activity-multigraph-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "44",
   "title": "Introduction to the Route Inspection Problem (Not on Quiz).",
   "body": " Introduction to the Route Inspection Problem (Not on Quiz)  Suppose the walk goes over every edge in the connected graph .     Draw a picture of the graph .    Draw a multigraph for which the above walk is an Eulerian circuit.    Find the odd-degree vertices of .    The following table gives the weights of the edges of .                 7      8  4     7   8           8   5     5       5   3           3   10   9         10   7      8      7   2     4   5   9   2        Pair up the odd-degree vertices, and find shortest paths between each pair.    Use this to solve the Route Inspection problem for this weighted graph.    Represent your solution as an Eulerian circuit of a multigraph.        "
@@ -1471,7 +1471,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-route-inspection-4",
   "level": "2",
   "url": "prep-4-9.html#video-activity-route-inspection-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "45",
   "title": "More Route Inspection.",
   "body": " More Route Inspection  Work the following route inspection problems.     Solve the Route Inspection Problem for the weighted graphs below.      graph={1:[2,5],2:[3],3:[4],4:[5]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'v_6'}          10  20  12  50  33  22  5  12  1          graph={1:[2,5],2:[3],3:[4],4:[5]}  labels={1:'A',2:'B',3:'C',4:'D',5:'E',6:'F',7:'G'}           5  4  2  2  1  1  2  5  2          Prove that the Route Inspection algorithm cannot give us two pairs of odd vertices and such that the shortest paths between & and between & go through the same edge . Hint: Prove by contradiction, and let be the distance from to , be the distance from to , be the distance from to and be the distance from to . Consider the following questions.   What is the total distance covered by the shortest paths between these two pairs?    Can you find a pairing of the vertices that gives a shorter distance?       Let be a connected weighted graph with precisely four odd vertices (say , , , and ). Let be a path between and , and let be a path between and . Suppose also that and share no edges. Prove that duplicating the edges of and transforms into an Eulerian multigraph.     "
@@ -1498,7 +1498,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-digraphs-4",
   "level": "2",
   "url": "prep-4-12.html#video-activity-digraphs-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "46",
   "title": "Digraphs &amp; Shortest Path Algorithms (No Quiz).",
   "body": " Digraphs & Shortest Path Algorithms (No Quiz)     graph={1:[2,5],2:[3],3:[4],4:[5]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g'}           4  5  2  1  10  3  6  4  2  2  4  8       Use either Dijkstra's or Improved Dijkstra's Algorithm on the weighted digraph above to determine the distance between and the other vertices.  "
@@ -1525,7 +1525,7 @@ var ptx_lunr_docs = [
   "id": "video-activity-scheduling-4",
   "level": "2",
   "url": "prep-4-14.html#video-activity-scheduling-4",
-  "type": "Problem",
+  "type": "In-Class Activities",
   "number": "47",
   "title": "Scheduling Problems.",
   "body": " Scheduling Problems  Joanne is writing her dissertation in mathematics. She has already chosen the general area in which she wants to work. She must complete the following tasks, not necessarily in the order given.   Work examples and find patterns (E).    Formulate her theorems and prove them (T).    Read journal articles related to her problem (R).    Make a bibliography (B).    Write her dissertation (W).     She must do (E) before (T). She must do (R) before (B). She cannot start (W) until (T) is done. If she does (E) before (R), then (E) takes 4 time units to complete; otherwise, it takes 2 time units. If she does (T) before (R), then (T) takes 10 time units; otherwise it takes 7 time units. If she does (R) before (T), then (R) takes 6 time units; otherwise it takes 4 time units. If she starts (B) before (W), then (B) takes 3 time units; otherwise it takes 1 time unit. If (W) starts before (R), then (W) takes 6 time units; otherwise, it takes 4 time units.     Represent this as a weighted digraph, where the vertices are the lists of tasks you have done and each arc is a task done between two vertices. Note that your vertices are sets (e.g. ).    Determine the order that Joanne should do the tasks to finish in the shortest amount of time.     "
