@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="adj-matrix-reading" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Adjacency Matrices for Graphs</title>
+
+  <p>
+    We have already found an effective way to represent a graph in Python.  We use a dictionary where the keys are the vertices of the graph and the values are lists of vertices adjacent to the key.  But we can also store this information in a matrix.  Let's see how in an example.
+  </p>
+
+  <example>
+    <statement>
+        <p>
+            Consider the graph below.
+        </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="adj-reading-ex-1">
+                <diagram dimensions="(300,300)" margins="5">
+                    <definition>undirected1={1:[3],2:[3,6],3:[4],4:[5,6]}</definition>
+                    <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'v_6'}</definition>
+                    <coordinates bbox="(0,0,1,1)">
+                        <network directed="no" graph="undirected1" labels="yes" label-dictionary="labels"
+                        scale="0.8" node-stroke="black" node-fill="white" >
+                            <node at="1" p="(0.05,0.7)" />
+                            <node at="2" p="(0.35,0.3)" />
+                            <node at="3" p="(0.35,0.7)" />
+                            <node at="4" p="(0.65,0.7)" />
+                            <node at="5" p="(0.95,0.7)" />
+                            <node at="6" p="(0.65,0.3)" />
+                        </network>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+        </image>
+        <p>
+            To store the information in the graph, we let each row represent a vertex.  I choose to let the first row represent <m>v_1</m>, the second row to represent <m>v_2</m>, etc.  Now the entries of the first row will tell us which vertices <m>v_1</m> is adjacent to.  This means that the columns represent the vertices as well.  We put 1 as an entry when <m>v_1</m> is adjacent to the vertex, and we put 0 as an entry when <m>v_1</m> is not adjacent to the vertex.  Since <m>v_1</m> is only adjacent to <m>v_3</m>, the first row will look like <m>\begin{matrix} 0 \amp 0 \amp 1 \amp 0 \amp 0 \amp 0 \end{matrix}</m>.  Moving on to the second row, we note that <m>v_2</m> is adjacent to <m>v_3</m> and <m>v_6</m>, so the second row looks like <m>\begin{matrix} 0 \amp 0 \amp 1 \amp 0 \amp 0 \amp 1 \end{matrix}</m>.  If we continue in this way, we get
+            <md>
+                \begin{bmatrix} 0 \amp 0 \amp 1 \amp 0 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \amp 0 \amp 1 \\ 1 \amp 1 \amp 0 \amp 1 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \amp 1 \amp 1 \\ 0 \amp 0 \amp 0 \amp 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \amp 1 \amp 0 \amp 0 \end{bmatrix}
+            </md>
+        </p>
+        <p>
+            At this point, we could call it a day, but it seemed pretty arbitrary to order the rows and columns as we did.  What if the first row and column represented <m>v_6</m>, the second row and column represented <m>v_5</m>, etc.  For the first row, we have <m>v_6</m> adjacent to <m>v_2</m> and <m>v_4</m>, so the first row is <m>\begin{bmatrix} 0 \amp 0 \amp 1 \amp 0 \amp 1 \amp 0 \end{bmatrix}</m> (the 1 in the third column is for <m>v_4</m> and the 1 in the fifth column is <m>v_2</m>).  We continue to get
+            <md>
+                \begin{bmatrix} 0 \amp 0 \amp 1 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \amp 0 \amp 0 \\ 1 \amp 1 \amp 0 \amp 1 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \amp 1 \amp 1 \\ 1 \amp 0 \amp 0 \amp 1 \amp 0 \amp 0 \\ 0 \amp 0 \amp 0 \amp 1 \amp 0 \amp 0  \end{bmatrix}
+            </md>
+        </p>
+        <p>
+            Note that they are different adjacency matrices, but they represent the same graph.  The only difference is how we chose to order the vertices.
+        </p>
+    </statement>
+  </example>
+
+  <p>
+    Here is how adjacency matrices work in general.  Let <m>G</m> be a graph.  We first order the vertices of <m>G</m>, say in the order <m>v_1</m>, <m>v_2, \ldots , v_n</m>.  Then the adjacency matrix is an <m>n \times n</m> matrix <m>A = [a_{ij}]</m>, where <m>a_{ij}</m> represents the entry in row <m>i</m> and column <m>j</m>, and we let <m>a_{ij}</m> be the number of edges between <m>v_i</m>. and <m>v_j</m> (so <m>a_{ij}=1</m> if <m>v_i</m> and <m>v_j</m> are adjacent, and <m>a_{ij} = 0</m> if <m>v_i</m> and <m>v_j</m> are not adjacent).  As we saw in the example, the adjacency matrix depends on the ordering of the vertices, so we can have many different adjacency matrices for the same graph.
+  </p>
+
+  <p>
+    Now let's see how we can get the graph from the adjacency matrix.
+  </p>
+  <example>
+    <statement>
+        <p>
+            Suppose the following is the adjacency matrix for a graph.
+            <md>
+                \begin{bmatrix} 0 \amp 1 \amp 0 \amp 1 \\ 1 \amp 0 \amp 1 \amp 1 \\ 0 \amp 1 \amp 0 \amp 0 \\ 1 \amp 1 \amp 0 \amp 0 \end{bmatrix}
+            </md>
+        </p>
+        <p>
+            Let's see what we can deduce from the matrix.  Well, the matrix is <m>4 \times 4</m>, and so the graph has 4 vertices, say <m>v_1</m>, <m>v_2</m>, <m>v_3</m>, and <m>v_4</m>.  The first row says that <m>v_1</m> is adjacent to <m>v_2</m> and <m>v_4</m>.  The second row says that <m>v_2</m> is adjacent to <m>v_1</m>, <m>v_3</m>, and <m>v_4</m>.  The third row says that <m>v_3</m> is adjacent to <m>v_2</m>, and the last row says that <m>v_4</m> is adjacent to <m>v_1</m> and <m>v_2</m>.  This gives the following graph.
+        </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="adj-reading-ex-2">
+                <diagram dimensions="(300,300)" margins="5">
+                    <definition>undirected1={1:[2,4],2:[3,4]}</definition>
+                    <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4'}</definition>
+                    <coordinates bbox="(0,0,1,1)">
+                        <network directed="no" graph="undirected1" labels="yes" label-dictionary="labels"
+                        scale="0.8" node-stroke="black" node-fill="white" >
+                            <node at="1" p="(0.3,0.7)" />
+                            <node at="2" p="(0.7,0.7)" />
+                            <node at="3" p="(0.7,0.3)" />
+                            <node at="4" p="(0.3,0.3)" />
+                        </network>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+        </image>
+    </statement>
+  </example>
+
+  <p>
+    All I did was take the matrix in the previous example and move the 1 in the third row to the fourth column.  What went wrong?
+  </p>
+
+  <theorem>
+    <statement>
+        <p>
+            Let <m>A = [a_{ij}]</m> be the adjacency matrix of a graph, where <m>a_{ij}</m> is the number of edges between the vertices <m>v_i</m> and <m>v_j</m>.  Then <m>a_{ij} = a_{ji}</m> for all <m>i</m> and <m>j</m>.  In other words, <m>A</m> is a <em>symmetric matrix</em>.
+        </p>
+    </statement>
+  </theorem>
+</section>

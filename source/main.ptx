@@ -92,6 +92,18 @@
       <xi:include href="./class-prep-materials/4-14-w.ptx" />
     </chapter>
 
+    <chapter xml:id="supp-read">
+      <title>Supplemental Readings</title>
+      <xi:include href="./readings/3-composition-of-relations-reading.ptx" />
+      <xi:include href="./readings/3-partial-order-reading.ptx" />
+      <xi:include href="./readings/3-transitive-closure-reading.ptx" />
+      <xi:include href="./readings/4-adjacency-matrix-reading.ptx" />
+      <xi:include href="./readings/6-digraph-reading.ptx" />
+      <xi:include href="./readings/6-route-inspection-reading.ptx" />
+      <xi:include href="./readings/6-scheduling-reading.ptx" />
+      <xi:include href="./readings/6-shortest-path-reading.ptx" />
+    </chapter>
+
     <chapter xml:id="in-class-12-31">
       <title>In-Class Activities: Sections 1.2 &amp; 3.1</title>
       <xi:include href=".//activities/1-proofs/section-12-31/1-introduction-to-proofs.ptx"/>

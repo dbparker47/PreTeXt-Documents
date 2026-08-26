@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="composition-reading" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Composition of Relations</title>
+
+  <p>
+    Think back to the old days when you were studying functions (mathematical functions, not Python functions).  In a function <m>f</m>, you had some input <m>x</m> that corresponded with an output <m>f(x)</m>.  A visual representation is the following.
+  </p>
+  <image>
+    <prefigure xmlns="https://prefigure.org" label="function-digraph">
+        <diagram dimensions="(300,300)" margins="5">
+            <coordinates bbox="(-0.5,-0.5,0.5,0.5)">
+                <network directed="yes" node-fill="white" labels="yes" 
+                scale="0.8" seed="1" node-stroke="no">
+                    <node at="1" p="(-0.2,0)"><m>x</m></node>
+                    <node at="2" p="(0.2,0)"><m>f(x)</m></node>
+                <edge vertices="(1,2)"><m>f</m></edge>
+                </network>
+            </coordinates>
+        </diagram>
+    </prefigure>
+  </image>
+
+  <p>
+    Composition takes two functions <m>f</m> and <m>g</m> and turns them into one function <m>g \circ f</m> that determines its output in two steps.  You start with your input <m>x</m> and put it into <m>f</m> to get <m>f(x)</m>.  Then you take that output <m>f(x)</m> and put it into <m>g</m> to get <m>g(f(x))</m>.  Then <m>(g \circ f)(x)=g(f(x))</m>.  Here is what the picture looks like.
+  </p>
+  <image>
+    <prefigure xmlns="https://prefigure.org" label="function-composition-digraph">
+        <diagram dimensions="(300,300)" margins="5">
+            <coordinates bbox="(-0.5,-0.5,0.5,0.5)">
+                <network directed="yes" node-fill="white" labels="yes" 
+                scale="0.8" seed="1" node-stroke="no" node-size="25">
+                    <node at="1" p="(-0.4,0)"><m>x</m></node>
+                    <node at="2" p="(0,0)"><m>f(x)</m></node>
+                    <node at="3" p="(0.4,0)"><m>g(f(x))</m></node>
+                    <edge vertices="(1,2)"><m>f</m></edge>
+                    <edge vertices="(2,3)"><m>g</m></edge>
+                </network>
+            </coordinates>
+        </diagram>
+    </prefigure>
+  </image>
+
+  <p>
+    Here are three things I hope you noticed about the visual representations of the functions.
+    <ul>
+        <li>
+            <p>
+                Using arrows to represent the relationship between the input of a function and its output is a lot like how we represent relations with a directed graph.  This is because functions are a special type of relation, where <m>a \rightarrow b</m> means that <m>f(a)=b</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                Computing the composition of two functions is just starting with the input of the first function (in the above case, this is <m>f</m>) and following two arrows to the output (one with <m>f</m> and then one with <m>g</m>).
+            </p>
+        </li>
+        <li>
+            <p>
+                When we write the composition, the second function <m>g</m> comes before the first function <m>f</m>.  This is a bit confusing, but it makes sense since the formula comes out to <m>g(f(x))</m>.
+            </p>
+        </li>
+    </ul>
+  </p>
+
+  <p>
+    Since we can define composition of functions in terms of the directed graph of the relation, there is no reason we cannot define composition for relations.  However, there is also no reason to reverse the order of the relations when writing out the composition (unlike with functions), so we will write the first relation first and the second relation second.
+  </p>
+
+  <definition>
+    <statement>
+        <p>
+            Let <m>R</m> be a relation from the set <m>A</m> to the set <m>B</m> (i.e. <m>aRb</m> can only happen when <m>a \in A</m> and <m>b \in B</m>), and let <m>S</m> be a relation from <m>B</m> to <m>C</m>.  We define the relation <m>R \circ S</m> from <m>A</m> to <m>C</m> by <m>a(R \circ S)c</m> precisely when there is some <m>b \in B</m> where <m>aRb</m> and <m>bSc</m>.  In picture form, this looks like
+        </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="relation-composition-digraph-1">
+                <diagram dimensions="(300,300)" margins="5">
+                    <coordinates bbox="(-0.5,-0.5,0.5,0.5)">
+                        <network directed="yes" node-fill="white" labels="yes" 
+                        scale="0.8" seed="1" node-stroke="no">
+                            <node at="1" p="(-0.4,0)"><m>a</m></node>
+                            <node at="2" p="(0,0)"><m>b</m></node>
+                            <node at="3" p="(0.4,0)"><m>c</m></node>
+                            <edge vertices="(1,2)"><m>R</m></edge>
+                            <edge vertices="(2,3)"><m>S</m></edge>
+                        </network>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+        </image>
+    </statement>
+  </definition>
+
+  <example>
+    <statement>
+        <p>
+            Let <m>E</m> be the relation on <m>\mathbb{Z}</m> given by <m>aEb</m> precisely when <m>a \equiv b</m> (mod 3), and let <m>\mid</m> be the divisibility relation on <m>\mathbb{Z}</m> (i.e. <m>a|b</m> precisely when <m>b=ak</m> for some <m>k \in \mathbb{Z}</m>).  Let <m>R = E \circ \mid</m>.  Let's see some integers that are related.
+        </p>
+        <p>
+            We have <m>2E5</m> and <m>5|10</m>, and so <m>2R10</m>.  Also, <m>1E7</m> and <m>7|21</m>, and so <m>1R21</m>.  Here are some pictures to help you understand this.
+        </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="relation-composition-digraph-2">
+                <diagram dimensions="(300,300)" margins="5">
+                    <coordinates bbox="(-0.5,-0.5,0.5,0.5)">
+                        <network directed="yes" node-fill="white" labels="yes" 
+                        scale="0.8" seed="1" node-stroke="no">
+                            <node at="1" p="(-0.4,0)"><m>2</m></node>
+                            <node at="2" p="(0,0)"><m>5</m></node>
+                            <node at="3" p="(0.4,0)"><m>10</m></node>
+                            <edge vertices="(1,2)"><m>E</m></edge>
+                            <edge vertices="(2,3)"><m>\mid</m></edge>
+                        </network>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+        </image>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="relation-composition-digraph-3">
+                <diagram dimensions="(300,300)" margins="5">
+                    <coordinates bbox="(-0.5,-0.5,0.5,0.5)">
+                        <network directed="yes" node-fill="white" labels="yes" 
+                        scale="0.8" seed="1" node-stroke="no">
+                            <node at="1" p="(-0.4,0)"><m>1</m></node>
+                            <node at="2" p="(0,0)"><m>7</m></node>
+                            <node at="3" p="(0.4,0)"><m>21</m></node>
+                            <edge vertices="(1,2)"><m>E</m></edge>
+                            <edge vertices="(2,3)"><m>\mid</m></edge>
+                        </network>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+        </image>
+        <p>
+            Try some others to see if you can get the hang of it.
+        </p>
+        <p>
+            One thing that is different about composition of relations as opposed to just functions is that there can be more than one way to show that two numbers are related.  For instance, recall that we used <m>2E5</m> and <m>5|10</m> to show that <m>2R10</m>.  But we also have <m>2E2</m> and <m>2|10</m>, which also gives us <m>2R10</m>.  Here is a picture that shows the two ways we get <m>2(E \circ \mid)10</m>.
+        </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="relation-composition-digraph-4">
+                <diagram dimensions="(300,300)" margins="5">
+                    <coordinates bbox="(-0.5,-0.5,0.5,0.5)">
+                        <network directed="yes" node-fill="white" labels="yes" 
+                        scale="0.8" seed="1" node-stroke="no">
+                            <node at="1" p="(-0.4,0)"><m>2</m></node>
+                            <node at="2" p="(0,0.2)"><m>5</m></node>
+                            <node at="3" p="(0.4,0)"><m>10</m></node>
+                            <node at="4" p="(0,-0.2)"><m>2</m></node>
+                            <edge vertices="(1,2)"><m>E</m></edge>
+                            <edge vertices="(2,3)"><m>\mid</m></edge>
+                            <edge vertices="(1,4)"><m>E</m></edge>
+                            <edge vertices="(4,3)"><m>\mid</m></edge>
+                        </network>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+        </image>
+    </statement>
+  </example>
+</section>

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="trans-closure-reading" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Transitive Closure and Warshall's Algorithm</title>
+
+  <subsection xml:id="trans-closure-intro">
+    <title>Transitive Closure</title>
+
+  <p>
+    One of the in-class exercises we did a while back was to take a relation (represented as a directed graph) and keep adding arrows until the relation became an equivalence relation.  Here, we will seek to do something similar, except our goals will be a little more modest.  We seek to add arrows to make the equivalence relation transitive.
+  </p>
+
+  <p>
+    Let's look at an example.  Here is a relation in the form of a directed graph.
+  </p>
+  <image>
+    <prefigure xmlns="https://prefigure.org" label="tc-initial">
+        <diagram dimensions="(300,300)" margins="5">
+            <definition>warsh1={1:[2],2:[3,4],4:[5]}</definition>
+            <coordinates bbox="(0,0,1,1)">
+                <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                scale="0.8" seed="16" node-stroke="no">
+                  <node at="1" p="(0.2,0.65)" />
+                  <node at="2" p="(0.5,0.65)" />
+                  <node at="3" p="(0.8,0.65)" />
+                  <node at="4" p="(0.5,0.35)" />
+                  <node at="5" p="(0.8,0.35)" />
+                </network>
+            </coordinates>
+        </diagram>
+    </prefigure>
+  </image>
+
+  <p>
+    If we want to make this relation transitive, one way is just to draw arrows everywhere:
+  </p>
+  <image>
+    <prefigure xmlns="https://prefigure.org" label="tc-all">
+        <diagram dimensions="(300,300)" margins="5">
+            <definition>warsh1={1:[1,2,3,4,5],2:[1,2,3,4,5],3:[1,2,3,4,5],4:[1,2,3,4,5],5:[1,2,3,4,5]}</definition>
+            <coordinates bbox="(0,0,1,1)">
+                <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                scale="0.8" seed="16" node-stroke="no">
+                  <node at="1" p="(0.2,0.65)" />
+                  <node at="2" p="(0.5,0.65)" />
+                  <node at="3" p="(0.8,0.65)" />
+                  <node at="4" p="(0.5,0.35)" />
+                  <node at="5" p="(0.8,0.35)" />
+                </network>
+            </coordinates>
+        </diagram>
+    </prefigure>
+  </image>
+
+  <p>
+    The above graph is certainly transitive, but that is not what we want.  We would like to make the relation transitive while drawing as few arrows as possible.  Before you read on, try to do this with the example above.
+  </p>
+
+  <p>
+    This leads us to the following definition.
+  </p>
+
+  <definition>
+    <statement>
+        <p>
+            Let <m>R</m> be a relation on a set <m>A</m>.  The <em>transitive closure of <m>R</m></em>, written as <m>R^+</m>, is the transitive relation with the smallest number of ordered pairs that includes all elements of <m>R</m>.  In other words, it is the smallest transitive relation such that <m>R \subseteq R^+</m>.
+        </p>
+    </statement>
+  </definition>
+
+  <p>
+    Let's look at the above relation and see what the transitive closure is.
+  </p>
+  <image>
+    <prefigure xmlns="https://prefigure.org" label="tc-initial-2">
+        <diagram dimensions="(300,300)" margins="5">
+            <definition>warsh1={1:[2],2:[3,4],4:[5]}</definition>
+            <coordinates bbox="(0,0,1,1)">
+                <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                scale="0.8" seed="16" node-stroke="no">
+                  <node at="1" p="(0.2,0.65)" />
+                  <node at="2" p="(0.5,0.65)" />
+                  <node at="3" p="(0.8,0.65)" />
+                  <node at="4" p="(0.5,0.35)" />
+                  <node at="5" p="(0.8,0.35)" />
+                </network>
+            </coordinates>
+        </diagram>
+    </prefigure>
+  </image>
+
+  <p>
+    Our strategy is to include only the arrows that are absolutely necessary to make the relation transitive.  For instance, we have <m>1R2</m> and <m>2R4</m>, and so we need <m>1R^+4</m>.  Similarly, <m>2R4</m> and <m>4R5</m>, and <m>3R2</m> and <m>2R4</m>.  Thus, we must have <m>2R^+5</m> and <m>3R^+4</m>.  This gives us the following.
+  </p>
+  <image>
+    <prefigure xmlns="https://prefigure.org" label="tc-step-1">
+        <diagram dimensions="(300,300)" margins="5">
+            <definition>warsh1={1:[2],2:[3,4],4:[5]}</definition>
+            <coordinates bbox="(0,0,1,1)">
+                <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                scale="0.8" seed="16" node-stroke="no">
+                  <node at="1" p="(0.2,0.65)" />
+                  <node at="2" p="(0.5,0.65)" />
+                  <node at="3" p="(0.8,0.65)" />
+                  <node at="4" p="(0.5,0.35)" />
+                  <node at="5" p="(0.8,0.35)" />
+                  <edge vertices="(1,4)" stroke="blue" dash="9 9" />
+                  <edge vertices="(2,5)" stroke="blue" dash="9 9" />
+                  <edge vertices="(3,4)" stroke="blue" dash="9 9" />
+                </network>
+            </coordinates>
+        </diagram>
+    </prefigure>
+  </image>
+
+  <p>
+    Notice that the relation is still not transitive (check to see why), so we have to go through the above process again.  We have <m>1R^+4</m> and <m>4R5</m>, and <m>3R2</m> and <m>2R^+5</m>, so we need to have <m>1R^+5</m> and <m>3R^+5</m>.  This gives us the following.
+  </p>
+  <image>
+    <prefigure xmlns="https://prefigure.org" label="tc-step-2">
+        <diagram dimensions="(300,300)" margins="5">
+            <definition>warsh1={1:[2],2:[3,4],4:[5]}</definition>
+            <coordinates bbox="(0,0,1,1)">
+                <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                scale="0.8" seed="16" node-stroke="no">
+                  <node at="1" p="(0.2,0.65)" />
+                  <node at="2" p="(0.5,0.65)" />
+                  <node at="3" p="(0.8,0.65)" />
+                  <node at="4" p="(0.5,0.35)" />
+                  <node at="5" p="(0.8,0.35)" />
+                  <edge vertices="(1,4)" stroke="blue" />
+                  <edge vertices="(2,5)" stroke="blue" />
+                  <edge vertices="(3,4)" stroke="blue" />
+                  <edge vertices="(1,5)" stroke="red" dash="9 9" />
+                  <edge vertices="(3,5)" stroke="red" dash="9 9" />
+                </network>
+            </coordinates>
+        </diagram>
+    </prefigure>
+  </image>
+
+  <p>
+    The above is transitive.  Since we did not add any arrows that were not absolutely necessary, it is the transitive closure.
+  </p>
+
+  <p>
+    Let us reflect a little on the above example.  In constructing <m>R^+</m>, the first thing we did was include all arrows from <m>R</m>.  After that, we looked for elements and arrows that looked like <m>a \rightarrow b \rightarrow c</m> and added the arrow <m>a \rightarrow c</m>.  If this feels familiar, it is because this new arrow comes from the composition <m>R \circ R</m> (which is also written <m>R^2</m>).  In fact, all arrows drawn with dashed lines are arrows in <m>R^2</m>.  For the last step, we combined arrows from <m>R^2</m> with arrows from <m>R</m> in the same way (i.e. for <m>a \rightarrow b \rightarrow c</m>, where one of the arrows is from <m>R</m> and the other is from <m>R^2</m>, we added the arrow <m>a \rightarrow c</m>).  These are the arrows from <m>(R \circ R) \circ R</m> (which is also written <m>R^3</m>).  Thus, we have <m>R^+ = R \cup R^2 \cup R^3</m>.  In general, we have <m>R^+ = R \cup R^2 \cup R^3 \cup \cdots \cup R^k</m>, where <m>k</m> is the last step that makes the relation transitive.
+  </p>
+
+  <p>
+    Here is another example to stimulate some thought.  Find the transitive closure of the following (no peeking!).
+  </p>
+  <example>
+    <statement>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="tc-path">
+                <diagram dimensions="(300,300)" margins="5">
+                    <definition>warsh1={1:[2],2:[3],3:[4],4:[5],5:[6]}</definition>
+                    <coordinates bbox="(0,0,1,1)">
+                        <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                        scale="0.8" seed="16" node-stroke="no">
+                            <node at="1" p="(0.05,0.5)" />
+                            <node at="2" p="(0.23,0.5)" />
+                            <node at="3" p="(0.41,0.5)" />
+                            <node at="4" p="(0.59,0.5)" />
+                            <node at="5" p="(0.77,0.5)" />
+                            <node at="6" p="(0.95,0.5)" />
+                        </network>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+        </image>
+    </statement>
+    <answer>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="tc-path-final">
+                <diagram dimensions="(300,300)" margins="5">
+                    <definition>warsh1={1:[2,3,4,5,6],2:[3,4,5,6],3:[4,5,6],4:[5,6],5:[6]}</definition>
+                    <coordinates bbox="(0,0,1,1)">
+                        <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                        scale="0.8" seed="16" node-stroke="no">
+                            <node at="1" p="(0.05,0.5)" />
+                            <node at="2" p="(0.23,0.5)" />
+                            <node at="3" p="(0.41,0.5)" />
+                            <node at="4" p="(0.59,0.5)" />
+                            <node at="5" p="(0.77,0.5)" />
+                            <node at="6" p="(0.95,0.5)" />
+                        </network>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+        </image>
+    </answer>
+  </example>
+
+  <p>
+    Notice that every vertex has an arrow with every other vertex that was <q>downstream</q> from it in the original graph.  This suggests the following theorem, which you will prove in an upcoming homework assignment.
+  </p>
+
+  <theorem>
+    <statement>
+        <p>
+            Let <m>R</m> be a relation on a set <m>A</m>.  Then <m>R^+</m> is the set of all ordered pairs <m>(a,b)</m> (i.e. <m>a \rightarrow b</m>) such that <m>a</m> and <m>b</m> are connected by a directed path in <m>R</m> (i.e. <m>a \rightarrow x_1 \rightarrow x_2 \rightarrow \cdots \rightarrow x_k \rightarrow b</m>).
+        </p>
+    </statement>
+  </theorem>
+
+  <p>
+    Note that in the proof, one would have to prove two things.
+    <ul>
+        <li>
+            <p>
+                Prove that if <m>a</m> and <m>b</m> are connected by a directed path, then <m>a \rightarrow b</m> in <m>R^+</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                Prove that the relation given by <m>R</m> along with the set of all ordered pairs <m>(a,b)</m> (i.e. <m>a \rightarrow b</m>) such that <m>a</m> and <m>b</m> are connected by a directed path in <m>R</m> is transitive.
+            </p>
+        </li>
+    </ul>
+  </p>
+  </subsection>
+
+  <subsection xml:id="warshall-intro">
+    <title>Warshall's Algorithm</title>
+  <p>
+    We use this path interpretation of transitive closure to develop an algorithm that was originally created by Stephen Warshall.  Let's first discuss how we have been thinking about finding the transitive closure until now.
+    <ol>
+        <li>
+            <p>
+                Look for paths of length 2 in the directed graph representation of the relation, which will look like <m>a \rightarrow b \rightarrow c</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                If <m>a \rightarrow b \rightarrow c</m> is a path of length 2 in the relation, draw in the arrow <m>a \rightarrow c</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                Go back to step 1, and repeat the process with the new arrows drawn in.  Keep doing this until you can't draw any more arrows.
+            </p>
+        </li>
+    </ol>
+  </p>
+
+  <p>
+    As you have probably noticed in the examples you have done, when you iterate this algorithm, you look over a lot of paths of length 2 that already have the arrow you want drawn in.  This represents an inefficiency in the algorithm (which means a longer run time).  Warshall's algorithm allows us to cut down a bit on this redundancy.  Here is what we do instead.
+    <ol>
+        <li>
+            <p>
+                We have the relation <m>R</m> on a set <m>A</m>.  Put the elements of <m>A</m> into some order, so <m>A=\{a_1,a_2,\ldots,a_n\}</m>.  You can put them in any order you want, but you have to keep the same order throughout the algorithm.
+            </p>
+        </li>
+        <li>
+            <p>
+                Look for all paths of length 2 that go through <m>a_1</m>, which will look like <m>a_i \rightarrow a_1 \rightarrow a_j</m>.  Draw in the arrow <m>a_i \rightarrow a_j</m> for each of these paths.
+            </p>
+        </li>
+        <li>
+            <p>
+                Repeat step 2 with <m>a_2</m>, using all the arrows you drew in step 2.  Note that you will not be looking for any new paths through <m>a_1</m>, even though we have not yet considered all possible paths through <m>a_1</m> with the step 2 arrows drawn.  So you will look for arrows that look like <m>a_i \rightarrow a_2 \rightarrow a_j</m> and draw in <m>a_i \rightarrow a_j</m> for each of these paths.
+            </p>
+        </li>
+        <li>
+            <p>
+                Keep going with <m>a_3, a_4, \ldots , a_n</m>.  At step <m>k</m>, we look for arrows that look like <m>a_i \rightarrow a_k \rightarrow a_j</m> and draw in <m>a_i \rightarrow a_j</m> for each of these paths.
+            </p>
+        </li>
+    </ol>
+  </p>
+
+  <p>
+    Is there something that bothers you about this algorithm?  When you get to the last element <m>a_n</m>, you are looking at all the arrows you constructed before getting to <m>a_n</m> before you drew in new arrows from <m>a_i \rightarrow a_n \rightarrow a_j</m>.  This included a lot of new arrows that are outside the relation <m>R</m>.  However, for <m>a_1</m>, you only looked at arrows from <m>R</m>.  So even though this algorithm is a lot faster than the one we used before, we run the risk of missing some arrows in the transitive closure.  Let's see if this happens in an example.
+  </p>
+
+  <example>
+    <statement>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="warshall-initial">
+                <diagram dimensions="(300,300)" margins="5">
+                    <definition>warsh1={1:[3],2:[1,4],4:[2]}</definition>
+                    <coordinates bbox="(0,0,1,1)">
+                        <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                        scale="0.8" seed="16" node-stroke="no">
+                            <node at="1" p="(0.2,0.8)" />
+                            <node at="2" p="(0.2,0.2)" />
+                            <node at="3" p="(0.8,0.8)" />
+                            <node at="4" p="(0.8,0.2)" />
+                        </network>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+        </image>
+        <p>
+            So I unimaginatively ordered the vertices 1, 2, 3, and 4.  We start by looking at 2-paths through 1.  There is only one such path <m>2 \rightarrow 1 \rightarrow 3</m>, so we draw in the arrow <m>2 \rightarrow 3</m>, as shown below.
+        </p>
+        <sidebyside widths="45% 45%">
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="warshall-step-1-start">
+                    <diagram dimensions="(300,300)" margins="5">
+                        <definition>warsh1={1:[3],2:[1,4],4:[2]}</definition>
+                        <coordinates bbox="(0,0,1,1)">
+                            <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                            scale="0.8" seed="16" node-stroke="no">
+                                <node at="1" p="(0.2,0.8)" stroke="purple" />
+                                <node at="2" p="(0.2,0.2)" />
+                                <node at="3" p="(0.8,0.8)" />
+                                <node at="4" p="(0.8,0.2)" />
+                            </network>
+                        </coordinates>
+                    </diagram>
+                </prefigure>
+            </image>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="warshall-step-1-finish">
+                    <diagram dimensions="(300,300)" margins="5">
+                        <definition>warsh1={1:[3],2:[1,4],4:[2]}</definition>
+                        <coordinates bbox="(0,0,1,1)">
+                            <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                            scale="0.8" seed="16" node-stroke="no">
+                                <node at="1" p="(0.2,0.8)" />
+                                <node at="2" p="(0.2,0.2)" />
+                                <node at="3" p="(0.8,0.8)" />
+                                <node at="4" p="(0.8,0.2)" />
+                                <edge vertices="(2,3)" stroke="blue" dash="9 9" />
+                            </network>
+                        </coordinates>
+                    </diagram>
+                </prefigure>
+            </image>
+        </sidebyside>
+
+        <p>
+            Now we look at 2.  There are now three paths through 2, <m>4 \rightarrow 2 \rightarrow 1</m>, <m>4 \rightarrow 2 \rightarrow 3</m>, and <m>4 \rightarrow 2 \rightarrow 4</m>, and so we draw in the arrows <m>4 \rightarrow 1</m>, <m>4 \rightarrow 3</m>, and <m>4 \rightarrow 4</m>, as shown below.
+        </p>
+        <sidebyside widths="45% 45%">
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="warshall-step-2-start">
+                    <diagram dimensions="(300,300)" margins="5">
+                        <definition>warsh1={1:[3],2:[1,4],4:[2]}</definition>
+                        <coordinates bbox="(0,0,1,1)">
+                            <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                            scale="0.8" seed="16" node-stroke="no">
+                                <node at="1" p="(0.2,0.8)" />
+                                <node at="2" p="(0.2,0.2)" stroke="purple" />
+                                <node at="3" p="(0.8,0.8)" />
+                                <node at="4" p="(0.8,0.2)" />
+                                <edge vertices="(2,3)" />
+                            </network>
+                        </coordinates>
+                    </diagram>
+                </prefigure>
+            </image>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="warshall-step-2-finish">
+                    <diagram dimensions="(300,300)" margins="5">
+                        <definition>warsh1={1:[3],2:[1,4],4:[2]}</definition>
+                        <coordinates bbox="(0,0,1,1)">
+                            <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                            scale="0.8" seed="16" node-stroke="no">
+                                <node at="1" p="(0.2,0.8)" />
+                                <node at="2" p="(0.2,0.2)" />
+                                <node at="3" p="(0.8,0.8)" />
+                                <node at="4" p="(0.8,0.2)" />
+                                <edge vertices="(2,3)" />
+                                <edge vertices="(4,1)" stroke="blue" dash="9 9" />
+                                <edge vertices="(4,4)" stroke="blue" dash="9 9" />
+                            </network>
+                        </coordinates>
+                    </diagram>
+                </prefigure>
+            </image>
+        </sidebyside>
+
+        <p>
+            Now we move on to 3.  Note that there are no 2-paths through 3, so we can't add any arrows.  We then move to 4.  This has a few 2-paths through it, but the only one that gives us a new arrow is <m>2 \rightarrow 4 \rightarrow 2</m>, so we draw in <m>2 \rightarrow 2</m>.  This gives us our final relation.
+        </p>
+        <sidebyside widths="30% 30% 30%">
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="warshall-step-3-start">
+                    <diagram dimensions="(300,300)" margins="5">
+                        <definition>warsh1={1:[3],2:[1,4],4:[2]}</definition>
+                        <coordinates bbox="(0,0,1,1)">
+                            <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                            scale="0.8" seed="16" node-stroke="no">
+                                <node at="1" p="(0.2,0.8)" />
+                                <node at="2" p="(0.2,0.2)" />
+                                <node at="3" p="(0.8,0.8)" />
+                                <node at="4" p="(0.8,0.2)" stroke="purple" />
+                                <edge vertices="(2,3)" />
+                                <edge vertices="(4,1)" />
+                                <edge vertices="(4,4)" />
+                            </network>
+                        </coordinates>
+                    </diagram>
+                </prefigure>
+            </image>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="warshall-step-3-finish">
+                    <diagram dimensions="(300,300)" margins="5">
+                        <definition>warsh1={1:[3],2:[1,4],4:[2]}</definition>
+                        <coordinates bbox="(0,0,1,1)">
+                            <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                            scale="0.8" seed="16" node-stroke="no">
+                                <node at="1" p="(0.2,0.8)" />
+                                <node at="2" p="(0.2,0.2)" />
+                                <node at="3" p="(0.8,0.8)" />
+                                <node at="4" p="(0.8,0.2)" />
+                                <edge vertices="(2,3)" />
+                                <edge vertices="(4,1)" />
+                                <edge vertices="(4,4)" />
+                                <edge vertices="(2,2)" stroke="blue" dash="9 9" />
+                            </network>
+                        </coordinates>
+                    </diagram>
+                </prefigure>
+            </image>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="warshall-finish">
+                    <diagram dimensions="(300,300)" margins="5">
+                        <definition>warsh1={1:[3],2:[1,4],4:[2]}</definition>
+                        <coordinates bbox="(0,0,1,1)">
+                            <network directed="yes" graph="warsh1" node-fill="white" labels="yes" 
+                            scale="0.8" seed="16" node-stroke="no">
+                                <node at="1" p="(0.2,0.8)" />
+                                <node at="2" p="(0.2,0.2)" />
+                                <node at="3" p="(0.8,0.8)" />
+                                <node at="4" p="(0.8,0.2)" />
+                                <edge vertices="(2,3)" />
+                                <edge vertices="(4,1)" />
+                                <edge vertices="(4,4)" />
+                                <edge vertices="(2,2)" />
+                            </network>
+                        </coordinates>
+                    </diagram>
+                </prefigure>
+            </image>
+        </sidebyside>
+    </statement>
+  </example>
+
+  <p>
+    Notice that, despite our worries, we ended up with all the arrows in the transitive closure.  Does this work out all the time?  Yes.
+  </p>
+
+  <theorem>
+    <statement>
+        <p>
+            Let <m>R</m> be a relation on the set <m>A</m>.  Then Warshall's algorithm always results in the transitive closure <m>R^+</m>.
+        </p>
+    </statement>
+  </theorem>
+
+  </subsection>
+</section>

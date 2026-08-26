@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="dijkstra-reading" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Shortest Path Algorithms for Weighted Graphs</title>
+
+  <p>
+    Consider a graph whose vertices are cities and whose edges are some of the driving routes between the cities.  We would like to use this graph to figure out the best routes between a given pair of cities (so would Google Maps).  For instance, we might want to find the shortest route between the cities.
+  </p>
+
+  <question>
+	<statement>
+		<p>
+			Can we figure this out from the graph only?
+		</p>
+	</statement>
+  </question>
+
+  <p>
+	No, you need two things.
+	<ul>
+		<li>
+			<p>
+				You want to know how long each route is <m>\Rightarrow</m> label each edge with the distance of the route (might not be the shortest route).
+			</p>
+		</li>
+		<li>
+			<p>
+				You might want to combine these routes to find the shortest possible route <m>\Rightarrow</m> Construct paths on the graph, and add the distances of the edges of the path to find the total distance.
+			</p>
+		</li>
+	</ul>
+  </p>
+
+  <p>
+	We do this with weighted graphs.
+  </p>
+
+  <definition>
+	<statement>
+		<p>
+			A \emph{weighted graph} is a graph <m>G=(V,E)</m> along with a function <m>w: E \rightarrow {\mathbb R}</m>.  Also,
+			<ul>
+				<li>
+					<p>
+						For <m>e \in E</m>, we call <m>w(e)</m> the <em>weight of $e$</em>.
+					</p>
+				</li>
+				<li>
+					<p>
+						The weight of a path or trail is the sum of all the weights of the edges in the path or trail.
+					</p>
+				</li>
+			</ul>
+		</p>
+	</statement>
+  </definition>
+
+  <p>
+	There are some interesting problems involving weighted graphs.
+	<ul>
+		<li>
+			<p>
+				<term>Traveling Salesperson Problem:</term> Given a weighted graph with a Hamiltonian cycle, which Hamilton cycle has the least weight?  This is a very hard problem in general.
+			</p>
+		</li>
+		<li>
+			<p>
+				<term>Shortest Path Problem:</term> Given a weighted graph and two vertices <m>v</m> and <m>w</m> in the graph, what is the shortest path beginning at <m>v</m> and ending at <m>w</m>?
+			</p>
+		</li>
+	</ul>
+  </p>
+
+  <p>
+	We focus on the shortest path problem.  Most of the algorithms we look at have some common elements.
+	<ul>
+		<li>
+			<p>
+				Start at <m>v</m> and look at one edge of the path at a time.
+			</p>
+		</li>
+		<li>
+			<p>
+				At each stage, make your best guess at what the least weight from <m>v</m> is so far.  Usually put a label on the <em>vertices</em> to keep track of your guesses.
+			</p>
+		</li>
+		<li>
+			<p>
+				Modify your guess as the algorithm progresses and change your vertex labels accordingly.
+			</p>
+		</li>
+	</ul>
+  </p>
+
+  <p>
+	In the in-class problems included with this reading, you will acquaint yourself with some of the methods we use to find shortest paths between vertices.  These methods include the following.
+	<ul>
+		<li>
+			<p>
+				<term>Dijkstra's Algorithm:</term> We label each vertex <m>y</m> with the distance from <m>v</m> and the vertex that came before <m>y</m> in the shortest path <m>\Rightarrow (x,d)</m>, where <m>x</m> is the previous vertex and <m>d</m> is the distance from <m>v</m>.  We do not label vertices until we are sure they are closest.
+				<ol>
+					<li>
+						<p>
+							The vertex <m>v</m> has a distance 0 and does not come from any vertex, so it gets a label (-,0).
+						</p>
+					</li>
+					<li>
+						<p>
+							For each vertex <m>u</m> that has a label <m>(x,d)</m> (initially, that is just <m>v</m>), look at all vertices <m>y</m> adjacent to <m>u</m> and compute <m>d+w(uy)</m>.  Again, do this for all vertices that currently have a label.
+						</p>
+					</li>
+					<li>
+						<p>
+							Take the smallest <m>d+w(uy)</m> found in step (2).  Label <m>y</m> with <m>(u,d+w(uy))</m>.
+						</p>
+					</li>
+					<li>
+						<p>
+							Go back to step 2 until you run out of vertices.  Then stop.
+						</p>
+					</li>
+				</ol>
+			</p>
+		</li>
+		<li>
+			<p>
+				<term>Improved Dijkstra's Algorithm:</term> We label each vertex with its distance from <m>v</m>.  We arrive at that distance by making temporary guesses, making them permanent when we know they are correct.
+				<ol>
+					<li>
+						<p>
+							Label <m>v</m> with the (permanent) number 0.
+						</p>
+					</li>
+					<li>
+						<p>
+							For the vertex <m>y</m> that got the last permanent label <m>d</m>, look at all <m>u</m> that are adjacent to <m>y</m>.  Give each such vertex the temporary label <m>d+w(uy)</m>.
+						</p>
+					</li>
+					<li>
+						<p>
+							Among all temporary vertices, make the shortest one permanent.  Go back to (2).
+						</p>
+					</li>
+				</ol>
+			</p>
+		</li>
+	</ul>
+  </p>
+</section>

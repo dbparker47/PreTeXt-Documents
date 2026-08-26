@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="poset-reading" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Partial Orders and Partially Ordered Sets</title>
+
+  <p>
+    We will be discussing <em>partial orders</em> on a set <m>A</m> in this document.  Both words in <q>partial order</q> are important in this type of relation.  The word <q>order</q> means that the relation (to some extent) tells us how to put the elements of <m>A</m> in order, and the word <q>partial</q> means that we may not be able to put the elements <em>completely</em> in order from first to last.
+  </p>
+
+  <p>
+	Let's start with a set that is both familiar and completely in order, namely the set of real numbers <m>\mathbb{R}</m>.  To tell what order the numbers are in, we merely need the relation to tell us which numbers come before which other numbers.  The relation that does that is <m>\le</m>.  So for <m>a,b \in \mathbb{R}</m>, <m>a \le b</m> means that <m>a</m> comes before <m>b</m>.  To extend the notion of order to other ordered sets, we take a look at some of the properties of <m>\le</m>.
+  </p>
+
+  <p>
+	A natural place to look is at the properties we had for equivalence relations.  Let's see if any of them work on <m>\le</m>.
+	<ul>
+		<li>
+			<p>
+				Reflexive Property:  If <m>a \in \mathbb{R}</m>, we have <m>a \le a</m>, and so <m>\le</m> is reflexive.
+			</p>
+		</li>
+		<li>
+			<p>
+				Symmetric Property:  If <m>a \le b</m>, then it is very unlikely that we also have <m>b \le a</m>.  In fact, the only way we can have both <m>a \le b</m> and <m>b \le a</m> if if <m>a=b</m>.  So <m>\le</m> is as far away from being symmetric as a reflexive relation can be.
+			</p>
+		</li>
+		<li>
+			<p>
+				Transitive Property:  If <m>a \le b</m> and <m>b \le c</m>, then it is clear that <m>a \le c</m>, so the transitive property works.
+			</p>
+		</li>
+	</ul>
+  </p>
+
+  <p>
+	So it looks like we almost have the properties we need to define partial orders.  We just have to figure out to do with that property that seems to be hostile toward symmetry.
+  </p>
+
+  <definition>
+	<statement>
+		<p>
+			Let <m>A</m> be a set, and let <m>R</m> be a relation on <m>A</m>.  We say that <m>R</m> is <em>antisymmetric</em> if whenever we have both <m>aRb</m> and <m>bRa</m>, then it follows that <m>a=b</m>.
+		</p>
+	</statement>
+  </definition>
+
+  <p>
+	This leads us to the definition of <em>partial orders</em> and <em>partially ordered sets</em>.
+  </p>
+
+  <definition>
+	<statement>
+		<p>
+			Let <m>A</m> be a set.
+			<ul>
+				<li>
+					<p>
+						A relation <m>R</m> on <m>A</m> is a partial order if <m>R</m> has the reflexive property, the antisymmetric property, and the transitive property.
+					</p>
+				</li>
+				<li>
+					<p>
+						If $A$ has a partial order <m>R</m> on it, we call <m>A</m> a <em>partially ordered set</em>, which is often called a <em>poset</em>.
+					</p>
+				</li>
+			</ul>
+		</p>
+	</statement>
+  </definition>
+
+  <p>
+	Before we look at some examples, we should look at another property of the <m>\le</m> relation on real numbers.  If we have two real numbers <m>a</m> and <m>b</m>, we know one of three things: Either <m>a</m> is smaller than <m>b</m>, <m>a</m> is bigger than <m>b</m>, or <m>a</m> is equal to <m>b</m>.  We can summarize this by saying that either <m>a \le b</m> or <m>b \le a</m>.  This leads us to the definition of a connex relation.
+  </p>
+
+  <definition>
+	<statement>
+		<p>
+			A relation <m>R</m> on a set <m>A</m> is <em>connex</em> if for all <m>a, b \in A</m>, we either have <m>aRb</m> or <m>bRa</m>.
+		</p>
+	</statement>
+  </definition>
+
+  <p>
+	If we add the connex property to the list of partial order properties, we get what is called a <em>total order</em>.
+  </p>
+
+  <definition>
+	<statement>
+		<p>
+			A relation <m>R</m> on a set <m>A</m> is a <em>total order</em> if it satisfies the reflexive property, the antisymmetric property, the transitive property, and the connex property.  In other words, a total order is a partial order that also satisfies the connex property.
+		</p>
+	</statement>
+  </definition>
+
+  <p>
+	So <m>\le</m> is a total order on the set <m>\mathbb{R}</m>.  Let's look at a partial order that is not a total order.
+  </p>
+
+  <example>
+	<statement>
+		<p>
+			Let <m>S</m> be a set, and let <m>A=\mathcal{P}(S)</m>, the power set of <m>S</m>.  In other words, <m>A</m> is the set of all subsets of <m>S</m>.  Note that <m>\subseteq</m> is a relation on <m>A</m> defined as follows:  For all <m>X,Y \in A</m> (i.e. for all <m>X</m> and <m>Y</m> that are subsets of <m>S</m>), <m>X \subseteq Y</m> means that every element of <m>X</m> is also an element of <m>Y</m>.
+		</p>
+		<p>
+			Note that if <m>X \in A</m>, then <m>X \subseteq X</m> (i.e. every subset of <m>S</m> is a subset of itself), and so <m>\subseteq</m> is reflexive.  If you have that <m>X \subseteq Y</m> and <m>Y \subseteq X</m>, this is the very definition of <m>X=Y</m>.  Thus, <m>\subseteq</m> is antisymmetric.  Finally, if <m>X \subseteq Y</m> and <m>Y \subseteq Z</m>, that means every element of <m>X</m> is an element of <m>Y</m>.  But every element of <m>Y</m> is an element of <m>Z</m>.  Since all elements of <m>X</m> are in <m>Y</m>, that means that every element of <m>X</m> is in <m>Z</m>, which means <m>X \subseteq Z</m>.  Thus, <m>\subseteq</m> is a partial order.
+		</p>
+		<p>
+			Note that <m>\subseteq</m> is not a total order.  For instance, if <m>A=\mathcal{P}(\mathbb{Z})</m>, look at the subsets <m>X=\{1,2,3,4,5\}</m> and <m>Y=\{6,7,8,9,10\}</m>.  If <m>\subseteq</m> were a total order, we would need to have either <m>X \subseteq Y</m> or <m>Y \subseteq X</m>.  But neither of these sets is a subset of the other.  This means that <m>\subseteq</m> is not connex, and so <m>\subseteq</m> is not a total order.
+		</p>
+	</statement>
+  </example>
+
+  <p>
+	We can think of a partial order on a set <m>A</m> as a relation that ranks the elements of <m>A</m>.  In that spirit, we define the following.
+  </p>
+
+  <definition>
+	<statement>
+		<p>
+			Let <m>A</m> be a set with partial order <m>R</m>.
+			<ul>
+				<li>
+					<p>
+						We say that <m>a,b \in A</m> are <em>comparable</em> if either <m>a R b</m> or <m>b R a</m>.
+					</p>
+				</li>
+				<li>
+					<p>
+						We say that <m>a</m> is <em>maximum</em> in <m>A</m> if <m>b R a</m> for all <m>b \in A</m>.  This means that <m>a</m> is unambiguously the highest ranking element in the set.
+					</p>
+				</li>
+				<li>
+					<p>
+						We say that <m>a</m> is <em>minimum</em> in <m>A</m> if <m>a R b</m> for all <m>b \in A</m>.  This means that <m>a</m> is unambiguously the lowest ranking element in the set.
+					</p>
+				</li>
+				<li>
+					<p>
+						We say that <m>a</m> is <em>maximal</em> in <m>A</m> if there are no other elements <m>b</m> with <m>a R b</m>.  This means that we cannot necessarily declare <m>a</m> to be the highest ranking element in the set, but there is no other element that has higher rank.
+					</p>
+				</li>
+				<li>
+					<p>
+						We say that <m>a</m> is <em>minimal</em> in <m>A</m> if there are no other elements <m>b</m> with <m>b R a</m>.    This means that we cannot necessarily declare <m>a</m> to be the lowest ranking element in the set, but there is no other element that has lower rank.
+					</p>
+				</li>
+			</ul>
+		</p>
+	</statement>
+  </definition>
+
+  <p>
+	Let's see how these concepts play out in an example.
+  </p>
+
+  <example>
+	<statement>
+		<p>
+			Suppose <m>S = \{ 1,2,3,4,5,6,7 \}</m>, and let <m>\subseteq</m> be the relation described above on <m>\mathcal{P}(S)</m>.  Let's look at each of the above concepts one at a time.
+			<ul>
+				<li>
+					<p>
+						Comparable:  The subsets <m>\{1,3,4\}</m> and <m>\{1,2,3,4,5\}</m> are comparable since <m>\{1,3,4\} \subseteq \{1,2,3,4,5\}</m>.  However, <m>\{ 1,3,4\}</m> and <m>\{1,2,4\}</m> are not comparable, since neither is a subset of the other.
+					</p>
+				</li>
+				<li>
+					<p>
+						Maximum:  The maximum of <m>\mathcal{P}(S)</m> is <m>S</m>.
+					</p>
+					<p>
+						To prove this, we assume <m>X \in \mathcal{P}(S)</m> and show that <m>X \subseteq S</m>.  Since <m>\mathcal{P}(S)</m> is the set of all subsets of <m>S</m>, we have <m>X \subseteq S</m>, which completes the proof.
+					</p>
+				</li>
+				<li>
+					<p>
+						Maximal but not Maximum:  Suppose we let <m>A=\mathcal{P}(S) \backslash \{S\}</m>.  In other words, <m>A</m> consists of all subsets of <m>S</m> except <m>S</m>.  Then <m>\{1,2,3,4,5,6\}</m> is maximal but not maximum. 
+					</p>
+					<p>
+						We prove it is maximal first.  Then we will prove that it is not maximum.  We will prove it is maximal by contradiction.  Let <m>X \in \mathcal{P}(S) \backslash \{S\}</m>, and assume both that <m>\{1,2,3,4,5,6\} \subseteq X</m> and that <m>X \ne \{1,2,3,4,5,6\}</m>.  Since <m>\{1,2,3,4,5,6\}</m> has six elements and is a subset of <m>X</m>, that implies that <m>X</m> has at least six elements.  Since <m>S</m> has seven elements and <m>X \subseteq S</m>, that implies that <m>X</m> has at most seven elements.  However, if <m>X</m> has seven elements, then it has to be <m>S</m>, which is a contradiction.  Thus, <m>X</m> has six elements.  But since <m>\{1,2,3,4,5,6\} \subseteq X</m>, then <m>X</m> has 1, 2, 3, 4, 5, and 6 as elements.  This is six elements, so <m>X=\{1,2,3,4,5,6\}</m>, which is also a contradiction.
+					</p>
+					<p>
+						To prove that <m>\{1,2,3,4,5,6\}</m> is not maximum, notice that <m>\{1,2,3,4,5,6\}</m> is not a subset of <m>\{7\}</m>, and <m>\{7\}</m> is not a subset of <m>\{1,2,3,4,5,6\}</m>.  Thus, it is not true that every element of <m>\mathcal{P}(S) \backslash S</m> is a subset of <m>\{1,2,3,4,5,6\}</m>.  Thus, <m>\{1,2,3,4,5,6\}</m> is not maximum.  This completes the proof.
+					</p>
+				</li>
+				<li>
+					<p>
+						Minimum:  The minimum of <m>\mathcal{P}(S)</m> is <m>\emptyset</m>.
+					</p>
+					<p>
+						To prove this, we assume that <m>X \in \mathcal{P}(S)</m> and show that <m>\emptyset \subseteq X</m>.  Since <m>X</m> is a set and <m>\emptyset</m> is as subset of every set, it follows that <m>\emptyset \subseteq X</m>, which completes the proof.
+					</p>
+				</li>
+				<li>
+					<p>
+						Minimal but not Minimum:  Suppose we let <m>A=\mathcal{P}(S) \backslash \{\emptyset\}</m>.  In other words, <m>A</m> consists of all subsets of <m>S</m> except <m>\emptyset</m>.  Then <m>\{7\}</m> is minimal but not minimum.
+					</p>
+					<p>
+						We prove it is minimal first.  Then we will prove that it is not minimum.  We will prove it is minimal by contradiction.  Let <m>X \in \mathcal{P}(S) \backslash \{\emptyset\}</m>, and assume both that <m>X \subseteq \{7\}</m> and that <m>X \ne \{7\}</m>.  Since <m>\{7\}</m> has one element and contains <m>X</m>, that implies that <m>X</m> has at most one element.  Thus, <m>X</m> has one element or zero elements.  If <m>X</m> has one element, then it has to be <m>\{7\}</m>, which is a contradiction.  Thus, <m>X</m> has zero elements.  But that makes <m>X</m> the empty set, which is also a contradiction.
+					</p>
+					<p>
+						To prove that <m>X</m> is not minimum, notice that <m>\{6\}</m> is not a subset of <m>\{7\}</m>, and <m>\{7\}</m> is not a subset of <m>\{6\}</m>.  Thus, it is not true that <m>\{7\}</m> is a subset of  every element of <m>\mathcal{P}(S) \backslash \{\emptyset\}</m>.  Thus <m>X</m> is not minimum.  This completes the proof.
+					</p>
+				</li>
+			</ul>
+		</p>
+	</statement>
+  </example>
+</section>

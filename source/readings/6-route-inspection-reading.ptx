@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="route-inspection-reading" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Route Inspection Algorithm for Weighted Graphs</title>
+
+  <p>
+    Suppose Jojo is inspecting some roads for potholes.  Once again, we can represent Jojo's task as a graph problem.  Let <m>G=(V,E)</m> be the weighted graph where
+    <ul>
+        <li>
+            <p>
+                $V$ is the set of street intersections on Jojo's route.
+            </p>
+        </li>
+        <li>
+            <p>
+                $E$ is the set of the portions of streets between adjacent intersections.
+            </p>
+        </li>
+        <li>
+            <p>
+                The weight of a given edge is the length of that street portion.
+            </p>
+        </li>
+    </ul>
+  </p>
+
+  <p>
+    So what does Jojo want to accomplish?
+    <ul>
+        <li>
+            <p>
+                Wants to walk along every part of every street on the route.
+            </p>
+        </li>
+        <li>
+            <p>
+                Wants to end up where they began.
+            </p>
+        </li>
+        <li>
+            <p>
+                Wants to do this in the shortest distance possible.
+            </p>
+        </li>
+    </ul>
+  </p>
+
+  <p>
+    So Jojo wants to cover every edge and end up at the vertex where the walk begins with the minimum distance. What kind of walks would accomplish this?
+    <ul>
+        <li>
+            <p>
+                If $G$ is Eulerian, an Eulerian circuit would work.
+            </p>
+        </li>
+        <li>
+            <p>
+                If $G$ is not Eulerian, we need another strategy.
+            </p>
+        </li>
+    </ul>
+  </p>
+
+  <p>
+    <term>Route Inspection Problem</term>: Given a weighted graph <m>G</m>, what is a closed walk that covers every edge of <m>G</m> and has minimum weight?
+  </p>
+
+  <p>
+    Let's take a look at some of the issues we need to deal with.
+  </p>
+
+  <question>
+    <statement>
+        <p>
+            What can prevent a graph from having the Eulerian circuit we want?
+        </p>
+    </statement>
+    <answer>
+        <p>
+            Vertices with odd degree. 
+        </p>
+    </answer>
+  </question>
+
+  <question>
+    <statement>
+        <p>
+            Our walk will have some edges that will be traveled along more than once.  How do we represent this?
+        </p>
+    </statement>
+    <answer>
+        <p>
+            We can draw multiple edges between vertices, one for each time we travel along an edge.
+        </p>
+    </answer>
+  </question>
+
+  <definition>
+    <statement>
+        <p>
+            A <em>multigraph</em> is the same as a graph, except that we may have more than one edge between a given pair of vertices.
+        </p>
+    </statement>
+  </definition>
+
+  <p>
+    So we can represent our walk as a multigraph, where if we have multiple edges between two vertices, that means we travel between those vertices more than once.
+  </p>
+
+  <question>
+    <statement>
+        <p>
+            What do we do with the odd vertices of the graph?
+        </p>
+    </statement>
+    <answer>
+        <p>
+            Recall that the Handshake Theorem says that the sum of the degrees of all vertices is an even number (specifically, twice the number of edges).  That means there is an even number of odd vertices.  So we can do the following:
+            <ul>
+                <li>
+                    <p>
+                        Put the odd-degree vertices in pairs.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Find paths between each pair of vertices.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Put in another edge to each edge you found in the second step.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </answer>
+  </question>
+
+  <p>
+    This will make the vertices all have even degree. So with these issue in mind, here is a summary of how we can think of the Route Inspection algorithm.
+    <ul>
+        <li>
+            <p>
+                Every walk can be represented by a multigraph (i.e. a graph that may have more than one edge between a given pair of vertices) in which traveling over an edge more than once is represented by multiple edges.
+            </p>
+        </li>
+        <li>
+            <p>
+                Every closed walk can be represented by an Eulerian multigraph, where a new edge is drawn between two vertices every time that edge is traveled on.
+            </p>
+        </li>
+        <li>
+            <p>
+                We can make any multigraph Eulerian by connecting each pair of odd vertices with a path.
+            </p>
+        </li>
+        <li>
+            <p>
+                Once we have made our multigraph, we need only find an Eulerian circuit to finish the problem.
+            </p>
+        </li>
+    </ul>
+  </p>
+
+  <p>
+    Rather than work an example here, I have set up the process in a straightforward problem in <em>Introduction to the Route Inspection Problem</em>. Try working that before watching the description of the Route Inspection algorithm in the second video for this section.
+  </p>
+</section>

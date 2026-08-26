@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="scheduling-reading" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Scheduling Problems</title>
+
+  <p>
+    Scheduling is something we do all the time.  Every day, we wake up and have certain things we have to get done.  We have to figure out what order to do our tasks and when they must be done.  Much of the time, we can figure out how to get our tasks done by making up the scheduling as we go, but often the tasks are so many and their requirements are so complicated that we must resort to some kind of organizational thinking (calendars, to-do lists, etc) to help us figure out how to make it through our day.
+  </p>
+
+  <p>
+    Much of this thinking is both mathematical and algorithmic, so it has been studied a lot by both mathematicians and computer scientists. Before we introduce the scheduling problems that we will be studying, let's first think about some of the issues that come up in scheduling problems.
+    <ul>
+        <li>
+            <p>
+                Scheduling usually begins with a list of tasks that need to be completed.
+            </p>
+        </li>
+        <li>
+            <p>
+                Beyond just completing all the tasks, there are usually other goals that motivate how we approach our scheduling problem.  For the problems we will be studying, the goal will to complete the tasks in the shortest time possible.
+            </p>
+        </li>
+        <li>
+            <p>
+                There are usually constraints on how we can complete the tasks.  Each task may take a certain amount of time, which may or may not depend on the tasks done before it.  In order to do one task, you might have to do one or more other tasks beforehand. 
+            </p>
+        </li>
+        <li>
+            <p>
+                There may be constraints on who is doing the tasks.  For instance, you may have one person who has to do all the tasks; you may have one person for each task who can work independently; or anything in between.
+            </p>
+        </li>
+    </ul>
+  </p>
+
+  <p>
+    Now let's see how we use digraphs to model the problems.  Our vertices usually indicate the state we are in at a given point in the schedule.  For instance, the vertex may indicate what task we are working on at that time, the task we just completed, or all the tasks that have been completed at that time.  An arc <m>a \rightarrow b</m> generally means that getting from state <m>a</m> to state <m>b</m> involves doing one task.  Including all this information in a digraph will then help us understand how we flow from one state to another by doing the tasks in a given order.  For our problems, it is also necessary to know how long it takes to get from one state to another, since we want to find out how much time is necessary to complete all of the tasks.  We do this by labeling each arc <m>a \rightarrow b</m> with the time it takes to get from state <m>a</m> to state <m>b</m>.  Thus, each problem will be modeled by a weighted digraph.
+  </p>
+
+  <p>
+    We will be working on just one of the many types of scheduling problems.  In each problem, we model the problem with a digraph.  Then we use our shortest path techniques to determine the solution to the scheduling problem. The scheduling problems we consider include problems like how you might schedule your tasks during the day or organizing the tasks you must complete to write a research paper.  Here are the constraints.
+    <ul>
+        <li>
+            <p>
+                One person must complete all tasks.
+            </p>
+        </li>
+        <li>
+            <p>
+                For a given task, it is possible that one or more other tasks must be completed before starting the task.
+            </p>
+        </li>
+        <li>
+            <p>
+                The time required for a given task may depend on what tasks have been completed before it.
+            </p>
+        </li>
+        <li>
+            <p>
+                The goal is to minimize the amount of time to complete the tasks.
+            </p>
+        </li>
+    </ul>
+  </p>
+
+  <p>
+    As noted above, the time it takes to do a task may depend on what tasks have been done before it.  So when we go from state <m>a</m> to state <m>b</m>, we should be able to look at state <m>a</m> and know what jobs have been done up to that point.  Thus, each vertex in the digraph is the set of tasks that we have completed.  So if <m>A</m> and <m>B</m> are sets of tasks, if <m>A \rightarrow B</m>, then <m>B</m> must contain all elements of <m>A</m> (i.e. <m>A \subseteq B</m>) in addition to the one task that was done between state <m>A</m> and state <m>B</m>.  Here is how we might set up the weighted digraph in an example.
+  </p>
+
+  <example>
+    <statement>
+        <p>
+            Suppose you have three tasks to complete (tasks <m>a</m>, <m>b</m>, and <m>c</m>).  Here are the constraints:
+            <ul>
+                <li>
+                    <p>
+                        Task <m>a</m> must be done before task <m>b</m>, and task <m>c</m> may be done at any time.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If task <m>a</m> is done before task <m>c</m>, then task <m>a</m> will take 3 minutes and task <m>c</m> will take 2 minutes.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If task <m>a</m> is done after task <m>c</m>, then task <m>a</m> will take 2 minutes and task <m>c</m> will take 4 minutes.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If task <m>b</m> comes before task <m>c</m>, then it will take 5 minutes.  Otherwise, task <m>b</m> will take 6 minutes.
+                    </p>
+                </li>
+            </ul>
+        </p>
+        <p>
+            I will help you think through part of the digraph.  We always start with the empty set <m>\emptyset</m>, because we begin the process having completed no tasks.  Our first task could be either <m>a</m> or <m>c</m> (not <m>b</m> since <m>a</m> comes before <m>b</m>).  So we have the arcs <m>\emptyset \rightarrow \{ a \}</m> and <m>\emptyset \rightarrow \{ c \}</m>.  In the first of those arcs, we are doing <m>a</m> before <m>c</m>, so it will have a weight of 3.  In the second arc, we are doing <m>c</m> before <m>a</m>, so it has a weight of 4.  Another arc is <m>\{ a \} \rightarrow \{ a,b \}</m> if we do task <m>a</m> then task <m>b</m>.  In this case, we are doing <m>b</m> before <m>c</m>, so the weight of the arc is 5.  We continue in this way to get the following weighted digraph.
+        </p>
+        <image width="60%">
+            <prefigure xmlns="https://prefigure.org" label="schedule-digraph">
+                <diagram dimensions="(300,300)" margins="5">
+                    <definition>graph={1:[2,5],2:[3],3:[4],4:[5]}</definition>
+                    <definition>labels={1:'\emptyset',2:'\{ a \}',3:'\{ c \}',4:'\{ a,b \}',5:'\{ a,c \}',6:'\{ a,b,c \}'}</definition>
+                    <coordinates bbox="(0,0,1.04,1)">
+                        <network directed="yes" labels="yes" label-dictionary="labels"
+                        scale="0.8" node-stroke="white" node-fill="white" node-size="14" >
+                            <node at="1" p="(0.05,0.35)" />
+                            <node at="2" p="(0.35,0.65)" />
+                            <node at="3" p="(0.35,0.05)" />
+                            <node at="4" p="(0.65,0.95)" />
+                            <node at="5" p="(0.65,0.35)" />
+                            <node at="6" p="(0.95,0.65)" />
+                            <edge vertices="(1,2)"><m>4</m></edge>
+                            <edge vertices="(1,3)"><m>5</m></edge>
+                            <edge vertices="(2,4)"><m>2</m></edge>
+                            <edge vertices="(2,5)"><m>1</m></edge>
+                            <edge vertices="(3,5)"><m>10</m></edge>
+                            <edge vertices="(4,6)"><m>3</m></edge>
+                            <edge vertices="(5,6)"><m>6</m></edge>
+                        </network>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+        </image>
+        <p>
+            Note that the digraph is missing the subsets <m>\{ b \}</m> and <m>\{ b,c \}</m>. This is because it is impossible to complete <m>b</m> without doing <m>a</m> first, so those two sets are impossible. Now our goal is to make it to the set <m>\{ a, b, c \}</m> in the shortest amount of time.  How would we do that?  Dijkstra, anyone?  Try it yourself.  The time you come up with should be 10 minutes, and the order should be <m>a</m>, then <m>b</m>, then <m>c</m>.
+        </p>
+    </statement>
+  </example>
+</section>

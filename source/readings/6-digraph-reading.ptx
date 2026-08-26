@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="digraph-reading" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Digraphs and Shortest Paths</title>
+
+  <p>
+    Remember back in the good old days when we were studying relations?  One way of representing them was with directed graphs, as below.
+  </p>
+
+  <image>
+    <prefigure xmlns="https://prefigure.org" label="digraph-intro">
+        <diagram dimensions="(300,300)" margins="5">
+            <definition>relation={1:[2,3,5],2:[5],3:[4],4:[1,2,5]}</definition>
+            <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}</definition>
+            <coordinates bbox="(-1,-1,1,1)">
+                <network directed="yes" graph="relation" node-fill="white" labels="yes" 
+                label-dictionary="labels" scale="0.8" seed="9" />
+            </coordinates>
+        </diagram>
+    </prefigure>
+  </image>
+
+  <p>
+    So for instance, since <m>e \rightarrow b</m>, we have <m>e</m> related to <m>b</m> (but not <m>b</m> related to <m>e</m>).  That looks a little like a graph, doesn't it?
+  </p>
+
+  <definition>
+    <statement>
+        <p>
+            A <em>directed graph</em>, also known as a <em>digraph</em>, is a pair <m>G=(V,A)</m>, where <m>V</m> is a set called the vertex set, and <m>A</m> is a set of <em>ordered</em> pairs of vertices (called <em>arcs</em>).  In other words, digraphs are just like graphs, except the edges (unordered pairs) are replaced with arcs (ordered pairs).
+        </p>
+    </statement>
+  </definition>
+
+  <p>
+    Visually, we represent the arcs with arrows to emphasize their asymmetry.  The ordered pair <m>(a,b)</m> is represented by <m>a \rightarrow b</m>.
+  </p>
+
+  <p>
+    We have many terms for digraphs that are similar as those for graphs.  However, most of the time we need to make adjustments due to arcs being asymmetric as opposed to edges, which are symmetric.
+    <ul>
+        <li>
+            <p>
+                <term>Adjacency</term>: When we have <m>a \rightarrow b</m>, we cannot really say that <m>a</m> and <m>b</m> are adjacent, since <m>a</m> and <m>b</m> play different roles in the arc.  We say <m>a</m> is the <em>direct predecessor</em> and <m>b</m> is the <em>direct successor</em> to indicate which vertex is pointing and which is being pointed at.
+            </p>
+        </li>
+        <li>
+            <p>
+                <term>Incidence</term>: When we have <m>a \rightarrow b</m>, saying that <m>a</m> or <m>b</m> is incident to the arc doesn't tell us enough about the direction of the arc.  We say that the arc is <em>incident from $a$</em> and <em>incident to <m>b</m></em>.
+            </p>
+        </li>
+        <li>
+            <p>
+                <term>Degree</term>: Since adjacency and incidence work in two directions, there has to be two different types of degree for a vertex.  For a vertex <m>v</m>, the number of arcs incident from <m>v</m> is called the <em>outdegree of <m>v</m></em> and the number of arcs incident to <m>v</m> is called the <em>indegree of <m>v</m></em>.
+            </p>
+        </li>
+        <li>
+            <p>
+                <term>Walk</term>: A walk in digraphs works the same as a walk for graphs, except the arcs only go in one direction.  So a walk is a sequence of vertices <m>v_1v_2 \ldots v_n</m> such that <m>v_i \rightarrow v_{i+1}</m> for all <m>1 \le i \le n-1</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                <term>Path, Trail, Circuit, and Cycle</term>: Now that we know what a walk is, these terms are defined the same way as for graphs.  A path is a walk with no repeating vertices; a trail is a walk with no repeating arcs; a circuit is a trail that begins and ends at the same vertex; and a cycle is a walk that begins and ends at the same vertex and repeats only the first and last vertices.
+            </p>
+        </li>
+        <li>
+            <p>
+                <term>Connected</term>: The concept of connectedness is a little complicated.  A graph is connected if every pair of vertices is connected by a walk.  For a digraph, does this mean that every pair of vertices <m>v</m> and <m>w</m> just needs a walk in one direction (either from <m>v</m> to <m>w</m> or from <m>w</m> to <m>v</m>) or both directions?  Should we allow walks where you don't have to follow the arrows, since that would still make the graph <em>look</em> connected?
+            </p>
+        </li>
+    </ul>
+  </p>
+
+  <p>
+    It turns out that we have two different kinds of connected.  A digraph is <em>strongly connected</em> if every pair of vertices has a walk in both directions.  A digraph is <em>weakly connected</em> if every pair of vertices has an undirected path between them (i.e. we can walk against the arrows if we want).  As far as I know, there is no definition of connected if every pair of vertices has a directed path in only one direction.
+  </p>
+
+  <p>
+    Now let's talk about shortest paths.  It turns out that all the algorithms we developed for graphs also work on digraphs.  I will give an example using Dijkstra's algorithm.
+  </p>
+
+  <example>
+    <statement>
+        <p>
+            Consider the following digraph.
+        </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="digraph-example">
+                <diagram dimensions="(300,300)" margins="5">
+                    <definition>graph={1:[2,5],2:[3],3:[4],4:[5]}</definition>
+                    <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e'}</definition>
+                    <coordinates bbox="(0,0,1.04,1)">
+                        <network directed="yes" labels="yes" label-dictionary="labels"
+                        scale="0.8" node-stroke="white" node-fill="white" >
+                            <node at="1" p="(0.2,0.5)" />
+                            <node at="2" p="(0.5,0.8)" />
+                            <node at="3" p="(0.5,0.2)" />
+                            <node at="4" p="(0.8,0.8)" />
+                            <node at="5" p="(0.8,0.2)" />
+                            <edge vertices="(1,2)"><m>4</m></edge>
+                            <edge vertices="(1,3)"><m>2</m></edge>
+                            <edge vertices="(2,4)"><m>3</m></edge>
+                            <edge vertices="(3,2)"><m>1</m></edge>
+                            <edge vertices="(3,5)"><m>1</m></edge>
+                            <edge vertices="(4,5)"><m>6</m></edge>
+                            <edge vertices="(5,3)"><m>2</m></edge>
+                        </network>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+        </image>
+        <p>
+            Let's find the distance from <m>a</m> to all the other vertices using Improved Dijkstra's algorithm.  We start out by setting the distance to <m>a</m> as 0.  Our next step is to guess 2 for the distance to <m>c</m> and 4 for the distance to <m>b</m>.  Since <m>2 &lt; 4</m>, we make the distance to <m>c</m> be 2 permanently.  For the next step, we extend out from <m>c</m>.  This reduces the distance. to <m>b</m> to 3 and gives us an approximated distance to <m>e</m> as 3.  These are both equally small, so they become permanent.  Finally, we extend from <m>b</m> to <m>d</m> to get a distance of 6.  This is the only approximation, so it is permanent.  This gives us <m>d(a,b)=3</m>, <m>d(a,c)=2</m>, <m>d(a,d)=6</m>, and <m>d(a,e)=3</m>.
+        </p>
+    </statement>
+  </example>
+</section>
