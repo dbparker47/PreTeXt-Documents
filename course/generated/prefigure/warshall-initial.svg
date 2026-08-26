@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="warshall-initial-figure" width="310" height="310" viewBox="0 0 310 310">
+<svg xmlns="http://www.w3.org/2000/svg" id="warshall-initial-figure" width="310" height="160" viewBox="0 0 310 160">
   <defs>
     <clipPath id="warshall-initial-clipPath-0">
-      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+      <rect x="5.0" y="5.0" width="300.0" height="150.0"/>
     </clipPath>
     <clipPath id="warshall-initial-clipPath-1">
-      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+      <rect x="5.0" y="5.0" width="300.0" height="150.0"/>
     </clipPath>
     <marker id="warshall-initial-arrow-head-end-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
       <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
@@ -15,14 +15,14 @@
   </defs>
   <g id="warshall-initial-group-0">
     <g id="warshall-initial-group-1">
-      <line id="warshall-initial-edge-1-3" x1="65.0" y1="65.0" x2="227.6" y2="65.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#warshall-initial-arrow-head-end-2_None_24_60-black)"/>
-      <line id="warshall-initial-edge-2-1" x1="65.0" y1="245.0" x2="65.0" y2="82.4" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#warshall-initial-arrow-head-end-2_None_24_60-black)"/>
-      <path id="warshall-initial-edge-2-4" d="M 65.0 245.0 Q 110.0 252.5 155.0 252.5 Q 177.5 252.5 200.0 250.6 Q 211.2 249.7 222.5 248.3 Q 225.3 247.9 228.1 247.6 Q 228.8 247.5 229.5 247.4" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#warshall-initial-clipPath-1)" marker-end="url(#warshall-initial-arrow-head-end-2_None_24_60-black)"/>
-      <path id="warshall-initial-edge-4-2" d="M 245.0 245.0 Q 200.0 237.5 155.0 237.5 Q 132.5 237.5 110.0 239.4 Q 98.8 240.3 87.5 241.7 Q 84.7 242.1 81.9 242.4 Q 81.2 242.5 80.5 242.6" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#warshall-initial-clipPath-1)" marker-end="url(#warshall-initial-arrow-head-end-2_None_24_60-black)"/>
+      <line id="warshall-initial-edge-1-3" x1="65.0" y1="35.0" x2="227.6" y2="35.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#warshall-initial-arrow-head-end-2_None_24_60-black)"/>
+      <line id="warshall-initial-edge-2-1" x1="65.0" y1="125.0" x2="65.0" y2="52.4" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#warshall-initial-arrow-head-end-2_None_24_60-black)"/>
+      <path id="warshall-initial-edge-2-4" d="M 65.0 125.0 Q 110.0 132.5 155.0 132.5 Q 177.5 132.5 200.0 130.6 Q 211.2 129.7 222.5 128.3 Q 225.3 127.9 228.1 127.5 Q 228.8 127.5 229.5 127.4" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#warshall-initial-clipPath-1)" marker-end="url(#warshall-initial-arrow-head-end-2_None_24_60-black)"/>
+      <path id="warshall-initial-edge-4-2" d="M 245.0 125.0 Q 200.0 117.5 155.0 117.5 Q 132.5 117.5 110.0 119.4 Q 98.8 120.3 87.5 121.7 Q 84.7 122.1 81.9 122.5 Q 81.2 122.5 80.5 122.6" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#warshall-initial-clipPath-1)" marker-end="url(#warshall-initial-arrow-head-end-2_None_24_60-black)"/>
     </g>
     <g id="warshall-initial-group-2">
-      <circle id="warshall-initial-node-1" cx="65.0" cy="65.0" r="12" stroke="no" stroke-width="1" fill="white"/>
-      <g id="warshall-initial-label-0" transform="translate(65.0,65.0) translate(-4.5,-6.0)">
+      <circle id="warshall-initial-node-1" cx="65.0" cy="35.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="warshall-initial-label-0" transform="translate(65.0,35.0) translate(-4.5,-6.0)">
         <g id="warshall-initial-g-0">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
             <defs>
@@ -38,8 +38,8 @@
           </svg>
         </g>
       </g>
-      <circle id="warshall-initial-node-2" cx="65.0" cy="245.0" r="12" stroke="no" stroke-width="1" fill="white"/>
-      <g id="warshall-initial-label-1" transform="translate(65.0,245.0) translate(-4.5,-6.0)">
+      <circle id="warshall-initial-node-2" cx="65.0" cy="125.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="warshall-initial-label-1" transform="translate(65.0,125.0) translate(-4.5,-6.0)">
         <g id="warshall-initial-g-1">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
             <defs>
@@ -55,8 +55,8 @@
           </svg>
         </g>
       </g>
-      <circle id="warshall-initial-node-3" cx="245.0" cy="65.0" r="12" stroke="no" stroke-width="1" fill="white"/>
-      <g id="warshall-initial-label-2" transform="translate(245.0,65.0) translate(-4.5,-6.2)">
+      <circle id="warshall-initial-node-3" cx="245.0" cy="35.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="warshall-initial-label-2" transform="translate(245.0,35.0) translate(-4.5,-6.2)">
         <g id="warshall-initial-g-2">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.432px" role="img" focusable="false" viewBox="0 -665 500 687" x="0.0" y="0.0">
             <defs>
@@ -72,8 +72,8 @@
           </svg>
         </g>
       </g>
-      <circle id="warshall-initial-node-4" cx="245.0" cy="245.0" r="12" stroke="no" stroke-width="1" fill="white"/>
-      <g id="warshall-initial-label-3" transform="translate(245.0,245.0) translate(-4.5,-6.1)">
+      <circle id="warshall-initial-node-4" cx="245.0" cy="125.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="warshall-initial-label-3" transform="translate(245.0,125.0) translate(-4.5,-6.1)">
         <g id="warshall-initial-g-3">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.256px" role="img" focusable="false" viewBox="0 -677 500 677" x="0.0" y="0.0">
             <defs>

@@ -558,7 +558,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="in-class-trans-closure.html" class="internal"><span class="title">In-Class Activities: Transitive Closure</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="act-transitive-closure.html" class="internal"><span class="title">Transitive Closure</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="act-warshall.html" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="act-warshall.html" class="internal"><span class="title">Warshall’s Algorithm</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -696,22 +696,22 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li id="video-activity-transitive-closure-4-3-1-3">
 <div class="para logical" id="video-activity-transitive-closure-4-3-1-3-1">
-<div class="para">Let $R$ be the relation on <span class="process-math">\(\mathbb{Z}\)</span> given by <span class="process-math">\(aRb\)</span> precisely when <span class="process-math">\(\frac{b}{a}\)</span> is a prime number.</div>
-<ol class="lower-alpha lower-alpha-level-1" id="video-activity-transitive-closure-4-3-1-3-1-4">
-<li id="video-activity-transitive-closure-4-3-1-3-1-4-1">
-<div class="para" id="video-activity-transitive-closure-4-3-1-3-1-4-1-1">Find a few ordered pairs in <span class="process-math">\(R^+\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#video-activity-transitive-closure-4-3-1-3-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">Let <span class="process-math">\(&gt;R\)</span> be the relation on <span class="process-math">\(\mathbb{Z}\)</span> given by <span class="process-math">\(aRb\)</span> precisely when <span class="process-math">\(\frac{b}{a}\)</span> is a prime number.</div>
+<ol class="lower-alpha lower-alpha-level-1" id="video-activity-transitive-closure-4-3-1-3-1-5">
+<li id="video-activity-transitive-closure-4-3-1-3-1-5-1">
+<div class="para" id="video-activity-transitive-closure-4-3-1-3-1-5-1-1">Find a few ordered pairs in <span class="process-math">\(R^+\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#video-activity-transitive-closure-4-3-1-3-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3.a"><a href="#video-activity-transitive-closure-4-3-1-3-1-4-1" title="Copy heading and permalink for Item 3.a" aria-label="Copy heading and permalink for Item 3.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 3.a"><a href="#video-activity-transitive-closure-4-3-1-3-1-5-1" title="Copy heading and permalink for Item 3.a" aria-label="Copy heading and permalink for Item 3.a">🔗</a></div>
 </li>
-<li id="video-activity-transitive-closure-4-3-1-3-1-4-2">
-<div class="para" id="video-activity-transitive-closure-4-3-1-3-1-4-2-1">Prove or disprove that <span class="process-math">\(9R^+360\text{.}\)</span>  Prove or disprove that <span class="process-math">\(9R^+100\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#video-activity-transitive-closure-4-3-1-3-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="video-activity-transitive-closure-4-3-1-3-1-5-2">
+<div class="para" id="video-activity-transitive-closure-4-3-1-3-1-5-2-1">Prove or disprove that <span class="process-math">\(9R^+360\text{.}\)</span>  Prove or disprove that <span class="process-math">\(9R^+100\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#video-activity-transitive-closure-4-3-1-3-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3.b"><a href="#video-activity-transitive-closure-4-3-1-3-1-4-2" title="Copy heading and permalink for Item 3.b" aria-label="Copy heading and permalink for Item 3.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 3.b"><a href="#video-activity-transitive-closure-4-3-1-3-1-5-2" title="Copy heading and permalink for Item 3.b" aria-label="Copy heading and permalink for Item 3.b">🔗</a></div>
 </li>
-<li id="video-activity-transitive-closure-4-3-1-3-1-4-3">
-<div class="para" id="video-activity-transitive-closure-4-3-1-3-1-4-3-1">(Not on quiz) Based on your experiences in (a) and/or (b), conjecture what you believe <span class="process-math">\(R^+\)</span> to be.  Prove your conjecture if you dare.<div class="autopermalink" data-description="Paragraph"><a href="#video-activity-transitive-closure-4-3-1-3-1-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="video-activity-transitive-closure-4-3-1-3-1-5-3">
+<div class="para" id="video-activity-transitive-closure-4-3-1-3-1-5-3-1">(Not on quiz) Based on your experiences in (a) and/or (b), conjecture what you believe <span class="process-math">\(R^+\)</span> to be.  Prove your conjecture if you dare.<div class="autopermalink" data-description="Paragraph"><a href="#video-activity-transitive-closure-4-3-1-3-1-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3.c"><a href="#video-activity-transitive-closure-4-3-1-3-1-4-3" title="Copy heading and permalink for Item 3.c" aria-label="Copy heading and permalink for Item 3.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 3.c"><a href="#video-activity-transitive-closure-4-3-1-3-1-5-3" title="Copy heading and permalink for Item 3.c" aria-label="Copy heading and permalink for Item 3.c">🔗</a></div>
 </li>
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#video-activity-transitive-closure-4-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>

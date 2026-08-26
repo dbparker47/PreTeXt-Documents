@@ -1,22 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="adj-reading-ex-2-figure" width="310" height="310" viewBox="0 0 310 310">
+<svg xmlns="http://www.w3.org/2000/svg" id="adj-reading-ex-2-figure" width="310" height="160" viewBox="0 0 310 160">
   <defs>
     <clipPath id="adj-reading-ex-2-clipPath-0">
-      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+      <rect x="5.0" y="5.0" width="300.0" height="150.0"/>
     </clipPath>
     <clipPath id="adj-reading-ex-2-clipPath-1">
-      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+      <rect x="5.0" y="5.0" width="300.0" height="150.0"/>
     </clipPath>
   </defs>
   <g id="adj-reading-ex-2-group-0">
     <g id="adj-reading-ex-2-group-1">
-      <path id="adj-reading-ex-2-edge-1-2" d="M 95.0 95.0 Q 125.0 95.0 155.0 95.0 Q 185.0 95.0 215.0 95.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#adj-reading-ex-2-clipPath-1)"/>
-      <path id="adj-reading-ex-2-edge-1-4" d="M 95.0 95.0 Q 95.0 125.0 95.0 155.0 Q 95.0 185.0 95.0 215.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#adj-reading-ex-2-clipPath-1)"/>
-      <path id="adj-reading-ex-2-edge-2-3" d="M 215.0 95.0 Q 215.0 125.0 215.0 155.0 Q 215.0 185.0 215.0 215.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#adj-reading-ex-2-clipPath-1)"/>
-      <path id="adj-reading-ex-2-edge-2-4" d="M 215.0 95.0 Q 185.0 125.0 155.0 155.0 Q 125.0 185.0 95.0 215.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#adj-reading-ex-2-clipPath-1)"/>
+      <path id="adj-reading-ex-2-edge-1-2" d="M 95.0 30.0 Q 125.0 30.0 155.0 30.0 Q 185.0 30.0 215.0 30.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#adj-reading-ex-2-clipPath-1)"/>
+      <path id="adj-reading-ex-2-edge-1-4" d="M 95.0 30.0 Q 95.0 55.0 95.0 80.0 Q 95.0 105.0 95.0 130.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#adj-reading-ex-2-clipPath-1)"/>
+      <path id="adj-reading-ex-2-edge-2-3" d="M 215.0 30.0 Q 215.0 55.0 215.0 80.0 Q 215.0 105.0 215.0 130.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#adj-reading-ex-2-clipPath-1)"/>
+      <path id="adj-reading-ex-2-edge-2-4" d="M 215.0 30.0 Q 185.0 55.0 155.0 80.0 Q 125.0 105.0 95.0 130.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#adj-reading-ex-2-clipPath-1)"/>
     </g>
     <g id="adj-reading-ex-2-group-2">
-      <circle id="adj-reading-ex-2-node-1" cx="95.0" cy="95.0" r="12" stroke="black" stroke-width="1" fill="white"/>
-      <g id="adj-reading-ex-2-label-0" transform="translate(95.0,95.0) translate(-8.3,-5.4)">
+      <circle id="adj-reading-ex-2-node-1" cx="95.0" cy="30.0" r="12" stroke="black" stroke-width="1" fill="white"/>
+      <g id="adj-reading-ex-2-label-0" transform="translate(95.0,30.0) translate(-8.3,-5.4)">
         <g id="adj-reading-ex-2-g-0">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -2.712px" width="16.680px" height="10.736px" role="img" focusable="false" viewBox="0 -443 921.6 593" x="0.0" y="0.0">
             <defs>
@@ -38,8 +38,8 @@
           </svg>
         </g>
       </g>
-      <circle id="adj-reading-ex-2-node-2" cx="215.0" cy="95.0" r="12" stroke="black" stroke-width="1" fill="white"/>
-      <g id="adj-reading-ex-2-label-1" transform="translate(215.0,95.0) translate(-8.3,-5.4)">
+      <circle id="adj-reading-ex-2-node-2" cx="215.0" cy="30.0" r="12" stroke="black" stroke-width="1" fill="white"/>
+      <g id="adj-reading-ex-2-label-1" transform="translate(215.0,30.0) translate(-8.3,-5.4)">
         <g id="adj-reading-ex-2-g-1">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -2.712px" width="16.680px" height="10.736px" role="img" focusable="false" viewBox="0 -443 921.6 593" x="0.0" y="0.0">
             <defs>
@@ -61,8 +61,8 @@
           </svg>
         </g>
       </g>
-      <circle id="adj-reading-ex-2-node-3" cx="215.0" cy="215.0" r="12" stroke="black" stroke-width="1" fill="white"/>
-      <g id="adj-reading-ex-2-label-2" transform="translate(215.0,215.0) translate(-8.3,-5.5)">
+      <circle id="adj-reading-ex-2-node-3" cx="215.0" cy="130.0" r="12" stroke="black" stroke-width="1" fill="white"/>
+      <g id="adj-reading-ex-2-label-2" transform="translate(215.0,130.0) translate(-8.3,-5.5)">
         <g id="adj-reading-ex-2-g-2">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.000px" width="16.680px" height="11.016px" role="img" focusable="false" viewBox="0 -443 921.6 608.6" x="0.0" y="0.0">
             <defs>
@@ -84,8 +84,8 @@
           </svg>
         </g>
       </g>
-      <circle id="adj-reading-ex-2-node-4" cx="95.0" cy="215.0" r="12" stroke="black" stroke-width="1" fill="white"/>
-      <g id="adj-reading-ex-2-label-3" transform="translate(95.0,215.0) translate(-8.3,-5.4)">
+      <circle id="adj-reading-ex-2-node-4" cx="95.0" cy="130.0" r="12" stroke="black" stroke-width="1" fill="white"/>
+      <g id="adj-reading-ex-2-label-3" transform="translate(95.0,130.0) translate(-8.3,-5.4)">
         <g id="adj-reading-ex-2-g-3">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -2.712px" width="16.680px" height="10.736px" role="img" focusable="false" viewBox="0 -443 921.6 593" x="0.0" y="0.0">
             <defs>

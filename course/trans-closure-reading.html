@@ -558,7 +558,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="in-class-trans-closure.html" class="internal"><span class="title">In-Class Activities: Transitive Closure</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="act-transitive-closure.html" class="internal"><span class="title">Transitive Closure</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="act-warshall.html" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="act-warshall.html" class="internal"><span class="title">Warshall’s Algorithm</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -641,10 +641,10 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="trans-closure-intro-3">Let’s look at an example.  Here is a relation in the form of a directed graph.<div class="autopermalink" data-description="Paragraph"><a href="#trans-closure-intro-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/tc-initial.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/prefigure/tc-initial.svg" role="img" class="contained"></div>
 <div class="para" id="trans-closure-intro-5">If we want to make this relation transitive, one way is just to draw arrows everywhere:<div class="autopermalink" data-description="Paragraph"><a href="#trans-closure-intro-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/tc-all.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/prefigure/tc-all.svg" role="img" class="contained"></div>
 <div class="para" id="trans-closure-intro-7">The above graph is certainly transitive, but that is not what we want.  We would like to make the relation transitive while drawing as few arrows as possible.  Before you read on, try to do this with the example above.<div class="autopermalink" data-description="Paragraph"><a href="#trans-closure-intro-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="trans-closure-intro-8">This leads us to the following definition.<div class="autopermalink" data-description="Paragraph"><a href="#trans-closure-intro-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -658,13 +658,13 @@ eBookConfig.enable_chatcodes =  false;
 </article>
 <div class="para" id="trans-closure-intro-10">Let’s look at the above relation and see what the transitive closure is.<div class="autopermalink" data-description="Paragraph"><a href="#trans-closure-intro-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/tc-initial-2.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/prefigure/tc-initial-2.svg" role="img" class="contained"></div>
 <div class="para" id="trans-closure-intro-12">Our strategy is to include only the arrows that are absolutely necessary to make the relation transitive.  For instance, we have <span class="process-math">\(1R2\)</span> and <span class="process-math">\(2R4\text{,}\)</span> and so we need <span class="process-math">\(1R^+4\text{.}\)</span>  Similarly, <span class="process-math">\(2R4\)</span> and <span class="process-math">\(4R5\text{,}\)</span> and <span class="process-math">\(3R2\)</span> and <span class="process-math">\(2R4\text{.}\)</span>  Thus, we must have <span class="process-math">\(2R^+5\)</span> and <span class="process-math">\(3R^+4\text{.}\)</span>  This gives us the following.<div class="autopermalink" data-description="Paragraph"><a href="#trans-closure-intro-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/tc-step-1.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/prefigure/tc-step-1.svg" role="img" class="contained"></div>
 <div class="para" id="trans-closure-intro-14">Notice that the relation is still not transitive (check to see why), so we have to go through the above process again.  We have <span class="process-math">\(1R^+4\)</span> and <span class="process-math">\(4R5\text{,}\)</span> and <span class="process-math">\(3R2\)</span> and <span class="process-math">\(2R^+5\text{,}\)</span> so we need to have <span class="process-math">\(1R^+5\)</span> and <span class="process-math">\(3R^+5\text{.}\)</span>  This gives us the following.<div class="autopermalink" data-description="Paragraph"><a href="#trans-closure-intro-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/tc-step-2.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/prefigure/tc-step-2.svg" role="img" class="contained"></div>
 <div class="para" id="trans-closure-intro-16">The above is transitive.  Since we did not add any arrows that were not absolutely necessary, it is the transitive closure.<div class="autopermalink" data-description="Paragraph"><a href="#trans-closure-intro-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="trans-closure-intro-17">Let us reflect a little on the above example.  In constructing <span class="process-math">\(R^+\text{,}\)</span> the first thing we did was include all arrows from <span class="process-math">\(R\text{.}\)</span>  After that, we looked for elements and arrows that looked like <span class="process-math">\(a \rightarrow b \rightarrow c\)</span> and added the arrow <span class="process-math">\(a \rightarrow c\text{.}\)</span>  If this feels familiar, it is because this new arrow comes from the composition <span class="process-math">\(R \circ R\)</span> (which is also written <span class="process-math">\(R^2\)</span>).  In fact, all arrows drawn with dashed lines are arrows in <span class="process-math">\(R^2\text{.}\)</span>  For the last step, we combined arrows from <span class="process-math">\(R^2\)</span> with arrows from <span class="process-math">\(R\)</span> in the same way (i.e. for <span class="process-math">\(a \rightarrow b \rightarrow c\text{,}\)</span> where one of the arrows is from <span class="process-math">\(R\)</span> and the other is from <span class="process-math">\(R^2\text{,}\)</span> we added the arrow <span class="process-math">\(a \rightarrow c\)</span>).  These are the arrows from <span class="process-math">\((R \circ R) \circ R\)</span> (which is also written <span class="process-math">\(R^3\)</span>).  Thus, we have <span class="process-math">\(R^+ = R \cup R^2 \cup R^3\text{.}\)</span>  In general, we have <span class="process-math">\(R^+ = R \cup R^2 \cup R^3 \cup \cdots \cup R^k\text{,}\)</span> where <span class="process-math">\(k\)</span> is the last step that makes the relation transitive.<div class="autopermalink" data-description="Paragraph"><a href="#trans-closure-intro-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -674,11 +674,11 @@ eBookConfig.enable_chatcodes =  false;
 <details id="trans-closure-intro-19" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">58</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
-<article class="example example-like knowl__content"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/tc-path.svg" role="img" class="contained"></div>
+<article class="example example-like knowl__content"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/prefigure/tc-path.svg" role="img" class="contained"></div>
 <div class="solutions">
 <details id="trans-closure-intro-19-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="answer solution-like knowl__content">
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/tc-path-final.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/prefigure/tc-path-final.svg" role="img" class="contained"></div>
 <div class="autopermalink" data-description="Answer 58.1"><a href="#trans-closure-intro-19-2" title="Copy heading and permalink for Answer 58.1" aria-label="Copy heading and permalink for Answer 58.1">🔗</a></div>
 </div></details>
 </div>
@@ -767,7 +767,7 @@ eBookConfig.enable_chatcodes =  false;
 <details id="warshall-intro-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">60</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
-<article class="example example-like knowl__content"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/warshall-initial.svg" role="img" class="contained"></div> 
+<article class="example example-like knowl__content"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/prefigure/warshall-initial.svg" role="img" class="contained"></div> 
 <div class="para" id="warshall-intro-5-1-2">So I unimaginatively ordered the vertices 1, 2, 3, and 4.  We start by looking at 2-paths through 1.  There is only one such path <span class="process-math">\(2 \rightarrow 1 \rightarrow 3\text{,}\)</span> so we draw in the arrow <span class="process-math">\(2 \rightarrow 3\text{,}\)</span> as shown below.<div class="autopermalink" data-description="Paragraph"><a href="#warshall-intro-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
 <div class="sidebyside">
@@ -787,7 +787,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="warshall-intro-5-1-6">Now we move on to 3.  Note that there are no 2-paths through 3, so we can’t add any arrows.  We then move to 4.  This has a few 2-paths through it, but the only one that gives us a new arrow is <span class="process-math">\(2 \rightarrow 4 \rightarrow 2\text{,}\)</span> so we draw in <span class="process-math">\(2 \rightarrow 2\text{.}\)</span>  This gives us our final relation.<div class="autopermalink" data-description="Paragraph"><a href="#warshall-intro-5-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
 <div class="sidebyside">
-<div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;grid-template-columns:31.0344827586207% 31.0344827586207% 31.0344827586207%;column-gap:3.333333333333333%;">
+<div class="sbsrow" style="margin-left:0.666666666666667%;margin-right:0.666666666666667%;grid-template-columns:32.4324324324324% 32.4324324324324% 32.4324324324324%;column-gap:1.333333333333333%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/warshall-step-3-start.svg" role="img" class="contained"></div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/warshall-step-3-finish.svg" role="img" class="contained"></div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/warshall-finish.svg" role="img" class="contained"></div></div>

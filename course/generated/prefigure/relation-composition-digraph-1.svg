@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="relation-composition-digraph-1-figure" width="310" height="310" viewBox="0 0 310 310">
+<svg xmlns="http://www.w3.org/2000/svg" id="relation-composition-digraph-1-figure" width="310" height="35" viewBox="0 0 310 35">
   <defs>
     <clipPath id="relation-composition-digraph-1-clipPath-0">
-      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+      <rect x="5.0" y="5.0" width="300.0" height="25.0"/>
     </clipPath>
     <clipPath id="relation-composition-digraph-1-clipPath-1">
-      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+      <rect x="5.0" y="5.0" width="300.0" height="25.0"/>
     </clipPath>
     <marker id="relation-composition-digraph-1-arrow-head-end-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
       <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
@@ -15,8 +15,8 @@
   </defs>
   <g id="relation-composition-digraph-1-group-0">
     <g id="relation-composition-digraph-1-group-1">
-      <line id="relation-composition-digraph-1-edge-1-2" x1="35.0" y1="155.0" x2="137.6" y2="155.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#relation-composition-digraph-1-arrow-head-end-2_None_24_60-black)"/>
-      <g id="relation-composition-digraph-1-label-0" transform="translate(95.0,159.0) translate(-6.9,-0.0)">
+      <line id="relation-composition-digraph-1-edge-1-2" x1="35.0" y1="17.5" x2="137.6" y2="17.5" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#relation-composition-digraph-1-arrow-head-end-2_None_24_60-black)"/>
+      <g id="relation-composition-digraph-1-label-0" transform="translate(95.0,21.5) translate(-6.9,-0.0)">
         <g id="relation-composition-digraph-1-g-0">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.384px" width="13.736px" height="12.744px" role="img" focusable="false" viewBox="0 -683 759 704" x="0.0" y="0.0">
             <defs>
@@ -32,8 +32,8 @@
           </svg>
         </g>
       </g>
-      <line id="relation-composition-digraph-1-edge-2-3" x1="155.0" y1="155.0" x2="257.6" y2="155.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#relation-composition-digraph-1-arrow-head-end-2_None_24_60-black)"/>
-      <g id="relation-composition-digraph-1-label-1" transform="translate(215.0,159.0) translate(-5.8,-0.0)">
+      <line id="relation-composition-digraph-1-edge-2-3" x1="155.0" y1="17.5" x2="257.6" y2="17.5" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#relation-composition-digraph-1-arrow-head-end-2_None_24_60-black)"/>
+      <g id="relation-composition-digraph-1-label-1" transform="translate(215.0,21.5) translate(-5.8,-0.0)">
         <g id="relation-composition-digraph-1-g-1">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="11.672px" height="13.160px" role="img" focusable="false" viewBox="0 -705 645 727" x="0.0" y="0.0">
             <defs>
@@ -51,8 +51,8 @@
       </g>
     </g>
     <g id="relation-composition-digraph-1-group-2">
-      <circle id="relation-composition-digraph-1-node-1" cx="35.0" cy="155.0" r="12" stroke="no" stroke-width="1" fill="white"/>
-      <g id="relation-composition-digraph-1-1" transform="translate(35.0,155.0) translate(-4.8,-4.1)">
+      <circle id="relation-composition-digraph-1-node-1" cx="35.0" cy="17.5" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="relation-composition-digraph-1-1" transform="translate(35.0,17.5) translate(-4.8,-4.1)">
         <g id="relation-composition-digraph-1-g-2">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.184px" width="9.576px" height="8.160px" role="img" focusable="false" viewBox="0 -441 529 451" x="0.0" y="0.0">
             <defs>
@@ -68,8 +68,8 @@
           </svg>
         </g>
       </g>
-      <circle id="relation-composition-digraph-1-node-2" cx="155.0" cy="155.0" r="12" stroke="no" stroke-width="1" fill="white"/>
-      <g id="relation-composition-digraph-1-2" transform="translate(155.0,155.0) translate(-3.9,-6.4)">
+      <circle id="relation-composition-digraph-1-node-2" cx="155.0" cy="17.5" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="relation-composition-digraph-1-2" transform="translate(155.0,17.5) translate(-3.9,-6.4)">
         <g id="relation-composition-digraph-1-g-3">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="7.768px" height="12.760px" role="img" focusable="false" viewBox="0 -694 429 705" x="0.0" y="0.0">
             <defs>
@@ -85,8 +85,8 @@
           </svg>
         </g>
       </g>
-      <circle id="relation-composition-digraph-1-node-3" cx="275.0" cy="155.0" r="12" stroke="no" stroke-width="1" fill="white"/>
-      <g id="relation-composition-digraph-1-3" transform="translate(275.0,155.0) translate(-3.9,-4.1)">
+      <circle id="relation-composition-digraph-1-node-3" cx="275.0" cy="17.5" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="relation-composition-digraph-1-3" transform="translate(275.0,17.5) translate(-3.9,-4.1)">
         <g id="relation-composition-digraph-1-g-4">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="7.840px" height="8.200px" role="img" focusable="false" viewBox="0 -442 433 453" x="0.0" y="0.0">
             <defs>

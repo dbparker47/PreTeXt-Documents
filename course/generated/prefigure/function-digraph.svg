@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="function-digraph-figure" width="310" height="310" viewBox="0 0 310 310">
+<svg xmlns="http://www.w3.org/2000/svg" id="function-digraph-figure" width="310" height="30" viewBox="0 0 310 30">
   <defs>
     <clipPath id="function-digraph-clipPath-0">
-      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+      <rect x="5.0" y="5.0" width="300.0" height="20.0"/>
     </clipPath>
     <clipPath id="function-digraph-clipPath-1">
-      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+      <rect x="5.0" y="5.0" width="300.0" height="20.0"/>
     </clipPath>
     <marker id="function-digraph-arrow-head-end-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
       <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
@@ -15,8 +15,8 @@
   </defs>
   <g id="function-digraph-group-0">
     <g id="function-digraph-group-1">
-      <line id="function-digraph-edge-1-2" x1="95.0" y1="155.0" x2="197.6" y2="155.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#function-digraph-arrow-head-end-2_None_24_60-black)"/>
-      <g id="function-digraph-label-0" transform="translate(155.0,159.0) translate(-5.0,-0.0)">
+      <line id="function-digraph-edge-1-2" x1="95.0" y1="15.0" x2="197.6" y2="15.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#function-digraph-arrow-head-end-2_None_24_60-black)"/>
+      <g id="function-digraph-label-0" transform="translate(155.0,19.0) translate(-5.0,-0.0)">
         <g id="function-digraph-g-0">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="9.952px" height="16.472px" role="img" focusable="false" viewBox="0 -705 550 910" x="0.0" y="0.0">
             <defs>
@@ -34,8 +34,8 @@
       </g>
     </g>
     <g id="function-digraph-group-2">
-      <circle id="function-digraph-node-1" cx="95.0" cy="155.0" r="12" stroke="no" stroke-width="1" fill="white"/>
-      <g id="function-digraph-1" transform="translate(95.0,155.0) translate(-5.2,-4.1)">
+      <circle id="function-digraph-node-1" cx="95.0" cy="15.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="function-digraph-1" transform="translate(95.0,15.0) translate(-5.2,-4.1)">
         <g id="function-digraph-g-1">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
             <defs>
@@ -51,8 +51,8 @@
           </svg>
         </g>
       </g>
-      <circle id="function-digraph-node-2" cx="215.0" cy="155.0" r="12" stroke="no" stroke-width="1" fill="white"/>
-      <g id="function-digraph-2" transform="translate(215.0,155.0) translate(-17.2,-9.0)">
+      <circle id="function-digraph-node-2" cx="215.0" cy="15.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="function-digraph-2" transform="translate(215.0,15.0) translate(-17.2,-9.0)">
         <g id="function-digraph-g-2">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="34.392px" height="18.096px" role="img" focusable="false" viewBox="0 -750 1900 1000" x="0.0" y="0.0">
             <defs>

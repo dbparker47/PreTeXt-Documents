@@ -558,7 +558,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="in-class-trans-closure.html" class="internal"><span class="title">In-Class Activities: Transitive Closure</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="act-transitive-closure.html" class="internal"><span class="title">Transitive Closure</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="act-warshall.html" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="act-warshall.html" class="internal"><span class="title">Warshall’s Algorithm</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -635,7 +635,7 @@ eBookConfig.enable_chatcodes =  false;
 </h2>
 <div class="para" id="digraph-reading-2">Remember back in the good old days when we were studying relations?  One way of representing them was with directed graphs, as below.<div class="autopermalink" data-description="Paragraph"><a href="#digraph-reading-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/digraph-intro.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/prefigure/digraph-intro.svg" role="img" class="contained"></div>
 <div class="para" id="digraph-reading-4">So for instance, since <span class="process-math">\(e \rightarrow b\text{,}\)</span> we have <span class="process-math">\(e\)</span> related to <span class="process-math">\(b\)</span> (but not <span class="process-math">\(b\)</span> related to <span class="process-math">\(e\)</span>).  That looks a little like a graph, doesn’t it?<div class="autopermalink" data-description="Paragraph"><a href="#digraph-reading-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="digraph-reading-5"><h3 class="heading">
@@ -658,7 +658,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li id="digraph-reading-7-1-2">
 <div class="para" id="digraph-reading-7-1-2-1">
-<dfn class="terminology">Incidence</dfn>: When we have <span class="process-math">\(a \rightarrow b\text{,}\)</span> saying that <span class="process-math">\(a\)</span> or <span class="process-math">\(b\)</span> is incident to the arc doesn’t tell us enough about the direction of the arc.  We say that the arc is <em class="emphasis">incident from $a$</em> and <em class="emphasis">incident to <span class="process-math">\(b\)</span></em>.<div class="autopermalink" data-description="Paragraph"><a href="#digraph-reading-7-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<dfn class="terminology">Incidence</dfn>: When we have <span class="process-math">\(a \rightarrow b\text{,}\)</span> saying that <span class="process-math">\(a\)</span> or <span class="process-math">\(b\)</span> is incident to the arc doesn’t tell us enough about the direction of the arc.  We say that the arc is <em class="emphasis">incident from <span class="process-math">\(&gt;a\)</span></em> and <em class="emphasis">incident to <span class="process-math">\(b\)</span></em>.<div class="autopermalink" data-description="Paragraph"><a href="#digraph-reading-7-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#digraph-reading-7-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
@@ -698,7 +698,7 @@ eBookConfig.enable_chatcodes =  false;
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="digraph-reading-10-1-1">Consider the following digraph.<div class="autopermalink" data-description="Paragraph"><a href="#digraph-reading-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/digraph-example.svg" role="img" class="contained"></div> 
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/prefigure/digraph-example.svg" role="img" class="contained"></div> 
 <div class="para" id="digraph-reading-10-1-3">Let’s find the distance from <span class="process-math">\(a\)</span> to all the other vertices using Improved Dijkstra’s algorithm.  We start out by setting the distance to <span class="process-math">\(a\)</span> as 0.  Our next step is to guess 2 for the distance to <span class="process-math">\(c\)</span> and 4 for the distance to <span class="process-math">\(b\text{.}\)</span>  Since <span class="process-math">\(2 &lt; 4\text{,}\)</span> we make the distance to <span class="process-math">\(c\)</span> be 2 permanently.  For the next step, we extend out from <span class="process-math">\(c\text{.}\)</span>  This reduces the distance. to <span class="process-math">\(b\)</span> to 3 and gives us an approximated distance to <span class="process-math">\(e\)</span> as 3.  These are both equally small, so they become permanent.  Finally, we extend from <span class="process-math">\(b\)</span> to <span class="process-math">\(d\)</span> to get a distance of 6.  This is the only approximation, so it is permanent.  This gives us <span class="process-math">\(d(a,b)=3\text{,}\)</span> <span class="process-math">\(d(a,c)=2\text{,}\)</span> <span class="process-math">\(d(a,d)=6\text{,}\)</span> and <span class="process-math">\(d(a,e)=3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#digraph-reading-10-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Example 66"><a href="#digraph-reading-10" title="Copy heading and permalink for Example 66" aria-label="Copy heading and permalink for Example 66">🔗</a></div>
