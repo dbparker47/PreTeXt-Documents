@@ -8,12 +8,12 @@
     <ul>
         <li>
             <p>
-                $V$ is the set of street intersections on Jojo's route.
+                <m>V</m> is the set of street intersections on Jojo's route.
             </p>
         </li>
         <li>
             <p>
-                $E$ is the set of the portions of streets between adjacent intersections.
+                <m>E</m> is the set of the portions of streets between adjacent intersections.
             </p>
         </li>
         <li>
@@ -50,12 +50,12 @@
     <ul>
         <li>
             <p>
-                If $G$ is Eulerian, an Eulerian circuit would work.
+                If <m>G</m> is Eulerian, an Eulerian circuit would work.
             </p>
         </li>
         <li>
             <p>
-                If $G$ is not Eulerian, we need another strategy.
+                If <m>G</m> is not Eulerian, we need another strategy.
             </p>
         </li>
     </ul>
@@ -69,31 +69,25 @@
     Let's take a look at some of the issues we need to deal with.
   </p>
 
-  <question>
-    <statement>
-        <p>
-            What can prevent a graph from having the Eulerian circuit we want?
-        </p>
-    </statement>
-    <answer>
-        <p>
-            Vertices with odd degree. 
-        </p>
-    </answer>
-  </question>
+  <insight>
+    <p>
+        What can prevent a graph from having the Eulerian circuit we want?
+    </p>
+  </insight>
 
-  <question>
-    <statement>
-        <p>
-            Our walk will have some edges that will be traveled along more than once.  How do we represent this?
-        </p>
-    </statement>
-    <answer>
-        <p>
-            We can draw multiple edges between vertices, one for each time we travel along an edge.
-        </p>
-    </answer>
-  </question>
+  <p>
+    As we saw when studying Eulerian circuits, the answer is vertices with odd degree.
+  </p>
+
+  <insight>
+    <p>
+        Our walk will have some edges that will be traveled along more than once.  How do we represent this?
+    </p>
+  </insight>
+
+  <p>
+    We can draw multiple edges between vertices, one for each time we travel along an edge.  This inspires the following definition.
+  </p>
 
   <definition>
     <statement>
@@ -107,35 +101,32 @@
     So we can represent our walk as a multigraph, where if we have multiple edges between two vertices, that means we travel between those vertices more than once.
   </p>
 
-  <question>
-    <statement>
-        <p>
-            What do we do with the odd vertices of the graph?
-        </p>
-    </statement>
-    <answer>
-        <p>
-            Recall that the Handshake Theorem says that the sum of the degrees of all vertices is an even number (specifically, twice the number of edges).  That means there is an even number of odd vertices.  So we can do the following:
-            <ul>
-                <li>
-                    <p>
-                        Put the odd-degree vertices in pairs.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Find paths between each pair of vertices.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Put in another edge to each edge you found in the second step.
-                    </p>
-                </li>
-            </ul>
-        </p>
-    </answer>
-  </question>
+  <insight>
+    <p>
+        What do we do with the odd vertices of the graph?
+    </p>
+  </insight>
+
+  <p>
+    Recall that the Handshake Theorem says that the sum of the degrees of all vertices is an even number (specifically, twice the number of edges).  That means there is an even number of odd vertices.  So we can do the following:
+    <ul>
+        <li>
+            <p>
+                Put the odd-degree vertices in pairs.
+            </p>
+        </li>
+        <li>
+            <p>
+                Find paths between each pair of vertices.
+            </p>
+        </li>
+        <li>
+            <p>
+                Put in another edge to each edge you found in the second step.
+            </p>
+        </li>
+    </ul>
+  </p>
 
   <p>
     This will make the vertices all have even degree. So with these issue in mind, here is a summary of how we can think of the Route Inspection algorithm.

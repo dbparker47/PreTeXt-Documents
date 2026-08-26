@@ -44,12 +44,12 @@
       <p>
         Let <m>G</m> be the graph pictured below.  Prove that <m>G</m> does not have a Hamiltonian cycle. 
       </p>
-      <image>
+      <image width="60%">
         <prefigure xmlns="https://prefigure.org" label="image-act-hamiltonian-1">
-          <diagram dimensions="(300,300)" margins="5">
+          <diagram dimensions="(300,150)" margins="5">
             <definition>undirected1={1:[2,5],2:[3],3:[4,6,8],4:[5],6:[7],7:[8]}</definition>
             <definition>labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'w_1',7:'w_2',8:'w_3'}</definition>
-            <coordinates bbox="(0,0,1,1)">
+            <coordinates bbox="(0,0.2,1,0.8)">
               <network directed="no" graph="undirected1" node-fill="white" labels="yes" 
               label-dictionary="labels" scale="0.8" node-stroke="black" >
                 <node at="1" p="(0.1,0.7)" />

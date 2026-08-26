@@ -77,7 +77,7 @@
           </li>
           <li>
             <p>
-              Let $R$ be the relation on <m>\mathbb{Z}</m> given by <m>aRb</m> precisely when <m>\frac{b}{a}</m> is a prime number.
+              Let <m>>R</m> be the relation on <m>\mathbb{Z}</m> given by <m>aRb</m> precisely when <m>\frac{b}{a}</m> is a prime number.
               <ol>
                 <li>
                   <p>

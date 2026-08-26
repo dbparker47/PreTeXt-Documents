@@ -6,9 +6,9 @@
   <p>
     Think back to the old days when you were studying functions (mathematical functions, not Python functions).  In a function <m>f</m>, you had some input <m>x</m> that corresponded with an output <m>f(x)</m>.  A visual representation is the following.
   </p>
-  <image>
+  <image width="70%">
     <prefigure xmlns="https://prefigure.org" label="function-digraph">
-        <diagram dimensions="(300,300)" margins="5">
+        <diagram dimensions="(300,20)" margins="5">
             <coordinates bbox="(-0.5,-0.5,0.5,0.5)">
                 <network directed="yes" node-fill="white" labels="yes" 
                 scale="0.8" seed="1" node-stroke="no">
@@ -24,9 +24,9 @@
   <p>
     Composition takes two functions <m>f</m> and <m>g</m> and turns them into one function <m>g \circ f</m> that determines its output in two steps.  You start with your input <m>x</m> and put it into <m>f</m> to get <m>f(x)</m>.  Then you take that output <m>f(x)</m> and put it into <m>g</m> to get <m>g(f(x))</m>.  Then <m>(g \circ f)(x)=g(f(x))</m>.  Here is what the picture looks like.
   </p>
-  <image>
+  <image width="70%">
     <prefigure xmlns="https://prefigure.org" label="function-composition-digraph">
-        <diagram dimensions="(300,300)" margins="5">
+        <diagram dimensions="(300,20)" margins="5">
             <coordinates bbox="(-0.5,-0.5,0.5,0.5)">
                 <network directed="yes" node-fill="white" labels="yes" 
                 scale="0.8" seed="1" node-stroke="no" node-size="25">
@@ -71,9 +71,9 @@
         <p>
             Let <m>R</m> be a relation from the set <m>A</m> to the set <m>B</m> (i.e. <m>aRb</m> can only happen when <m>a \in A</m> and <m>b \in B</m>), and let <m>S</m> be a relation from <m>B</m> to <m>C</m>.  We define the relation <m>R \circ S</m> from <m>A</m> to <m>C</m> by <m>a(R \circ S)c</m> precisely when there is some <m>b \in B</m> where <m>aRb</m> and <m>bSc</m>.  In picture form, this looks like
         </p>
-        <image>
+        <image width="70%">
             <prefigure xmlns="https://prefigure.org" label="relation-composition-digraph-1">
-                <diagram dimensions="(300,300)" margins="5">
+                <diagram dimensions="(300,25)" margins="5">
                     <coordinates bbox="(-0.5,-0.5,0.5,0.5)">
                         <network directed="yes" node-fill="white" labels="yes" 
                         scale="0.8" seed="1" node-stroke="no">
@@ -98,9 +98,9 @@
         <p>
             We have <m>2E5</m> and <m>5|10</m>, and so <m>2R10</m>.  Also, <m>1E7</m> and <m>7|21</m>, and so <m>1R21</m>.  Here are some pictures to help you understand this.
         </p>
-        <image>
+        <image width="70%">
             <prefigure xmlns="https://prefigure.org" label="relation-composition-digraph-2">
-                <diagram dimensions="(300,300)" margins="5">
+                <diagram dimensions="(300,25)" margins="5">
                     <coordinates bbox="(-0.5,-0.5,0.5,0.5)">
                         <network directed="yes" node-fill="white" labels="yes" 
                         scale="0.8" seed="1" node-stroke="no">
@@ -114,9 +114,9 @@
                 </diagram>
             </prefigure>
         </image>
-        <image>
+        <image width="70%">
             <prefigure xmlns="https://prefigure.org" label="relation-composition-digraph-3">
-                <diagram dimensions="(300,300)" margins="5">
+                <diagram dimensions="(300,25)" margins="5">
                     <coordinates bbox="(-0.5,-0.5,0.5,0.5)">
                         <network directed="yes" node-fill="white" labels="yes" 
                         scale="0.8" seed="1" node-stroke="no">
@@ -136,10 +136,10 @@
         <p>
             One thing that is different about composition of relations as opposed to just functions is that there can be more than one way to show that two numbers are related.  For instance, recall that we used <m>2E5</m> and <m>5|10</m> to show that <m>2R10</m>.  But we also have <m>2E2</m> and <m>2|10</m>, which also gives us <m>2R10</m>.  Here is a picture that shows the two ways we get <m>2(E \circ \mid)10</m>.
         </p>
-        <image>
+        <image width="70%">
             <prefigure xmlns="https://prefigure.org" label="relation-composition-digraph-4">
-                <diagram dimensions="(300,300)" margins="5">
-                    <coordinates bbox="(-0.5,-0.5,0.5,0.5)">
+                <diagram dimensions="(300,150)" margins="5">
+                    <coordinates bbox="(-0.5,-0.3,0.5,0.3)">
                         <network directed="yes" node-fill="white" labels="yes" 
                         scale="0.8" seed="1" node-stroke="no">
                             <node at="1" p="(-0.4,0)"><m>2</m></node>

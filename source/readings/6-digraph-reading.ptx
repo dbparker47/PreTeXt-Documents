@@ -7,7 +7,7 @@
     Remember back in the good old days when we were studying relations?  One way of representing them was with directed graphs, as below.
   </p>
 
-  <image>
+  <image width="50%">
     <prefigure xmlns="https://prefigure.org" label="digraph-intro">
         <diagram dimensions="(300,300)" margins="5">
             <definition>relation={1:[2,3,5],2:[5],3:[4],4:[1,2,5]}</definition>
@@ -46,7 +46,7 @@
         </li>
         <li>
             <p>
-                <term>Incidence</term>: When we have <m>a \rightarrow b</m>, saying that <m>a</m> or <m>b</m> is incident to the arc doesn't tell us enough about the direction of the arc.  We say that the arc is <em>incident from $a$</em> and <em>incident to <m>b</m></em>.
+                <term>Incidence</term>: When we have <m>a \rightarrow b</m>, saying that <m>a</m> or <m>b</m> is incident to the arc doesn't tell us enough about the direction of the arc.  We say that the arc is <em>incident from <m>>a</m></em> and <em>incident to <m>b</m></em>.
             </p>
         </li>
         <li>
@@ -85,12 +85,12 @@
         <p>
             Consider the following digraph.
         </p>
-        <image>
+        <image width="50%">
             <prefigure xmlns="https://prefigure.org" label="digraph-example">
                 <diagram dimensions="(300,300)" margins="5">
                     <definition>graph={1:[2,5],2:[3],3:[4],4:[5]}</definition>
                     <definition>labels={1:'a',2:'b',3:'c',4:'d',5:'e'}</definition>
-                    <coordinates bbox="(0,0,1.04,1)">
+                    <coordinates bbox="(0.1,0.1,0.9,0.9)">
                         <network directed="yes" labels="yes" label-dictionary="labels"
                         scale="0.8" node-stroke="white" node-fill="white" >
                             <node at="1" p="(0.2,0.5)" />

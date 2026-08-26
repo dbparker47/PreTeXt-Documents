@@ -7,13 +7,11 @@
     Consider a graph whose vertices are cities and whose edges are some of the driving routes between the cities.  We would like to use this graph to figure out the best routes between a given pair of cities (so would Google Maps).  For instance, we might want to find the shortest route between the cities.
   </p>
 
-  <question>
-	<statement>
-		<p>
-			Can we figure this out from the graph only?
-		</p>
-	</statement>
-  </question>
+  <insight>
+  	<p>
+		Can we figure this out from the graph only?
+	</p>
+  </insight>
 
   <p>
 	No, you need two things.
@@ -42,7 +40,7 @@
 			<ul>
 				<li>
 					<p>
-						For <m>e \in E</m>, we call <m>w(e)</m> the <em>weight of $e$</em>.
+						For <m>e \in E</m>, we call <m>w(e)</m> the <em>weight of <m>e</m></em>.
 					</p>
 				</li>
 				<li>

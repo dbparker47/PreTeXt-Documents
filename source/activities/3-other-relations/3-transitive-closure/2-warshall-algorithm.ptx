@@ -2,7 +2,7 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="act-warshall">
-  <title></title>
+  <title>Warshall's Algorithm</title>
 
   <!-- Optional introduction -->
   <introduction>
