@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="relation-composition-digraph-4-figure" width="310" height="310" viewBox="0 0 310 310">
+  <defs>
+    <clipPath id="relation-composition-digraph-4-clipPath-0">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="relation-composition-digraph-4-clipPath-1">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <marker id="relation-composition-digraph-4-arrow-head-end-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+    </marker>
+    <marker id="relation-composition-digraph-4-arrow-head-end-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+  </defs>
+  <g id="relation-composition-digraph-4-group-0">
+    <g id="relation-composition-digraph-4-group-1">
+      <line id="relation-composition-digraph-4-edge-1-2" x1="35.0" y1="155.0" x2="139.4" y2="102.8" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#relation-composition-digraph-4-arrow-head-end-2_None_24_60-black)"/>
+      <g id="relation-composition-digraph-4-label-0" transform="translate(99.0,129.0) translate(0.0,-0.0)">
+        <g id="relation-composition-digraph-4-g-0">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="13.832px" height="12.304px" role="img" focusable="false" viewBox="0 -680 764 680" x="0.0" y="0.0">
+            <defs>
+              <path id="relation-composition-digraph-4-MJX-2-TEX-I-1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper E">
+                  <use data-c="1D438" xlink:href="#relation-composition-digraph-4-MJX-2-TEX-I-1D438"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+      <line id="relation-composition-digraph-4-edge-2-3" x1="155.0" y1="95.0" x2="259.4" y2="147.2" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#relation-composition-digraph-4-arrow-head-end-2_None_24_60-black)"/>
+      <g id="relation-composition-digraph-4-label-1" transform="translate(211.0,129.0) translate(-5.0,-0.0)">
+        <g id="relation-composition-digraph-4-g-1">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.504px" width="5.032px" height="18.080px" role="img" focusable="false" viewBox="0 -750 278 999" x="0.0" y="0.0">
+            <defs>
+              <path id="relation-composition-digraph-4-MJX-3-TEX-N-2223" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="neutral" data-semantic-id="0" data-semantic-speech="vertical bar">
+                  <use data-c="2223" xlink:href="#relation-composition-digraph-4-MJX-3-TEX-N-2223"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+      <line id="relation-composition-digraph-4-edge-1-4" x1="35.0" y1="155.0" x2="139.4" y2="207.2" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#relation-composition-digraph-4-arrow-head-end-2_None_24_60-black)"/>
+      <g id="relation-composition-digraph-4-label-2" transform="translate(91.0,189.0) translate(-13.8,-0.0)">
+        <g id="relation-composition-digraph-4-g-2">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="13.832px" height="12.304px" role="img" focusable="false" viewBox="0 -680 764 680" x="0.0" y="0.0">
+            <defs>
+              <path id="relation-composition-digraph-4-MJX-4-TEX-I-1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper E">
+                  <use data-c="1D438" xlink:href="#relation-composition-digraph-4-MJX-4-TEX-I-1D438"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+      <line id="relation-composition-digraph-4-edge-4-3" x1="155.0" y1="215.0" x2="259.4" y2="162.8" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" marker-end="url(#relation-composition-digraph-4-arrow-head-end-2_None_24_60-black)"/>
+      <g id="relation-composition-digraph-4-label-3" transform="translate(219.0,189.0) translate(0.0,-0.0)">
+        <g id="relation-composition-digraph-4-g-3">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.504px" width="5.032px" height="18.080px" role="img" focusable="false" viewBox="0 -750 278 999" x="0.0" y="0.0">
+            <defs>
+              <path id="relation-composition-digraph-4-MJX-5-TEX-N-2223" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="neutral" data-semantic-id="0" data-semantic-speech="vertical bar">
+                  <use data-c="2223" xlink:href="#relation-composition-digraph-4-MJX-5-TEX-N-2223"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+    </g>
+    <g id="relation-composition-digraph-4-group-2">
+      <circle id="relation-composition-digraph-4-node-1" cx="35.0" cy="155.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="relation-composition-digraph-4-1" transform="translate(35.0,155.0) translate(-4.5,-6.0)">
+        <g id="relation-composition-digraph-4-g-4">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+            <defs>
+              <path id="relation-composition-digraph-4-MJX-6-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="2">
+                  <use data-c="32" xlink:href="#relation-composition-digraph-4-MJX-6-TEX-N-32"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+      <circle id="relation-composition-digraph-4-node-2" cx="155.0" cy="95.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="relation-composition-digraph-4-2" transform="translate(155.0,95.0) translate(-4.5,-6.2)">
+        <g id="relation-composition-digraph-4-g-5">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+            <defs>
+              <path id="relation-composition-digraph-4-MJX-7-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="5">
+                  <use data-c="35" xlink:href="#relation-composition-digraph-4-MJX-7-TEX-N-35"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+      <circle id="relation-composition-digraph-4-node-3" cx="275.0" cy="155.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="relation-composition-digraph-4-3" transform="translate(275.0,155.0) translate(-9.0,-6.2)">
+        <g id="relation-composition-digraph-4-g-6">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="18.096px" height="12.456px" role="img" focusable="false" viewBox="0 -666 1000 688" x="0.0" y="0.0">
+            <defs>
+              <path id="relation-composition-digraph-4-MJX-8-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+              <path id="relation-composition-digraph-4-MJX-8-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="10">
+                  <use data-c="31" xlink:href="#relation-composition-digraph-4-MJX-8-TEX-N-31"/>
+                  <use data-c="30" xlink:href="#relation-composition-digraph-4-MJX-8-TEX-N-30" transform="translate(500,0)"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+      <circle id="relation-composition-digraph-4-node-4" cx="155.0" cy="215.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="relation-composition-digraph-4-4" transform="translate(155.0,215.0) translate(-4.5,-6.0)">
+        <g id="relation-composition-digraph-4-g-7">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+            <defs>
+              <path id="relation-composition-digraph-4-MJX-9-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="2">
+                  <use data-c="32" xlink:href="#relation-composition-digraph-4-MJX-9-TEX-N-32"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

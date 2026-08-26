@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="tc-all-figure" width="310" height="310" viewBox="0 0 310 310">
+  <defs>
+    <clipPath id="tc-all-clipPath-0">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="tc-all-clipPath-1">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <marker id="tc-all-arrow-head-end-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+    </marker>
+    <marker id="tc-all-arrow-head-end-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+  </defs>
+  <g id="tc-all-group-0">
+    <g id="tc-all-group-1">
+      <path id="tc-all-edge-1-2" d="M 65.0 110.0 Q 87.5 117.5 110.0 117.5 Q 121.2 117.5 132.5 115.6 Q 135.3 115.2 138.1 114.6 Q 138.8 114.4 139.5 114.3 Q 139.9 114.2 140.2 114.1" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-1-3" d="M 65.0 110.0 Q 110.0 117.5 155.0 117.5 Q 177.5 117.5 200.0 115.6 Q 211.2 114.7 222.5 113.3 Q 225.3 112.9 228.1 112.6 Q 228.8 112.5 229.5 112.4" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-1-4" d="M 65.0 110.0 Q 82.2 137.8 104.7 160.3 Q 115.9 171.6 128.5 181.5 Q 134.8 186.4 141.4 191.1 Q 141.8 191.4 142.2 191.7" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-1-5" d="M 65.0 110.0 Q 106.6 139.2 151.6 161.7 Q 174.1 173.0 197.5 182.5 Q 209.2 187.3 221.0 191.7 Q 224.0 192.8 227.0 193.8 Q 228.5 194.4 230.0 194.9" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-2-1" d="M 155.0 110.0 Q 132.5 102.5 110.0 102.5 Q 98.8 102.5 87.5 104.4 Q 84.7 104.8 81.9 105.4 Q 81.2 105.6 80.5 105.7 Q 80.1 105.8 79.8 105.9" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-2-3" d="M 155.0 110.0 Q 177.5 117.5 200.0 117.5 Q 211.2 117.5 222.5 115.6 Q 225.3 115.2 228.1 114.6 Q 228.8 114.4 229.5 114.3 Q 229.9 114.2 230.2 114.1" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-2-4" d="M 155.0 110.0 Q 147.5 132.5 147.5 155.0 Q 147.5 166.2 149.4 177.5 Q 149.8 180.3 150.4 183.1 Q 150.6 183.8 150.7 184.5 Q 150.8 184.9 150.9 185.2" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-2-5" d="M 155.0 110.0 Q 172.2 137.8 194.7 160.3 Q 205.9 171.6 218.5 181.5 Q 224.8 186.4 231.4 191.1 Q 231.8 191.4 232.2 191.7" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-3-1" d="M 245.0 110.0 Q 200.0 102.5 155.0 102.5 Q 132.5 102.5 110.0 104.4 Q 98.8 105.3 87.5 106.7 Q 84.7 107.1 81.9 107.5 Q 81.2 107.5 80.5 107.6" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-3-2" d="M 245.0 110.0 Q 222.5 102.5 200.0 102.5 Q 188.8 102.5 177.5 104.4 Q 174.7 104.8 171.9 105.4 Q 171.2 105.6 170.5 105.7 Q 170.1 105.8 169.8 105.9" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-3-4" d="M 245.0 110.0 Q 217.2 127.2 194.7 149.7 Q 183.4 160.9 173.5 173.5 Q 168.6 179.8 163.9 186.4 Q 163.6 186.8 163.3 187.2" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-3-5" d="M 245.0 110.0 Q 237.5 132.5 237.5 155.0 Q 237.5 166.2 239.4 177.5 Q 239.8 180.3 240.4 183.1 Q 240.6 183.8 240.7 184.5 Q 240.8 184.9 240.9 185.2" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-4-1" d="M 155.0 200.0 Q 137.8 172.2 115.3 149.7 Q 104.1 138.4 91.5 128.5 Q 85.2 123.6 78.6 118.9 Q 78.2 118.6 77.8 118.3" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-4-2" d="M 155.0 200.0 Q 162.5 177.5 162.5 155.0 Q 162.5 143.8 160.6 132.5 Q 160.2 129.7 159.6 126.9 Q 159.4 126.2 159.3 125.5 Q 159.2 125.1 159.1 124.8" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-4-3" d="M 155.0 200.0 Q 182.8 182.8 205.3 160.3 Q 216.6 149.1 226.5 136.5 Q 231.4 130.2 236.1 123.6 Q 236.4 123.2 236.7 122.8" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-4-5" d="M 155.0 200.0 Q 177.5 207.5 200.0 207.5 Q 211.2 207.5 222.5 205.6 Q 225.3 205.2 228.1 204.6 Q 228.8 204.4 229.5 204.3 Q 229.9 204.2 230.2 204.1" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-5-1" d="M 245.0 200.0 Q 203.4 170.8 158.4 148.3 Q 135.9 137.0 112.5 127.5 Q 100.9 122.7 89.0 118.3 Q 86.0 117.2 83.0 116.2 Q 81.5 115.6 80.0 115.1" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-5-2" d="M 245.0 200.0 Q 227.8 172.2 205.3 149.7 Q 194.1 138.4 181.5 128.5 Q 175.2 123.6 168.6 118.9 Q 168.2 118.6 167.8 118.3" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-5-3" d="M 245.0 200.0 Q 252.5 177.5 252.5 155.0 Q 252.5 143.8 250.6 132.5 Q 250.2 129.7 249.6 126.9 Q 249.4 126.2 249.3 125.5 Q 249.2 125.1 249.1 124.8" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-edge-5-4" d="M 245.0 200.0 Q 222.5 192.5 200.0 192.5 Q 188.8 192.5 177.5 194.4 Q 174.7 194.8 171.9 195.4 Q 171.2 195.6 170.5 195.7 Q 170.1 195.8 169.8 195.9" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-loop-1" d="M 65.0 110.0 C 54.1 140.1 9.0 123.7 19.9 93.7 C 25.3 78.6 39.3 75.2 50.6 79.3 C 56.2 81.3 61.2 85.2 64.1 90.5 C 64.8 91.8 65.4 93.3 65.8 94.7" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-loop-2" d="M 155.0 110.0 C 123.0 110.0 123.0 62.0 155.0 62.0 C 171.0 62.0 179.0 74.0 179.0 86.0 C 179.0 92.0 177.0 98.0 173.0 102.5 C 172.0 103.6 170.9 104.7 169.6 105.6" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-loop-3" d="M 245.0 110.0 C 222.4 87.4 256.3 53.4 278.9 76.1 C 290.2 87.4 287.4 101.5 278.9 110.0 C 274.7 114.2 269.0 117.1 263.0 117.4 C 261.5 117.5 260.0 117.4 258.5 117.2" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-loop-4" d="M 155.0 200.0 C 184.0 213.6 163.6 257.0 134.7 243.5 C 120.2 236.7 118.0 222.4 123.1 211.6 C 125.6 206.1 130.0 201.5 135.5 199.2 C 136.9 198.6 138.3 198.1 139.9 197.8" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+      <path id="tc-all-loop-5" d="M 245.0 200.0 C 267.6 177.4 301.6 211.3 278.9 233.9 C 267.6 245.2 253.5 242.4 245.0 233.9 C 240.8 229.7 237.9 224.0 237.6 218.0 C 237.5 216.5 237.6 215.0 237.8 213.5" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#tc-all-clipPath-1)" marker-end="url(#tc-all-arrow-head-end-2_None_24_60-black)"/>
+    </g>
+    <g id="tc-all-group-2">
+      <circle id="tc-all-node-1" cx="65.0" cy="110.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="tc-all-label-0" transform="translate(65.0,110.0) translate(-4.5,-6.0)">
+        <g id="tc-all-g-0">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+            <defs>
+              <path id="tc-all-MJX-2-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="1">
+                  <use data-c="31" xlink:href="#tc-all-MJX-2-TEX-N-31"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+      <circle id="tc-all-node-2" cx="155.0" cy="110.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="tc-all-label-1" transform="translate(155.0,110.0) translate(-4.5,-6.0)">
+        <g id="tc-all-g-1">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+            <defs>
+              <path id="tc-all-MJX-3-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="2">
+                  <use data-c="32" xlink:href="#tc-all-MJX-3-TEX-N-32"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+      <circle id="tc-all-node-3" cx="245.0" cy="110.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="tc-all-label-2" transform="translate(245.0,110.0) translate(-4.5,-6.2)">
+        <g id="tc-all-g-2">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.432px" role="img" focusable="false" viewBox="0 -665 500 687" x="0.0" y="0.0">
+            <defs>
+              <path id="tc-all-MJX-4-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="3">
+                  <use data-c="33" xlink:href="#tc-all-MJX-4-TEX-N-33"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+      <circle id="tc-all-node-4" cx="155.0" cy="200.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="tc-all-label-3" transform="translate(155.0,200.0) translate(-4.5,-6.1)">
+        <g id="tc-all-g-3">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.256px" role="img" focusable="false" viewBox="0 -677 500 677" x="0.0" y="0.0">
+            <defs>
+              <path id="tc-all-MJX-5-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="4">
+                  <use data-c="34" xlink:href="#tc-all-MJX-5-TEX-N-34"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+      <circle id="tc-all-node-5" cx="245.0" cy="200.0" r="12" stroke="no" stroke-width="1" fill="white"/>
+      <g id="tc-all-label-4" transform="translate(245.0,200.0) translate(-4.5,-6.2)">
+        <g id="tc-all-g-4">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+            <defs>
+              <path id="tc-all-MJX-6-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="5">
+                  <use data-c="35" xlink:href="#tc-all-MJX-6-TEX-N-35"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

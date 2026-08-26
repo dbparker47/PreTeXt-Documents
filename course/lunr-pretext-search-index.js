@@ -1531,6 +1531,348 @@ var ptx_lunr_docs = [
   "body": " Scheduling Problems  Joanne is writing her dissertation in mathematics. She has already chosen the general area in which she wants to work. She must complete the following tasks, not necessarily in the order given.   Work examples and find patterns (E).    Formulate her theorems and prove them (T).    Read journal articles related to her problem (R).    Make a bibliography (B).    Write her dissertation (W).     She must do (E) before (T). She must do (R) before (B). She cannot start (W) until (T) is done. If she does (E) before (R), then (E) takes 4 time units to complete; otherwise, it takes 2 time units. If she does (T) before (R), then (T) takes 10 time units; otherwise it takes 7 time units. If she does (R) before (T), then (R) takes 6 time units; otherwise it takes 4 time units. If she starts (B) before (W), then (B) takes 3 time units; otherwise it takes 1 time unit. If (W) starts before (R), then (W) takes 6 time units; otherwise, it takes 4 time units.     Represent this as a weighted digraph, where the vertices are the lists of tasks you have done and each arc is a task done between two vertices. Note that your vertices are sets (e.g. ).    Determine the order that Joanne should do the tasks to finish in the shortest amount of time.     "
 },
 {
+  "id": "composition-reading",
+  "level": "1",
+  "url": "composition-reading.html",
+  "type": "Section",
+  "number": "",
+  "title": "Composition of Relations",
+  "body": " Composition of Relations  Think back to the old days when you were studying functions (mathematical functions, not Python functions). In a function , you had some input that corresponded with an output . A visual representation is the following.       x  f(x)  f       Composition takes two functions and and turns them into one function that determines its output in two steps. You start with your input and put it into to get . Then you take that output and put it into to get . Then . Here is what the picture looks like.       x  f(x)  g(f(x))  f  g       Here are three things I hope you noticed about the visual representations of the functions.   Using arrows to represent the relationship between the input of a function and its output is a lot like how we represent relations with a directed graph. This is because functions are a special type of relation, where means that .    Computing the composition of two functions is just starting with the input of the first function (in the above case, this is ) and following two arrows to the output (one with and then one with ).    When we write the composition, the second function comes before the first function . This is a bit confusing, but it makes sense since the formula comes out to .     Since we can define composition of functions in terms of the directed graph of the relation, there is no reason we cannot define composition for relations. However, there is also no reason to reverse the order of the relations when writing out the composition (unlike with functions), so we will write the first relation first and the second relation second.    Let be a relation from the set to the set (i.e. can only happen when and ), and let be a relation from to . We define the relation from to by precisely when there is some where and . In picture form, this looks like       a  b  c  R  S           Let be the relation on given by precisely when (mod 3), and let be the divisibility relation on (i.e. precisely when for some ). Let . Let's see some integers that are related.  We have and , and so . Also, and , and so . Here are some pictures to help you understand this.       2  5  10  E  \\mid            1  7  21  E  \\mid       Try some others to see if you can get the hang of it.  One thing that is different about composition of relations as opposed to just functions is that there can be more than one way to show that two numbers are related. For instance, recall that we used and to show that . But we also have and , which also gives us . Here is a picture that shows the two ways we get .       2  5  10  2  E  \\mid  E  \\mid         "
+},
+{
+  "id": "composition-reading-8",
+  "level": "2",
+  "url": "composition-reading.html#composition-reading-8",
+  "type": "Definition",
+  "number": "48",
+  "title": "",
+  "body": "  Let be a relation from the set to the set (i.e. can only happen when and ), and let be a relation from to . We define the relation from to by precisely when there is some where and . In picture form, this looks like       a  b  c  R  S        "
+},
+{
+  "id": "composition-reading-9",
+  "level": "2",
+  "url": "composition-reading.html#composition-reading-9",
+  "type": "Example",
+  "number": "49",
+  "title": "",
+  "body": "  Let be the relation on given by precisely when (mod 3), and let be the divisibility relation on (i.e. precisely when for some ). Let . Let's see some integers that are related.  We have and , and so . Also, and , and so . Here are some pictures to help you understand this.       2  5  10  E  \\mid            1  7  21  E  \\mid       Try some others to see if you can get the hang of it.  One thing that is different about composition of relations as opposed to just functions is that there can be more than one way to show that two numbers are related. For instance, recall that we used and to show that . But we also have and , which also gives us . Here is a picture that shows the two ways we get .       2  5  10  2  E  \\mid  E  \\mid        "
+},
+{
+  "id": "poset-reading",
+  "level": "1",
+  "url": "poset-reading.html",
+  "type": "Section",
+  "number": "",
+  "title": "Partial Orders and Partially Ordered Sets",
+  "body": " Partial Orders and Partially Ordered Sets  We will be discussing partial orders on a set in this document. Both words in partial order are important in this type of relation. The word order means that the relation (to some extent) tells us how to put the elements of in order, and the word partial means that we may not be able to put the elements completely in order from first to last.  Let's start with a set that is both familiar and completely in order, namely the set of real numbers . To tell what order the numbers are in, we merely need the relation to tell us which numbers come before which other numbers. The relation that does that is . So for , means that comes before . To extend the notion of order to other ordered sets, we take a look at some of the properties of .  A natural place to look is at the properties we had for equivalence relations. Let's see if any of them work on .   Reflexive Property: If , we have , and so is reflexive.    Symmetric Property: If , then it is very unlikely that we also have . In fact, the only way we can have both and if if . So is as far away from being symmetric as a reflexive relation can be.    Transitive Property: If and , then it is clear that , so the transitive property works.     So it looks like we almost have the properties we need to define partial orders. We just have to figure out to do with that property that seems to be hostile toward symmetry.    Let be a set, and let be a relation on . We say that is antisymmetric if whenever we have both and , then it follows that .    This leads us to the definition of partial orders and partially ordered sets .    Let be a set.   A relation on is a partial order if has the reflexive property, the antisymmetric property, and the transitive property.    If $A$ has a partial order on it, we call a partially ordered set , which is often called a poset .       Before we look at some examples, we should look at another property of the relation on real numbers. If we have two real numbers and , we know one of three things: Either is smaller than , is bigger than , or is equal to . We can summarize this by saying that either or . This leads us to the definition of a connex relation.    A relation on a set is connex if for all , we either have or .    If we add the connex property to the list of partial order properties, we get what is called a total order .    A relation on a set is a total order if it satisfies the reflexive property, the antisymmetric property, the transitive property, and the connex property. In other words, a total order is a partial order that also satisfies the connex property.    So is a total order on the set . Let's look at a partial order that is not a total order.    Let be a set, and let , the power set of . In other words, is the set of all subsets of . Note that is a relation on defined as follows: For all (i.e. for all and that are subsets of ), means that every element of is also an element of .  Note that if , then (i.e. every subset of is a subset of itself), and so is reflexive. If you have that and , this is the very definition of . Thus, is antisymmetric. Finally, if and , that means every element of is an element of . But every element of is an element of . Since all elements of are in , that means that every element of is in , which means . Thus, is a partial order.  Note that is not a total order. For instance, if , look at the subsets and . If were a total order, we would need to have either or . But neither of these sets is a subset of the other. This means that is not connex, and so is not a total order.    We can think of a partial order on a set as a relation that ranks the elements of . In that spirit, we define the following.    Let be a set with partial order .   We say that are comparable if either or .    We say that is maximum in if for all . This means that is unambiguously the highest ranking element in the set.    We say that is minimum in if for all . This means that is unambiguously the lowest ranking element in the set.    We say that is maximal in if there are no other elements with . This means that we cannot necessarily declare to be the highest ranking element in the set, but there is no other element that has higher rank.    We say that is minimal in if there are no other elements with . This means that we cannot necessarily declare to be the lowest ranking element in the set, but there is no other element that has lower rank.       Let's see how these concepts play out in an example.    Suppose , and let be the relation described above on . Let's look at each of the above concepts one at a time.   Comparable: The subsets and are comparable since . However, and are not comparable, since neither is a subset of the other.    Maximum: The maximum of is .  To prove this, we assume and show that . Since is the set of all subsets of , we have , which completes the proof.    Maximal but not Maximum: Suppose we let . In other words, consists of all subsets of except . Then is maximal but not maximum.  We prove it is maximal first. Then we will prove that it is not maximum. We will prove it is maximal by contradiction. Let , and assume both that and that . Since has six elements and is a subset of , that implies that has at least six elements. Since has seven elements and , that implies that has at most seven elements. However, if has seven elements, then it has to be , which is a contradiction. Thus, has six elements. But since , then has 1, 2, 3, 4, 5, and 6 as elements. This is six elements, so , which is also a contradiction.  To prove that is not maximum, notice that is not a subset of , and is not a subset of . Thus, it is not true that every element of is a subset of . Thus, is not maximum. This completes the proof.    Minimum: The minimum of is .  To prove this, we assume that and show that . Since is a set and is as subset of every set, it follows that , which completes the proof.    Minimal but not Minimum: Suppose we let . In other words, consists of all subsets of except . Then is minimal but not minimum.  We prove it is minimal first. Then we will prove that it is not minimum. We will prove it is minimal by contradiction. Let , and assume both that and that . Since has one element and contains , that implies that has at most one element. Thus, has one element or zero elements. If has one element, then it has to be , which is a contradiction. Thus, has zero elements. But that makes the empty set, which is also a contradiction.  To prove that is not minimum, notice that is not a subset of , and is not a subset of . Thus, it is not true that is a subset of every element of . Thus is not minimum. This completes the proof.       "
+},
+{
+  "id": "poset-reading-6",
+  "level": "2",
+  "url": "poset-reading.html#poset-reading-6",
+  "type": "Definition",
+  "number": "50",
+  "title": "",
+  "body": "  Let be a set, and let be a relation on . We say that is antisymmetric if whenever we have both and , then it follows that .   "
+},
+{
+  "id": "poset-reading-8",
+  "level": "2",
+  "url": "poset-reading.html#poset-reading-8",
+  "type": "Definition",
+  "number": "51",
+  "title": "",
+  "body": "  Let be a set.   A relation on is a partial order if has the reflexive property, the antisymmetric property, and the transitive property.    If $A$ has a partial order on it, we call a partially ordered set , which is often called a poset .      "
+},
+{
+  "id": "poset-reading-10",
+  "level": "2",
+  "url": "poset-reading.html#poset-reading-10",
+  "type": "Definition",
+  "number": "52",
+  "title": "",
+  "body": "  A relation on a set is connex if for all , we either have or .   "
+},
+{
+  "id": "poset-reading-12",
+  "level": "2",
+  "url": "poset-reading.html#poset-reading-12",
+  "type": "Definition",
+  "number": "53",
+  "title": "",
+  "body": "  A relation on a set is a total order if it satisfies the reflexive property, the antisymmetric property, the transitive property, and the connex property. In other words, a total order is a partial order that also satisfies the connex property.   "
+},
+{
+  "id": "poset-reading-14",
+  "level": "2",
+  "url": "poset-reading.html#poset-reading-14",
+  "type": "Example",
+  "number": "54",
+  "title": "",
+  "body": "  Let be a set, and let , the power set of . In other words, is the set of all subsets of . Note that is a relation on defined as follows: For all (i.e. for all and that are subsets of ), means that every element of is also an element of .  Note that if , then (i.e. every subset of is a subset of itself), and so is reflexive. If you have that and , this is the very definition of . Thus, is antisymmetric. Finally, if and , that means every element of is an element of . But every element of is an element of . Since all elements of are in , that means that every element of is in , which means . Thus, is a partial order.  Note that is not a total order. For instance, if , look at the subsets and . If were a total order, we would need to have either or . But neither of these sets is a subset of the other. This means that is not connex, and so is not a total order.   "
+},
+{
+  "id": "poset-reading-16",
+  "level": "2",
+  "url": "poset-reading.html#poset-reading-16",
+  "type": "Definition",
+  "number": "55",
+  "title": "",
+  "body": "  Let be a set with partial order .   We say that are comparable if either or .    We say that is maximum in if for all . This means that is unambiguously the highest ranking element in the set.    We say that is minimum in if for all . This means that is unambiguously the lowest ranking element in the set.    We say that is maximal in if there are no other elements with . This means that we cannot necessarily declare to be the highest ranking element in the set, but there is no other element that has higher rank.    We say that is minimal in if there are no other elements with . This means that we cannot necessarily declare to be the lowest ranking element in the set, but there is no other element that has lower rank.      "
+},
+{
+  "id": "poset-reading-18",
+  "level": "2",
+  "url": "poset-reading.html#poset-reading-18",
+  "type": "Example",
+  "number": "56",
+  "title": "",
+  "body": "  Suppose , and let be the relation described above on . Let's look at each of the above concepts one at a time.   Comparable: The subsets and are comparable since . However, and are not comparable, since neither is a subset of the other.    Maximum: The maximum of is .  To prove this, we assume and show that . Since is the set of all subsets of , we have , which completes the proof.    Maximal but not Maximum: Suppose we let . In other words, consists of all subsets of except . Then is maximal but not maximum.  We prove it is maximal first. Then we will prove that it is not maximum. We will prove it is maximal by contradiction. Let , and assume both that and that . Since has six elements and is a subset of , that implies that has at least six elements. Since has seven elements and , that implies that has at most seven elements. However, if has seven elements, then it has to be , which is a contradiction. Thus, has six elements. But since , then has 1, 2, 3, 4, 5, and 6 as elements. This is six elements, so , which is also a contradiction.  To prove that is not maximum, notice that is not a subset of , and is not a subset of . Thus, it is not true that every element of is a subset of . Thus, is not maximum. This completes the proof.    Minimum: The minimum of is .  To prove this, we assume that and show that . Since is a set and is as subset of every set, it follows that , which completes the proof.    Minimal but not Minimum: Suppose we let . In other words, consists of all subsets of except . Then is minimal but not minimum.  We prove it is minimal first. Then we will prove that it is not minimum. We will prove it is minimal by contradiction. Let , and assume both that and that . Since has one element and contains , that implies that has at most one element. Thus, has one element or zero elements. If has one element, then it has to be , which is a contradiction. Thus, has zero elements. But that makes the empty set, which is also a contradiction.  To prove that is not minimum, notice that is not a subset of , and is not a subset of . Thus, it is not true that is a subset of every element of . Thus is not minimum. This completes the proof.      "
+},
+{
+  "id": "trans-closure-reading",
+  "level": "1",
+  "url": "trans-closure-reading.html",
+  "type": "Section",
+  "number": "",
+  "title": "Transitive Closure and Warshall’s Algorithm",
+  "body": " Transitive Closure and Warshall's Algorithm   Transitive Closure  One of the in-class exercises we did a while back was to take a relation (represented as a directed graph) and keep adding arrows until the relation became an equivalence relation. Here, we will seek to do something similar, except our goals will be a little more modest. We seek to add arrows to make the equivalence relation transitive.  Let's look at an example. Here is a relation in the form of a directed graph.     warsh1={1:[2],2:[3,4],4:[5]}              If we want to make this relation transitive, one way is just to draw arrows everywhere:     warsh1={1:[1,2,3,4,5],2:[1,2,3,4,5],3:[1,2,3,4,5],4:[1,2,3,4,5],5:[1,2,3,4,5]}              The above graph is certainly transitive, but that is not what we want. We would like to make the relation transitive while drawing as few arrows as possible. Before you read on, try to do this with the example above.  This leads us to the following definition.    Let be a relation on a set . The transitive closure of , written as , is the transitive relation with the smallest number of ordered pairs that includes all elements of . In other words, it is the smallest transitive relation such that .    Let's look at the above relation and see what the transitive closure is.     warsh1={1:[2],2:[3,4],4:[5]}              Our strategy is to include only the arrows that are absolutely necessary to make the relation transitive. For instance, we have and , and so we need . Similarly, and , and and . Thus, we must have and . This gives us the following.     warsh1={1:[2],2:[3,4],4:[5]}                 Notice that the relation is still not transitive (check to see why), so we have to go through the above process again. We have and , and and , so we need to have and . This gives us the following.     warsh1={1:[2],2:[3,4],4:[5]}                   The above is transitive. Since we did not add any arrows that were not absolutely necessary, it is the transitive closure.  Let us reflect a little on the above example. In constructing , the first thing we did was include all arrows from . After that, we looked for elements and arrows that looked like and added the arrow . If this feels familiar, it is because this new arrow comes from the composition (which is also written ). In fact, all arrows drawn with dashed lines are arrows in . For the last step, we combined arrows from with arrows from in the same way (i.e. for , where one of the arrows is from and the other is from , we added the arrow ). These are the arrows from (which is also written ). Thus, we have . In general, we have , where is the last step that makes the relation transitive.  Here is another example to stimulate some thought. Find the transitive closure of the following (no peeking!).       warsh1={1:[2],2:[3],3:[4],4:[5],5:[6]}                    warsh1={1:[2,3,4,5,6],2:[3,4,5,6],3:[4,5,6],4:[5,6],5:[6]}                 Notice that every vertex has an arrow with every other vertex that was downstream from it in the original graph. This suggests the following theorem, which you will prove in an upcoming homework assignment.    Let be a relation on a set . Then is the set of all ordered pairs (i.e. ) such that and are connected by a directed path in (i.e. ).    Note that in the proof, one would have to prove two things.   Prove that if and are connected by a directed path, then in .    Prove that the relation given by along with the set of all ordered pairs (i.e. ) such that and are connected by a directed path in is transitive.       Warshall's Algorithm  We use this path interpretation of transitive closure to develop an algorithm that was originally created by Stephen Warshall. Let's first discuss how we have been thinking about finding the transitive closure until now.   Look for paths of length 2 in the directed graph representation of the relation, which will look like .    If is a path of length 2 in the relation, draw in the arrow .    Go back to step 1, and repeat the process with the new arrows drawn in. Keep doing this until you can't draw any more arrows.     As you have probably noticed in the examples you have done, when you iterate this algorithm, you look over a lot of paths of length 2 that already have the arrow you want drawn in. This represents an inefficiency in the algorithm (which means a longer run time). Warshall's algorithm allows us to cut down a bit on this redundancy. Here is what we do instead.   We have the relation on a set . Put the elements of into some order, so . You can put them in any order you want, but you have to keep the same order throughout the algorithm.    Look for all paths of length 2 that go through , which will look like . Draw in the arrow for each of these paths.    Repeat step 2 with , using all the arrows you drew in step 2. Note that you will not be looking for any new paths through , even though we have not yet considered all possible paths through with the step 2 arrows drawn. So you will look for arrows that look like and draw in for each of these paths.    Keep going with . At step , we look for arrows that look like and draw in for each of these paths.     Is there something that bothers you about this algorithm? When you get to the last element , you are looking at all the arrows you constructed before getting to before you drew in new arrows from . This included a lot of new arrows that are outside the relation . However, for , you only looked at arrows from . So even though this algorithm is a lot faster than the one we used before, we run the risk of missing some arrows in the transitive closure. Let's see if this happens in an example.       warsh1={1:[3],2:[1,4],4:[2]}             So I unimaginatively ordered the vertices 1, 2, 3, and 4. We start by looking at 2-paths through 1. There is only one such path , so we draw in the arrow , as shown below.      warsh1={1:[3],2:[1,4],4:[2]}                warsh1={1:[3],2:[1,4],4:[2]}               Now we look at 2. There are now three paths through 2, , , and , and so we draw in the arrows , , and , as shown below.      warsh1={1:[3],2:[1,4],4:[2]}                 warsh1={1:[3],2:[1,4],4:[2]}                 Now we move on to 3. Note that there are no 2-paths through 3, so we can't add any arrows. We then move to 4. This has a few 2-paths through it, but the only one that gives us a new arrow is , so we draw in . This gives us our final relation.      warsh1={1:[3],2:[1,4],4:[2]}                   warsh1={1:[3],2:[1,4],4:[2]}                    warsh1={1:[3],2:[1,4],4:[2]}                    Notice that, despite our worries, we ended up with all the arrows in the transitive closure. Does this work out all the time? Yes.    Let be a relation on the set . Then Warshall's algorithm always results in the transitive closure .     "
+},
+{
+  "id": "trans-closure-intro-9",
+  "level": "2",
+  "url": "trans-closure-reading.html#trans-closure-intro-9",
+  "type": "Definition",
+  "number": "57",
+  "title": "",
+  "body": "  Let be a relation on a set . The transitive closure of , written as , is the transitive relation with the smallest number of ordered pairs that includes all elements of . In other words, it is the smallest transitive relation such that .   "
+},
+{
+  "id": "trans-closure-intro-19",
+  "level": "2",
+  "url": "trans-closure-reading.html#trans-closure-intro-19",
+  "type": "Example",
+  "number": "58",
+  "title": "",
+  "body": "     warsh1={1:[2],2:[3],3:[4],4:[5],5:[6]}                    warsh1={1:[2,3,4,5,6],2:[3,4,5,6],3:[4,5,6],4:[5,6],5:[6]}                "
+},
+{
+  "id": "trans-closure-intro-21",
+  "level": "2",
+  "url": "trans-closure-reading.html#trans-closure-intro-21",
+  "type": "Theorem",
+  "number": "59",
+  "title": "",
+  "body": "  Let be a relation on a set . Then is the set of all ordered pairs (i.e. ) such that and are connected by a directed path in (i.e. ).   "
+},
+{
+  "id": "warshall-intro-5",
+  "level": "2",
+  "url": "trans-closure-reading.html#warshall-intro-5",
+  "type": "Example",
+  "number": "60",
+  "title": "",
+  "body": "     warsh1={1:[3],2:[1,4],4:[2]}             So I unimaginatively ordered the vertices 1, 2, 3, and 4. We start by looking at 2-paths through 1. There is only one such path , so we draw in the arrow , as shown below.      warsh1={1:[3],2:[1,4],4:[2]}                warsh1={1:[3],2:[1,4],4:[2]}               Now we look at 2. There are now three paths through 2, , , and , and so we draw in the arrows , , and , as shown below.      warsh1={1:[3],2:[1,4],4:[2]}                 warsh1={1:[3],2:[1,4],4:[2]}                 Now we move on to 3. Note that there are no 2-paths through 3, so we can't add any arrows. We then move to 4. This has a few 2-paths through it, but the only one that gives us a new arrow is , so we draw in . This gives us our final relation.      warsh1={1:[3],2:[1,4],4:[2]}                   warsh1={1:[3],2:[1,4],4:[2]}                    warsh1={1:[3],2:[1,4],4:[2]}                   "
+},
+{
+  "id": "warshall-intro-7",
+  "level": "2",
+  "url": "trans-closure-reading.html#warshall-intro-7",
+  "type": "Theorem",
+  "number": "61",
+  "title": "",
+  "body": "  Let be a relation on the set . Then Warshall's algorithm always results in the transitive closure .   "
+},
+{
+  "id": "adj-matrix-reading",
+  "level": "1",
+  "url": "adj-matrix-reading.html",
+  "type": "Section",
+  "number": "",
+  "title": "Adjacency Matrices for Graphs",
+  "body": " Adjacency Matrices for Graphs  We have already found an effective way to represent a graph in Python. We use a dictionary where the keys are the vertices of the graph and the values are lists of vertices adjacent to the key. But we can also store this information in a matrix. Let's see how in an example.    Consider the graph below.     undirected1={1:[3],2:[3,6],3:[4],4:[5,6]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'v_6'}               To store the information in the graph, we let each row represent a vertex. I choose to let the first row represent , the second row to represent , etc. Now the entries of the first row will tell us which vertices is adjacent to. This means that the columns represent the vertices as well. We put 1 as an entry when is adjacent to the vertex, and we put 0 as an entry when is not adjacent to the vertex. Since is only adjacent to , the first row will look like . Moving on to the second row, we note that is adjacent to and , so the second row looks like . If we continue in this way, we get   At this point, we could call it a day, but it seemed pretty arbitrary to order the rows and columns as we did. What if the first row and column represented , the second row and column represented , etc. For the first row, we have adjacent to and , so the first row is (the 1 in the third column is for and the 1 in the fifth column is ). We continue to get   Note that they are different adjacency matrices, but they represent the same graph. The only difference is how we chose to order the vertices.    Here is how adjacency matrices work in general. Let be a graph. We first order the vertices of , say in the order , . Then the adjacency matrix is an matrix , where represents the entry in row and column , and we let be the number of edges between . and (so if and are adjacent, and if and are not adjacent). As we saw in the example, the adjacency matrix depends on the ordering of the vertices, so we can have many different adjacency matrices for the same graph.  Now let's see how we can get the graph from the adjacency matrix.    Suppose the following is the adjacency matrix for a graph.   Let's see what we can deduce from the matrix. Well, the matrix is , and so the graph has 4 vertices, say , , , and . The first row says that is adjacent to and . The second row says that is adjacent to , , and . The third row says that is adjacent to , and the last row says that is adjacent to and . This gives the following graph.     undirected1={1:[2,4],2:[3,4]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4'}               All I did was take the matrix in the previous example and move the 1 in the third row to the fourth column. What went wrong?    Let be the adjacency matrix of a graph, where is the number of edges between the vertices and . Then for all and . In other words, is a symmetric matrix .    "
+},
+{
+  "id": "adj-matrix-reading-3",
+  "level": "2",
+  "url": "adj-matrix-reading.html#adj-matrix-reading-3",
+  "type": "Example",
+  "number": "62",
+  "title": "",
+  "body": "  Consider the graph below.     undirected1={1:[3],2:[3,6],3:[4],4:[5,6]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4',5:'v_5',6:'v_6'}               To store the information in the graph, we let each row represent a vertex. I choose to let the first row represent , the second row to represent , etc. Now the entries of the first row will tell us which vertices is adjacent to. This means that the columns represent the vertices as well. We put 1 as an entry when is adjacent to the vertex, and we put 0 as an entry when is not adjacent to the vertex. Since is only adjacent to , the first row will look like . Moving on to the second row, we note that is adjacent to and , so the second row looks like . If we continue in this way, we get   At this point, we could call it a day, but it seemed pretty arbitrary to order the rows and columns as we did. What if the first row and column represented , the second row and column represented , etc. For the first row, we have adjacent to and , so the first row is (the 1 in the third column is for and the 1 in the fifth column is ). We continue to get   Note that they are different adjacency matrices, but they represent the same graph. The only difference is how we chose to order the vertices.   "
+},
+{
+  "id": "adj-matrix-reading-6",
+  "level": "2",
+  "url": "adj-matrix-reading.html#adj-matrix-reading-6",
+  "type": "Example",
+  "number": "63",
+  "title": "",
+  "body": "  Suppose the following is the adjacency matrix for a graph.   Let's see what we can deduce from the matrix. Well, the matrix is , and so the graph has 4 vertices, say , , , and . The first row says that is adjacent to and . The second row says that is adjacent to , , and . The third row says that is adjacent to , and the last row says that is adjacent to and . This gives the following graph.     undirected1={1:[2,4],2:[3,4]}  labels={1:'v_1',2:'v_2',3:'v_3',4:'v_4'}              "
+},
+{
+  "id": "adj-matrix-reading-8",
+  "level": "2",
+  "url": "adj-matrix-reading.html#adj-matrix-reading-8",
+  "type": "Theorem",
+  "number": "64",
+  "title": "",
+  "body": "  Let be the adjacency matrix of a graph, where is the number of edges between the vertices and . Then for all and . In other words, is a symmetric matrix .   "
+},
+{
+  "id": "digraph-reading",
+  "level": "1",
+  "url": "digraph-reading.html",
+  "type": "Section",
+  "number": "",
+  "title": "Digraphs and Shortest Paths",
+  "body": " Digraphs and Shortest Paths  Remember back in the good old days when we were studying relations? One way of representing them was with directed graphs, as below.     relation={1:[2,3,5],2:[5],3:[4],4:[1,2,5]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f'}        So for instance, since , we have related to (but not related to ). That looks a little like a graph, doesn't it?    A directed graph , also known as a digraph , is a pair , where is a set called the vertex set, and is a set of ordered pairs of vertices (called arcs ). In other words, digraphs are just like graphs, except the edges (unordered pairs) are replaced with arcs (ordered pairs).    Visually, we represent the arcs with arrows to emphasize their asymmetry. The ordered pair is represented by .  We have many terms for digraphs that are similar as those for graphs. However, most of the time we need to make adjustments due to arcs being asymmetric as opposed to edges, which are symmetric.    Adjacency : When we have , we cannot really say that and are adjacent, since and play different roles in the arc. We say is the direct predecessor and is the direct successor to indicate which vertex is pointing and which is being pointed at.     Incidence : When we have , saying that or is incident to the arc doesn't tell us enough about the direction of the arc. We say that the arc is incident from $a$ and incident to .     Degree : Since adjacency and incidence work in two directions, there has to be two different types of degree for a vertex. For a vertex , the number of arcs incident from is called the outdegree of and the number of arcs incident to is called the indegree of .     Walk : A walk in digraphs works the same as a walk for graphs, except the arcs only go in one direction. So a walk is a sequence of vertices such that for all .     Path, Trail, Circuit, and Cycle : Now that we know what a walk is, these terms are defined the same way as for graphs. A path is a walk with no repeating vertices; a trail is a walk with no repeating arcs; a circuit is a trail that begins and ends at the same vertex; and a cycle is a walk that begins and ends at the same vertex and repeats only the first and last vertices.     Connected : The concept of connectedness is a little complicated. A graph is connected if every pair of vertices is connected by a walk. For a digraph, does this mean that every pair of vertices and just needs a walk in one direction (either from to or from to ) or both directions? Should we allow walks where you don't have to follow the arrows, since that would still make the graph look connected?     It turns out that we have two different kinds of connected. A digraph is strongly connected if every pair of vertices has a walk in both directions. A digraph is weakly connected if every pair of vertices has an undirected path between them (i.e. we can walk against the arrows if we want). As far as I know, there is no definition of connected if every pair of vertices has a directed path in only one direction.  Now let's talk about shortest paths. It turns out that all the algorithms we developed for graphs also work on digraphs. I will give an example using Dijkstra's algorithm.    Consider the following digraph.     graph={1:[2,5],2:[3],3:[4],4:[5]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e'}         4  2  3  1  1  6  2       Let's find the distance from to all the other vertices using Improved Dijkstra's algorithm. We start out by setting the distance to as 0. Our next step is to guess 2 for the distance to and 4 for the distance to . Since , we make the distance to be 2 permanently. For the next step, we extend out from . This reduces the distance. to to 3 and gives us an approximated distance to as 3. These are both equally small, so they become permanent. Finally, we extend from to to get a distance of 6. This is the only approximation, so it is permanent. This gives us , , , and .    "
+},
+{
+  "id": "digraph-reading-5",
+  "level": "2",
+  "url": "digraph-reading.html#digraph-reading-5",
+  "type": "Definition",
+  "number": "65",
+  "title": "",
+  "body": "  A directed graph , also known as a digraph , is a pair , where is a set called the vertex set, and is a set of ordered pairs of vertices (called arcs ). In other words, digraphs are just like graphs, except the edges (unordered pairs) are replaced with arcs (ordered pairs).   "
+},
+{
+  "id": "digraph-reading-7",
+  "level": "2",
+  "url": "digraph-reading.html#digraph-reading-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Adjacency Incidence Degree Walk Path, Trail, Circuit, and Cycle Connected "
+},
+{
+  "id": "digraph-reading-10",
+  "level": "2",
+  "url": "digraph-reading.html#digraph-reading-10",
+  "type": "Example",
+  "number": "66",
+  "title": "",
+  "body": "  Consider the following digraph.     graph={1:[2,5],2:[3],3:[4],4:[5]}  labels={1:'a',2:'b',3:'c',4:'d',5:'e'}         4  2  3  1  1  6  2       Let's find the distance from to all the other vertices using Improved Dijkstra's algorithm. We start out by setting the distance to as 0. Our next step is to guess 2 for the distance to and 4 for the distance to . Since , we make the distance to be 2 permanently. For the next step, we extend out from . This reduces the distance. to to 3 and gives us an approximated distance to as 3. These are both equally small, so they become permanent. Finally, we extend from to to get a distance of 6. This is the only approximation, so it is permanent. This gives us , , , and .   "
+},
+{
+  "id": "route-inspection-reading",
+  "level": "1",
+  "url": "route-inspection-reading.html",
+  "type": "Section",
+  "number": "",
+  "title": "Route Inspection Algorithm for Weighted Graphs",
+  "body": " Route Inspection Algorithm for Weighted Graphs  Suppose Jojo is inspecting some roads for potholes. Once again, we can represent Jojo's task as a graph problem. Let be the weighted graph where   $V$ is the set of street intersections on Jojo's route.    $E$ is the set of the portions of streets between adjacent intersections.    The weight of a given edge is the length of that street portion.     So what does Jojo want to accomplish?   Wants to walk along every part of every street on the route.    Wants to end up where they began.    Wants to do this in the shortest distance possible.     So Jojo wants to cover every edge and end up at the vertex where the walk begins with the minimum distance. What kind of walks would accomplish this?   If $G$ is Eulerian, an Eulerian circuit would work.    If $G$ is not Eulerian, we need another strategy.      Route Inspection Problem : Given a weighted graph , what is a closed walk that covers every edge of and has minimum weight?  Let's take a look at some of the issues we need to deal with.    What can prevent a graph from having the Eulerian circuit we want?    Vertices with odd degree.      Our walk will have some edges that will be traveled along more than once. How do we represent this?    We can draw multiple edges between vertices, one for each time we travel along an edge.      A multigraph is the same as a graph, except that we may have more than one edge between a given pair of vertices.    So we can represent our walk as a multigraph, where if we have multiple edges between two vertices, that means we travel between those vertices more than once.    What do we do with the odd vertices of the graph?    Recall that the Handshake Theorem says that the sum of the degrees of all vertices is an even number (specifically, twice the number of edges). That means there is an even number of odd vertices. So we can do the following:   Put the odd-degree vertices in pairs.    Find paths between each pair of vertices.    Put in another edge to each edge you found in the second step.       This will make the vertices all have even degree. So with these issue in mind, here is a summary of how we can think of the Route Inspection algorithm.   Every walk can be represented by a multigraph (i.e. a graph that may have more than one edge between a given pair of vertices) in which traveling over an edge more than once is represented by multiple edges.    Every closed walk can be represented by an Eulerian multigraph, where a new edge is drawn between two vertices every time that edge is traveled on.    We can make any multigraph Eulerian by connecting each pair of odd vertices with a path.    Once we have made our multigraph, we need only find an Eulerian circuit to finish the problem.     Rather than work an example here, I have set up the process in a straightforward problem in Introduction to the Route Inspection Problem . Try working that before watching the description of the Route Inspection algorithm in the second video for this section.  "
+},
+{
+  "id": "route-inspection-reading-5",
+  "level": "2",
+  "url": "route-inspection-reading.html#route-inspection-reading-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Route Inspection Problem "
+},
+{
+  "id": "route-inspection-reading-7",
+  "level": "2",
+  "url": "route-inspection-reading.html#route-inspection-reading-7",
+  "type": "Question",
+  "number": "67",
+  "title": "",
+  "body": "  What can prevent a graph from having the Eulerian circuit we want?    Vertices with odd degree.   "
+},
+{
+  "id": "route-inspection-reading-8",
+  "level": "2",
+  "url": "route-inspection-reading.html#route-inspection-reading-8",
+  "type": "Question",
+  "number": "68",
+  "title": "",
+  "body": "  Our walk will have some edges that will be traveled along more than once. How do we represent this?    We can draw multiple edges between vertices, one for each time we travel along an edge.   "
+},
+{
+  "id": "route-inspection-reading-9",
+  "level": "2",
+  "url": "route-inspection-reading.html#route-inspection-reading-9",
+  "type": "Definition",
+  "number": "69",
+  "title": "",
+  "body": "  A multigraph is the same as a graph, except that we may have more than one edge between a given pair of vertices.   "
+},
+{
+  "id": "route-inspection-reading-11",
+  "level": "2",
+  "url": "route-inspection-reading.html#route-inspection-reading-11",
+  "type": "Question",
+  "number": "70",
+  "title": "",
+  "body": "  What do we do with the odd vertices of the graph?    Recall that the Handshake Theorem says that the sum of the degrees of all vertices is an even number (specifically, twice the number of edges). That means there is an even number of odd vertices. So we can do the following:   Put the odd-degree vertices in pairs.    Find paths between each pair of vertices.    Put in another edge to each edge you found in the second step.      "
+},
+{
+  "id": "scheduling-reading",
+  "level": "1",
+  "url": "scheduling-reading.html",
+  "type": "Section",
+  "number": "",
+  "title": "Scheduling Problems",
+  "body": " Scheduling Problems  Scheduling is something we do all the time. Every day, we wake up and have certain things we have to get done. We have to figure out what order to do our tasks and when they must be done. Much of the time, we can figure out how to get our tasks done by making up the scheduling as we go, but often the tasks are so many and their requirements are so complicated that we must resort to some kind of organizational thinking (calendars, to-do lists, etc) to help us figure out how to make it through our day.  Much of this thinking is both mathematical and algorithmic, so it has been studied a lot by both mathematicians and computer scientists. Before we introduce the scheduling problems that we will be studying, let's first think about some of the issues that come up in scheduling problems.   Scheduling usually begins with a list of tasks that need to be completed.    Beyond just completing all the tasks, there are usually other goals that motivate how we approach our scheduling problem. For the problems we will be studying, the goal will to complete the tasks in the shortest time possible.    There are usually constraints on how we can complete the tasks. Each task may take a certain amount of time, which may or may not depend on the tasks done before it. In order to do one task, you might have to do one or more other tasks beforehand.    There may be constraints on who is doing the tasks. For instance, you may have one person who has to do all the tasks; you may have one person for each task who can work independently; or anything in between.     Now let's see how we use digraphs to model the problems. Our vertices usually indicate the state we are in at a given point in the schedule. For instance, the vertex may indicate what task we are working on at that time, the task we just completed, or all the tasks that have been completed at that time. An arc generally means that getting from state to state involves doing one task. Including all this information in a digraph will then help us understand how we flow from one state to another by doing the tasks in a given order. For our problems, it is also necessary to know how long it takes to get from one state to another, since we want to find out how much time is necessary to complete all of the tasks. We do this by labeling each arc with the time it takes to get from state to state . Thus, each problem will be modeled by a weighted digraph.  We will be working on just one of the many types of scheduling problems. In each problem, we model the problem with a digraph. Then we use our shortest path techniques to determine the solution to the scheduling problem. The scheduling problems we consider include problems like how you might schedule your tasks during the day or organizing the tasks you must complete to write a research paper. Here are the constraints.   One person must complete all tasks.    For a given task, it is possible that one or more other tasks must be completed before starting the task.    The time required for a given task may depend on what tasks have been completed before it.    The goal is to minimize the amount of time to complete the tasks.     As noted above, the time it takes to do a task may depend on what tasks have been done before it. So when we go from state to state , we should be able to look at state and know what jobs have been done up to that point. Thus, each vertex in the digraph is the set of tasks that we have completed. So if and are sets of tasks, if , then must contain all elements of (i.e. ) in addition to the one task that was done between state and state . Here is how we might set up the weighted digraph in an example.    Suppose you have three tasks to complete (tasks , , and ). Here are the constraints:   Task must be done before task , and task may be done at any time.    If task is done before task , then task will take 3 minutes and task will take 2 minutes.    If task is done after task , then task will take 2 minutes and task will take 4 minutes.    If task comes before task , then it will take 5 minutes. Otherwise, task will take 6 minutes.     I will help you think through part of the digraph. We always start with the empty set , because we begin the process having completed no tasks. Our first task could be either or (not since comes before ). So we have the arcs and . In the first of those arcs, we are doing before , so it will have a weight of 3. In the second arc, we are doing before , so it has a weight of 4. Another arc is if we do task then task . In this case, we are doing before , so the weight of the arc is 5. We continue in this way to get the following weighted digraph.     graph={1:[2,5],2:[3],3:[4],4:[5]}  labels={1:'\\emptyset',2:'\\{ a \\}',3:'\\{ c \\}',4:'\\{ a,b \\}',5:'\\{ a,c \\}',6:'\\{ a,b,c \\}'}          4  5  2  1  10  3  6       Note that the digraph is missing the subsets and . This is because it is impossible to complete without doing first, so those two sets are impossible. Now our goal is to make it to the set in the shortest amount of time. How would we do that? Dijkstra, anyone? Try it yourself. The time you come up with should be 10 minutes, and the order should be , then , then .    "
+},
+{
+  "id": "scheduling-reading-7",
+  "level": "2",
+  "url": "scheduling-reading.html#scheduling-reading-7",
+  "type": "Example",
+  "number": "71",
+  "title": "",
+  "body": "  Suppose you have three tasks to complete (tasks , , and ). Here are the constraints:   Task must be done before task , and task may be done at any time.    If task is done before task , then task will take 3 minutes and task will take 2 minutes.    If task is done after task , then task will take 2 minutes and task will take 4 minutes.    If task comes before task , then it will take 5 minutes. Otherwise, task will take 6 minutes.     I will help you think through part of the digraph. We always start with the empty set , because we begin the process having completed no tasks. Our first task could be either or (not since comes before ). So we have the arcs and . In the first of those arcs, we are doing before , so it will have a weight of 3. In the second arc, we are doing before , so it has a weight of 4. Another arc is if we do task then task . In this case, we are doing before , so the weight of the arc is 5. We continue in this way to get the following weighted digraph.     graph={1:[2,5],2:[3],3:[4],4:[5]}  labels={1:'\\emptyset',2:'\\{ a \\}',3:'\\{ c \\}',4:'\\{ a,b \\}',5:'\\{ a,c \\}',6:'\\{ a,b,c \\}'}          4  5  2  1  10  3  6       Note that the digraph is missing the subsets and . This is because it is impossible to complete without doing first, so those two sets are impossible. Now our goal is to make it to the set in the shortest amount of time. How would we do that? Dijkstra, anyone? Try it yourself. The time you come up with should be 10 minutes, and the order should be , then , then .   "
+},
+{
+  "id": "dijkstra-reading",
+  "level": "1",
+  "url": "dijkstra-reading.html",
+  "type": "Section",
+  "number": "",
+  "title": "Shortest Path Algorithms for Weighted Graphs",
+  "body": " Shortest Path Algorithms for Weighted Graphs  Consider a graph whose vertices are cities and whose edges are some of the driving routes between the cities. We would like to use this graph to figure out the best routes between a given pair of cities (so would Google Maps). For instance, we might want to find the shortest route between the cities.    Can we figure this out from the graph only?    No, you need two things.   You want to know how long each route is label each edge with the distance of the route (might not be the shortest route).    You might want to combine these routes to find the shortest possible route Construct paths on the graph, and add the distances of the edges of the path to find the total distance.     We do this with weighted graphs.    A \\emph{weighted graph} is a graph along with a function . Also,   For , we call the weight of $e$ .    The weight of a path or trail is the sum of all the weights of the edges in the path or trail.       There are some interesting problems involving weighted graphs.    Traveling Salesperson Problem: Given a weighted graph with a Hamiltonian cycle, which Hamilton cycle has the least weight? This is a very hard problem in general.     Shortest Path Problem: Given a weighted graph and two vertices and in the graph, what is the shortest path beginning at and ending at ?     We focus on the shortest path problem. Most of the algorithms we look at have some common elements.   Start at and look at one edge of the path at a time.    At each stage, make your best guess at what the least weight from is so far. Usually put a label on the vertices to keep track of your guesses.    Modify your guess as the algorithm progresses and change your vertex labels accordingly.     In the in-class problems included with this reading, you will acquaint yourself with some of the methods we use to find shortest paths between vertices. These methods include the following.    Dijkstra's Algorithm: We label each vertex with the distance from and the vertex that came before in the shortest path , where is the previous vertex and is the distance from . We do not label vertices until we are sure they are closest.   The vertex has a distance 0 and does not come from any vertex, so it gets a label (-,0).    For each vertex that has a label (initially, that is just ), look at all vertices adjacent to and compute . Again, do this for all vertices that currently have a label.    Take the smallest found in step (2). Label with .    Go back to step 2 until you run out of vertices. Then stop.        Improved Dijkstra's Algorithm: We label each vertex with its distance from . We arrive at that distance by making temporary guesses, making them permanent when we know they are correct.   Label with the (permanent) number 0.    For the vertex that got the last permanent label , look at all that are adjacent to . Give each such vertex the temporary label .    Among all temporary vertices, make the shortest one permanent. Go back to (2).        "
+},
+{
+  "id": "dijkstra-reading-3",
+  "level": "2",
+  "url": "dijkstra-reading.html#dijkstra-reading-3",
+  "type": "Question",
+  "number": "72",
+  "title": "",
+  "body": "  Can we figure this out from the graph only?   "
+},
+{
+  "id": "dijkstra-reading-6",
+  "level": "2",
+  "url": "dijkstra-reading.html#dijkstra-reading-6",
+  "type": "Definition",
+  "number": "73",
+  "title": "",
+  "body": "  A \\emph{weighted graph} is a graph along with a function . Also,   For , we call the weight of $e$ .    The weight of a path or trail is the sum of all the weights of the edges in the path or trail.      "
+},
+{
+  "id": "dijkstra-reading-7",
+  "level": "2",
+  "url": "dijkstra-reading.html#dijkstra-reading-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Traveling Salesperson Problem: Shortest Path Problem: "
+},
+{
+  "id": "dijkstra-reading-9",
+  "level": "2",
+  "url": "dijkstra-reading.html#dijkstra-reading-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Dijkstra's Algorithm: Improved Dijkstra's Algorithm: "
+},
+{
   "id": "act-intro-proofs",
   "level": "1",
   "url": "act-intro-proofs.html",
