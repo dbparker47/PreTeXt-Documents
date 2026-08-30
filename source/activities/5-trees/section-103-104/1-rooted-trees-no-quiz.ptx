@@ -3,7 +3,7 @@
 <worksheet xml:id="act-rooted-tree">
   <title>Rooted Trees (Not on Quiz)</title>
 
-  <image>
+  <image width="60%">
     <prefigure xmlns="https://prefigure.org" label="image-act-rooted-tree-ex">
         <diagram dimensions="(300,300)" margins="5">
             <definition>graph={1:[2,3,4],3:[6,7],4:[5,9],7:[8],9:[10,11]}</definition>
