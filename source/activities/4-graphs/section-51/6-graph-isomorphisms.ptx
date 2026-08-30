@@ -126,7 +126,7 @@
       </image>
     </sidebyside>
 
-    <image>
+    <image width="30%">
       <prefigure xmlns="https://prefigure.org" label="image-act-isomorphism-7">
         <diagram dimensions="(300,300)" margins="5">
           <definition>undirected1={1:[3,4],2:[3,5],3:[5]}</definition>
